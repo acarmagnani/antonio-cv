@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+  <title>Antonio Carmagnani - CV</title>
+
+  <link rel="stylesheet" href="../assets/styles.css" />
+
+  <style>
+    :root { --scale: 1.60}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js" defer></script>
+  <script defer>
+    // ---------- Utilities ----------
+    function create(tag, className, text) {
+      const el = document.createElement(tag);
+      if (className) el.className = className;
+      if (text != null) el.textContent = text;
+      return el;
+    }
+    function b1(text) {
+      const el = document.createElement('b1');
+      if (text != null) el.textContent = text;
+      return el;
+    }
+    function fmtMonthYear(iso) {
+      // Accepts "YYYY-MM" or "YYYY-MM-DD"; returns "MM.YYYY". Falls back to raw if unparsable
+      if (!iso || typeof iso !== 'string') return '';
+      const m = iso.match(/^(\d{4})-(\d{2})/);
+      if (!m) return iso;
+      return `${m[2]}.${m[1]}`;
+    }
+    function joinDates(start, end) {
+      const s = fmtMonthYear(start);
+      const e = fmtMonthYear(end);
+      if (s && e) return `${s} - ${e}`;
+      return s || e || '';
+    }
+    function listify(container, items) {
+      if (!Array.isArray(items) || items.length === 0) return;
+      const ul = create('ul');
+      items.forEach(t => {
+        const li = create('li');
+        li.appendChild(b1(t));
+        ul.appendChild(li);
+      });
+      container.appendChild(ul);
+    }
+    function entryBlock({ titleLeft, location, dates, bullets }) {
+      const block = create('div', 'entry-block');
+
+      const header = create('div', 'entry-header');
+      const left = b1(titleLeft);
+      const loc = create('span', 'entry-location');
+      loc.appendChild(b1(location || ''));
+      header.appendChild(left);
+      header.appendChild(loc);
+
+      const datesEl = create('div', 'entry-dates');
+      datesEl.appendChild(b1(dates || ''));
+
+      block.appendChild(header);
+      block.appendChild(datesEl);
+
+      const bulletsWrap = create('div');
+      listify(bulletsWrap, bullets || []);
+      block.appendChild(bulletsWrap);
+
+      return block;
+    }
+
+    async function loadYAML(path) {
+      const res = await fetch(path, { cache: 'no-cache' });
+      if (!res.ok) throw new Error(`Failed to fetch ${path}: ${res.status}`);
+      const text = await res.text();
+      return jsyaml.load(text);
+    }
+
+    function renderMeta(root, meta) {
+      document.title = `${meta?.name ?? '-'} - CV`;
+
+      const header = create('div', 'header');
+      const h1 = create('h1');
+      h1.textContent = meta?.name ?? '';
+      header.appendChild(h1);
+
+      const contact = create('div', 'contact-info');
+      const parts = [meta?.location, '•', meta?.phone, '•', meta?.email].filter(Boolean);
+      parts.forEach((t, i) => {
+        contact.appendChild(b1(t));
+        if (i < parts.length - 1) contact.appendChild(document.createTextNode(' '));
+      });
+
+      header.appendChild(contact);
+      root.appendChild(header);
+      root.appendChild(create('hr'));
+    }
+
+    function renderProfile(root, profile) {
+      if (!profile) return;
+      const section = create('div', 'cv-section');
+      const title = create('div', 'section-title');
+      title.appendChild(b1('PROFILE'));
+      const content = create('div', 'section-content');
+      content.appendChild(b1(profile));
+      section.appendChild(title);
+      section.appendChild(content);
+      root.appendChild(section);
+    }
+
+    function renderExperience(root, experience = []) {
+      if (!experience.length) return;
+      const section = create('div', 'cv-section');
+      const title = create('div', 'section-title');
+      title.appendChild(b1('Experience'));
+      const content = create('div', 'section-content');
+
+      experience.forEach(role => {
+        const left = [role.title, role.org].filter(Boolean).join(' @ ');
+        const dates = joinDates(role.start, role.end);
+        content.appendChild(entryBlock({
+          titleLeft: left,
+          location: role.location,
+          dates,
+          bullets: role.bullets
+        }));
+      });
+
+      section.appendChild(title);
+      section.appendChild(content);
+      root.appendChild(section);
+    }
+
+    function renderEducation(root, education = []) {
+      if (!education.length) return;
+      const section = create('div', 'cv-section');
+      const title = create('div', 'section-title');
+      title.appendChild(b1('Education'));
+      const content = create('div', 'section-content');
+
+      education.forEach(ed => {
+        const left = [ed.degree, ed.school].filter(Boolean).join(' @ ');
+        const dates = joinDates(ed.start, ed.end);
+        const block = create('div', 'entry-block');
+
+        const header = create('div', 'entry-header');
+        header.appendChild(b1(left));
+        const loc = create('span', 'entry-location');
+        loc.appendChild(b1(ed.location || ''));
+        header.appendChild(loc);
+
+        const datesEl = create('div', 'entry-dates');
+        datesEl.appendChild(b1(dates));
+
+        block.appendChild(header);
+        block.appendChild(datesEl);
+        content.appendChild(block);
+      });
+
+      section.appendChild(title);
+      section.appendChild(content);
+      root.appendChild(section);
+    }
+
+    function renderProjects(root, projects = []) {
+      if (!projects.length) return;
+      const section = create('div', 'cv-section');
+      const title = create('div', 'section-title');
+      title.appendChild(b1('Projects'));
+      const content = create('div', 'section-content');
+
+      projects.forEach(p => {
+        const left = [p.name, p.org].filter(Boolean).join(' @ ');
+        const block = entryBlock({
+          titleLeft: left,
+          location: p.location,
+          dates: joinDates(p.start, p.end),
+          bullets: p.bullets
+        });
+        content.appendChild(block);
+      });
+
+      section.appendChild(title);
+      section.appendChild(content);
+      root.appendChild(section);
+    }
+
+    function renderSkills(root, skills) {
+      if (!skills) return;
+      const section = create('div', 'cv-section');
+      const title = create('div', 'section-title');
+      title.appendChild(b1('Skills'));
+      const content = create('div', 'section-content');
+
+      const groups = [
+        ['Data & Analysis', skills.data_and_analysis],
+        ['Digital Tools', skills.digital_tools],
+        ['ESG & Sustainability', skills.esg_and_sustainability],
+        ['Real Estate & Urban', skills.real_estate_and_urban],
+        ['Languages', skills.languages],
+      ];
+
+      const ul = create('ul');
+      groups.forEach(([label, arr]) => {
+        if (!Array.isArray(arr) || arr.length === 0) return;
+        const li = create('li');
+        const strong = b1(`${label}: ${arr.join(', ')}`);
+        li.appendChild(strong);
+        ul.appendChild(li);
+      });
+      content.appendChild(ul);
+
+      section.appendChild(title);
+      section.appendChild(content);
+      root.appendChild(section);
+    }
+
+    async function main() {
+      const [mainData, supportData] = await Promise.all([
+        loadYAML('../content_tailored.yaml'),
+        loadYAML('../support.yaml')
+      ]);
+
+      // Merge: support.yaml overrides / supplies shared sections
+      const data = {
+        ...mainData,
+        meta: supportData.meta,
+        education: supportData.education,
+        skills: supportData.skills
+      };
+
+      const container = document.querySelector('.cv-container');
+
+      renderMeta(container, data.meta);
+      renderProfile(container, data.profile);
+      renderExperience(container, data.experience);
+      renderEducation(container, data.education);
+      renderProjects(container, data.projects);
+      renderSkills(container, data.skills);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      main().catch(err => {
+        const root = document.querySelector('.cv-container');
+        const notice = create('div');
+        notice.style.color = 'crimson';
+        notice.style.marginTop = '1rem';
+        notice.textContent = `Failed to render CV: ${err.message}`;
+        root.appendChild(notice);
+        // Fallback: static skeleton
+      });
+    });
+  </script>
+</head>
+<body>
+  <noscript>
+    <div style="max-width:900px;margin:1rem auto;padding:1rem;border:1px solid #ccc;">
+      This CV requires JavaScript to load <code>content.yaml</code>. Please enable JavaScript or pre-render this template.
+    </div>
+  </noscript>
+
+  <div class="cv-container">
+    <!-- Populated from content.yaml by the script above -->
+  </div>
+</body>
+</html>

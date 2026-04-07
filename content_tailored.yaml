@@ -1,0 +1,96 @@
+profile: >
+  Driven by the ambition to move businesses and societies in a sustainable direction. Currently completing an M.Arch. in Architecture Computation at The Royal Danish Academy, with hands-on experience in human rights due diligence, double materiality assessments, and responsible business conduct advisory. Cross-sector background spanning infrastructure consulting, real estate development, and computational urban analysis supports an integrated approach to the green transition and resilient societies.
+
+experience:
+  - title: "Project Assistant in International Infrastructure Projects"
+    org: "Sweco Danmark A/S"
+    location: "Copenhagen, DK"
+    start: "2026-02"
+    end: "Present"
+    bullets:
+      - "Supported consulting teams in delivering internationally funded infrastructure projects across water, energy, urban development, and transport sectors."
+      - "Used QGIS to collect, process, and visualize spatial data supporting project preparation and geographic analysis."
+      - "Synthesized spatial and contextual analysis to inform infrastructure planning decisions and support evidence-based feasibility-stage assessments."
+      - "Contributed to the development of climate and environmental methodologies for project evaluation."
+      - "Prepared structured documentation and background materials for international tenders and consulting proposals."
+      - "Coordinated inputs across multidisciplinary teams to advance project structuring and ensure delivery milestones."
+      - "Analyzed social, environmental, and human rights considerations associated with large-scale infrastructure investments."
+
+  - title: "Intern in Responsible Business Conduct"
+    org: "Ramboll Management Consulting"
+    location: "Copenhagen, DK"
+    start: "2025-05"
+    end: "2025-08"
+    bullets:
+      - "Designed a structured tool for Human Rights Impact Assessments (HRIAs) covering data collection, impact evaluation, and stakeholder mapping across supply chains."
+      - "Built a supply chain mapping dashboard for EU-listed critical raw materials, structuring upstream, trade, and downstream flows with geographic and actor-specific detail."
+      - "Translated EU Critical Raw Materials Act regulatory requirements into a client-facing strategic overview, linking compliance obligations to service offerings and project references."
+      - "Structured an overview of ESG due diligence capabilities for real estate clients, outlining core services and assessment frameworks."
+      - "Conducted HRIAs for key clients and integrated findings into risk management and supplier oversight processes."
+      - "Developed a structured benchmarking methodology mapping salient human rights risks across peer supply chains and produced workshop materials grounded in sector practices."
+      - "Assessed companies' alignment with UNGPs and OECD Guidelines in the context of corporate due diligence requirements."
+      - "Supported double materiality assessments by applying UNGP methodologies and aligning outputs with CSRD financial materiality standards."
+      - "Integrated AI tools into research workflows to increase efficiency and consistency in company assessments."
+
+  - title: "Architect"
+    org: "Isay Weinfeld Architects"
+    location: "São Paulo, BR"
+    start: "2023-02"
+    end: "2024-08"
+    bullets:
+      - "Applied parametric analysis in Python and Grasshopper to evaluate building orientation and massing scenarios for energy performance optimization."
+      - "Developed a parametric workflow that reduced a recurring production process from one week to under one hour, enabling consistent application across 10+ projects."
+      - "Presented the pipeline in a studio workshop attended by 60+ people and led its application with colleagues across multiple projects."
+
+  - title: "Trainee in Real Estate Product Development"
+    org: "OSPA"
+    location: "São Paulo, BR"
+    start: "2022-02"
+    end: "2022-10"
+    bullets:
+      - "Delivered 10+ structured feasibility studies for large-scale mixed-use developments across multiple cities in the United States and Brazil, combining volumetric and numerical analysis."
+      - "Analyzed zoning codes, land use regulations, and soil classification rules to assess development potential and identify regulatory opportunities."
+      - "Built early-stage financial models using P&L statements and cash flow forecasts to evaluate project viability (ROI, IRR)."
+      - "Incorporated environmental constraints and ESG considerations into early-stage due diligence for real estate developments."
+
+  - title: "Architect"
+    org: "Felipe Hess Architects"
+    location: "São Paulo, BR"
+    start: "2021-07"
+    end: "2022-02"
+    bullets:
+      - "Produced BIM documentation in Revit for residential and commercial projects, covering technical drawings and coordination models across design phases."
+      - "Applied parametric modeling techniques in Grasshopper to support geometric exploration and design development."
+      - "Worked within a fast-paced studio environment on multiple concurrent projects, coordinating with senior architects on documentation and modeling tasks."
+
+  - title: "Intern in Project Management"
+    org: "Itaú-Unibanco"
+    location: "São Paulo, BR"
+    start: "2020-08"
+    end: "2021-07"
+    bullets:
+      - "Assessed environmental and energy performance of buildings under acquisition or lease as part of internal ESG due diligence processes."
+      - "Developed Excel dashboards and supported analytical requests from internal business teams across project evaluation workflows."
+
+projects:
+  - name: "Master's Thesis, Computational Urban Analysis for Intensification Strategy"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Developed a computational framework to identify underused spaces in São Paulo by combining urban morphology, land use, and social vulnerability data."
+      - "Built an algorithm integrating building typology, regulatory conditions, and use patterns to generate urban intensification strategies aligned with policy."
+      - "Integrated geospatial datasets in QGIS to analyze spatial relationships between buildings, zoning, and social context."
+
+  - name: "Real Estate Development Recommendation Tool"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Built a machine learning tool generating site-specific development recommendations by integrating financial, social, sustainability, and geospatial data."
+      - "Designed an interface enabling stakeholders to adjust impact drivers and evaluate trade-offs aligned with ESG priorities."
+
+  - name: "Venice Architecture Biennale 2025"
+    org: "The Royal Danish Academy, CITA, GXN, 3XN"
+    location: "Venice, IT"
+    bullets:
+      - "Contributed to the Matanzas panel by developing geospatial mappings to analyze local material sources and supply flows, producing cartographic work that informed the site's material research."
+      - "Contributed to the Veneto panel by producing the physical exhibition panels displayed in the 7-metre installation at the Arsenale, which used the blue biomass composite technique developed during the semester project."
