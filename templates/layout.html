@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Antonio Carmagnani - CV</title>
 
   <link rel="stylesheet" href="../assets/styles.css" />
 
   <style>
-    :root { --scale: 1.60}
+    :root {
+      --scale: 1.60
+    }
   </style>
 
   <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js" defer></script>
@@ -221,17 +221,26 @@
     }
 
     async function main() {
-      const [mainData, supportData] = await Promise.all([
-        loadYAML('../content_tailored.yaml'),
-        loadYAML('../support.yaml')
-      ]);
+      // Load base (stable: meta, education, skills, full experience/projects)
+      // and tailored (per-application overrides for profile/experience/projects).
+      // Tailored fields, when present, override base fields.
+      const baseData = await loadYAML('../content_base.yaml');
 
-      // Merge: support.yaml overrides / supplies shared sections
+      let tailoredData = {};
+      try {
+        tailoredData = await loadYAML('../content_tailored.yaml');
+      } catch (e) {
+        // No tailored file yet - render from base only
+        tailoredData = {};
+      }
+
       const data = {
-        ...mainData,
-        meta: supportData.meta,
-        education: supportData.education,
-        skills: supportData.skills
+        meta: baseData.meta,
+        education: baseData.education,
+        skills: baseData.skills,
+        profile: tailoredData.profile ?? baseData.profile,
+        experience: tailoredData.experience ?? baseData.experience,
+        projects: tailoredData.projects ?? baseData.projects,
       };
 
       const container = document.querySelector('.cv-container');
@@ -257,10 +266,12 @@
     });
   </script>
 </head>
+
 <body>
   <noscript>
     <div style="max-width:900px;margin:1rem auto;padding:1rem;border:1px solid #ccc;">
-      This CV requires JavaScript to load <code>content.yaml</code>. Please enable JavaScript or pre-render this template.
+      This CV requires JavaScript to load <code>content.yaml</code>. Please enable JavaScript or pre-render this
+      template.
     </div>
   </noscript>
 
@@ -268,4 +279,5 @@
     <!-- Populated from content.yaml by the script above -->
   </div>
 </body>
+
 </html>

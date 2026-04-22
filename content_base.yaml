@@ -1,3 +1,10 @@
+meta:
+  name: "Antonio Carmagnani"
+  title: "Curriculum Vitae"
+  location: "Copenhagen, DK"
+  phone: "+45 71 49 62 06"
+  email: "antoniocarmagnani@gmail.com"
+
 profile: >
   Experience in real estate development, sustainability consulting, and computational design. Currently completing an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on applying computational and data methods to real estate and urban development challenges. Hands-on skills span GIS-based spatial analysis, financial feasibility modeling, ESG due diligence, and parametric design workflows. Motivated by work where the built environment, technology, and sustainability intersect.
 
@@ -86,6 +93,32 @@ experience:
       - "Built a custom VBA tool in Excel to monitor the bank's corporate furniture assets across locations, replacing a manual tracking process."
       - "Developed Excel dashboards and supported ad hoc analytical requests from business teams."
 
+
+education:
+  - degree: "M.Arch. in Architecture Computation"
+    school: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    start: "2024-07"
+    end: "2026-07"
+
+  - degree: "Semester Programme in Building Technology"
+    school: "Architecture Association"
+    location: "London, UK"
+    start: "2022-07"
+    end: "2023-01"
+
+  - degree: "Summer School in Parametric Design"
+    school: "Architecture Association"
+    location: "London, UK"
+    start: "2019-06"
+    end: "2019-07"
+
+  - degree: "B.Arch. in Architecture and Urbanism"
+    school: "Mackenzie University"
+    location: "São Paulo, BR"
+    start: "2018-07"
+    end: "2023-12"
+
 projects:
   - name: "Master's Thesis, Computational Urban Analysis for Intensification Strategy"
     org: "The Royal Danish Academy"
@@ -120,3 +153,35 @@ projects:
     bullets:
       - "Contributed to the Matanzas panel by developing geospatial mappings to analyze local material sources and supply flows, producing cartographic work that informed the site's material research."
       - "Contributed to the Veneto panel by producing the physical exhibition panels displayed in the 7-metre installation at the Arsenale, which used the blue biomass composite technique developed during the semester project."
+
+skills:
+  data_and_analysis:
+    - "Python"
+    - "QGIS"
+    - "SQL"
+    - "Power BI"
+    - "Excel / VBA"
+    - "HTML"
+
+  digital_tools:
+    - "Rhino + Grasshopper"
+    - "Revit"
+    - "AutoCAD"
+    - "Adobe Suite (InDesign, Illustrator, Photoshop)"
+
+  esg_and_sustainability:
+    - "CSRD, Double Materiality, EU Taxonomy"
+    - "UNGPs, OECD Guidelines, HRDD, HRIA"
+    - "LCA (Life Cycle Assessment)"
+
+  real_estate_and_urban:
+    - "Real estate feasibility modeling"
+    - "Zoning and land use regulatory analysis"
+    - "Urban morphology and spatial analysis"
+
+  languages:
+    - "English (fluent)"
+    - "Portuguese (native)"
+    - "Spanish (fluent)"
+    - "Danish (limited working proficiency)"
+    - "Italian (limited working proficiency)"
