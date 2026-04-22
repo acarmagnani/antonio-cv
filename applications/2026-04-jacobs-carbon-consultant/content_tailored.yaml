@@ -1,0 +1,93 @@
+profile: >
+  A sustainability professional with a built-environment foundation, combining consulting experience in ESG due diligence and CSRD-aligned assessments with technical work in life cycle analysis and environmental performance. Master's research at The Royal Danish Academy applied LCA metrics to blue bio-based construction materials, linking carbon outcomes to structural optimization and material sourcing. Focused on building expertise in carbon accounting and decarbonisation strategy within a data-driven consulting environment.
+
+experience:
+  - title: "Project Assistant in International Infrastructure Projects"
+    org: "Sweco Danmark A/S"
+    location: "Copenhagen, DK"
+    start: "2026-02"
+    end: "Present"
+    bullets:
+      - "Supported consulting teams delivering internationally funded infrastructure projects across water, energy, urban development, and transport sectors."
+      - "Contributed to climate and environmental methodology documents."
+      - "Analyzed social, environmental, and human rights considerations associated with large-scale infrastructure investments."
+      - "Used QGIS to collect, process, and visualize spatial data supporting environmental analysis and project preparation."
+      - "Prepared technical documentation and background materials for international tenders and consulting proposals."
+
+  - title: "Intern in Responsible Business Conduct"
+    org: "Ramboll Management Consulting"
+    location: "Copenhagen, DK"
+    start: "2025-05"
+    end: "2025-08"
+    bullets:
+      - "Supported double materiality assessments by applying UNGP methods and aligning outputs with CSRD financial materiality standards."
+      - "Developed a strategic overview of Ramboll's ESG due diligence capabilities for real estate clients, covering core services and assessment frameworks."
+      - "Designed a structured assessment tool covering data collection, impact evaluation, and stakeholder mapping across complex supply chains."
+      - "Integrated AI tools into research workflows to handle higher volumes of assessments without losing analytical consistency."
+
+  - title: "Architect"
+    org: "Isay Weinfeld Architects"
+    location: "São Paulo, BR"
+    start: "2023-02"
+    end: "2024-08"
+    bullets:
+      - "Ran real-time parametric analysis in Python and Grasshopper to optimize building orientation and massing configurations for energy performance."
+      - "Developed Revit models for large-scale residential and commercial projects spanning multiple regions, contributing to technical documentation across design phases."
+
+  - title: "Trainee in Real Estate Product Development"
+    org: "OSPA"
+    location: "São Paulo, BR"
+    start: "2022-02"
+    end: "2022-10"
+    bullets:
+      - "Contributed to internal due diligence by reviewing environmental constraints and site-specific ESG considerations alongside financial and zoning analysis."
+      - "Developed 10+ volumetric and numerical feasibility studies for large-scale mixed-use developments across the United States and Brazil."
+
+  - title: "Architect"
+    org: "Felipe Hess Architects"
+    location: "São Paulo, BR"
+    start: "2021-07"
+    end: "2022-02"
+    bullets:
+      - "Produced BIM documentation in Revit for residential and commercial projects, covering technical drawings and coordination models across design phases."
+      - "Applied parametric modeling techniques in Grasshopper to support geometric exploration and design development."
+
+  - title: "Intern in Project Management"
+    org: "Itaú-Unibanco"
+    location: "São Paulo, BR"
+    start: "2020-08"
+    end: "2021-07"
+    bullets:
+      - "Assessed environmental and energy performance of buildings the bank was acquiring or leasing, reviewing energy consumption data, efficiency ratings, and applicable certifications as part of internal due diligence processes."
+      - "Reviewed technical documentation submitted by architecture and engineering firms prior to construction authorization, evaluating compliance with building norms and environmental performance requirements."
+      - "Developed Excel dashboards and supported ad hoc analytical requests from business teams."
+
+projects:
+  - name: "Master's Thesis, Computational Urban Analysis for Intensification Strategy"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Developed a computational framework combining urban morphology analysis, land use data, and social vulnerability indicators to identify underused spaces and assess development potential."
+      - "Integrated multiple geospatial datasets in QGIS to map spatial relationships between buildings, zoning conditions, and social context at the neighborhood scale."
+
+  - name: "Real Estate Development Recommendation Tool"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Built a machine learning tool generating site-specific development recommendations by integrating financial, social, sustainability, and geospatial data."
+      - "Designed a user interface allowing stakeholders to adjust ESG impact drivers and weighting, with predictive outputs aligned to local development conditions and sustainability priorities."
+
+  - name: "Rammed Blue Biomass & Computational Optimization"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Developed a new construction technique using blue biomass (seashells and algae), applying LCA metrics and parametric simulations to evaluate carbon performance, structural behavior, and environmental impact."
+      - "Integrated life cycle assessment methods with computational optimization to identify configurations that minimized environmental load while meeting structural requirements."
+      - "Project was selected as a semester highlight and served as the material foundation for the school's installation at the Venice Architecture Biennale 2025, presented in collaboration with CITA, GXN, and 3XN at the Arsenale."
+
+  - name: "Venice Architecture Biennale 2025"
+    org: "The Royal Danish Academy, CITA, GXN, 3XN"
+    location: "Venice, IT"
+    bullets:
+      - "Contributed to the Matanzas panel by developing geospatial mappings to analyze local material sources and supply flows, producing cartographic work that informed the site's material research."
+      - "Contributed to the Veneto panel by producing the physical exhibition panels displayed in the 7-metre installation at the Arsenale, which used the blue biomass composite technique developed during the semester project."

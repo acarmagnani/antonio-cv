@@ -1,8 +1,9 @@
 /* A4 Page Formatting */
 @page {
     size: 21cm 29.7cm;
-    margin: 30mm 45mm 30mm 45mm;
+    margin: 15mm 5mm 0mm 5mm;
 }
+
 @media print {
     body {
         width: 21cm;
@@ -20,6 +21,7 @@ body {
     display: block;
     background-color: #000000;
 }
+
 .cv-container {
     width: 21cm;
     height: 31cm;
@@ -31,6 +33,7 @@ body {
 h1 {
     font-size: calc(var(--scale) * 15px);
 }
+
 b1 {
     font-size: calc(var(--scale) * 7px);
     line-height: calc(var(--scale) * .7);
@@ -44,13 +47,14 @@ ul {
     text-indent: 0;
     line-height: calc(var(--scale) * .5);
 }
+
 ul li::marker {
     font-size: calc(var(--scale) * 6px);
 }
 
 hr {
     border: none;
-    border-top: 0.5px solid black; 
+    border-top: 0.5px solid black;
     width: 100%;
 }
 
@@ -59,10 +63,12 @@ hr {
 .header {
     text-align: center;
 }
+
 .header h1 {
     margin: 0;
     margin-right: 20px;
 }
+
 .contact-info {
     display: flex;
     justify-content: center;
@@ -78,11 +84,13 @@ hr {
     gap: 0px;
     margin-top: calc(var(--scale) * 3px);
 }
+
 .section-title {
     text-transform: uppercase;
     font-weight: bold;
     display: flex;
 }
+
 .section-content {
     display: flex;
     flex-direction: column;
@@ -95,10 +103,12 @@ hr {
     justify-content: space-between;
     font-weight: bold;
 }
+
 .entry-location {
     display: flex;
     text-align: right;
 }
+
 .entry-dates {
     text-align: left;
     font-style: italic;

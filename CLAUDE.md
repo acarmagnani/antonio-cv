@@ -43,17 +43,17 @@ It must do a different job than the rest of the CV.
 
 ## File structure
 
-content_base.yaml:         Source of truth. Full history, never edit during tailoring.
-content_tailored.yaml:     Scratch file at root. The last tailored CV, copied here by the skill so that layout.html can render it. Not authoritative, do not edit directly.
-templates/layout.html:     Renders a CV from content_base.yaml + content_tailored.yaml.
-assets/styles.css:         CV styling.
-applications/:             One folder per job application.
-YYYY-MM-company-role/:     Naming convention: year-month-company-role, kebab-case.
-job_description.md:        Pasted from the job posting.
-strategy.md:               Tailoring strategy for this application.
-content_tailored.yaml:     The tailored CV content. Authoritative for this application.
-cover_letter.md:           Optional. Cover letter for this application.
-.claude/skills/:           Claude Code skills for CV tailoring and cover letters.
+- **content_base.yaml**:         Source of truth. Full history, never edit during tailoring.
+- **content_tailored.yaml**:     Scratch file at root. The last tailored CV, copied here by the skill so that layout.html can render it. Not authoritative, do not edit directly.
+- **templates/layout.html**:     Renders a CV from content_base.yaml + content_tailored.yaml.
+- **assets/styles.css**:         CV styling.
+- **applications/**:             One folder per job application.
+- **YYYY-MM-company-role/**:     Naming convention: year-month-company-role, kebab-case.
+- **job_description.md**:        Pasted from the job posting.
+- **strategy.md**:               Tailoring strategy for this application.
+- **content_tailored.yaml**:     Scratch file at root. The last tailored CV, copied here by the skill so that layout.html can render it. Not authoritative, do not edit directly. Contains only profile, experience, and projects Stable sections (meta, education, skills) live in content_base.yaml and are merged in by layout.html at render time.
+- **cover_letter.md**:           Optional. Cover letter for this application.
+- **.claude/skills/**:           Claude Code skills for CV tailoring and cover letters.
 
 ### Application folder naming
 

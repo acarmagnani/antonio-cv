@@ -135,6 +135,13 @@ projects:
       - "Built a machine learning tool that generates site-specific development recommendations for buildings in Copenhagen by integrating financial, social, sustainability, and geospatial data."
       - "Designed a user interface allowing different stakeholders to adjust impact drivers and weighting, with predictive outputs aligned to ESG priorities and local development conditions."
 
+  - name: "LCA Toolkit for Revalu"
+    org: "Revalu"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Collaborated with Revalu, a Copenhagen-based LCA platform, to design and deliver a Revit-based toolkit for embodied carbon calculations integrating the platform's GWP values for A1-A3 and A4 stages."
+      - "Built a pre-configured Revit schedule that automatically computes embodied carbon with built-in documentation for adoption by architects."
+
   - name: "House Price Prediction - Competition"
     location: "Copenhagen, DK"
     bullets:
