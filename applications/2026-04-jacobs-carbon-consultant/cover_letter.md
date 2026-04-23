@@ -7,9 +7,3 @@ What made that project useful was not just the LCA framework but the ability to 
 My earlier experience adds a further thread. At Itaú-Unibanco, I assessed the environmental and energy performance of buildings the bank was acquiring or leasing, reviewing energy consumption data, efficiency ratings, and applicable certifications as part of internal due diligence. That early exposure to building-level environmental assessment, alongside the parametric energy performance analysis I later ran at Isay Weinfeld Architects, has given me a practical sense of how carbon performance plays out across a building's life, from design through operation.
 
 Jacobs' commitment to embedding measurable sustainability outcomes into its work, and its push toward more digital and data-driven carbon analysis, align closely with the direction I want to develop in. I would welcome the opportunity to discuss how my background could contribute to the team.
-
-Thank you for considering my application. I look forward to hearing from you.
-
-All the best,
-
-Antonio Carmagnani

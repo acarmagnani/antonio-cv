@@ -6,9 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Antonio Carmagnani - CV</title>
 
-  <link rel="stylesheet" href="../assets/styles.css" />
+  <link rel="stylesheet" href="../assets/base.css" />
+  <link rel="stylesheet" href="../assets/cv.css" />
 
   <style>
+    @page {
+      size: 21cm 29.7cm;
+      margin: 10mm 5mm 5mm 5mm;
+    }
     :root {
       --scale: 1.60
     }
@@ -228,9 +233,15 @@
 
       let tailoredData = {};
       try {
-        tailoredData = await loadYAML('../content_tailored.yaml');
+        const pointerRes = await fetch('../active_application.txt', { cache: 'no-cache' });
+        if (pointerRes.ok) {
+          const pointer = (await pointerRes.text()).trim();
+          if (pointer) {
+            tailoredData = await loadYAML(`../applications/${pointer}/content_tailored.yaml`);
+          }
+        }
       } catch (e) {
-        // No tailored file yet - render from base only
+        // No pointer or no tailored file - render from base only
         tailoredData = {};
       }
 

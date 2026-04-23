@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Antonio Carmagnani - Cover Letter</title>
+
+  <link rel="stylesheet" href="../assets/base.css" />
+  <link rel="stylesheet" href="../assets/cover-letter.css" />
+
+  <style>
+    @page {
+      size: 21cm 29.7cm;
+      margin: 25mm 20mm 20mm 20mm;
+    }
+
+    :root {
+      --scale: 1.85
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+  <script defer>
+    function create(tag, className, text) {
+      const el = document.createElement(tag);
+      if (className) el.className = className;
+      if (text != null) el.textContent = text;
+      return el;
+    }
+
+    async function main() {
+      const container = document.querySelector('.cl-container');
+
+      const pointerRes = await fetch('../active_application.txt', { cache: 'no-cache' });
+      if (!pointerRes.ok) throw new Error('active_application.txt not found');
+      const pointer = (await pointerRes.text()).trim();
+      if (!pointer) throw new Error('active_application.txt is empty');
+
+      const clRes = await fetch(`../applications/${pointer}/cover_letter.md`, { cache: 'no-cache' });
+      if (!clRes.ok) throw new Error(`cover_letter.md not found for application: ${pointer}`);
+      const markdown = await clRes.text();
+
+      const body = create('div', 'cl-body');
+      body.innerHTML = marked.parse(markdown);
+      container.appendChild(body);
+
+      const closing = create('div', 'cl-closing');
+      [
+        'Thank you for considering my application. I look forward to hearing from you.',
+        'All the best,',
+        'Antonio Carmagnani',
+      ].forEach(line => closing.appendChild(create('p', null, line)));
+      container.appendChild(closing);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      main().catch(err => {
+        const root = document.querySelector('.cl-container');
+        const notice = create('div');
+        notice.style.color = 'crimson';
+        notice.style.marginTop = '1rem';
+        notice.textContent = `Failed to render cover letter: ${err.message}`;
+        root.appendChild(notice);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <noscript>
+    <div style="max-width:900px;margin:1rem auto;padding:1rem;border:1px solid #ccc;">
+      This cover letter requires JavaScript. Please enable JavaScript or pre-render this template.
+    </div>
+  </noscript>
+
+  <div class="cl-container">
+    <!-- Populated from cover_letter.md by the script above -->
+  </div>
+</body>
+
+</html>

@@ -1,63 +1,20 @@
-/* A4 Page Formatting */
-@page {
-    size: 21cm 29.7cm;
-    margin: 15mm 5mm 0mm 5mm;
+.cv-container {
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0 auto;
+    background: white;
+    padding: 10mm 5mm 5mm 5mm;
+    box-sizing: border-box;
 }
 
 @media print {
-    body {
-        width: 21cm;
-        margin: 0 auto;
-        height: 29.7cm;
-        display: block;
+    .cv-container {
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
     }
 }
-
-/* General Styling */
-body {
-    font-family: "Times New Roman", serif;
-    margin: 0;
-    padding: 0;
-    display: block;
-    background-color: #000000;
-}
-
-.cv-container {
-    width: 21cm;
-    height: 31cm;
-    margin: 0 auto;
-    background: white;
-    padding: 15px 30px;
-}
-
-h1 {
-    font-size: calc(var(--scale) * 15px);
-}
-
-b1 {
-    font-size: calc(var(--scale) * 7px);
-    line-height: calc(var(--scale) * .7);
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-    list-style-position: outside;
-    margin-left: 1.2em;
-    text-indent: 0;
-    line-height: calc(var(--scale) * .5);
-}
-
-ul li::marker {
-    font-size: calc(var(--scale) * 6px);
-}
-
-hr {
-    border: none;
-    border-top: 0.5px solid black;
-    width: 100%;
-}
-
 
 /* Header */
 .header {

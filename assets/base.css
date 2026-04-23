@@ -1,0 +1,44 @@
+/* A4 Page Formatting */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* General Styling */
+body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: #000000;
+}
+
+h1 {
+    font-size: calc(var(--scale) * 15px);
+}
+
+b1 {
+    font-size: calc(var(--scale) * 7px);
+    line-height: calc(var(--scale) * .7);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-position: outside;
+    margin-left: 1.2em;
+    text-indent: 0;
+    line-height: calc(var(--scale) * .5);
+}
+
+ul li::marker {
+    font-size: calc(var(--scale) * 6px);
+}
+
+hr {
+    border: none;
+    border-top: 0.5px solid black;
+    width: 100%;
+}

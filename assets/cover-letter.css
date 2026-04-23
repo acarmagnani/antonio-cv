@@ -1,0 +1,36 @@
+.cl-container {
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0 auto;
+    background: white;
+    padding: 25mm 20mm 20mm 20mm;
+    box-sizing: border-box;
+    overflow: auto;
+    font-size: calc(var(--scale) * 10px);
+}
+
+@media print {
+    .cl-container {
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+}
+
+.cl-body p {
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: calc(var(--scale) * 5px);
+}
+
+.cl-closing {
+    margin-top: calc(var(--scale) * 5px);
+}
+
+.cl-closing p {
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: calc(var(--scale) * 3px);
+}
