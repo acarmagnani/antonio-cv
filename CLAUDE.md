@@ -44,14 +44,14 @@ It must do a different job than the rest of the CV.
 ## File structure
 
 - **content_base.yaml**:         Source of truth. Full history, never edit during tailoring.
-- **content_tailored.yaml**:     Scratch file at root. The last tailored CV, copied here by the skill so that layout.html can render it. Not authoritative, do not edit directly.
-- **templates/layout.html**:     Renders a CV from content_base.yaml + content_tailored.yaml.
+- **active_application.txt**:    Pointer file at root. Contains just the application folder name. Written by the CV tailoring skill after each tailoring. Not committed to git.
+- **templates/layout.html**:     Renders a CV from content_base.yaml + the tailored YAML resolved via active_application.txt.
 - **assets/styles.css**:         CV styling.
 - **applications/**:             One folder per job application.
 - **YYYY-MM-company-role/**:     Naming convention: year-month-company-role, kebab-case.
 - **job_description.md**:        Pasted from the job posting.
 - **strategy.md**:               Tailoring strategy for this application.
-- **content_tailored.yaml**:     Scratch file at root. The last tailored CV, copied here by the skill so that layout.html can render it. Not authoritative, do not edit directly. Contains only profile, experience, and projects Stable sections (meta, education, skills) live in content_base.yaml and are merged in by layout.html at render time.
+- **content_tailored.yaml**:     Lives inside the application folder. Contains only profile, experience, and projects. Stable sections (meta, education, skills) live in content_base.yaml and are merged in by layout.html at render time.
 - **cover_letter.md**:           Optional. Cover letter for this application.
 - **.claude/skills/**:           Claude Code skills for CV tailoring and cover letters.
 
@@ -59,12 +59,12 @@ It must do a different job than the rest of the CV.
 
 - Format: `YYYY-MM-company-role`, lowercase, hyphens for spaces.
 
-### The root `content_tailored.yaml`
+### How rendering works
 
-- It is a copy of the tailored YAML from the most recently worked-on application.
-- The CV tailoring skill writes to the application folder first, then copies to the root.
-- `layout.html` reads from this root file plus `content_base.yaml`.
-- Never edit the root file directly. Edit the one in the application folder, then re-copy.
+- `layout.html` reads `active_application.txt` from the repo root to find the active application folder name.
+- It then loads `applications/[pointer]/content_tailored.yaml` from that folder.
+- If the pointer file is missing or empty, it falls back to rendering from `content_base.yaml` only.
+- To switch which application is rendered, update `active_application.txt` (the CV tailoring skill does this automatically).
 
 ## Workflows
 

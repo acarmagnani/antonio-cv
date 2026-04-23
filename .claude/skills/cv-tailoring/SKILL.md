@@ -67,11 +67,11 @@ For `projects`:
 - Same YAML structure rules as experience.
 - Same rephrasing and trimming rules.
 
-### Step 3: Copy to root
+### Step 3: Update active_application.txt
 
-After writing `content_tailored.yaml` in the application folder, copy it to the repo root as `content_tailored.yaml`. This lets `layout.html` render it.
+After writing `content_tailored.yaml` in the application folder, write the application folder name to `active_application.txt` at the repo root. This tells `layout.html` which application to render.
 
-Use `cp applications/YYYY-MM-company-role/content_tailored.yaml content_tailored.yaml` (from the repo root).
+Use `echo "YYYY-MM-company-role" > active_application.txt` (from the repo root), substituting the actual folder name.
 
 Tell the user the CV is ready and they can open `templates/layout.html` in a browser to print.
 
