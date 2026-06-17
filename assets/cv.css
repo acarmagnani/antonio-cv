@@ -1,18 +1,41 @@
+/* Print margins — edit @page margin below. Then update --print-content-h
+   to match: A4 height (29.7cm) minus top margin minus bottom margin. */
+:root {
+    --print-content-h: calc(29.7cm - 5mm - 5mm);
+}
+
+@page {
+    size: A4;
+    margin: 4mm;
+}
+
 .cv-container {
     width: 21cm;
-    height: 29.7cm;
     margin: 0 auto;
     background: white;
-    padding: 10mm 5mm 5mm 5mm;
+    padding: 0;
     box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Page-break indicator: faint red line every --print-content-h,
+   offset by --print-margin-v so the first line falls at page 1 bottom. */
+@media screen {
+    .cv-container {
+        background-image: repeating-linear-gradient(to bottom,
+                transparent 0,
+                transparent var(--print-content-h),
+                rgba(200, 0, 0, 0.25) var(--print-content-h),
+                rgba(200, 0, 0, 0.25) calc(var(--print-content-h) + 2px));
+        background-position: 0 var(--print-margin-v);
+    }
 }
 
 @media print {
     .cv-container {
-        width: auto;
-        height: auto;
-        margin: 0;
+        box-shadow: none;
         padding: 0;
+        width: 100%;
     }
 }
 

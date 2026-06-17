@@ -6,15 +6,13 @@
     padding: 25mm 20mm 20mm 20mm;
     box-sizing: border-box;
     overflow: auto;
-    font-size: calc(var(--scale) * 10px);
+    font-size: calc(var(--scale) * 9px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media print {
     .cl-container {
-        width: auto;
-        height: auto;
-        margin: 0;
-        padding: 0;
+        box-shadow: none;
         overflow: visible;
     }
 }

@@ -1,0 +1,88 @@
+profile: >
+  Geospatial and computational data professional with experience delivering spatial analysis workflows, data tools, and technical documentation in infrastructure consulting and architecture. Currently completing an M.Arch. in Architecture Computation at The Royal Danish Academy, with applied work in QGIS-based spatial analysis, Python automation, and client-facing tool delivery. Based in Copenhagen, with direct exposure to Nordic infrastructure consulting at Sweco and a track record of translating technical outputs into structured, stakeholder-ready materials.
+
+experience:
+  - title: "Project Assistant in International Infrastructure Projects"
+    org: "Sweco Danmark A/S"
+    location: "Copenhagen, DK"
+    start: "2026-02"
+    end: "Present"
+    bullets:
+      - "Supported consulting teams delivering internationally funded infrastructure projects across water, energy, urban development, and transport sectors."
+      - "Used QGIS to collect, process, and visualize spatial data supporting project preparation and geographic analysis."
+      - "Conducted spatial and contextual research to inform infrastructure planning decisions and support feasibility-stage work."
+      - "Prepared technical documentation and background materials for international tenders and consulting proposals."
+      - "Contributed to climate and environmental methodology documents."
+      - "Coordinated across internal teams to organize technical inputs and support the assembly of multidisciplinary project teams."
+
+  - title: "Intern in Responsible Business Conduct"
+    org: "Ramboll Management Consulting"
+    location: "Copenhagen, DK"
+    start: "2025-05"
+    end: "2025-08"
+    bullets:
+      - "Designed a structured tool for Human Rights Impact Assessments covering data collection, impact evaluation, and stakeholder mapping across supply chains."
+      - "Built a supply chain mapping dashboard for EU-listed critical raw materials, structuring upstream, trade, and downstream flows with geographic and actor-specific detail."
+      - "Conducted assessments for key clients and integrated findings into their risk management and supplier oversight processes."
+      - "Produced a client-facing deck on the EU Critical Raw Materials Act, connecting regulatory requirements to Ramboll's service offerings and project references."
+      - "Integrated AI tools into research workflows to handle higher volumes of company assessments without losing consistency."
+
+  - title: "Architect"
+    org: "Isay Weinfeld Architects"
+    location: "São Paulo, BR"
+    start: "2023-02"
+    end: "2024-08"
+    bullets:
+      - "Ran real-time parametric analysis in Python and Grasshopper to optimize building orientation and massing configurations for energy performance."
+      - "Automated repetitive modeling tasks by writing Python scripts in Grasshopper, reducing production time on complex geometry workflows."
+      - "Built a Grasshopper pipeline for modeling staircases in complex geometries, cutting the process from roughly a week to under an hour per study. The tool exported Revit-compatible geometry for technical documentation and was applied across 10+ projects."
+      - "Presented the pipeline in a studio workshop attended by 60+ people and led its adoption with colleagues across multiple projects."
+      - "Led BIM documentation workflows, producing technical drawings, coordination models, and project specifications across multiple phases."
+
+  - title: "Trainee in Real Estate Product Development"
+    org: "OSPA"
+    location: "São Paulo, BR"
+    start: "2022-02"
+    end: "2022-10"
+    bullets:
+      - "Developed 10+ volumetric and numerical feasibility studies for large-scale mixed-use developments across multiple cities in the United States and Brazil."
+      - "Analyzed zoning codes, land use regulations, and soil classification rules across different municipalities to determine development potential and identify regulatory opportunities for each site."
+      - "Built early-stage financial models to assess project viability, using P&L statements, cash flow forecasts, and metrics including ROI and IRR."
+
+  - title: "Intern in Project Management"
+    org: "Itaú-Unibanco"
+    location: "São Paulo, BR"
+    start: "2020-08"
+    end: "2021-07"
+    bullets:
+      - "Reviewed technical documentation submitted by architecture and engineering firms prior to construction authorization, checking drawings and specifications for compliance with Brazilian building norms."
+      - "Built a custom VBA tool in Excel to monitor the bank's corporate furniture assets across locations, replacing a manual tracking process."
+      - "Developed Excel dashboards and supported ad hoc analytical requests from business teams."
+
+projects:
+  - name: "Master's Thesis, Computational Urban Analysis for Intensification Strategy"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Developed a computational framework to identify underused spaces in the historic city center of São Paulo, Brazil, combining urban morphology analysis, land use data, and social vulnerability indicators."
+      - "Built an algorithm that uses urban data, including building typology, use patterns, regulatory conditions, and building use, to generate programmatic and morphological typologies for urban intensification, aligned with the city's existing urban policies."
+      - "Integrated multiple geospatial datasets in QGIS to map spatial relationships between buildings, zoning conditions, and social context at the neighborhood scale."
+
+  - name: "Real Estate Development Recommendation Tool"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Built a machine learning tool that generates site-specific development recommendations for buildings in Copenhagen by integrating financial, social, sustainability, and geospatial data."
+      - "Designed a user interface allowing different stakeholders to adjust impact drivers and weighting, with predictive outputs aligned to ESG priorities and local development conditions."
+
+  - name: "LCA Toolkit for Revalu"
+    org: "Revalu"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Collaborated with Revalu, a Copenhagen-based LCA platform, to design and deliver a Revit-based toolkit for embodied carbon calculations integrating the platform's GWP values for A1-A3 and A4 stages."
+      - "Built a pre-configured Revit schedule that automatically computes embodied carbon with built-in documentation for adoption by architects."
+
+  - name: "House Price Prediction - Competition"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Built a predictive model for real estate valuation using ensemble learning (XGBoost, LightGBM, Ridge, CatBoost) and feature engineering on structured property and financial data, finishing in the top 2% of competitors."

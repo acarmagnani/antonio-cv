@@ -12,11 +12,11 @@
   <style>
     @page {
       size: 21cm 29.7cm;
-      margin: 25mm 20mm 20mm 20mm;
+      margin: 0;
     }
 
     :root {
-      --scale: 1.85
+      --scale: 1.5
     }
   </style>
 
@@ -52,6 +52,7 @@
         'Antonio Carmagnani',
       ].forEach(line => closing.appendChild(create('p', null, line)));
       container.appendChild(closing);
+
     }
 
     window.addEventListener('DOMContentLoaded', () => {

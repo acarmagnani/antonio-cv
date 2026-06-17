@@ -1,82 +1,89 @@
 ---
 name: cv-tailoring
-description: Tailors Antonio's CV for a specific job application. Use this skill whenever the user wants to tailor a CV, adapt the CV for a job, create a new application, generate strategy.md, or produce content_tailored.yaml from a job description. Triggers on phrases like "tailor my CV", "new application", "apply for this job", or when the user points to a job_description.md file inside an applications/ folder.
+description: Tailors Antonio's CV for a specific job application. Use this skill whenever the user wants to tailor a CV, adapt the CV for a job, create a new application, or produce content_tailored.yaml from a job description. Triggers on phrases like "tailor my CV", "new application", "apply for this job", or when the user points to a job_description.md file inside an applications/ folder.
 ---
 
 # CV Tailoring
 
-This skill produces a tailored CV for a specific job application, in two steps separated by a review checkpoint.
+This skill tailors Antonio's CV in three steps. Steps 1 and 2 are separated by a review checkpoint so Antonio can adjust the selected tags before the script runs.
 
 ## Inputs
 
-- `content_base.yaml` at the repo root (Antonio's full history).
+- `content_base.yaml` at the repo root (source of truth, with tagged bullets and multiple profile variants).
 - `applications/YYYY-MM-company-role/job_description.md` (the posting, pasted by the user).
 
-Before starting, confirm both files exist. If the application folder or job_description.md is missing, ask the user to create them.
+Before starting, confirm both files exist. If the application folder or `job_description.md` is missing, ask the user to create them.
+
+## Tag taxonomy
+
+There are exactly six tags. Do not invent tags outside this list.
+
+- `real-estate` — real estate development, investment, advisory, asset management, feasibility
+- `esg` — sustainability consulting, ESG due diligence, human rights, CSRD, supply chain, LCA
+- `infrastructure` — international development consulting, multilateral/bilateral-funded infrastructure projects
+- `proptech` — tech-enabled roles in the built environment: data tools, computational analysis, GIS, ML, digital platforms for real estate or cities
+- `consulting` — cross-cutting process skills: research, reporting, client deliverables, project coordination
+- `generic` — always included regardless of selected tags. Do not select or deselect this tag. It is set in content_base.yaml by Antonio and applied automatically by the script.
+
+When reading a job description, identify which 1–3 of these buckets the role primarily falls into. Most roles map cleanly to one or two. A PropTech startup → `proptech` (+ `real-estate` if focused on property). An ESG consulting firm → `esg + consulting`. A real estate developer → `real-estate`. Infrastructure consulting → `infrastructure + consulting`. A VC investing in PropTech → `real-estate + proptech + consulting`.
 
 ## Workflow
 
-### Step 1: Write strategy.md
+### Step 1: Write selected_tags.yaml
 
-Read `content_base.yaml` and the `job_description.md` in the current application folder.
+Read `content_base.yaml` and `job_description.md`.
 
-Write `strategy.md` in the same application folder with exactly these four sections and nothing else:
+Identify 6–12 tags from the list above that best describe what this role requires. Prioritize tags that appear explicitly in the job description or map directly to its core requirements. Avoid over-selecting: a wider tag set means more bullets, which dilutes relevance.
 
+Write `selected_tags.yaml` in the application folder:
 
-### Strategy: [Company, Role]
-**Positioning**
-[One sentence. How Antonio is framed for this role.]
+```yaml
+tags:
+  - esg
+  - reporting
+  - stakeholder-engagement
+```
 
-**Profile**
-[Antonio's profile section tailored for this job opening.]
+After writing, stop. Tell the user which tags were selected and briefly explain the reasoning (one line per tag is enough). Ask them to review and edit `selected_tags.yaml` directly, then signal when ready to proceed.
 
-**Experiences**
-[One line per experience from content_base.yaml, in the same order as content_base.yaml, each marked KEEP or EXCLUDE.]
-
-**Projects**
-[One line per project from content_base.yaml, in the same order as content_base.yaml, each marked KEEP or EXCLUDE.]
-
-Rules for strategy.md:
-
-- Read the current list of experiences and projects from `content_base.yaml` each time. 
-- List every experience and every project from `content_base.yaml`, with KEEP or EXCLUDE next to each.
-- Do not give reasons for KEEP/EXCLUDE decisions.
-
-After writing `strategy.md`, stop. Tell the user the strategy is ready for review and to reply when they want to proceed. Do not write `content_tailored.yaml` yet.
-
-### Step 2: Write content_tailored.yaml
+### Step 2: Run the selection script
 
 Only proceed after the user signals approval.
 
-Before generating the YAML, re-read `strategy.md` from disk. The user may have edited it. The on-disk version is authoritative.
+Run from the repo root:
 
-Write `content_tailored.yaml` in the same application folder. It must contain only these three top-level keys: `profile`, `experience`, `projects`. Do not include `meta`, `education`, or `skills`. Those live in `content_base.yaml`.
+```bash
+python select_cv.py <application-folder-name>
+```
 
-For `profile`:
-- Write 2-3 sentences per the Profile rules in CLAUDE.md.
-- Use the Profile bullets in strategy.md as the angle.
+The script reads `selected_tags.yaml` + `content_base.yaml`, selects bullets with any matching tag, picks the profile variant with the highest tag overlap, and writes `content_tailored.yaml` to the application folder with plain strings (tags stripped).
 
-For `experience`:
-- Include only entries marked KEEP.
-- Preserve the exact YAML structure from `content_base.yaml`.
-- Bullets may be rephrased per the Writing Rules in CLAUDE.md. Do not invent facts.
-- Not every bullet from the source has to appear. 
+Report the script output to the user (experiences included, projects included, profile chosen).
 
-For `projects`:
-- Include only entries marked KEEP.
-- Same YAML structure rules as experience.
-- Same rephrasing and trimming rules.
+### Step 3: Light editorial review
 
-### Step 3: Update active_application.txt
+Read `content_tailored.yaml` and `job_description.md`.
 
-After writing `content_tailored.yaml` in the application folder, write the application folder name to `active_application.txt` at the repo root. This tells `layout.html` which application to render.
+Look for gaps: specific terminology, frameworks, or requirements named in the job description that are absent or weakly represented in the selected output. Make targeted wording adjustments only where the gap is real and the underlying experience supports the change.
 
-Use `echo "YYYY-MM-company-role" > active_application.txt` (from the repo root), substituting the actual folder name.
+Rules:
+- Do not add facts not present in `content_base.yaml`.
+- Do not rewrite bullets wholesale. Adjust a verb, a term, or a framing — not the substance.
+- Do not touch bullets that already cover the point well.
+- If a genuine gap cannot be addressed without invention, flag it to the user.
 
-Tell the user the CV is ready and they can open `templates/layout.html` in a browser to print.
+Write the edited version back to `content_tailored.yaml`.
 
-## Rules recap (enforced in both steps)
+### Step 4: Update active_application.txt
 
-All writing rules in `CLAUDE.md` apply.
+Write the application folder name to `active_application.txt` at the repo root:
 
-The strategy is the plan. The YAML is the execution. Do not redesign the strategy in Step 2. If the strategy seems wrong while generating the YAML, stop and tell the user.
+```bash
+echo "YYYY-MM-company-role" > active_application.txt
+```
+
+Tell the user the CV is ready and they can open `templates/cv.html` in a browser to print.
+
+## Rules recap
+
+All writing rules in `CLAUDE.md` apply throughout. The tag list is the selection constraint — respect it.

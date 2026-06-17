@@ -10,12 +10,8 @@
   <link rel="stylesheet" href="../assets/cv.css" />
 
   <style>
-    @page {
-      size: 21cm 29.7cm;
-      margin: 10mm 5mm 5mm 5mm;
-    }
     :root {
-      --scale: 1.60
+      --scale: 1.75
     }
   </style>
 
@@ -49,9 +45,10 @@
     function listify(container, items) {
       if (!Array.isArray(items) || items.length === 0) return;
       const ul = create('ul');
-      items.forEach(t => {
+      items.forEach(item => {
+        const text = typeof item === 'string' ? item : (item?.text ?? '');
         const li = create('li');
-        li.appendChild(b1(t));
+        li.appendChild(b1(text));
         ul.appendChild(li);
       });
       container.appendChild(ul);
@@ -249,7 +246,7 @@
         meta: baseData.meta,
         education: baseData.education,
         skills: baseData.skills,
-        profile: tailoredData.profile ?? baseData.profile,
+        profile: tailoredData.profile ?? baseData.profile ?? baseData.profiles?.[0]?.text ?? null,
         experience: tailoredData.experience ?? baseData.experience,
         projects: tailoredData.projects ?? baseData.projects,
       };
@@ -262,6 +259,7 @@
       renderEducation(container, data.education);
       renderProjects(container, data.projects);
       renderSkills(container, data.skills);
+
     }
 
     window.addEventListener('DOMContentLoaded', () => {
