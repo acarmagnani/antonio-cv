@@ -1,5 +1,7 @@
-profile: >
-  A sustainability professional with a built-environment foundation, combining consulting experience in ESG due diligence and CSRD-aligned assessments with technical work in life cycle analysis and environmental performance. Master's research at The Royal Danish Academy applied LCA metrics to blue bio-based construction materials, linking carbon outcomes to structural optimization and material sourcing. Focused on building expertise in carbon accounting and decarbonisation strategy within a data-driven consulting environment.
+# Tailored for: Jacobs - Carbon Consultant (ESG / carbon / LCA / data-driven).
+# Selected verbatim from content_base.yaml. Projects/education/skills are static
+# (rendered from content_base.yaml). Verify with: python verify_cv.py <folder>
+profile: "Experience across sustainability consulting, ESG and human rights due diligence, and the built environment, including climate risk work on internationally financed infrastructure. Currently completing an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to sustainability and the built environment. Hands-on skills span human rights and supply chain due diligence, climate risk assessment, and the technical grounding to connect sustainability requirements to delivery. Motivated by work where analytical rigor and domain knowledge inform real decisions."
 
 experience:
   - title: "Project Assistant in International Infrastructure Projects"
@@ -8,11 +10,11 @@ experience:
     start: "2026-02"
     end: "Present"
     bullets:
-      - "Supported consulting teams delivering internationally funded infrastructure projects across water, energy, urban development, and transport sectors."
-      - "Contributed to climate and environmental methodology documents."
-      - "Analyzed social, environmental, and human rights considerations associated with large-scale infrastructure investments."
-      - "Used QGIS to collect, process, and visualize spatial data supporting environmental analysis and project preparation."
-      - "Prepared technical documentation and background materials for international tenders and consulting proposals."
+      - "Support consulting teams delivering internationally funded infrastructure projects in water, energy, and transport across emerging and developing economies, financed by development banks including the World Bank, EBRD, IFDK, KfW and EIB."
+      - "Authored climate risk assessments for major water supply projects following JASPERS and EBRD climate-proofing guidance, screening hazards against CMIP6 projections data and rating risk by exposure and vulnerability for each asset."
+      - "Joined a week-long field mission across Baku's water supply system, assessing asset condition and identifying technical, social, environmental, and human rights risks through site inspections and interviews."
+      - "Built geospatial databases for water and infrastructure projects in QGIS, compiling georeferenced asset locations (treatment plants, pump stations, intakes, canals) from agency data, satellite imagery, and open sources, and scripting joins of demographic data onto administrative-boundary shapefiles for socio-spatial analysis."
+      - "Contributed to the technical and methodology sections of tender proposals, articulating Sweco's delivery approach for infrastructure project bids."
 
   - title: "Intern in Responsible Business Conduct"
     org: "Ramboll Management Consulting"
@@ -20,10 +22,10 @@ experience:
     start: "2025-05"
     end: "2025-08"
     bullets:
-      - "Supported double materiality assessments by applying UNGP methods and aligning outputs with CSRD financial materiality standards."
-      - "Developed a strategic overview of Ramboll's ESG due diligence capabilities for real estate clients, covering core services and assessment frameworks."
-      - "Designed a structured assessment tool covering data collection, impact evaluation, and stakeholder mapping across complex supply chains."
-      - "Integrated AI tools into research workflows to handle higher volumes of assessments without losing analytical consistency."
+      - "Conducted human rights due diligence for corporate clients, applying the UN Guiding Principles on Business and Human Rights and OECD Guidelines to assess salient risks across global supply chains."
+      - "Developed a client-facing overview of the firm's real estate ESG due diligence services, centered on building energy and decarbonization assessments aligned with EU building performance regulations."
+      - "Designed an automated risk-assessment tool in Excel for a global agricultural producer, turning 40+ supply chain risks into a scored matrix with a dashboard that surfaced the highest-risk countries, crops, and supply chains."
+      - "Integrated AI research tools (Perplexity, ChatGPT) into due diligence workflows to source and cite human rights risk data at scale, keeping assessments evidence-backed and traceable across high research volumes."
 
   - title: "Architect"
     org: "Isay Weinfeld Architects"
@@ -31,8 +33,8 @@ experience:
     start: "2023-02"
     end: "2024-08"
     bullets:
-      - "Ran real-time parametric analysis in Python and Grasshopper to optimize building orientation and massing configurations for energy performance."
-      - "Developed Revit models for large-scale residential and commercial projects spanning multiple regions, contributing to technical documentation across design phases."
+      - "Delivered high-end residential, hotel, and mixed-use projects across South America, North America, Europe, the Middle East, and Asia at one of Brazil's most prominent architecture studios."
+      - "Optimized building orientation and massing for energy performance and daylight using environmental simulation, including a multi-tower residential scheme tuned so tower placement and heights maximized solar access across all apartments."
 
   - title: "Trainee in Real Estate Product Development"
     org: "OSPA"
@@ -40,8 +42,17 @@ experience:
     start: "2022-02"
     end: "2022-10"
     bullets:
-      - "Contributed to internal due diligence by reviewing environmental constraints and site-specific ESG considerations alongside financial and zoning analysis."
-      - "Developed 10+ volumetric and numerical feasibility studies for large-scale mixed-use developments across the United States and Brazil."
+      - "Produced 15+ feasibility studies for mixed-use and residential developments across Brazil and the US (São Paulo, Rio de Janeiro, Porto Alegre, Miami) for developer clients."
+      - "Ran preliminary environmental and solar studies to inform massing and layout decisions."
+
+  - title: "Co-Founder"
+    org: "VIZU"
+    location: "São Paulo, BR"
+    start: "2022-02"
+    end: "2022-10"
+    bullets:
+      - "Co-founded and ran an architectural visualization studio, managing 10+ clients (architecture firms and developers), project scoping and delivery, and hiring staff."
+      - "Produced architectural renders, humanized plans, and visualizations to communicate residential and commercial designs to investors and end buyers, using Lumion, Rhino, Grasshopper, and SketchUp."
 
   - title: "Architect"
     org: "Felipe Hess Architects"
@@ -49,8 +60,8 @@ experience:
     start: "2021-07"
     end: "2022-02"
     bullets:
-      - "Produced BIM documentation in Revit for residential and commercial projects, covering technical drawings and coordination models across design phases."
-      - "Applied parametric modeling techniques in Grasshopper to support geometric exploration and design development."
+      - "Developed high-end residential projects in São Paulo and Rio de Janeiro from preliminary studies through technical documentation, working in Revit, AutoCAD, and SketchUp."
+      - "Ran environmental and daylight studies to inform early design decisions."
 
   - title: "Intern in Project Management"
     org: "Itaú-Unibanco"
@@ -58,36 +69,26 @@ experience:
     start: "2020-08"
     end: "2021-07"
     bullets:
-      - "Assessed environmental and energy performance of buildings the bank was acquiring or leasing, reviewing energy consumption data, efficiency ratings, and applicable certifications as part of internal due diligence processes."
-      - "Reviewed technical documentation submitted by architecture and engineering firms prior to construction authorization, evaluating compliance with building norms and environmental performance requirements."
-      - "Developed Excel dashboards and supported ad hoc analytical requests from business teams."
+      - "Reviewed technical documentation from architecture and engineering firms prior to construction authorization, checking drawings against Brazilian building, accessibility, and fire-safety norms (NBR standards)."
+      - "Assessed the environmental and energy performance of buildings the bank was acquiring or leasing, reviewing consumption data, efficiency ratings, and certifications as part of internal due diligence."
 
 projects:
-  - name: "Master's Thesis, Computational Urban Analysis for Intensification Strategy"
-    org: "The Royal Danish Academy"
+  - name: "Embodied Carbon Toolkit"
     location: "Copenhagen, DK"
     bullets:
-      - "Developed a computational framework combining urban morphology analysis, land use data, and social vulnerability indicators to identify underused spaces and assess development potential."
-      - "Integrated multiple geospatial datasets in QGIS to map spatial relationships between buildings, zoning conditions, and social context at the neighborhood scale."
+      - "Collaborated with a Copenhagen-based LCA platform to design and deliver a Revit-based toolkit for embodied carbon calculations, integrating the platform's GWP values for A1-A3 and A4 stages."
+      - "Built a pre-configured Revit schedule that automatically computes embodied carbon with built-in documentation for adoption by architects."
 
   - name: "Real Estate Development Recommendation Tool"
     org: "The Royal Danish Academy"
     location: "Copenhagen, DK"
     bullets:
-      - "Built a machine learning tool generating site-specific development recommendations by integrating financial, social, sustainability, and geospatial data."
-      - "Designed a user interface allowing stakeholders to adjust ESG impact drivers and weighting, with predictive outputs aligned to local development conditions and sustainability priorities."
+      - "Built a machine learning tool that generates site-specific development recommendations for buildings in Copenhagen by integrating financial, social, sustainability, and geospatial data."
+      - "Designed a user interface allowing different stakeholders to adjust impact drivers and weighting, with predictive outputs aligned to ESG priorities and local development conditions."
 
   - name: "Rammed Blue Biomass & Computational Optimization"
     org: "The Royal Danish Academy"
     location: "Copenhagen, DK"
     bullets:
-      - "Developed a new construction technique using blue biomass (seashells and algae), applying LCA metrics and parametric simulations to evaluate carbon performance, structural behavior, and environmental impact."
-      - "Integrated life cycle assessment methods with computational optimization to identify configurations that minimized environmental load while meeting structural requirements."
+      - "Developed a new construction technique and material system using blue biomass (seashells and algae), applying LCA metrics and parametric simulations to optimize structural performance and environmental impact."
       - "Project was selected as a semester highlight and served as the material foundation for the school's installation at the Venice Architecture Biennale 2025, presented in collaboration with CITA, GXN, and 3XN at the Arsenale."
-
-  - name: "Venice Architecture Biennale 2025"
-    org: "The Royal Danish Academy, CITA, GXN, 3XN"
-    location: "Venice, IT"
-    bullets:
-      - "Contributed to the Matanzas panel by developing geospatial mappings to analyze local material sources and supply flows, producing cartographic work that informed the site's material research."
-      - "Contributed to the Veneto panel by producing the physical exhibition panels displayed in the 7-metre installation at the Arsenale, which used the blue biomass composite technique developed during the semester project."

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cover Letter</title>
+
+  <link rel="stylesheet" href="../assets/base.css" />
+  <link rel="stylesheet" href="../assets/cover-letter.css" />
+
+  <style>
+    :root {
+      --scale: 1.4
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    .cl-header {
+      margin-bottom: calc(var(--scale) * 10px);
+    }
+
+    .cl-name {
+      font-weight: bold;
+      font-size: calc(var(--scale) * 12px);
+    }
+
+    .cl-contact {
+      font-size: calc(var(--scale) * 8px);
+      margin-top: calc(var(--scale) * 2px);
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js" defer></script>
+  <script defer>
+    async function main() {
+      const container = document.querySelector('.cl-container');
+
+      // Which application are we rendering?
+      let pointer = '';
+      try {
+        const r = await fetch('../../active_application.txt', { cache: 'no-cache' });
+        if (r.ok) pointer = (await r.text()).trim();
+      } catch (e) { /* ignore */ }
+
+      if (!pointer) {
+        container.innerHTML = '<p>No active application. Point active_application.txt at an application folder that has cover_letter.md, then re-run.</p>';
+        return;
+      }
+
+      // Contact header from content_base.yaml meta.
+      try {
+        const baseText = await (await fetch('../../content_base.yaml', { cache: 'no-cache' })).text();
+        const meta = (jsyaml.load(baseText) || {}).meta || {};
+        const header = document.createElement('div');
+        header.className = 'cl-header';
+        const name = document.createElement('div');
+        name.className = 'cl-name';
+        name.textContent = meta.name || '';
+        const contact = document.createElement('div');
+        contact.className = 'cl-contact';
+        contact.textContent = [meta.location, meta.phone, meta.email].filter(Boolean).join('  •  ');
+        header.appendChild(name);
+        header.appendChild(contact);
+        container.appendChild(header);
+      } catch (e) { /* no header if meta fails */ }
+
+      // The letter itself.
+      const mdRes = await fetch(`../../applications/${pointer}/cover_letter.md`, { cache: 'no-cache' });
+      if (!mdRes.ok) {
+        container.appendChild(Object.assign(document.createElement('p'), {
+          textContent: `No cover_letter.md found in applications/${pointer}/.`
+        }));
+        return;
+      }
+      const md = (await mdRes.text()).trim();
+
+      const body = document.createElement('div');
+      body.className = 'cl-body';
+      // Paragraphs are separated by blank lines; single newlines become <br>.
+      md.split(/\n\s*\n/).forEach(block => {
+        const p = document.createElement('p');
+        block.trim().split('\n').forEach((line, i) => {
+          if (i > 0) p.appendChild(document.createElement('br'));
+          p.appendChild(document.createTextNode(line.trim()));
+        });
+        body.appendChild(p);
+      });
+      container.appendChild(body);
+
+      document.title = `${pointer} - Cover Letter`;
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      main().catch(err => {
+        const c = document.querySelector('.cl-container');
+        const n = document.createElement('div');
+        n.style.color = 'crimson';
+        n.textContent = `Failed to render cover letter: ${err.message}`;
+        c.appendChild(n);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="cl-container"></div>
+</body>
+
+</html>

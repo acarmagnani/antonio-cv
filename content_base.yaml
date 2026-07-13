@@ -5,22 +5,23 @@ meta:
   phone: "+45 71 49 62 06"
   email: "antoniocarmagnani@gmail.com"
 
-# Multiple profile variants. Each has a text and tags.
-# The selection script picks the variant with the highest tag overlap against selected_tags.yaml.
-# Tags: real-estate | esg | infrastructure | proptech | consulting | generic
-# generic = always included regardless of selected tags
+# Profile variants. Selection picks the one with the highest tag overlap with
+# the job, used verbatim (no rewriting). Same selection logic as the bullets.
 profiles:
-  - text: "Background spanning ESG consulting, built environment practice, and data analysis, with direct experience in human rights due diligence, infrastructure advisory, and development feasibility. I bring a fesh perspective to business teams with a combination of technical built environment knowledge and sustainability expertise working at that intersection. Drawn to roles where analytical rigor and domain grounding are both expected."
-    tags: [esg, consulting]
+  - tags: [esg, consulting]
+    text: "Experience across sustainability consulting and the built environment, from ESG and human rights due diligence to climate risk work on internationally financed infrastructure. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to sustainability. Hands-on skills span the UNGP and OECD due-diligence frameworks, climate hazard and risk assessment, and building structured analytical tools in Excel and Python. Motivated by work where sustainability, the built environment, and rigorous analysis intersect."
 
-  - text: "Background spanning real estate development, ESG consulting, and computational analysis, with technical skills in Python, GIS, and machine learning applied to built environment problems. Domain knowledge and data fluency in the same background bring a fresh perspective to teams building tools for real estate and cities. Motivated by work where better data changes how cities and buildings get planned and built."
-    tags: [proptech]
+  - tags: [proptech]
+    text: "Experience in computational design and data analysis for real estate and cities, spanning academic research and architecture practice. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on computational and data methods for real estate and urban development. Hands-on skills span Python, QGIS, and machine learning, parametric workflows in Grasshopper, and building data tools that turn spatial and financial data into decisions. Motivated by work where the built environment, technology, and data intersect."
 
-  - text: "Background in real estate feasibility, financial modeling, and zoning analysis, with additional training in machine learning and spatial analysis applied to property and urban data. The combination of development experience and computational skills brings a fresh perspective to real estate and investment teams. Motivated by roles where rigorous analysis and sustainability awareness inform real decisions about what gets built and where."
-    tags: [real-estate]
+  - tags: [proptech, real-estate]
+    text: "Experience across real estate development and computational design, from feasibility and financial analysis to spatial and predictive modeling. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on computational and data methods for real estate and urban development. Hands-on skills span financial feasibility modeling, GIS and spatial analysis, and machine learning applied to property and market data. Motivated by work where real estate, technology, and data intersect."
 
-  - text: "Experience in infrastructure consulting across climate risk assessment, GIS-based spatial analysis, ESG due diligence, and client-facing documentation. Working across technical analysis, environmental assessment, and consulting delivery, bringing a cross-disciplinary perspective that complements specialized infrastructure teams."
-    tags: [infrastructure, consulting]
+  - tags: [real-estate]
+    text: "Experience in real estate development, feasibility, and financial modeling, grounded in zoning and land-use analysis across multiple markets. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on computational and data methods for real estate and urban development. Hands-on skills span feasibility and P&L modeling, zoning and buildable-potential analysis, and volumetric studies in Revit. Motivated by work where real estate, finance, and design intersect."
+
+  - tags: [infrastructure, consulting]
+    text: "Experience in international infrastructure consulting on water and energy projects across emerging economies, working from tender through delivery. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to the built environment. Hands-on skills span climate risk assessment (JASPERS/EBRD), GIS-based spatial analysis, and preparing technical documentation and tenders for development-bank-funded projects. Motivated by work where infrastructure, sustainability, and technical analysis intersect."
 
 experience:
   - title: "Project Assistant in International Infrastructure Projects"
@@ -28,163 +29,342 @@ experience:
     location: "Copenhagen, DK"
     start: "2026-02"
     end: "Present"
-    bullets:
-      - text: "Supported consulting teams delivering internationally funded infrastructure projects across water, energy, urban development, and transport sectors."
-        tags: [infrastructure, consulting, generic]
+    points:
+      - point: "Department anchor (always shows Sweco's core)"
+        variants:
+          - text: "Support consulting teams delivering internationally funded infrastructure projects in water, energy, and transport across emerging and developing economies, financed by development banks including the World Bank, EBRD, IFDK, KfW and EIB."
+            tags: [infrastructure, consulting, generic]
 
-      - text: "Collected and integrated georeferenced and tabular datasets in QGIS - including population indicators and geographic data - to produce spatial analyses."
-        tags: [infrastructure, proptech]
+      - point: "Climate risk assessments (showpiece)"
+        variants:
+          - text: "Authored climate risk assessments for major water supply projects following JASPERS and EBRD climate-proofing guidance, screening hazards against projections data and rating risk by exposure and vulnerability for each asset."
+            tags: [esg, infrastructure]
+          - text: "Produced the climate risk and adaptation chapters of project Inception Reports for internationally financed water projects, translating climate projections into hazard, risk, and adaptation findings for client and lender review."
+            tags: [esg, consulting]
 
-      - text: "Conducted spatial and contextual research to inform infrastructure planning decisions and support feasibility-stage work."
-        tags: [infrastructure, consulting]
+      - point: "Azerbaijan field mission (asset assessment)"
+        variants:
+          - text: "Joined a field mission across Baku's water supply system, assessing asset condition and identifying technical, social, environmental, and human rights risks through site inspections and interviews."
+            tags: [infrastructure, esg, consulting]
 
-      - text: "Produced climate risk assessments for infrastructure projects across multiple geographies."
-        tags: [esg, infrastructure]
+      - point: "Azerbaijan stakeholder meetings and data gathering"
+        variants:
+          - text: "Engaged the national water agency (AZERSU) and government counterparts during the mission to align on rehabilitation priorities and collect technical and geographic project data."
+            tags: [consulting, infrastructure]
 
-      - text: "Participated in a field mission to Azerbaijan to assess water supply infrastructure serving Baku, conducting site visits to treatment and distribution facilities and meeting with the national water agency to collect data for project preparation."
-        tags: [infrastructure, consulting]
+      - point: "Geospatial data and analysis"
+        variants:
+          - text: "Built geospatial databases for water and infrastructure projects in QGIS, compiling georeferenced asset locations from agency data, satellite imagery, and open sources for socio-spatial analysis."
+            tags: [proptech, infrastructure]
 
-      - text: "Prepared technical documentation and background materials for international tenders and consulting proposals."
-        tags: [consulting, infrastructure]
+      - point: "Office GIS lead across projects"
+        variants:
+          - text: "Produced cartographic material locating infrastructure across multiple international projects to support methodology and proposal documents."
+            tags: [infrastructure, consulting]
 
-      - text: "Coordinated across internal teams to organize the assembly of multidisciplinary project teams."
-        tags: [consulting, infrastructure]
+      - point: "Tender bid-team assembly"
+        variants:
+          - text: "Assembled bid teams for competitive international tenders, sourcing specialist consultants to evidence the local and technical expertise."
+            tags: [consulting, infrastructure]
 
-      - text: "Analyzed social, environmental, and human rights considerations associated with large-scale infrastructure investments."
-        tags: [esg, infrastructure]
+      - point: "Tender methodology"
+        variants:
+          - text: "Contributed to the technical and methodology sections of tender proposals, articulating Sweco's delivery approach for infrastructure project bids."
+            tags: [consulting, infrastructure]
+
+      - point: "Engineering design review"
+        variants:
+          - text: "Reviewed engineering designs across multiple infrastructure projects under FIDIC Yellow Book arrangements, checking specifications against subconsultants' technical drawings."
+            tags: [infrastructure, consulting]
+
+      - point: "Project pricing model"
+        variants:
+          - text: "Developed a pricing tool to support bid decisions, parametrizing expert fee bands and project economics for financial viability testing of tender configurations."
+            tags: [consulting, infrastructure]
+
+      - point: "Bangladesh branch office setup"
+        variants:
+          - text: "Supported the setup of a new Sweco branch office in Bangladesh, drafting employment contracts and managing the full insurance onboarding."
+            tags: [consulting]
 
   - title: "Intern in Responsible Business Conduct"
     org: "Ramboll Management Consulting"
     location: "Copenhagen, DK"
     start: "2025-05"
     end: "2025-08"
-    bullets:
-      - text: "Designed a structured tool for Human Rights Impact Assessments (HRIAs) covering data collection, impact evaluation, and stakeholder mapping across supply chains."
-        tags: [esg, consulting, generic]
+    points:
+      - point: "Frameworks anchor (always shows Ramboll's core)"
+        variants:
+          - text: "Conducted human rights due diligence for corporate clients, applying the UN Guiding Principles on Business and Human Rights and OECD Guidelines to assess salient risks across global supply chains."
+            tags: [esg, consulting, generic]
 
-      - text: "Built a supply chain mapping dashboard for EU-listed critical raw materials, structuring upstream, trade, and downstream flows with geographic and actor-specific detail."
-        tags: [esg, proptech]
+      - point: "Nordzucker HRIA tool"
+        variants:
+          - text: "Built a Human Rights Impact Assessment tool, mapping 40+ salient human rights risks across supply chains, with severity scoring to prioritize the most material risks."
+            tags: [esg, consulting]
 
-      - text: "Produced a client-facing sales deck on the EU Critical Raw Materials Act, connecting regulatory requirements to Ramboll's service offerings and project references."
-        tags: [esg, consulting]
+      - point: "Colt salience tool (technical showpiece)"
+        variants:
+          - text: "Developed a salience-based human rights due diligence, scoring risks across business units and supply chains by probability, scale, and scope to automatically prioritize salient risks."
+            tags: [esg, consulting, generic]
+          - text: "Built a fully automated risk-assessment system in Excel, consolidating risk data across supply chains into a single dashboard that updated salient risks dynamically."
+            tags: [proptech]
 
-      - text: "Developed a strategic overview of Ramboll's ESG due diligence capabilities for real estate clients, covering core services and assessment frameworks."
-        tags: [esg, real-estate, consulting]
+      - point: "Colt human rights workshop materials"
+        variants:
+          - text: "Created workshop and training materials on business and human rights for a corporate client, drawing on real-world cases to illustrate human rights risks, their business repercussions, and mitigation measures."
+            tags: [esg, consulting]
 
-      - text: "Conducted HRIAs for key clients and integrated findings into their risk management and supplier oversight processes."
-        tags: [esg, consulting, generic]
+      - point: "Colt peer benchmark"
+        variants:
+          - text: "Ran a peer benchmarking analysis for a corporate client, comparing its responsible business and human rights practices against industry competitors across multiple service areas to identify gaps, competitive advantages, and opportunities to strengthen its positioning."
+            tags: [esg, consulting]
 
-      - text: "Led peer benchmarking exercises mapping salient human rights risks across supply chains and developed workshop materials drawing on peer company approaches."
-        tags: [esg, consulting]
+      - point: "Genesta Code of Conduct review"
+        variants:
+          - text: "Reviewed and strengthened the Code of Conduct ofreal estate investment managers, identifying gaps against international human rights standards to reduce its exposure to human rights and labor risks."
+            tags: [esg, real-estate, consulting]
 
-      - text: "Assessed companies' alignment with UNGPs and OECD Guidelines in the context of corporate due diligence mandates."
-        tags: [esg, consulting]
+      - point: "Genesta supplier human rights resource"
+        variants:
+          - text: "Produced a supplier-facing human rights resource for real estate clients, mapping Code of Conducts to international instruments (UDHR, ICESCR, ICCPR) to help contractors and subcontractors meet labor expectations on site."
+            tags: [esg, real-estate]
 
-      - text: "Supported double materiality assessments by applying UNGP methods and aligning outputs with CSRD financial materiality standards."
-        tags: [esg, consulting]
+      - point: "Critical Raw Materials study"
+        variants:
+          - text: "Mapped the global supply chains of 20+ critical raw materials under the EU Critical Raw Materials Act, profiling producing companies, sectors, and geographies from authoritative industry databases."
+            tags: [esg, consulting]
+          - text: "Led an internal market study mapping 20+ critical raw materials supply chains to identify prospective clients and new ESG service lines, connecting regulatory drivers to concrete business development targets."
+            tags: [consulting, esg]
 
-      - text: "Integrated AI tools into research workflows to handle higher volumes of company assessments without losing consistency."
-        tags: [esg, proptech]
+      - point: "Real estate ESG due diligence service deck"
+        variants:
+          - text: "Developed a client-facing overview of the firm's real estate ESG due diligence services, centered on building energy and decarbonization assessments aligned with EU building performance regulations."
+            tags: [esg, real-estate, consulting]
 
-      - text: "Supported ESG risk screenings for real estate asset portfolios, evaluating environmental, social, and governance factors in the context of acquisition and lending due diligence processes."
-        tags: [esg, real-estate]
+      - point: "AI in research workflow"
+        variants:
+          - text: "Integrated AI research tools into due diligence workflows to source and cite human rights risk data at scale across high research volumes."
+            tags: [esg, proptech]
 
   - title: "Architect"
     org: "Isay Weinfeld Architects"
     location: "São Paulo, BR"
     start: "2023-02"
     end: "2024-08"
-    bullets:
-      - text: "Developed Revit models for large-scale residential and commercial projects spanning South America, Europe, the United States, Asia, and the Middle East."
-        tags: [real-estate, proptech]
+    points:
+      - point: "Portfolio anchor (always shows Isay's core)"
+        variants:
+          - text: "Delivered high-end residential, hotel, and mixed-use projects across South America, North America, Europe, the Middle East, and Asia at one of Brazil's most prominent architecture studios."
+            tags: [real-estate, generic]
 
-      - text: "Led BIM documentation workflows, producing technical drawings, coordination models, and project specifications across multiple phases."
-        tags: [proptech, real-estate, generic]
+      - point: "Staircase Grasshopper plugin (showpiece)"
+        variants:
+          - text: "Built a Grasshopper plugin in Python that generates bespoke staircases from a floor plan, cutting staircase modeling from days to around 20 minutes and enabling far more design iterations and geometric complexity."
+            tags: [proptech, real-estate]
 
-      - text: "Coordinated with international clients and developers to align design proposals with project programs, technical requirements, and delivery schedules across projects in multiple geographies."
-        tags: [real-estate, consulting]
+      - point: "Staircase plugin adoption / teaching"
+        variants:
+          - text: "Presented the tool in a studio workshop and supported its adoption by colleagues across 10+ projects."
+            tags: [proptech, consulting]
 
-      - text: "Ran real-time parametric analysis in Python and Grasshopper to optimize building orientation and massing configurations for energy performance."
-        tags: [proptech, esg]
+      - point: "Complex / organic parametric modeling"
+        variants:
+          - text: "Scripted parametric and computational models in Rhino and Grasshopper for geometrically complex forms, supporting design development across projects."
+            tags: [proptech, real-estate]
 
-      - text: "Automated repetitive modeling tasks by writing Python scripts in Grasshopper, reducing production time on complex geometry workflows."
-        tags: [proptech]
+      - point: "BIM coordination / clash detection"
+        variants:
+          - text: "Coordinated multidisciplinary inputs (structural, HVAC, electrical, lighting) into a single Revit model."
+            tags: [proptech, real-estate, consulting]
 
-      - text: "Built a Grasshopper pipeline for modeling staircases in complex geometries, cutting the process from roughly a week to under an hour per study. The tool exported Revit-compatible geometry for technical documentation and was applied across 10+ projects."
-        tags: [proptech, generic]
+      - point: "BIM documentation / development"
+        variants:
+          - text: "Produced executive and technical documentation and coordination models across multiple project phases."
+            tags: [proptech, real-estate]
 
-      - text: "Presented the pipeline in a studio workshop attended by 60+ people and led its application with colleagues across multiple projects."
-        tags: [consulting]
+      - point: "Client and consultant coordination"
+        variants:
+          - text: "Took part in client and consultant meetings to align design proposals with project requirements across disciplines."
+            tags: [consulting, real-estate]
+
+      - point: "Environmental / daylight analysis (Ladybug)"
+        variants:
+          - text: "Optimized building orientation and massing for energy performance and daylight using environmental simulation."
+            tags: [esg, real-estate]
+          - text: "Ran daylight and solar-exposure simulations with Ladybug in Grasshopper to drive massing and orientation decisions, quantifying light incidence across building layouts."
+            tags: [proptech, esg]
 
   - title: "Trainee in Real Estate Product Development"
     org: "OSPA"
     location: "São Paulo, BR"
     start: "2022-02"
     end: "2022-10"
-    bullets:
-      - text: "Developed 10+ volumetric and numerical feasibility studies for large-scale mixed-use developments across multiple cities in the United States and Brazil."
-        tags: [real-estate, generic]
+    points:
+      - point: "Feasibility anchor (always shows OSPA's core)"
+        variants:
+          - text: "Produced 15+ feasibility studies for mixed-use and residential developments across Brazil and the US (São Paulo, Rio de Janeiro, Porto Alegre, Miami) for developer clients."
+            tags: [real-estate, generic]
 
-      - text: "Analyzed zoning codes, land use regulations, and soil classification rules across different municipalities to determine development potential and identify regulatory opportunities for each site."
-        tags: [real-estate]
+      - point: "Numerical feasibility / financial modeling"
+        variants:
+          - text: "Ran early-stage financial feasibility on candidate sites, sizing investment and return against buildable area, unit mix, price per square metre, and parking to test viability."
+            tags: [real-estate]
 
-      - text: "Built early-stage financial models to assess project viability, using P&L statements, cash flow forecasts, and metrics including ROI and IRR."
-        tags: [real-estate, generic]
+      - point: "Zoning / land-use regulatory analysis"
+        variants:
+          - text: "Analyzed municipal master plans and land-use law to determine development potential, unit counts, apartment sizing, and setback rules, identifying regulatory opportunities to maximize buildable value."
+            tags: [real-estate]
 
-      - text: "Contributed to internal due diligence by reviewing environmental constraints and site-specific ESG considerations alongside financial and zoning analysis."
-        tags: [real-estate, esg]
+      - point: "Volumetric massing study in Revit"
+        variants:
+          - text: "Developed volumetric massing studies in Revit, resolving circulation, unit layouts, ground-floor active frontage, and parking against zoning metrics."
+            tags: [real-estate, proptech]
 
-      - text: "Aggregated and structured data from public planning portals, zoning registers, and market databases to support site analysis and program definition across multiple cities."
-        tags: [real-estate, proptech]
+      - point: "Environmental analysis"
+        variants:
+          - text: "Ran preliminary environmental and solar studies to inform massing and layout decisions."
+            tags: [esg, real-estate, proptech]
+
+      - point: "Client presentations"
+        variants:
+          - text: "Produced images, plans, and diagrams and presented feasibility outcomes to developer clients."
+            tags: [consulting, real-estate]
 
   - title: "Co-Founder"
     org: "VIZU"
     location: "São Paulo, BR"
     start: "2022-02"
     end: "2022-10"
-    bullets:
-      - text: "Co-founded and managed an architectural visualization studio, overseeing client relationships, project scoping, production workflows, and delivery."
-        tags: [consulting, generic]
+    points:
+      - point: "Studio anchor (always shows VIZU's core)"
+        variants:
+          - text: "Co-founded and ran an architectural visualization studio, managing 10+ clients, project scoping and delivery, and hiring staff."
+            tags: [consulting, real-estate, generic]
 
-      - text: "Produced architectural visualizations and renders for residential and commercial projects, working with developers and architecture firms to communicate design proposals to investors and end buyers."
-        tags: [real-estate, consulting]
+      - point: "Visualization production"
+        variants:
+          - text: "Produced architectural renders, humanized plans, and visualizations to communicate residential and commercial designs to investors and end buyers."
+            tags: [proptech, real-estate]
 
-      - text: "Built 3D models and rendering pipelines using industry-standard visualization software, managing production from initial model setup to final client deliverable."
-        tags: [proptech]
+      - point: "Design work"
+        variants:
+          - text: "Developed architectural design for select client projects beyond visualization."
+            tags: [real-estate]
 
   - title: "Architect"
     org: "Felipe Hess Architects"
     location: "São Paulo, BR"
     start: "2021-07"
     end: "2022-02"
-    bullets:
-      - text: "Produced BIM documentation in Revit for residential and commercial projects, covering technical drawings and coordination models across design phases."
-        tags: [proptech, real-estate, generic]
+    points:
+      - point: "Portfolio anchor (always shows Felipe Hess's core)"
+        variants:
+          - text: "Developed high-end residential projects in São Paulo and Rio de Janeiro from preliminary studies through technical documentation, working in Revit, AutoCAD, and SketchUp."
+            tags: [real-estate, generic]
 
-      - text: "Applied parametric modeling techniques in Grasshopper to support geometric exploration and design development."
-        tags: [proptech]
+      - point: "Zoning / feasibility study"
+        variants:
+          - text: "Carried out a zoning and feasibility study under São Paulo's master plan for residential buildings, determining buildable potential, apartment sizing, and compliance with fire and elevator regulations."
+            tags: [real-estate]
 
-      - text: "Worked within a fast-paced studio environment on multiple concurrent projects, coordinating with senior architects on documentation and modeling tasks."
-        tags: [consulting]
+      - point: "BIM documentation"
+        variants:
+          - text: "Produced BIM documentation in Revit and construction drawings across design phases."
+            tags: [proptech, real-estate]
+
+      - point: "Environmental analysis"
+        variants:
+          - text: "Ran environmental and daylight studies to inform early design decisions."
+            tags: [esg, proptech, real-estate]
+
+      - point: "Client meetings / preliminary studies"
+        variants:
+          - text: "Took part in client meetings and produced preliminary design studies to align proposals with client briefs."
+            tags: [consulting, real-estate]
 
   - title: "Intern in Project Management"
     org: "Itaú-Unibanco"
     location: "São Paulo, BR"
     start: "2020-08"
     end: "2021-07"
+    points:
+      - point: "Documentation review anchor (always shows Itaú's core)"
+        variants:
+          - text: "Reviewed technical documentation from architecture and engineering firms prior to construction authorization, checking drawings against building, accessibility, and fire-safety norms (NBR standards)."
+            tags: [real-estate, consulting, generic]
+
+      - point: "Building environmental / energy due diligence"
+        variants:
+          - text: "Assessed the environmental and energy performance of buildings the bank was acquiring or leasing, reviewing consumption data, efficiency ratings, and certifications as part of internal due diligence."
+            tags: [real-estate, esg]
+
+      - point: "New office towers technical review"
+        variants:
+          - text: "Supported technical review of new office towers under construction at the bank's São Paulo headquarters campus, evaluating design documentation for compliance and environmental performance."
+            tags: [real-estate]
+
+      - point: "Furniture inventory tool"
+        variants:
+          - text: "Built a VBA-powered Excel dashboard tracking the bank's corporate furniture inventory across locations, replacing a manual process and speeding up procurement for new-building fit-outs."
+            tags: [proptech, real-estate]
+
+# Projects are tag-selectable at the PROJECT level: a whole project is included
+# when its tags overlap the job. Bullets are always shown verbatim, never split.
+projects:
+  - name: "Master's Thesis, Computational Urban Analysis for Intensification Strategy"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    tags: [proptech, real-estate]
     bullets:
-      - text: "Reviewed technical documentation submitted by architecture and engineering firms prior to construction authorization, checking drawings and specifications for compliance with Brazilian building norms (NBR standards)."
-        tags: [real-estate, consulting, generic]
+      - "Developed a computational framework to identify underused spaces in the historic city center of São Paulo, Brazil, combining urban morphology analysis, land use data, and social vulnerability indicators."
+      - "Built an algorithm that uses urban data, including building typology, use patterns, regulatory conditions, and building use, to generate programmatic and morphological typologies for urban intensification, aligned with the city's existing urban policies."
+      - "Integrated multiple geospatial datasets in QGIS to map spatial relationships between buildings, zoning conditions, and social context at the neighborhood scale."
 
-      - text: "Assessed environmental and energy performance of buildings the bank was acquiring or leasing, reviewing energy consumption data, efficiency ratings, and applicable certifications, as part of internal due diligence processes."
-        tags: [real-estate, esg]
+  - name: "Real Estate Development Recommendation Tool"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    tags: [proptech, real-estate, esg]
+    bullets:
+      - "Built a machine learning tool that generates site-specific development recommendations for buildings in Copenhagen by integrating financial, social, sustainability, and geospatial data."
+      - "Designed a user interface allowing different stakeholders to adjust impact drivers and weighting, with predictive outputs aligned to ESG priorities and local development conditions."
 
-      - text: "Supported technical review of new office towers under construction in the Itaú Centro Empresarial, evaluating design documentation for both technical compliance and environmental performance requirements."
-        tags: [real-estate]
+  - name: "Embodied Carbon Toolkit"
+    location: "Copenhagen, DK"
+    tags: [esg, proptech]
+    bullets:
+      - "Collaborated with a Copenhagen-based LCA startup to design and deliver a Revit-based toolkit for embodied carbon calculations, integrating the platform's GWP values for A1-A3 and A4 stages."
+      - "Built a pre-configured Revit schedule that computes embodied carbon with built-in documentation for adoption by architects."
 
-      - text: "Built a custom VBA tool in Excel to monitor the bank's corporate furniture assets across locations, replacing a manual tracking process."
-        tags: [proptech, generic]
+  - name: "Computational Deployable Structures Workshop"
+    org: "Southeast University x The Royal Danish Academy"
+    location: "Nanjing, CN"
+    tags: [proptech]
+    bullets:
+      - "Selected as one of a small group from The Royal Danish Academy for a two-week international workshop at Southeast University, applying origami-based deployable-structure principles (used in satellite deployment) to architectural structures."
+      - "Developed parametric models exploring foldable geometry, material systems, and structural performance, working across computational design, geometry, and engineering."
 
+  - name: "House Price Prediction - Competition"
+    location: "Copenhagen, DK"
+    tags: [proptech, real-estate]
+    bullets:
+      - "Built a predictive model for real estate valuation using ensemble learning (XGBoost, LightGBM, Ridge, CatBoost) and feature engineering on structured property and financial data, finishing in the top 2% of competitors."
+
+  - name: "Rammed Blue Biomass & Computational Optimization"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    tags: [esg, proptech]
+    bullets:
+      - "Developed a new construction technique and material system using blue biomass (seashells and algae), applying LCA metrics and parametric simulations to optimize structural performance and environmental impact."
+      - "Project was selected as a semester highlight and served as the material foundation for the school's installation at the Venice Architecture Biennale 2025, presented in collaboration with CITA, GXN, and 3XN at the Arsenale."
+
+  - name: "Venice Architecture Biennale 2025"
+    org: "The Royal Danish Academy, CITA, GXN, 3XN"
+    location: "Venice, IT"
+    tags: [esg, proptech]
+    bullets:
+      - "Contributed to the Matanzas panel by developing geospatial mappings to analyze local material sources and supply flows, producing cartographic work that informed the site's material research."
+      - "Contributed to the Veneto panel by producing the physical exhibition panels displayed in the 7-metre installation at the Arsenale, which used the blue biomass composite technique developed during the semester project."
 
 education:
   - degree: "M.Arch. in Architecture Computation"
@@ -211,65 +391,6 @@ education:
     start: "2018-07"
     end: "2023-12"
 
-projects:
-  - name: "Master's Thesis, Computational Urban Analysis for Intensification Strategy"
-    org: "The Royal Danish Academy"
-    location: "Copenhagen, DK"
-    bullets:
-      - text: "Developed a computational framework to identify underused spaces in the historic city center of São Paulo, Brazil, combining urban morphology analysis, land use data, and social vulnerability indicators."
-        tags: [proptech, real-estate]
-
-      - text: "Built an algorithm that uses urban data, including building typology, use patterns, regulatory conditions, and building use, to generate programmatic and morphological typologies for urban intensification, aligned with the city's existing urban policies."
-        tags: [proptech, real-estate]
-
-      - text: "Integrated multiple geospatial datasets in QGIS to map spatial relationships between buildings, zoning conditions, and social context at the neighborhood scale."
-        tags: [proptech, real-estate]
-
-  - name: "Real Estate Development Recommendation Tool"
-    org: "The Royal Danish Academy"
-    location: "Copenhagen, DK"
-    bullets:
-      - text: "Built a machine learning tool that generates site-specific development recommendations for buildings in Copenhagen by integrating financial, social, sustainability, and geospatial data."
-        tags: [proptech, real-estate, esg]
-
-      - text: "Designed a user interface allowing different stakeholders to adjust impact drivers and weighting, with predictive outputs aligned to ESG priorities and local development conditions."
-        tags: [proptech, real-estate, esg]
-
-  - name: "LCA Toolkit for Revalu"
-    org: "Revalu"
-    location: "Copenhagen, DK"
-    bullets:
-      - text: "Collaborated with Revalu, a Copenhagen-based LCA platform, to design and deliver a Revit-based toolkit for embodied carbon calculations integrating the platform's GWP values for A1-A3 and A4 stages."
-        tags: [proptech, esg]
-
-      - text: "Built a pre-configured Revit schedule that automatically computes embodied carbon with built-in documentation for adoption by architects."
-        tags: [proptech, esg]
-
-  - name: "House Price Prediction - Competition"
-    location: "Copenhagen, DK"
-    bullets:
-      - text: "Built a predictive model for real estate valuation using ensemble learning (XGBoost, LightGBM, Ridge, CatBoost) and feature engineering on structured property and financial data, finishing in the top 2% of competitors."
-        tags: [proptech, real-estate]
-
-  - name: "Rammed Blue Biomass & Computational Optimization"
-    org: "The Royal Danish Academy"
-    location: "Copenhagen, DK"
-    bullets:
-      - text: "Developed a new construction technique and material system using blue biomass (seashells and algae), applying LCA metrics and parametric simulations to optimize structural performance and environmental impact."
-        tags: [proptech, esg]
-
-      - text: "Project was selected as a semester highlight and served as the material foundation for the school's installation at the Venice Architecture Biennale 2025, presented in collaboration with CITA, GXN, and 3XN at the Arsenale."
-        tags: [esg]
-
-  - name: "Venice Architecture Biennale 2025"
-    org: "The Royal Danish Academy, CITA, GXN, 3XN"
-    location: "Venice, IT"
-    bullets:
-      - text: "Contributed to the Matanzas panel by developing geospatial mappings to analyze local material sources and supply flows, producing cartographic work that informed the site's material research."
-        tags: [proptech]
-
-      - text: "Contributed to the Veneto panel by producing the physical exhibition panels displayed in the 7-metre installation at the Arsenale, which used the blue biomass composite technique developed during the semester project."
-        tags: [esg]
 
 skills:
   data_and_analysis:

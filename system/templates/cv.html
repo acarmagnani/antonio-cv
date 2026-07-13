@@ -76,6 +76,24 @@
       return block;
     }
 
+    // content_base.yaml stores experience as points -> variants. When rendering
+    // straight from base (no tailored file), flatten each point to its first
+    // variant so we get one bullet per fact. A real tailored content_tailored.yaml
+    // already holds plain-string bullets and skips this path.
+    function pointsToBullets(points) {
+      if (!Array.isArray(points)) return [];
+      return points
+        .map(p => (p.variants && p.variants[0] && p.variants[0].text) || '')
+        .filter(Boolean);
+    }
+    function flattenBaseExperience(experience = []) {
+      return experience.map(role => ({
+        title: role.title, org: role.org, location: role.location,
+        start: role.start, end: role.end,
+        bullets: pointsToBullets(role.points),
+      }));
+    }
+
     async function loadYAML(path) {
       const res = await fetch(path, { cache: 'no-cache' });
       if (!res.ok) throw new Error(`Failed to fetch ${path}: ${res.status}`);
@@ -226,15 +244,15 @@
       // Load base (stable: meta, education, skills, full experience/projects)
       // and tailored (per-application overrides for profile/experience/projects).
       // Tailored fields, when present, override base fields.
-      const baseData = await loadYAML('../content_base.yaml');
+      const baseData = await loadYAML('../../content_base.yaml');
 
       let tailoredData = {};
       try {
-        const pointerRes = await fetch('../active_application.txt', { cache: 'no-cache' });
+        const pointerRes = await fetch('../../active_application.txt', { cache: 'no-cache' });
         if (pointerRes.ok) {
           const pointer = (await pointerRes.text()).trim();
           if (pointer) {
-            tailoredData = await loadYAML(`../applications/${pointer}/content_tailored.yaml`);
+            tailoredData = await loadYAML(`../../applications/${pointer}/content_tailored.yaml`);
           }
         }
       } catch (e) {
@@ -246,8 +264,8 @@
         meta: baseData.meta,
         education: baseData.education,
         skills: baseData.skills,
-        profile: tailoredData.profile ?? baseData.profile ?? baseData.profiles?.[0]?.text ?? null,
-        experience: tailoredData.experience ?? baseData.experience,
+        profile: tailoredData.profile ?? baseData.profiles?.[0]?.text ?? null,
+        experience: tailoredData.experience ?? flattenBaseExperience(baseData.experience),
         projects: tailoredData.projects ?? baseData.projects,
       };
 

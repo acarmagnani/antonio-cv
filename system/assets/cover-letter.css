@@ -1,19 +1,25 @@
 .cl-container {
     width: 21cm;
-    height: 29.7cm;
     margin: 0 auto;
     background: white;
     padding: 25mm 20mm 20mm 20mm;
     box-sizing: border-box;
-    overflow: auto;
     font-size: calc(var(--scale) * 9px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Full-page "paper" look on screen only. In print the container sizes to its
+   content, so a short letter stays on a single page (a fixed height would spill
+   a sliver onto page 2). */
+@media screen {
+    .cl-container {
+        min-height: 29.7cm;
+    }
 }
 
 @media print {
     .cl-container {
         box-shadow: none;
-        overflow: visible;
     }
 }
 

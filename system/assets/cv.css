@@ -1,9 +1,5 @@
-/* Print margins — edit @page margin below. Then update --print-content-h
-   to match: A4 height (29.7cm) minus top margin minus bottom margin. */
-:root {
-    --print-content-h: calc(29.7cm - 5mm - 5mm);
-}
-
+/* Print margins live entirely in @page. Every printed page gets the same
+   margin automatically — no manual padding per page, no scale fiddling. */
 @page {
     size: A4;
     margin: 4mm;
@@ -16,19 +12,6 @@
     padding: 0;
     box-sizing: border-box;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Page-break indicator: faint red line every --print-content-h,
-   offset by --print-margin-v so the first line falls at page 1 bottom. */
-@media screen {
-    .cv-container {
-        background-image: repeating-linear-gradient(to bottom,
-                transparent 0,
-                transparent var(--print-content-h),
-                rgba(200, 0, 0, 0.25) var(--print-content-h),
-                rgba(200, 0, 0, 0.25) calc(var(--print-content-h) + 2px));
-        background-position: 0 var(--print-margin-v);
-    }
 }
 
 @media print {
@@ -75,6 +58,13 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+/* Pagination control: never split a single role/project (its header, dates,
+   and bullets) across a page break. This replaces the old manual page-break
+   guide and scale hack — the browser decides where to break, cleanly. */
+.entry-block {
+    break-inside: avoid;
 }
 
 /* Experience & Education Layout */
