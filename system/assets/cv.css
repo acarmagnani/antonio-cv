@@ -2,7 +2,9 @@
    margin automatically — no manual padding per page, no scale fiddling. */
 @page {
     size: A4;
-    margin: 4mm;
+    /* First value = top/bottom, second = left/right. Bump the second value
+       for wider side margins (was 4mm all around). */
+    margin: 4mm 12mm;
 }
 
 .cv-container {

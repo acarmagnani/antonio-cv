@@ -1,0 +1,12 @@
+Dear Hiring Team at EY,
+
+As an architect in Brazil I spent years executing the "how" of building: the drawings, the coordination, the delivery. What pulled me elsewhere were the questions an architecture office rarely stops on, why something is being built, whether it should be there at all, and what its impact is. Following them led me to an M.Arch. in Architecture Computation at The Royal Danish Academy and, within it, specifically toward data, the part that lets you answer such questions with evidence rather than intuition. The Sustainability Consultant (Data Analytics) role in EY's CCaSS team, where sustainability is made to stand on measured, verifiable data, is where I want to keep doing exactly that.
+
+During my time in Ramboll's Responsible Business Conduct team, I conducted human rights due diligence for corporate clients under the UN Guiding Principles and OECD Guidelines, assessing salient risks across global supply chains. In practice, most of that was data work. I built a fully automated risk-assessment system in Excel that consolidated supply-chain risk data into a single dashboard updating salient risks dynamically, a human rights impact assessment tool that scored 40+ risks by severity to surface the most material ones, and a mapping of 20+ critical raw materials supply chains under the EU Critical Raw Materials Act. The task underneath all of it is the one this role centers on: take large, uneven bodies of ESG evidence, structure them rigorously, and turn them into scored, defensible outputs.
+
+The pull toward data is not new; even in practice I was running daylight and solar-exposure simulations to drive design decisions. At Sweco I now author climate risk assessments for internationally financed water projects, screening hazards against projection data and rating exposure and vulnerability asset by asset. And my M.Arch. in Architecture Computation gave me the analytical depth this role's data side asks for: Python, geospatial analysis in QGIS, an embodied-carbon toolkit computing GWP across life-cycle stages, and machine-learning work that placed in the top 2% of a price-prediction competition. Sustainability and data analysis have never been separate tracks for me; they are the same work.
+
+EY CCaSS, pairing assurance-grade verification with advisory while it builds out its data-analytics capability, is exactly where I want to grow: doing sustainability work that is measured, evidenced, and built to hold up.
+
+All the best,
+Antonio Carmagnani

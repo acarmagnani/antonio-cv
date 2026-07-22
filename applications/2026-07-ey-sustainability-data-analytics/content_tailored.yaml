@@ -1,0 +1,100 @@
+# Tailored for: EY - Consultor/a de Sostenibilidad, Data Analytics (CCaSS).
+# The ESG + data intersection: ESG/supply-chain consulting made rigorous and
+# data-driven (Excel automation, dashboards, ML, Python, QGIS), plus LCA/carbon.
+# Selected verbatim from content_base.yaml. Projects/education/skills are static
+# (rendered from content_base.yaml). Verify with: python system/verify_cv.py <folder>
+profile: "Experience across sustainability consulting and the built environment, from ESG and human rights due diligence to climate risk work on internationally financed infrastructure. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to sustainability. Hands-on skills span the UNGP and OECD due-diligence frameworks, climate hazard and risk assessment, and building structured analytical tools in Excel and Python. Motivated by work where sustainability, the built environment, and rigorous analysis intersect."
+
+experience:
+  - title: "Project Assistant in International Infrastructure Projects"
+    org: "Sweco Danmark A/S"
+    location: "Copenhagen, DK"
+    start: "2026-02"
+    end: "Present"
+    bullets:
+      - "Support consulting teams delivering internationally funded infrastructure projects in water, energy, and transport across emerging and developing economies, financed by development banks including the World Bank, EBRD, IFDK, KfW and EIB."
+      - "Authored climate risk assessments for major water supply projects following JASPERS and EBRD climate-proofing guidance, screening hazards against projections data and rating risk by exposure and vulnerability for each asset."
+      - "Built geospatial databases for water and infrastructure projects in QGIS, compiling georeferenced asset locations from agency data, satellite imagery, and open sources for socio-spatial analysis."
+
+  - title: "Intern in Responsible Business Conduct"
+    org: "Ramboll Management Consulting"
+    location: "Copenhagen, DK"
+    start: "2025-05"
+    end: "2025-08"
+    bullets:
+      - "Conducted human rights due diligence for corporate clients, applying the UN Guiding Principles on Business and Human Rights and OECD Guidelines to assess salient risks across global supply chains."
+      - "Built a fully automated risk-assessment system in Excel, consolidating risk data across supply chains into a single dashboard that updated salient risks dynamically."
+      - "Built a Human Rights Impact Assessment tool, mapping 40+ salient human rights risks across supply chains, with severity scoring to prioritize the most material risks."
+      - "Mapped the global supply chains of 20+ critical raw materials under the EU Critical Raw Materials Act, profiling producing companies, sectors, and geographies from authoritative industry databases."
+      - "Ran a peer benchmarking analysis for a corporate client, comparing its responsible business and human rights practices against industry competitors across multiple service areas to identify gaps, competitive advantages, and opportunities to strengthen its positioning."
+
+  - title: "Architect"
+    org: "Isay Weinfeld Architects"
+    location: "São Paulo, BR"
+    start: "2023-02"
+    end: "2024-08"
+    bullets:
+      - "Delivered high-end residential, hotel, and mixed-use projects across South America, North America, Europe, the Middle East, and Asia at one of Brazil's most prominent architecture studios."
+      - "Built a Grasshopper plugin in Python that generates bespoke staircases from a floor plan, cutting staircase modeling from days to around 20 minutes and enabling far more design iterations and geometric complexity."
+      - "Ran daylight and solar-exposure simulations with Ladybug in Grasshopper to drive massing and orientation decisions, quantifying light incidence across building layouts."
+
+  - title: "Trainee in Real Estate Product Development"
+    org: "OSPA"
+    location: "São Paulo, BR"
+    start: "2022-02"
+    end: "2022-10"
+    bullets:
+      - "Produced 15+ feasibility studies for mixed-use and residential developments across Brazil and the US (São Paulo, Rio de Janeiro, Porto Alegre, Miami) for developer clients."
+      - "Ran preliminary environmental and solar studies to inform massing and layout decisions."
+
+  - title: "Co-Founder"
+    org: "VIZU"
+    location: "São Paulo, BR"
+    start: "2022-02"
+    end: "2022-10"
+    bullets:
+      - "Co-founded and ran an architectural visualization studio, managing 10+ clients, project scoping and delivery, and hiring staff."
+
+  - title: "Architect"
+    org: "Felipe Hess Architects"
+    location: "São Paulo, BR"
+    start: "2021-07"
+    end: "2022-02"
+    bullets:
+      - "Developed high-end residential projects in São Paulo and Rio de Janeiro from preliminary studies through technical documentation, working in Revit, AutoCAD, and SketchUp."
+      - "Ran environmental and daylight studies to inform early design decisions."
+
+  - title: "Intern in Project Management"
+    org: "Itaú-Unibanco"
+    location: "São Paulo, BR"
+    start: "2020-08"
+    end: "2021-07"
+    bullets:
+      - "Assessed the environmental and energy performance of buildings the bank was acquiring or leasing, reviewing consumption data, efficiency ratings, and certifications as part of internal due diligence."
+      - "Built a VBA-powered Excel dashboard tracking the bank's corporate furniture inventory across locations, replacing a manual process and speeding up procurement for new-building fit-outs."
+
+projects:
+  - name: "Real Estate Development Recommendation Tool"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Built a machine learning tool that generates site-specific development recommendations for buildings in Copenhagen by integrating financial, social, sustainability, and geospatial data."
+      - "Designed a user interface allowing different stakeholders to adjust impact drivers and weighting, with predictive outputs aligned to ESG priorities and local development conditions."
+
+  - name: "Embodied Carbon Toolkit"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Collaborated with a Copenhagen-based LCA startup to design and deliver a Revit-based toolkit for embodied carbon calculations, integrating the platform's GWP values for A1-A3 and A4 stages."
+      - "Built a pre-configured Revit schedule that computes embodied carbon with built-in documentation for adoption by architects."
+
+  - name: "House Price Prediction - Competition"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Built a predictive model for real estate valuation using ensemble learning (XGBoost, LightGBM, Ridge, CatBoost) and feature engineering on structured property and financial data, finishing in the top 2% of competitors."
+
+  - name: "Rammed Blue Biomass & Computational Optimization"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Developed a new construction technique and material system using blue biomass (seashells and algae), applying LCA metrics and parametric simulations to optimize structural performance and environmental impact."
+      - "Project was selected as a semester highlight and served as the material foundation for the school's installation at the Venice Architecture Biennale 2025, presented in collaboration with CITA, GXN, and 3XN at the Arsenale."

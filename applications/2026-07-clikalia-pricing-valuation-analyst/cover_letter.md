@@ -1,0 +1,12 @@
+Estimado equipo de selección de Clikalia,
+
+Soy arquitecto de formación, aunque la parte del trabajo que más me ha atraído siempre fue la que viene antes del proyecto, la de entender cuánto vale un inmueble y qué potencial tiene una vez transformado. Clikalia resuelve justamente ese problema a gran escala, comprando, reformando y devolviendo al mercado vivienda de segunda mano con una valoración apoyada en datos. Llego a ese terreno con dos bases que no suelen ir juntas, la viabilidad inmobiliaria y la práctica de la arquitectura, y con los métodos computacionales y de análisis de datos en los que me especialicé durante mi máster.
+
+En OSPA trabajé precisamente en eso. Elaboré más de quince estudios de viabilidad para promociones residenciales y de uso mixto en Brasil y Estados Unidos, y en fase inicial analizaba cada suelo dimensionando la inversión y el retorno frente a la edificabilidad, el mix de unidades, el precio por metro cuadrado y el aparcamiento. En paralelo estudiaba los planes urbanísticos y la normativa de uso del suelo para fijar el potencial de desarrollo y sacar el mayor valor edificable posible. Es, en el fondo, el mismo ejercicio que plantea esta posición, leer las restricciones técnicas y regulatorias de un activo, traducirlas a números y llegar a un precio que sostenga una decisión de negocio.
+
+Esa mirada se apoya en la arquitectura de estudio y en los datos. En Isay Weinfeld y en Felipe Hess llevé proyectos residenciales desde la viabilidad hasta la documentación técnica en Revit y AutoCAD, de modo que entiendo los procesos constructivos y su implicación en coste directamente desde los planos. Y los datos han sido el hilo conductor de mi máster en métodos computacionales para el sector inmobiliario, donde construí un modelo de valoración de vivienda con ensemble learning que terminó en el 2% superior de la competición, además de una herramienta de machine learning que genera recomendaciones de desarrollo por emplazamiento a partir de datos financieros, geoespaciales y de sostenibilidad. Es el tipo de análisis que pide esta posición, aplicado ya a vivienda.
+
+Me interesa Clikalia porque ahí la valoración no es un trámite más, sino el eje de un negocio que se mueve con datos y a gran velocidad. Es donde quiero llevar mi lado de arquitecto y mi lado analítico al mismo trabajo, sobre activos reales y con impacto directo en las decisiones.
+
+Un cordial saludo,
+Antonio Carmagnani

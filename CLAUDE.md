@@ -45,6 +45,7 @@ Profiles are **pre-written variants** in content_base.yaml, selected verbatim by
 
 - **content_base.yaml**:         Source of truth. `profiles` (tagged profile variants), `experience` (7 roles, each a list of `points` with tagged phrasing `variants`), tag-selectable `projects` (tags per whole project), and STATIC `education`, `skills`.
 - **cover_letter_base.md**:      Base/voice anchor for cover letters (the content_base of letters). Antonio edits it; the cover-letter skill writes each letter to match its voice, architecture, and banned-phrases list.
+- **system/context.md**:         Versioned personal context (work eligibility, ambitions, career arc) that travels with the repo across machines. Read by the job-fit skill; edit it when timing, eligibility, or direction changes.
 - **system/verify_cv.py**:       Verifier. Checks a folder's `content_tailored.yaml` against `content_base.yaml`: every bullet and the profile must be verbatim, and no two bullets may come from the same point. Exits non-zero on failure. Run `python system/verify_cv.py <folder>` after tailoring.
 - **system/make_cv_pdf.py**:        Render the active CV to `cv.pdf` via a local server + headless Chrome. Run `python system/make_cv_pdf.py` (works in any shell). `system/make_cv_pdf.sh` is the Git Bash equivalent.
 - **system/make_cover_pdf.py**:  Render the active application's `cover_letter.md` to `cover_letter.pdf` (same headless-Chrome approach).
