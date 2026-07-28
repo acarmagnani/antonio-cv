@@ -122,7 +122,7 @@ experience:
 
       - point: "Genesta Code of Conduct review"
         variants:
-          - text: "Reviewed and strengthened the Code of Conduct ofreal estate investment managers, identifying gaps against international human rights standards to reduce its exposure to human rights and labor risks."
+          - text: "Reviewed and strengthened the Code of Conduct of real estate investment managers, identifying gaps against international human rights standards to reduce its exposure to human rights and labor risks."
             tags: [esg, real-estate, consulting]
 
       - point: "Genesta supplier human rights resource"
@@ -330,11 +330,14 @@ projects:
       - "Designed a user interface allowing different stakeholders to adjust impact drivers and weighting, with predictive outputs aligned to ESG priorities and local development conditions."
 
   - name: "Embodied Carbon Toolkit"
+    org: "Revalu"
     location: "Copenhagen, DK"
     tags: [esg, proptech]
     bullets:
-      - "Collaborated with a Copenhagen-based LCA startup to design and deliver a Revit-based toolkit for embodied carbon calculations, integrating the platform's GWP values for A1-A3 and A4 stages."
+      - "Collaborated with Revalu, a Copenhagen-based LCA platform, to design and deliver a Revit-based toolkit for embodied carbon calculations integrating the platform's GWP values."
       - "Built a pre-configured Revit schedule that computes embodied carbon with built-in documentation for adoption by architects."
+      - "Provided UX feedback drawing on years of hands-on Revit experience, advising on material search, organization, and Revit integration workflows."
+      - "Maintained an ongoing advisory relationship with Revalu's product team, contributing feedback on API development and platform features over a year after the initial delivery."
 
   - name: "Computational Deployable Structures Workshop"
     org: "Southeast University x The Royal Danish Academy"

@@ -1,0 +1,95 @@
+profile: "Experience in real estate development, feasibility, and financial modeling, grounded in zoning and land-use analysis across multiple markets. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on computational and data methods for real estate and urban development. Hands-on skills span feasibility and P&L modeling, zoning and buildable-potential analysis, and volumetric studies in Revit. Motivated by work where real estate, finance, and design intersect."
+
+experience:
+  - title: "Project Assistant in International Infrastructure Projects"
+    org: "Sweco Danmark A/S"
+    location: "Copenhagen, DK"
+    start: "2026-02"
+    end: "Present"
+    bullets:
+      - "Support consulting teams delivering internationally funded infrastructure projects in water, energy, and transport across emerging and developing economies, financed by development banks including the World Bank, EBRD, IFDK, KfW and EIB."
+      - "Developed a pricing tool to support bid decisions, parametrizing expert fee bands and project economics for financial viability testing of tender configurations."
+      - "Built geospatial databases for water and infrastructure projects in QGIS, compiling georeferenced asset locations from agency data, satellite imagery, and open sources for socio-spatial analysis."
+      - "Joined a field mission across Baku's water supply system, assessing asset condition and identifying technical, social, environmental, and human rights risks through site inspections and interviews."
+
+  - title: "Intern in Responsible Business Conduct"
+    org: "Ramboll Management Consulting"
+    location: "Copenhagen, DK"
+    start: "2025-05"
+    end: "2025-08"
+    bullets:
+      - "Conducted human rights due diligence for corporate clients, applying the UN Guiding Principles on Business and Human Rights and OECD Guidelines to assess salient risks across global supply chains."
+      - "Reviewed and strengthened the Code of Conduct of real estate investment managers, identifying gaps against international human rights standards to reduce its exposure to human rights and labor risks."
+      - "Developed a client-facing overview of the firm's real estate ESG due diligence services, centered on building energy and decarbonization assessments aligned with EU building performance regulations."
+      - "Built a fully automated risk-assessment system in Excel, consolidating risk data across supply chains into a single dashboard that updated salient risks dynamically."
+
+  - title: "Architect"
+    org: "Isay Weinfeld Architects"
+    location: "São Paulo, BR"
+    start: "2023-02"
+    end: "2024-08"
+    bullets:
+      - "Delivered high-end residential, hotel, and mixed-use projects across South America, North America, Europe, the Middle East, and Asia at one of Brazil's most prominent architecture studios."
+      - "Took part in client and consultant meetings to align design proposals with project requirements across disciplines."
+      - "Built a Grasshopper plugin in Python that generates bespoke staircases from a floor plan, cutting staircase modeling from days to around 20 minutes and enabling far more design iterations and geometric complexity."
+
+  - title: "Trainee in Real Estate Product Development"
+    org: "OSPA"
+    location: "São Paulo, BR"
+    start: "2022-02"
+    end: "2022-10"
+    bullets:
+      - "Produced 15+ feasibility studies for mixed-use and residential developments across Brazil and the US (São Paulo, Rio de Janeiro, Porto Alegre, Miami) for developer clients."
+      - "Ran early-stage financial feasibility on candidate sites, sizing investment and return against buildable area, unit mix, price per square metre, and parking to test viability."
+      - "Analyzed municipal master plans and land-use law to determine development potential, unit counts, apartment sizing, and setback rules, identifying regulatory opportunities to maximize buildable value."
+      - "Produced images, plans, and diagrams and presented feasibility outcomes to developer clients."
+
+  - title: "Co-Founder"
+    org: "VIZU"
+    location: "São Paulo, BR"
+    start: "2022-02"
+    end: "2022-10"
+    bullets:
+      - "Co-founded and ran an architectural visualization studio, managing 10+ clients, project scoping and delivery, and hiring staff."
+      - "Produced architectural renders, humanized plans, and visualizations to communicate residential and commercial designs to investors and end buyers."
+
+  - title: "Architect"
+    org: "Felipe Hess Architects"
+    location: "São Paulo, BR"
+    start: "2021-07"
+    end: "2022-02"
+    bullets:
+      - "Developed high-end residential projects in São Paulo and Rio de Janeiro from preliminary studies through technical documentation, working in Revit, AutoCAD, and SketchUp."
+      - "Carried out a zoning and feasibility study under São Paulo's master plan for residential buildings, determining buildable potential, apartment sizing, and compliance with fire and elevator regulations."
+      - "Took part in client meetings and produced preliminary design studies to align proposals with client briefs."
+
+  - title: "Intern in Project Management"
+    org: "Itaú-Unibanco"
+    location: "São Paulo, BR"
+    start: "2020-08"
+    end: "2021-07"
+    bullets:
+      - "Reviewed technical documentation from architecture and engineering firms prior to construction authorization, checking drawings against building, accessibility, and fire-safety norms (NBR standards)."
+      - "Assessed the environmental and energy performance of buildings the bank was acquiring or leasing, reviewing consumption data, efficiency ratings, and certifications as part of internal due diligence."
+      - "Built a VBA-powered Excel dashboard tracking the bank's corporate furniture inventory across locations, replacing a manual process and speeding up procurement for new-building fit-outs."
+
+projects:
+  - name: "House Price Prediction - Competition"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Built a predictive model for real estate valuation using ensemble learning (XGBoost, LightGBM, Ridge, CatBoost) and feature engineering on structured property and financial data, finishing in the top 2% of competitors."
+
+  - name: "Real Estate Development Recommendation Tool"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Built a machine learning tool that generates site-specific development recommendations for buildings in Copenhagen by integrating financial, social, sustainability, and geospatial data."
+      - "Designed a user interface allowing different stakeholders to adjust impact drivers and weighting, with predictive outputs aligned to ESG priorities and local development conditions."
+
+  - name: "Master's Thesis, Computational Urban Analysis for Intensification Strategy"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Developed a computational framework to identify underused spaces in the historic city center of São Paulo, Brazil, combining urban morphology analysis, land use data, and social vulnerability indicators."
+      - "Built an algorithm that uses urban data, including building typology, use patterns, regulatory conditions, and building use, to generate programmatic and morphological typologies for urban intensification, aligned with the city's existing urban policies."
+      - "Integrated multiple geospatial datasets in QGIS to map spatial relationships between buildings, zoning conditions, and social context at the neighborhood scale."
