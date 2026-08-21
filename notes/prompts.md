@@ -13,16 +13,15 @@ Chat novo por tarefa. A barra na primeira mensagem tira a ambiguidade.
 - **Só a carta, numa application que já existe:** 
     `/cover-letter` + nome da pasta
 
-Pra olhar os currículos base (os blocos), sem mexer em application nenhuma:
+## Comandos no terminal
 
-- **Ler os 3 blocos inteiros (o jeito rápido, sempre atualizado):** 
-    `python system/show_blocks.py` (escreve `preset_previews/blocks.md`, com o id do lado de cada bullet). Deixo esse arquivo aberto do lado do `content_base.yaml`, mudo uma frase lá, rodo de novo, ele atualiza sozinho.
-- **Exportar os 3 blocos em PDF (só quando quero ver o layout de verdade):** 
-    `python system/make_preset_pdfs.py`
-- **Ver que tópico do content_base vai pra cada bloco:** 
-    `python system/select_cv.py --usage`
-- **Listar os blocos:** 
-    `python system/select_cv.py --list-presets`
+- `python system/show_blocks.py`: escreve os 3 blocos em `preset_previews/cv_<bloco>.md`
+- `python system/make_preset_pdfs.py`: os 3 blocos em PDF
+- `python system/make_pdfs.py`: CV + carta da application ativa
+- `python system/make_cv_pdf.py`: só o CV da application ativa
+- `python system/select_cv.py <pasta> --preview`: valida uma application
+- `python system/select_cv.py --usage`: que tópico vai pra cada bloco
+- `python system/select_cv.py --list-presets`: lista os blocos
 
 Notas:
 
