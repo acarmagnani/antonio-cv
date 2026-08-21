@@ -434,7 +434,7 @@ experience:
             text: "Co-founded and ran a small studio serving 10+ clients, responsible for client acquisition, scoping, pricing, delivery, and hiring."
             tags: [re-investment, consulting]
           - id: vizu.studio-anchor.v3
-            text: "Co-founded and ran a small practice delivering projects for 10+ clients in the architecture, engineering and construction sector, responsible for client acquisition, scoping, pricing, and delivery."
+            text: "Co-founded and ran a small practice delivering projects for 10+ clients in the AEC sector, responsible for client acquisition, scoping, pricing, and delivery."
             tags: [re-investment, real-estate, consulting]
 
       - point: "Visualization production"
@@ -467,7 +467,7 @@ experience:
       - point: "Financial analysis tool for a private client"
         variants:
           - id: independent.financial-analysis-tool.v1
-            text: "Built financial analysis tooling in Excel and VBA for a private client, automating the consolidation of raw financial data into a dashboard used to track performance and support decisions."
+            text: "Built an Excel and VBA financial analysis tool for a private client that ingests monthly statements and PDF exports, categorises transactions automatically, and renders them into a decision dashboard."
             tags: [proptech, re-investment, consulting]
 
 

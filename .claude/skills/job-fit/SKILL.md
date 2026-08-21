@@ -16,7 +16,11 @@ his odds, and whether the role moves him toward the career he wants.
   `CLAUDE.md`.
 - `notes/context.md` — the versioned personal context (travels with the repo across machines):
   - **Job search 2026** — work eligibility (Italian / EU citizen, so no visa in the EU/EEA; UK
-    needs sponsorship post-Brexit), Spanish fluent, contract timing, the two open directions.
+    needs sponsorship post-Brexit), Spanish fluent, and the DIRECTION, which changed in 2026-08:
+    real estate first, real estate + data second, ESG + data as the fallback. Do not treat these
+    as co-equal any more, and do not treat green certification (BREEAM/LEED/DGNB) as a target.
+  - **Compensation** and **Realistic odds by role family** — read both. They are the difference
+    between a useful verdict and a polite one.
   - **Ambitions** — the professional he wants to become (the "future" axis).
   - **Journey** — his background arc.
 - If his ambitions or a key constraint are not clear from `notes/context.md`, ask one short
@@ -27,7 +31,9 @@ his odds, and whether the role moves him toward the career he wants.
 - Real fit, not flattery. Name the genuine matches AND the real gaps (missing must-haves, wrong
   level, a credential he lacks such as BREEAM, a tool he does not have such as Presto).
 - **Eligibility is often decisive.** EU roles are clean (Italian passport, Spanish); UK roles
-  need sponsorship; always check the geography first.
+  need sponsorship; always check that first. But **location itself is now his least important
+  criterion**: he will relocate anywhere in the EU and would return to Brazil. Do not down-rank a
+  good real estate role for being outside Copenhagen.
 - **Level. Always state the direction explicitly: below, at, or above his level, and by how much.**
   Benchmark against what he actually has: roughly 4.5 years total including internships and the
   trainee role, of which ~18 months titled "Architect" (Isay Weinfeld), most recent title "Project
@@ -39,8 +45,16 @@ his odds, and whether the role moves him toward the career he wants.
   wrong direction does not.
 - **Realistic odds.** Weigh must-have gaps, level, eligibility, and how competitive he would be.
   Do not inflate; a clear skip should be called a skip.
-- **Salary**, only if he asks: recalibrate to the LOCAL market (not his Nordic salary), and say
-  the data is noisy.
+- **Compensation is a real criterion for him, not a taboo.** Say a line about it unprompted when
+  it changes the verdict: whether the role is on a path with bonus and carry or only a salary
+  band, and how the local market compares. Recalibrate to the LOCAL market (not his Nordic
+  salary) and say the data is noisy. A well-aimed role that structurally caps low (green
+  certification, pure ESG reporting) deserves that stated plainly.
+- **Anchor the odds in `notes/context.md` -> "Realistic odds by role family".** Valuation and
+  advisory, proptech pricing, research and development analyst roles are genuinely winnable;
+  investment/acquisitions analyst seats at the big funds are not, with the CV as it stands.
+  The decisive gap for real estate roles is no transaction experience and no DCF/waterfall
+  modelling, so a posting that runs a modelling test is a long shot today. Say so.
 
 ## Output — SHORT, in Portuguese (his language)
 
@@ -50,7 +64,7 @@ Six compact lines, skimmable, no preamble, roughly this shape:
 **Encaixe:** <principais matches; gaps reais> (1-2 linhas)
 **Senioridade:** Abaixo / No nível / Acima, <quantos degraus e o que a vaga pede que ele não tem> (1 linha)
 **Chance de entrar:** Baixa / Média / Alta, <por quê: elegibilidade, nível, gaps decisivos> (1 linha)
-**Futuro:** <serve às ambições dele? geografia faz sentido? desenvolve o profissional que ele quer ser?> (1-2 linhas)
+**Futuro:** <serve às ambições dele? desenvolve o profissional que ele quer ser? tem teto de dinheiro ou caminho pra bônus/carry?> (1-2 linhas)
 **Bottom line:** <1 linha, a recomendação>
 
 Never skip **Senioridade**, including when the match is good ("No nível" is useful information).

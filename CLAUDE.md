@@ -12,7 +12,7 @@ Antonio is an architect by training (B.Arch., Mackenzie São Paulo) with a M.Arc
 - **Computational design and data** — Python, GIS, parametric modeling, machine learning (academic projects, Isay Weinfeld)
 - **Architecture practice** — BIM, Revit, Grasshopper, project documentation (Isay Weinfeld, Felipe Hess)
 
-He is based in Copenhagen and applying to roles across consulting, real estate, ESG, and computational/data-adjacent fields. He does not have a fixed target role — the CV should be tailored to present a coherent, job-specific purpose for each application, drawing from the relevant parts of his background rather than defaulting to one framing.
+He is based in Copenhagen and applying across real estate, consulting, ESG, and computational/data-adjacent fields. As of 2026-08 he HAS a priority: **real estate first** (investment, valuation, development, research), with sustainability and data as differentiators inside that seat rather than as the job itself; real-estate-plus-data second; ESG-plus-data as the fallback. `notes/context.md` holds the full picture, including compensation as an explicit criterion and which role families are realistically winnable. Each CV is still tailored to present a coherent, job-specific purpose, drawing from the relevant parts of his background rather than defaulting to one framing.
 
 **Important**: The goal of each tailored CV is to look like its purpose is aligned with the specific job — not scattered across all his interests. Inclusion decisions should be deliberate. Not every experience and not every bullet belongs in every CV.
 
