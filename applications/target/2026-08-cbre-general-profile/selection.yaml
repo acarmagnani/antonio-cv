@@ -1,0 +1,52 @@
+# CBRE, general candidate profile (reused across every CBRE application)
+# Angle: assessing buildings on financial AND environmental terms, with the
+# data skills to do both. ESG and data lead, real estate is the ground.
+
+profile: profile.real-estate-esg-data
+
+bullets:
+  # Sweco Danmark, Project Assistant
+  - sweco.climate-risk-assessments.v1
+  - sweco.azerbaijan-field-mission.v1
+  - sweco.geospatial-data-and-analysis.v1
+  - sweco.project-pricing-model.v1
+  - sweco.department-anchor.v1
+
+  # Ramboll Management Consulting, Intern in Responsible Business Conduct
+  - ramboll.real-estate-esg.v1
+  - ramboll.genesta-code-of-conduct.v1
+  - ramboll.colt-salience-tool.v2
+  - ramboll.nordzucker-hria-tool.v1
+  - ramboll.frameworks-anchor.v1
+
+  # Isay Weinfeld Architects, Architect
+  - isay.environmental-daylight-analysis.v1
+  - isay.staircase-grasshopper-plugin.v1
+  - isay.bim-coordination-clash-detection.v1
+  - isay.portfolio-anchor.v1
+
+  # OSPA, Trainee in Real Estate Product Development
+  - ospa.feasibility-anchor.v1
+  - ospa.numerical-feasibility-financial-modeling.v1
+  - ospa.zoning-land-use-regulatory.v1
+  - ospa.environmental-analysis.v1
+
+  # VIZU, Co-Founder
+  - vizu.studio-anchor.v1
+  - vizu.visualization-production.v1
+
+  # Felipe Hess Architects, Architect
+  - felipe.zoning-feasibility-study.v1
+  - felipe.portfolio-anchor.v1
+
+  # Itau-Unibanco, Intern in Project Management
+  - itau.building-environmental-energy.v1
+  - itau.furniture-inventory-tool.v1
+  - itau.new-office-towers-technical.v1
+  - itau.documentation-review-anchor.v1
+
+projects:
+  - project.real-estate-development
+  - project.embodied-carbon-toolkit
+  - project.house-price-prediction
+  - project.masters-thesis-computational

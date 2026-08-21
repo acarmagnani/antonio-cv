@@ -1,0 +1,12 @@
+Estimado equipo de selección de AECOM,
+
+Soy arquitecto de formación, pero lo que siempre me atrajo del oficio no fue el proyecto en sí, sino la pregunta que viene antes, cómo se comporta un edificio, cuánto carbono y energía cuesta, y cómo tomar esas decisiones con datos en lugar de intuición. Seguir esa pregunta me llevó de la práctica de arquitectura en Brasil a un M.Arch. en Architecture Computation en The Royal Danish Academy, centrado en métodos computacionales aplicados a la sostenibilidad. El equipo de Sustainable Design de AECOM en Madrid, que lidera la respuesta a la emergencia climática desde el concepto hasta la entrega, es donde quiero seguir haciendo exactamente eso.
+
+En Isay Weinfeld trabajé la sostenibilidad desde la fase más temprana del diseño. Ejecutaba simulaciones de luz natural y exposición solar con Ladybug en Grasshopper para orientar las decisiones de masa y orientación de los edificios, cuantificando la incidencia de luz a lo largo de las plantas antes de fijar la geometría. Es el momento en el que las decisiones de sostenibilidad todavía valen algo, cuando aún se puede cambiar el edificio, y es justo la fase en la que esta posición sitúa el análisis de rendimiento ambiental.
+
+Ese trabajo se apoya en dos hilos que traigo conmigo, el carbono y los datos. Con una startup de LCA en Copenhague desarrollé un toolkit en Revit para calcular carbono incorporado, integrando sus valores de GWP para las etapas A1-A3 y A4, y en mi proyecto de biomasa azul apliqué métricas de LCA y simulaciones paramétricas para optimizar el desempeño estructural y el impacto ambiental de un material nuevo, trabajo que terminó siendo la base de la instalación de la escuela en la Biennale de Venecia 2025. En paralelo construí flujos de trabajo paramétricos y de datos, desde un plugin de Grasshopper en Python hasta una herramienta de machine learning que genera recomendaciones de desarrollo integrando datos financieros, sociales y de sostenibilidad. Es el tipo de flujo data-driven y paramétrico que pide esta posición, puesto ya al servicio de decisiones de bajo carbono.
+
+Me interesa AECOM porque ahí la sostenibilidad no es un añadido al final, sino la estrategia que guía el proyecto desde el concepto, sobre una cartera internacional y multidisciplinar. Es donde quiero llevar mi lado de arquitecto y mi lado computacional al mismo trabajo.
+
+Un cordial saludo,
+Antonio Carmagnani

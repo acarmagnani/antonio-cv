@@ -94,6 +94,49 @@
       }));
     }
 
+    // ---------- Selection resolver ----------
+    // A per-application selection.yaml lists only IDs. We resolve them against
+    // content_base.yaml here, so no CV text is ever copied into an application
+    // folder. Bullet order inside each role follows the order given in the file.
+    function resolveSelection(sel, base) {
+      const variantById = new Map();
+      (base.experience || []).forEach((role, ri) => {
+        (role.points || []).forEach((point, pi) => {
+          (point.variants || []).forEach(v => {
+            if (v.id) variantById.set(v.id, { text: v.text, ri, pi });
+          });
+        });
+      });
+
+      const wanted = sel.bullets || [];
+      const rank = new Map(wanted.map((id, i) => [id, i]));
+
+      const missing = wanted.filter(id => !variantById.has(id));
+      if (missing.length) throw new Error(`Unknown bullet id(s): ${missing.join(', ')}`);
+
+      const experience = (base.experience || []).map((role, ri) => {
+        const bullets = wanted
+          .filter(id => variantById.get(id).ri === ri)
+          .sort((a, b) => rank.get(a) - rank.get(b))
+          .map(id => variantById.get(id).text);
+        return {
+          title: role.title, org: role.org, location: role.location,
+          start: role.start, end: role.end, bullets,
+        };
+      }).filter(role => role.bullets.length > 0);
+
+      const profile = (base.profiles || []).find(p => p.id === sel.profile);
+      if (sel.profile && !profile) throw new Error(`Unknown profile id: ${sel.profile}`);
+
+      const byProjectId = new Map((base.projects || []).map(p => [p.id, p]));
+      const projects = (sel.projects || []).map(id => {
+        if (!byProjectId.has(id)) throw new Error(`Unknown project id: ${id}`);
+        return byProjectId.get(id);
+      });
+
+      return { profile: profile ? profile.text : null, experience, projects };
+    }
+
     async function loadYAML(path) {
       const res = await fetch(path, { cache: 'no-cache' });
       if (!res.ok) throw new Error(`Failed to fetch ${path}: ${res.status}`);
@@ -252,7 +295,16 @@
         if (pointerRes.ok) {
           const pointer = (await pointerRes.text()).trim();
           if (pointer) {
-            tailoredData = await loadYAML(`../../applications/${pointer}/content_tailored.yaml`);
+            const dir = `../../applications/${pointer}`;
+            try {
+              // Preferred format: selection.yaml (ids only, resolved against base).
+              const sel = await loadYAML(`${dir}/selection.yaml`);
+              tailoredData = resolveSelection(sel, baseData);
+            } catch (selErr) {
+              if (/Unknown (bullet|profile|project)/.test(selErr.message)) throw selErr;
+              // Legacy format: content_tailored.yaml with full text copied in.
+              tailoredData = await loadYAML(`${dir}/content_tailored.yaml`);
+            }
           }
         }
       } catch (e) {

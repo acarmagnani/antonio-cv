@@ -1,0 +1,13 @@
+# Strategy — Cushman & Wakefield, Research Analyst Germany
+
+**Positioning:** someone who builds the database rather than only reading it. This posting is unusually literal about its toolkit (Excel, Power BI, Power Query, ArcGIS, QGIS) and about the work (collect data, maintain databases, analyse market dynamics, turn it into reports and presentations). Antonio matches it item by item, which almost never happens. The application leans hard on that, and treats the real estate research function as the natural landing point for a background that has been circling it from three directions.
+
+**Profile chosen:** `profile.proptech-real-estate`. It opens on real estate and financial analysis, then names GIS and spatial analysis plus machine learning applied to property and market data, which is a research analyst's toolkit stated in real estate terms. `profile.proptech` names QGIS explicitly but frames him as a computational designer and drags in Grasshopper, which is noise here.
+
+**Threads to lead with:**
+
+1. **Sweco, the anchor.** Building geospatial databases in QGIS, compiling georeferenced asset locations from agency data, satellite imagery and open sources, and producing the cartographic output that fed methodology and proposal documents across multiple international projects. This is data collection, database maintenance and GIS delivery, which is the first bullet of the job description almost word for word.
+2. **Ramboll, research that feeds business development.** An internal market study mapping 20+ critical raw material supply chains from authoritative industry databases, connecting regulatory drivers to concrete business development targets, plus a peer benchmarking analysis comparing a client against industry competitors to identify gaps and positioning. Desk research and competitive intelligence, aimed at generating opportunities, which is exactly what this role exists to do.
+3. **OSPA, real estate market metrics and the client-facing half.** Sizing viability against price per square metre, unit mix and buildable area across Brazilian and US markets, then producing the images, plans and diagrams and presenting the outcome to developer clients.
+
+**The language question:** the posting states no language requirement, so the letter does not confess to having no German. Instead it carries a short line on working across markets and languages, currently operating in English from Denmark, which positions the EMEA angle honestly without manufacturing a doubt. Antonio should ask the recruiter directly whether the role runs in English before investing further in the process.

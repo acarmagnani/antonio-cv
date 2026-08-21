@@ -11,7 +11,7 @@
 1. Crio a pasta `applications/AAAA-MM-empresa-cargo/`
 2. Colo o anúncio da vaga num `job_description.md` dentro dela
 3. Peço pro Claude: **"tailora meu CV pra essa vaga"**
-   - Ele seleciona os bullets relevantes (verbatim, sem inventar), escreve o `content_tailored.yaml`,
+   - Ele seleciona os bullets relevantes (só os ids, sem copiar texto), escreve o `selection.yaml`,
      roda o verificador e aponta o `active_application.txt` pra essa pasta.
 4. (Opcional) Peço: **"escreve a cover letter pra essa vaga"**, e passo 2-3 frases sobre por que essa empresa.
    Ele escreve o `cover_letter.md` seguindo o `cover_letter_base.md`.
@@ -23,8 +23,9 @@
 - **Ver o CV completo (sem tailoring):** esvazio o `active_application.txt` e rodo o make_cv_pdf.
 
 ## Regras de ouro
-- No tailoring o Claude **só seleciona**, nunca reescreve meus bullets. O verificador (`system/verify_cv.py`) garante isso.
-- Se eu quiser mudar o texto de um bullet, mudo no **content_base.yaml** (a fonte da verdade). Nunca no `content_tailored.yaml`.
+- No tailoring o Claude **só seleciona**: a pasta da candidatura guarda apenas ids, nunca texto de CV. O validador (`system/select_cv.py`) confere que todo id existe.
+- Se eu quiser mudar o texto de um bullet, mudo no **content_base.yaml** (a fonte da verdade). Muda em todos os CVs de uma vez.
+- Para gerar os PDFs da candidatura ativa: `python system/make_pdfs.py`.
 
 ## Pastas
 - **applications/** — uma pasta por vaga.

@@ -1,0 +1,50 @@
+# Urban Partners, Investment Analyst, Nordic Credit
+# Angle: several years spent judging whether a real estate project holds up
+# under its own numbers, now moving from the developer side to the capital side.
+
+profile: profile.proptech-real-estate
+
+bullets:
+  # Sweco Danmark, Project Assistant
+  - sweco.department-anchor.v1
+  - sweco.project-pricing-model.v1
+  - sweco.engineering-design-review.v1
+  - sweco.climate-risk-assessments.v2
+  - sweco.geospatial-data-and-analysis.v1
+
+  # Ramboll Management Consulting, Intern in Responsible Business Conduct
+  - ramboll.genesta-code-of-conduct.v1
+  - ramboll.real-estate-esg.v1
+  - ramboll.critical-raw-materials-study.v2
+  - ramboll.colt-peer-benchmark.v1
+  - ramboll.frameworks-anchor.v1
+
+  # Isay Weinfeld Architects, Architect
+  - isay.portfolio-anchor.v1
+  - isay.staircase-grasshopper-plugin.v1
+  - isay.client-and-consultant-coordination.v1
+
+  # OSPA, Trainee in Real Estate Product Development
+  - ospa.numerical-feasibility-financial-modeling.v1
+  - ospa.feasibility-anchor.v1
+  - ospa.zoning-land-use-regulatory.v1
+  - ospa.client-presentations.v1
+
+  # VIZU, Co-Founder
+  - vizu.studio-anchor.v1
+  - vizu.visualization-production.v1
+
+  # Felipe Hess Architects, Architect
+  - felipe.zoning-feasibility-study.v1
+  - felipe.portfolio-anchor.v1
+
+  # Itau-Unibanco, Intern in Project Management
+  - itau.building-environmental-energy.v1
+  - itau.documentation-review-anchor.v1
+  - itau.new-office-towers-technical.v1
+
+projects:
+  - project.house-price-prediction
+  - project.real-estate-development
+  - project.masters-thesis-computational
+  - project.embodied-carbon-toolkit

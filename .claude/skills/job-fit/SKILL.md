@@ -14,12 +14,12 @@ his odds, and whether the role moves him toward the career he wants.
 - The **job posting** he pasted or pointed to.
 - `content_base.yaml` (his real experience and skills) and the "About Antonio" section of
   `CLAUDE.md`.
-- `system/context.md` — the versioned personal context (travels with the repo across machines):
+- `notes/context.md` — the versioned personal context (travels with the repo across machines):
   - **Job search 2026** — work eligibility (Italian / EU citizen, so no visa in the EU/EEA; UK
     needs sponsorship post-Brexit), Spanish fluent, contract timing, the two open directions.
   - **Ambitions** — the professional he wants to become (the "future" axis).
   - **Journey** — his background arc.
-- If his ambitions or a key constraint are not clear from `system/context.md`, ask one short
+- If his ambitions or a key constraint are not clear from `notes/context.md`, ask one short
   question rather than guessing (and offer to record the answer in that file).
 
 ## Judge honestly
@@ -28,8 +28,15 @@ his odds, and whether the role moves him toward the career he wants.
   level, a credential he lacks such as BREEAM, a tool he does not have such as Presto).
 - **Eligibility is often decisive.** EU roles are clean (Italian passport, Spanish); UK roles
   need sponsorship; always check the geography first.
-- **Level.** Is it a proper step, or junior / graduate / intern / short fixed-term? He is not
-  interested in junior or temporary roles.
+- **Level. Always state the direction explicitly: below, at, or above his level, and by how much.**
+  Benchmark against what he actually has: roughly 4.5 years total including internships and the
+  trainee role, of which ~18 months titled "Architect" (Isay Weinfeld), most recent title "Project
+  Assistant", no line management, no project P&L ownership. A "Lead"/"Senior"/"Head" title asking
+  for team leadership and budget responsibility is several steps above him; say so plainly.
+  Analyst and other entry/junior roles are fine when they are a genuine entry rung into his target
+  field; do not treat "junior" as a negative. He has finished studying, so internships are not
+  relevant. Separate the two failure modes: too senior is a timing problem that fixes itself,
+  wrong direction does not.
 - **Realistic odds.** Weigh must-have gaps, level, eligibility, and how competitive he would be.
   Do not inflate; a clear skip should be called a skip.
 - **Salary**, only if he asks: recalibrate to the LOCAL market (not his Nordic salary), and say
@@ -37,20 +44,22 @@ his odds, and whether the role moves him toward the career he wants.
 
 ## Output — SHORT, in Portuguese (his language)
 
-Five compact lines, skimmable, no preamble, roughly this shape:
+Six compact lines, skimmable, no preamble, roughly this shape:
 
 **Veredito:** Aplica / Talvez / Pula, <meia linha do porquê>
 **Encaixe:** <principais matches; gaps reais> (1-2 linhas)
+**Senioridade:** Abaixo / No nível / Acima, <quantos degraus e o que a vaga pede que ele não tem> (1 linha)
 **Chance de entrar:** Baixa / Média / Alta, <por quê: elegibilidade, nível, gaps decisivos> (1 linha)
 **Futuro:** <serve às ambições dele? geografia faz sentido? desenvolve o profissional que ele quer ser?> (1-2 linhas)
 **Bottom line:** <1 linha, a recomendação>
 
-Keep the whole thing under ~150 words. No headers beyond these labels, no long analysis.
+Never skip **Senioridade**, including when the match is good ("No nível" is useful information).
+Keep the whole thing under ~170 words. No headers beyond these labels, no long analysis.
 
 ## If Antonio says go
 
 Hand off, keeping chatter minimal:
-1. **cv-tailoring** skill — select verbatim from `content_base.yaml`, run `verify_cv.py`, point
+1. **cv-tailoring** skill — select ids from `content_base.yaml`, run `select_cv.py`, point
    `active_application.txt`.
 2. **cover-letter** skill — journey-led storytelling per `cover_letter_base.md`; Spanish for
    roles in Spain, CV in English.

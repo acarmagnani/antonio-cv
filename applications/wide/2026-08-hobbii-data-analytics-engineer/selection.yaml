@@ -1,0 +1,50 @@
+# Hobbii, Data & Analytics Engineer
+# Angle: the person who builds the data tool nobody else was going to build,
+# owns it end to end, and gets the business to actually use it.
+
+profile: profile.proptech
+
+bullets:
+  # Sweco Danmark, Project Assistant
+  - sweco.geospatial-data-and-analysis.v1
+  - sweco.project-pricing-model.v1
+  - sweco.office-gis-lead.v1
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  - sweco.department-anchor.v1
+
+  # Ramboll Management Consulting, Intern in Responsible Business Conduct
+  - ramboll.colt-salience-tool.v2
+  - ramboll.ai-in-research-workflow.v1
+  - ramboll.nordzucker-hria-tool.v1
+  - ramboll.critical-raw-materials-study.v2
+  - ramboll.frameworks-anchor.v1
+
+  # Isay Weinfeld Architects, Architect
+  - isay.staircase-grasshopper-plugin.v1
+  - isay.staircase-plugin-adoption-teaching.v1
+  - isay.complex-organic-parametric-modeling.v1
+  - isay.portfolio-anchor.v1
+
+  # OSPA, Trainee in Real Estate Product Development
+  - ospa.numerical-feasibility-financial-modeling.v1
+  - ospa.client-presentations.v1
+  - ospa.feasibility-anchor.v1
+
+  # VIZU, Co-Founder
+  - vizu.studio-anchor.v1
+  - vizu.visualization-production.v1
+
+  # Felipe Hess Architects, Architect
+  - felipe.zoning-feasibility-study.v1
+  - felipe.portfolio-anchor.v1
+
+  # Itau-Unibanco, Intern in Project Management
+  - itau.furniture-inventory-tool.v1
+  - itau.building-environmental-energy.v1
+  - itau.documentation-review-anchor.v1
+
+projects:
+  - project.house-price-prediction
+  - project.real-estate-development
+  - project.masters-thesis-computational
+  - project.embodied-carbon-toolkit

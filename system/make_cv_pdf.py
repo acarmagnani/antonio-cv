@@ -27,22 +27,55 @@ ROOT = Path(__file__).parent.parent.resolve()
 os.chdir(ROOT)
 PORT = 8123
 
-# Prefer Chrome; fall back to Edge (both are Chromium and support --print-to-pdf).
-CANDIDATES = [
-    r"C:\Program Files\Google\Chrome\Application\chrome.exe",
-    r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
-    r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
-    r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
-]
+# Prefer Chrome; fall back to Edge/Chromium (all are Chromium and support --print-to-pdf).
+if sys.platform == "win32":
+    CANDIDATES = [
+        r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+        r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+        r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+        r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
+    ]
+elif sys.platform == "darwin":
+    CANDIDATES = [
+        "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+        "/Applications/Chromium.app/Contents/MacOS/Chromium",
+    ]
+else:
+    CANDIDATES = [
+        "/usr/bin/google-chrome",
+        "/usr/bin/chromium-browser",
+        "/usr/bin/chromium",
+    ]
+
 chrome = next((c for c in CANDIDATES if Path(c).exists()), None) \
-    or shutil.which("chrome") or shutil.which("msedge")
+    or shutil.which("chrome") or shutil.which("google-chrome") \
+    or shutil.which("chromium") or shutil.which("msedge")
+
 if not chrome:
-    sys.exit("No Chrome or Edge found. Add its path to CANDIDATES in make_cv_pdf.py.")
+    # No system browser: fall back to a Playwright-downloaded Chromium if one
+    # is already cached locally (e.g. from `npx playwright install`), so
+    # rendering doesn't require installing a full browser just for this.
+    for cache in (Path.home() / "Library/Caches/ms-playwright", Path.home() / ".cache/ms-playwright"):
+        if cache.exists():
+            matches = sorted(cache.glob("chromium*/**/Chromium.app/Contents/MacOS/Chromium")) \
+                or sorted(cache.glob("chromium*/**/chrome"))
+            if matches:
+                chrome = str(matches[-1])
+                break
+
+if not chrome:
+    sys.exit("No Chrome, Edge, or Chromium found. Install one, or add its path to CANDIDATES in make_cv_pdf.py.")
+
+# Ad-hoc Chromium builds (e.g. Playwright's) lack the setuid sandbox helper a
+# packaged browser install has; --no-sandbox is safe since we only render
+# trusted local HTML. Harmless to keep off on Windows, where it isn't needed.
+SANDBOX_FLAGS = [] if sys.platform == "win32" else ["--no-sandbox"]
 
 def company_name(app):
     """From an application folder 'YYYY-MM-company-role', take the token right
     after the date as the company (e.g. jacobs -> Jacobs)."""
-    rest = re.sub(r"^\d{4}-\d{2}-", "", app)
+    rest = re.sub(r"^\d{4}-\d{2}-", "", app.split("/")[-1])
     return rest.split("-")[0].capitalize() or "Application"
 
 
@@ -76,6 +109,7 @@ try:
     subprocess.run(
         [
             chrome,
+            *SANDBOX_FLAGS,
             "--headless=new",
             "--disable-gpu",
             "--no-pdf-header-footer",

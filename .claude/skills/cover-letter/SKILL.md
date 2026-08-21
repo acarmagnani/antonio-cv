@@ -16,7 +16,7 @@ letter what content_base.yaml is to the CV: the reference every letter is writte
 - `applications/YYYY-MM-company-role/job_description.md` — what the role actually needs.
 - `content_base.yaml` — source for the experiences, skills, and numbers to cite (verbatim
   facts; you may phrase them naturally in the letter, but never invent).
-- `applications/YYYY-MM-company-role/strategy.md` and `content_tailored.yaml`, if present —
+- `applications/YYYY-MM-company-role/strategy.md` and `selection.yaml`, if present —
   keep the letter consistent with how the CV was positioned for this role.
 - Any per-application notes from Antonio (why this company, a hook). These are gold; if he
   gave none and a genuine company hook isn't clear, ask him for one or two sentences.

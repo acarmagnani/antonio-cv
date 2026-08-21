@@ -1,0 +1,13 @@
+# Strategy — Greystar, Development Analyst (Netherlands)
+
+**Positioning:** someone who has already done the core of this job, on a smaller stage. The role is feasibility and underwriting for residential development, which is exactly what OSPA was, plus planning and building-regulation literacy, which runs through four of his seven roles. This is the first application in the batch with no hard filter against him, so the letter does not spend a single line apologising for a gap. It competes on the work itself.
+
+**Profile chosen:** `profile.real-estate`. It reads almost as the posting does, naming real estate development, feasibility and financial modeling grounded in zoning and land-use analysis across multiple markets, then P&L modeling and buildable-potential analysis as hands-on skills. `profile.proptech-real-estate` would foreground computational design, which is a differentiator but not what a development analyst is hired for. The data angle carries in the projects section instead, where it reads as an edge rather than a detour.
+
+**Threads to lead with:**
+
+1. **OSPA, the anchor.** 15+ feasibility studies for developer clients in São Paulo, Rio, Porto Alegre and Miami. Sizing investment and return against buildable area, unit mix, price per square metre and parking. Reading municipal master plans and land-use law to establish development potential and find the regulatory room to maximise buildable value. Presenting the outcome to the client. That is the pro-forma, the market read, the planning work and the client-facing report, all in one role.
+2. **The data edge.** The Copenhagen development recommendation tool (machine learning over financial, social, sustainability and geospatial data, with stakeholder-adjustable weighting) and a top 2% finish in a valuation modelling competition using ensemble learning on property and financial data. Greystar asks for someone who turns complex data into clear reports. Most analysts at this level cannot build the model as well as read it.
+3. **Itaú-Unibanco, acquisition due diligence.** Assessing the environmental and energy performance of buildings the bank was acquiring or leasing as part of internal due diligence, and reviewing technical documentation against building, accessibility and fire-safety norms. Backs both the due diligence responsibility and the stated interest in building regulations.
+
+**Soft gaps, not named in the letter:** no BTR or PBSA specifically, no closed transaction, no Dutch. None of these is a stated must-have, so raising them unprompted would only manufacture a doubt the reader did not have.

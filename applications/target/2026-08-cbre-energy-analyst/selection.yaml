@@ -1,0 +1,51 @@
+# CBRE GWS, Energy Analyst
+# Angle: measuring how buildings and assets actually perform, against a
+# structured framework, and turning that into something people act on.
+
+profile: profile.esg-consulting
+
+bullets:
+  # Sweco Danmark, Project Assistant
+  - sweco.climate-risk-assessments.v1
+  - sweco.azerbaijan-field-mission.v1
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  - sweco.geospatial-data-and-analysis.v1
+  - sweco.department-anchor.v1
+
+  # Ramboll Management Consulting, Intern in Responsible Business Conduct
+  - ramboll.real-estate-esg.v1
+  - ramboll.colt-salience-tool.v2
+  - ramboll.colt-human-rights-workshop.v1
+  - ramboll.nordzucker-hria-tool.v1
+  - ramboll.frameworks-anchor.v1
+
+  # Isay Weinfeld Architects, Architect
+  - isay.environmental-daylight-analysis.v1
+  - isay.bim-coordination-clash-detection.v1
+  - isay.staircase-grasshopper-plugin.v1
+  - isay.portfolio-anchor.v1
+
+  # OSPA, Trainee in Real Estate Product Development
+  - ospa.environmental-analysis.v1
+  - ospa.numerical-feasibility-financial-modeling.v1
+  - ospa.feasibility-anchor.v1
+
+  # VIZU, Co-Founder
+  - vizu.studio-anchor.v1
+  - vizu.visualization-production.v1
+
+  # Felipe Hess Architects, Architect
+  - felipe.environmental-analysis.v1
+  - felipe.portfolio-anchor.v1
+
+  # Itau-Unibanco, Intern in Project Management
+  - itau.building-environmental-energy.v1
+  - itau.new-office-towers-technical.v1
+  - itau.furniture-inventory-tool.v1
+  - itau.documentation-review-anchor.v1
+
+projects:
+  - project.embodied-carbon-toolkit
+  - project.real-estate-development
+  - project.rammed-blue-biomass
+  - project.masters-thesis-computational

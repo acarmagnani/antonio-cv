@@ -1,0 +1,46 @@
+profile: profile.real-estate
+
+bullets:
+  # Sweco Danmark A/S — Project Assistant in International Infrastructure Projects
+  - sweco.department-anchor.v1
+  - sweco.project-pricing-model.v1
+  - sweco.azerbaijan-field-mission.v1
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  - sweco.tender-methodology.v1
+
+  # Ramboll Management Consulting — Intern in Responsible Business Conduct
+  - ramboll.frameworks-anchor.v1
+  - ramboll.real-estate-esg.v1
+  - ramboll.colt-peer-benchmark.v1
+  - ramboll.colt-salience-tool.v2
+
+  # Isay Weinfeld Architects — Architect
+  - isay.portfolio-anchor.v1
+  - isay.client-and-consultant-coordination.v1
+  - isay.staircase-grasshopper-plugin.v1
+
+  # OSPA — Trainee in Real Estate Product Development
+  - ospa.feasibility-anchor.v1
+  - ospa.numerical-feasibility-financial-modeling.v1
+  - ospa.zoning-land-use-regulatory.v1
+  - ospa.volumetric-massing-study.v1
+  - ospa.client-presentations.v1
+
+  # VIZU — Co-Founder
+  - vizu.studio-anchor.v1
+  - vizu.visualization-production.v1
+
+  # Felipe Hess Architects — Architect
+  - felipe.portfolio-anchor.v1
+  - felipe.zoning-feasibility-study.v1
+
+  # Itaú-Unibanco — Intern in Project Management
+  - itau.documentation-review-anchor.v1
+  - itau.building-environmental-energy.v1
+  - itau.new-office-towers-technical.v1
+
+projects:
+  - project.house-price-prediction
+  - project.real-estate-development
+  - project.masters-thesis-computational
+  - project.embodied-carbon-toolkit

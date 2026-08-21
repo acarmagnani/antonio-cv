@@ -8,19 +8,28 @@ meta:
 # Profile variants. Selection picks the one with the highest tag overlap with
 # the job, used verbatim (no rewriting). Same selection logic as the bullets.
 profiles:
-  - tags: [esg, consulting]
+  - id: profile.esg-consulting
+    tags: [esg, consulting]
     text: "Experience across sustainability consulting and the built environment, from ESG and human rights due diligence to climate risk work on internationally financed infrastructure. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to sustainability. Hands-on skills span the UNGP and OECD due-diligence frameworks, climate hazard and risk assessment, and building structured analytical tools in Excel and Python. Motivated by work where sustainability, the built environment, and rigorous analysis intersect."
 
-  - tags: [proptech]
+  - id: profile.real-estate-esg-data
+    tags: [real-estate, esg, proptech, consulting]
+    text: "Experience across real estate development and sustainability consulting, from feasibility and financial modeling to ESG due diligence, building energy assessment, and climate risk work on internationally financed infrastructure. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to real estate and sustainability. Hands-on skills span feasibility and financial modeling, building energy and environmental performance analysis, GIS, and structured analytical tools in Excel, Power BI, and Python. Motivated by work where real estate, sustainability, and rigorous analysis intersect."
+
+  - id: profile.proptech
+    tags: [proptech]
     text: "Experience in computational design and data analysis for real estate and cities, spanning academic research and architecture practice. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on computational and data methods for real estate and urban development. Hands-on skills span Python, QGIS, and machine learning, parametric workflows in Grasshopper, and building data tools that turn spatial and financial data into decisions. Motivated by work where the built environment, technology, and data intersect."
 
-  - tags: [proptech, real-estate]
+  - id: profile.proptech-real-estate
+    tags: [proptech, real-estate]
     text: "Experience across real estate development and computational design, from feasibility and financial analysis to spatial and predictive modeling. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on computational and data methods for real estate and urban development. Hands-on skills span financial feasibility modeling, GIS and spatial analysis, and machine learning applied to property and market data. Motivated by work where real estate, technology, and data intersect."
 
-  - tags: [real-estate]
+  - id: profile.real-estate
+    tags: [real-estate]
     text: "Experience in real estate development, feasibility, and financial modeling, grounded in zoning and land-use analysis across multiple markets. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on computational and data methods for real estate and urban development. Hands-on skills span feasibility and P&L modeling, zoning and buildable-potential analysis, and volumetric studies in Revit. Motivated by work where real estate, finance, and design intersect."
 
-  - tags: [infrastructure, consulting]
+  - id: profile.infrastructure-consulting
+    tags: [infrastructure, consulting]
     text: "Experience in international infrastructure consulting on water and energy projects across emerging economies, working from tender through delivery. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to the built environment. Hands-on skills span climate risk assessment (JASPERS/EBRD), GIS-based spatial analysis, and preparing technical documentation and tenders for development-bank-funded projects. Motivated by work where infrastructure, sustainability, and technical analysis intersect."
 
 experience:
@@ -28,63 +37,75 @@ experience:
     org: "Sweco Danmark A/S"
     location: "Copenhagen, DK"
     start: "2026-02"
-    end: "Present"
+    end: "2026-07"
     points:
       - point: "Department anchor (always shows Sweco's core)"
         variants:
-          - text: "Support consulting teams delivering internationally funded infrastructure projects in water, energy, and transport across emerging and developing economies, financed by development banks including the World Bank, EBRD, IFDK, KfW and EIB."
+          - id: sweco.department-anchor.v1
+            text: "Support consulting teams delivering internationally funded infrastructure projects in water, energy, and transport across emerging and developing economies, financed by development banks including the World Bank, EBRD, IFDK, KfW and EIB."
             tags: [infrastructure, consulting, generic]
 
       - point: "Climate risk assessments (showpiece)"
         variants:
-          - text: "Authored climate risk assessments for major water supply projects following JASPERS and EBRD climate-proofing guidance, screening hazards against projections data and rating risk by exposure and vulnerability for each asset."
+          - id: sweco.climate-risk-assessments.v1
+            text: "Authored climate risk assessments for major water supply projects following JASPERS and EBRD climate-proofing guidance, screening hazards against projections data and rating risk by exposure and vulnerability for each asset."
             tags: [esg, infrastructure]
-          - text: "Produced the climate risk and adaptation chapters of project Inception Reports for internationally financed water projects, translating climate projections into hazard, risk, and adaptation findings for client and lender review."
+          - id: sweco.climate-risk-assessments.v2
+            text: "Produced the climate risk and adaptation chapters of project Inception Reports for internationally financed water projects, translating climate projections into hazard, risk, and adaptation findings for client and lender review."
             tags: [esg, consulting]
 
       - point: "Azerbaijan field mission (asset assessment)"
         variants:
-          - text: "Joined a field mission across Baku's water supply system, assessing asset condition and identifying technical, social, environmental, and human rights risks through site inspections and interviews."
+          - id: sweco.azerbaijan-field-mission.v1
+            text: "Joined a field mission across Baku's water supply system, assessing asset condition and identifying technical, social, environmental, and human rights risks through site inspections and interviews."
             tags: [infrastructure, esg, consulting]
 
       - point: "Azerbaijan stakeholder meetings and data gathering"
         variants:
-          - text: "Engaged national water agencies and government counterparts during the field missions to align on rehabilitation priorities and collect technical and geographic project data."
+          - id: sweco.azerbaijan-stakeholder-meetings.v1
+            text: "Engaged national water agencies and government counterparts during the field missions to align on rehabilitation priorities and collect technical and geographic project data."
             tags: [consulting, infrastructure]
 
       - point: "Geospatial data and analysis"
         variants:
-          - text: "Built geospatial databases for water and infrastructure projects in QGIS, compiling georeferenced asset locations from agency data, satellite imagery, and open sources for socio-spatial analysis."
+          - id: sweco.geospatial-data-and-analysis.v1
+            text: "Built geospatial databases for water and infrastructure projects in QGIS, compiling georeferenced asset locations from agency data, satellite imagery, and open sources for socio-spatial analysis."
             tags: [proptech, infrastructure]
 
       - point: "Office GIS lead across projects"
         variants:
-          - text: "Produced cartographic material locating infrastructure across multiple international projects to support methodology and proposal documents."
+          - id: sweco.office-gis-lead.v1
+            text: "Produced cartographic material locating infrastructure across multiple international projects to support methodology and proposal documents."
             tags: [infrastructure, consulting]
 
       - point: "Tender bid-team assembly"
         variants:
-          - text: "Assembled bid teams for competitive international tenders, sourcing specialist consultants to evidence the local and technical expertise."
+          - id: sweco.tender-bid-team-assembly.v1
+            text: "Assembled bid teams for competitive international tenders, sourcing specialist consultants to evidence the local and technical expertise."
             tags: [consulting, infrastructure]
 
       - point: "Tender methodology"
         variants:
-          - text: "Contributed to the technical and methodology sections of tender proposals, articulating Sweco's delivery approach for infrastructure project bids."
+          - id: sweco.tender-methodology.v1
+            text: "Contributed to the technical and methodology sections of tender proposals, articulating Sweco's delivery approach for infrastructure project bids."
             tags: [consulting, infrastructure]
 
       - point: "Engineering design review"
         variants:
-          - text: "Reviewed engineering designs across multiple infrastructure projects under FIDIC Yellow Book arrangements, checking specifications against subconsultants' technical drawings."
+          - id: sweco.engineering-design-review.v1
+            text: "Reviewed engineering designs across multiple infrastructure projects under FIDIC Yellow Book arrangements, checking specifications against subconsultants' technical drawings."
             tags: [infrastructure, consulting]
 
       - point: "Project pricing model"
         variants:
-          - text: "Developed a pricing tool to support bid decisions, parametrizing expert fee bands and project economics for financial viability testing of tender configurations."
+          - id: sweco.project-pricing-model.v1
+            text: "Developed a pricing tool to support bid decisions, parametrizing expert fee bands and project economics for financial viability testing of tender configurations."
             tags: [consulting, infrastructure]
 
       - point: "Bangladesh branch office setup"
         variants:
-          - text: "Supported the setup of a new Sweco branch office in Bangladesh, drafting employment contracts and managing the full insurance onboarding."
+          - id: sweco.bangladesh-branch-office-setup.v1
+            text: "Supported the setup of a new Sweco branch office in Bangladesh, drafting employment contracts and managing the full insurance onboarding."
             tags: [consulting]
 
   - title: "Intern in Responsible Business Conduct"
@@ -95,56 +116,68 @@ experience:
     points:
       - point: "Frameworks anchor (always shows Ramboll's core)"
         variants:
-          - text: "Conducted human rights due diligence for corporate clients, applying the UN Guiding Principles on Business and Human Rights and OECD Guidelines to assess salient risks across global supply chains."
+          - id: ramboll.frameworks-anchor.v1
+            text: "Conducted human rights due diligence for corporate clients, applying the UN Guiding Principles on Business and Human Rights and OECD Guidelines to assess salient risks across global supply chains."
             tags: [esg, consulting, generic]
 
       - point: "Nordzucker HRIA tool"
         variants:
-          - text: "Built a Human Rights Impact Assessment tool, mapping 40+ salient human rights risks across supply chains, with severity scoring to prioritize the most material risks."
+          - id: ramboll.nordzucker-hria-tool.v1
+            text: "Built a Human Rights Impact Assessment tool, mapping 40+ salient human rights risks across supply chains, with severity scoring to prioritize the most material risks."
             tags: [esg, consulting]
 
       - point: "Colt salience tool (technical showpiece)"
         variants:
-          - text: "Developed a salience-based human rights due diligence, scoring risks across business units and supply chains by probability, scale, and scope to automatically prioritize salient risks."
+          - id: ramboll.colt-salience-tool.v1
+            text: "Developed a salience-based human rights due diligence, scoring risks across business units and supply chains by probability, scale, and scope to automatically prioritize salient risks."
             tags: [esg, consulting, generic]
-          - text: "Built a fully automated risk-assessment system in Excel, consolidating risk data across supply chains into a single dashboard that updated salient risks dynamically."
+          - id: ramboll.colt-salience-tool.v2
+            text: "Built a fully automated risk-assessment system in Excel, consolidating risk data across supply chains into a single dashboard that updated salient risks dynamically."
             tags: [proptech]
 
       - point: "Colt human rights workshop materials"
         variants:
-          - text: "Created workshop and training materials on business and human rights for a corporate client, drawing on real-world cases to illustrate human rights risks, their business repercussions, and mitigation measures."
+          - id: ramboll.colt-human-rights-workshop.v1
+            text: "Created workshop and training materials on business and human rights for a corporate client, drawing on real-world cases to illustrate human rights risks, their business repercussions, and mitigation measures."
             tags: [esg, consulting]
 
       - point: "Colt peer benchmark"
         variants:
-          - text: "Ran a peer benchmarking analysis for a corporate client, comparing its responsible business and human rights practices against industry competitors across multiple service areas to identify gaps, competitive advantages, and opportunities to strengthen its positioning."
+          - id: ramboll.colt-peer-benchmark.v1
+            text: "Ran a peer benchmarking analysis for a corporate client, comparing its responsible business and human rights practices against industry competitors across multiple service areas to identify gaps, competitive advantages, and opportunities to strengthen its positioning."
             tags: [esg, consulting]
 
       - point: "Genesta Code of Conduct review"
         variants:
-          - text: "Reviewed and strengthened the Code of Conduct ofreal estate investment managers, identifying gaps against international human rights standards to reduce its exposure to human rights and labor risks."
+          - id: ramboll.genesta-code-of-conduct.v1
+            text: "Reviewed and strengthened the Code of Conduct of real estate investment managers, identifying gaps against international human rights standards to reduce its exposure to human rights and labor risks."
             tags: [esg, real-estate, consulting]
 
       - point: "Genesta supplier human rights resource"
         variants:
-          - text: "Produced a supplier-facing human rights resource for real estate clients, mapping Code of Conducts to international instruments (UDHR, ICESCR, ICCPR) to help contractors and subcontractors meet labor expectations on site."
+          - id: ramboll.genesta-supplier-human-rights.v1
+            text: "Produced a supplier-facing human rights resource for real estate clients, mapping Code of Conducts to international instruments (UDHR, ICESCR, ICCPR) to help contractors and subcontractors meet labor expectations on site."
             tags: [esg, real-estate]
 
       - point: "Critical Raw Materials study"
         variants:
-          - text: "Mapped the global supply chains of 20+ critical raw materials under the EU Critical Raw Materials Act, profiling producing companies, sectors, and geographies from authoritative industry databases."
+          - id: ramboll.critical-raw-materials-study.v1
+            text: "Mapped the global supply chains of 20+ critical raw materials under the EU Critical Raw Materials Act, profiling producing companies, sectors, and geographies from authoritative industry databases."
             tags: [esg, consulting]
-          - text: "Led an internal market study mapping 20+ critical raw materials supply chains to identify prospective clients and new ESG service lines, connecting regulatory drivers to concrete business development targets."
+          - id: ramboll.critical-raw-materials-study.v2
+            text: "Led an internal market study mapping 20+ critical raw materials supply chains to identify prospective clients and new ESG service lines, connecting regulatory drivers to concrete business development targets."
             tags: [consulting, esg]
 
       - point: "Real estate ESG due diligence service deck"
         variants:
-          - text: "Developed a client-facing overview of the firm's real estate ESG due diligence services, centered on building energy and decarbonization assessments aligned with EU building performance regulations."
+          - id: ramboll.real-estate-esg.v1
+            text: "Developed a client-facing overview of the firm's real estate ESG due diligence services, centered on building energy and decarbonization assessments aligned with EU building performance regulations."
             tags: [esg, real-estate, consulting]
 
       - point: "AI in research workflow"
         variants:
-          - text: "Integrated AI research tools into due diligence workflows to source and cite human rights risk data at scale across high research volumes."
+          - id: ramboll.ai-in-research-workflow.v1
+            text: "Integrated AI research tools into due diligence workflows to source and cite human rights risk data at scale across high research volumes."
             tags: [esg, proptech]
 
   - title: "Architect"
@@ -155,44 +188,53 @@ experience:
     points:
       - point: "Portfolio anchor (always shows Isay's core)"
         variants:
-          - text: "Delivered high-end residential, hotel, and mixed-use projects across South America, North America, Europe, the Middle East, and Asia at one of Brazil's most prominent architecture studios."
+          - id: isay.portfolio-anchor.v1
+            text: "Delivered high-end residential, hotel, and mixed-use projects across South America, North America, Europe, the Middle East, and Asia at one of Brazil's most prominent architecture studios."
             tags: [real-estate, generic]
 
       - point: "Staircase Grasshopper plugin (showpiece)"
         variants:
-          - text: "Built a Grasshopper plugin in Python that generates bespoke staircases from a floor plan, cutting staircase modeling from days to around 20 minutes and enabling far more design iterations and geometric complexity."
+          - id: isay.staircase-grasshopper-plugin.v1
+            text: "Built a Grasshopper plugin in Python that generates bespoke staircases from a floor plan, cutting staircase modeling from days to around 20 minutes and enabling far more design iterations and geometric complexity."
             tags: [proptech, real-estate]
 
       - point: "Staircase plugin adoption / teaching"
         variants:
-          - text: "Presented the tool in a studio workshop and supported its adoption by colleagues across 10+ projects."
+          - id: isay.staircase-plugin-adoption-teaching.v1
+            text: "Presented the tool in a studio workshop and supported its adoption by colleagues across 10+ projects."
             tags: [proptech, consulting]
 
       - point: "Complex / organic parametric modeling"
         variants:
-          - text: "Scripted parametric and computational models in Rhino and Grasshopper for geometrically complex forms, supporting design development across projects."
+          - id: isay.complex-organic-parametric-modeling.v1
+            text: "Scripted parametric and computational models in Rhino and Grasshopper for geometrically complex forms, supporting design development across projects."
             tags: [proptech, real-estate]
 
       - point: "BIM coordination / clash detection"
         variants:
-          - text: "Coordinated multidisciplinary inputs (structural, HVAC, electrical, lighting) into a single Revit model."
+          - id: isay.bim-coordination-clash-detection.v1
+            text: "Coordinated multidisciplinary inputs (structural, HVAC, electrical, lighting) into a single Revit model."
             tags: [proptech, real-estate, consulting]
 
       - point: "BIM documentation / development"
         variants:
-          - text: "Produced executive and technical documentation and coordination models across multiple project phases."
+          - id: isay.bim-documentation-development.v1
+            text: "Produced executive and technical documentation and coordination models across multiple project phases."
             tags: [proptech, real-estate]
 
       - point: "Client and consultant coordination"
         variants:
-          - text: "Took part in client and consultant meetings to align design proposals with project requirements across disciplines."
+          - id: isay.client-and-consultant-coordination.v1
+            text: "Took part in client and consultant meetings to align design proposals with project requirements across disciplines."
             tags: [consulting, real-estate]
 
       - point: "Environmental / daylight analysis (Ladybug)"
         variants:
-          - text: "Optimized building orientation and massing for energy performance and daylight using environmental simulation."
+          - id: isay.environmental-daylight-analysis.v1
+            text: "Optimized building orientation and massing for energy performance and daylight using environmental simulation."
             tags: [esg, real-estate]
-          - text: "Ran daylight and solar-exposure simulations with Ladybug in Grasshopper to drive massing and orientation decisions, quantifying light incidence across building layouts."
+          - id: isay.environmental-daylight-analysis.v2
+            text: "Ran daylight and solar-exposure simulations with Ladybug in Grasshopper to drive massing and orientation decisions, quantifying light incidence across building layouts."
             tags: [proptech, esg]
 
   - title: "Trainee in Real Estate Product Development"
@@ -203,32 +245,38 @@ experience:
     points:
       - point: "Feasibility anchor (always shows OSPA's core)"
         variants:
-          - text: "Produced 15+ feasibility studies for mixed-use and residential developments across Brazil and the US (São Paulo, Rio de Janeiro, Porto Alegre, Miami) for developer clients."
+          - id: ospa.feasibility-anchor.v1
+            text: "Produced 15+ feasibility studies for mixed-use and residential developments across Brazil and the US (São Paulo, Rio de Janeiro, Porto Alegre, Miami) for developer clients."
             tags: [real-estate, generic]
 
       - point: "Numerical feasibility / financial modeling"
         variants:
-          - text: "Ran early-stage financial feasibility on candidate sites, sizing investment and return against buildable area, unit mix, price per square metre, and parking to test viability."
+          - id: ospa.numerical-feasibility-financial-modeling.v1
+            text: "Ran early-stage financial feasibility on candidate sites, sizing investment and return against buildable area, unit mix, price per square metre, and parking to test viability."
             tags: [real-estate]
 
       - point: "Zoning / land-use regulatory analysis"
         variants:
-          - text: "Analyzed municipal master plans and land-use law to determine development potential, unit counts, apartment sizing, and setback rules, identifying regulatory opportunities to maximize buildable value."
+          - id: ospa.zoning-land-use-regulatory.v1
+            text: "Analyzed municipal master plans and land-use law to determine development potential, unit counts, apartment sizing, and setback rules, identifying regulatory opportunities to maximize buildable value."
             tags: [real-estate]
 
       - point: "Volumetric massing study in Revit"
         variants:
-          - text: "Developed volumetric massing studies in Revit, resolving circulation, unit layouts, ground-floor active frontage, and parking against zoning metrics."
+          - id: ospa.volumetric-massing-study.v1
+            text: "Developed volumetric massing studies in Revit, resolving circulation, unit layouts, ground-floor active frontage, and parking against zoning metrics."
             tags: [real-estate, proptech]
 
       - point: "Environmental analysis"
         variants:
-          - text: "Ran preliminary environmental and solar studies to inform massing and layout decisions."
+          - id: ospa.environmental-analysis.v1
+            text: "Ran preliminary environmental and solar studies to inform massing and layout decisions."
             tags: [esg, real-estate, proptech]
 
       - point: "Client presentations"
         variants:
-          - text: "Produced images, plans, and diagrams and presented feasibility outcomes to developer clients."
+          - id: ospa.client-presentations.v1
+            text: "Produced images, plans, and diagrams and presented feasibility outcomes to developer clients."
             tags: [consulting, real-estate]
 
   - title: "Co-Founder"
@@ -239,17 +287,20 @@ experience:
     points:
       - point: "Studio anchor (always shows VIZU's core)"
         variants:
-          - text: "Co-founded and ran an architectural visualization studio, managing 10+ clients, project scoping and delivery, and hiring staff."
+          - id: vizu.studio-anchor.v1
+            text: "Co-founded and ran an architectural visualization studio, managing 10+ clients, project scoping and delivery, and hiring staff."
             tags: [consulting, real-estate, generic]
 
       - point: "Visualization production"
         variants:
-          - text: "Produced architectural renders, humanized plans, and visualizations to communicate residential and commercial designs to investors and end buyers."
+          - id: vizu.visualization-production.v1
+            text: "Produced architectural renders, humanized plans, and visualizations to communicate residential and commercial designs to investors and end buyers."
             tags: [proptech, real-estate]
 
       - point: "Design work"
         variants:
-          - text: "Developed architectural design for select client projects beyond visualization."
+          - id: vizu.design-work.v1
+            text: "Developed architectural design for select client projects beyond visualization."
             tags: [real-estate]
 
   - title: "Architect"
@@ -260,27 +311,32 @@ experience:
     points:
       - point: "Portfolio anchor (always shows Felipe Hess's core)"
         variants:
-          - text: "Developed high-end residential projects in São Paulo and Rio de Janeiro from preliminary studies through technical documentation, working in Revit, AutoCAD, and SketchUp."
+          - id: felipe.portfolio-anchor.v1
+            text: "Developed high-end residential projects in São Paulo and Rio de Janeiro from preliminary studies through technical documentation, working in Revit, AutoCAD, and SketchUp."
             tags: [real-estate, generic]
 
       - point: "Zoning / feasibility study"
         variants:
-          - text: "Carried out a zoning and feasibility study under São Paulo's master plan for residential buildings, determining buildable potential, apartment sizing, and compliance with fire and elevator regulations."
+          - id: felipe.zoning-feasibility-study.v1
+            text: "Carried out a zoning and feasibility study under São Paulo's master plan for residential buildings, determining buildable potential, apartment sizing, and compliance with fire and elevator regulations."
             tags: [real-estate]
 
       - point: "BIM documentation"
         variants:
-          - text: "Produced BIM documentation in Revit and construction drawings across design phases."
+          - id: felipe.bim-documentation.v1
+            text: "Produced BIM documentation in Revit and construction drawings across design phases."
             tags: [proptech, real-estate]
 
       - point: "Environmental analysis"
         variants:
-          - text: "Ran environmental and daylight studies to inform early design decisions."
+          - id: felipe.environmental-analysis.v1
+            text: "Ran environmental and daylight studies to inform early design decisions."
             tags: [esg, proptech, real-estate]
 
       - point: "Client meetings / preliminary studies"
         variants:
-          - text: "Took part in client meetings and produced preliminary design studies to align proposals with client briefs."
+          - id: felipe.client-meetings-preliminary-studies.v1
+            text: "Took part in client meetings and produced preliminary design studies to align proposals with client briefs."
             tags: [consulting, real-estate]
 
   - title: "Intern in Project Management"
@@ -291,28 +347,33 @@ experience:
     points:
       - point: "Documentation review anchor (always shows Itaú's core)"
         variants:
-          - text: "Reviewed technical documentation from architecture and engineering firms prior to construction authorization, checking drawings against building, accessibility, and fire-safety norms (NBR standards)."
+          - id: itau.documentation-review-anchor.v1
+            text: "Reviewed technical documentation from architecture and engineering firms prior to construction authorization, checking drawings against building, accessibility, and fire-safety norms (NBR standards)."
             tags: [real-estate, consulting, generic]
 
       - point: "Building environmental / energy due diligence"
         variants:
-          - text: "Assessed the environmental and energy performance of buildings the bank was acquiring or leasing, reviewing consumption data, efficiency ratings, and certifications as part of internal due diligence."
+          - id: itau.building-environmental-energy.v1
+            text: "Assessed the environmental and energy performance of buildings the bank was acquiring or leasing, reviewing consumption data, efficiency ratings, and certifications as part of internal due diligence."
             tags: [real-estate, esg]
 
       - point: "New office towers technical review"
         variants:
-          - text: "Supported technical review of new office towers under construction at the bank's São Paulo headquarters campus, evaluating design documentation for compliance and environmental performance."
+          - id: itau.new-office-towers-technical.v1
+            text: "Supported technical review of new office towers under construction at the bank's São Paulo headquarters campus, evaluating design documentation for compliance and environmental performance."
             tags: [real-estate]
 
       - point: "Furniture inventory tool"
         variants:
-          - text: "Built a VBA-powered Excel dashboard tracking the bank's corporate furniture inventory across locations, replacing a manual process and speeding up procurement for new-building fit-outs."
+          - id: itau.furniture-inventory-tool.v1
+            text: "Built a VBA-powered Excel dashboard tracking the bank's corporate furniture inventory across locations, replacing a manual process and speeding up procurement for new-building fit-outs."
             tags: [proptech, real-estate]
 
 # Projects are tag-selectable at the PROJECT level: a whole project is included
 # when its tags overlap the job. Bullets are always shown verbatim, never split.
 projects:
-  - name: "Master's Thesis, Computational Urban Analysis for Intensification Strategy"
+  - id: project.masters-thesis-computational
+    name: "Master's Thesis, Computational Urban Analysis for Intensification Strategy"
     org: "The Royal Danish Academy"
     location: "Copenhagen, DK"
     tags: [proptech, real-estate]
@@ -321,7 +382,8 @@ projects:
       - "Built an algorithm that uses urban data, including building typology, use patterns, regulatory conditions, and building use, to generate programmatic and morphological typologies for urban intensification, aligned with the city's existing urban policies."
       - "Integrated multiple geospatial datasets in QGIS to map spatial relationships between buildings, zoning conditions, and social context at the neighborhood scale."
 
-  - name: "Real Estate Development Recommendation Tool"
+  - id: project.real-estate-development
+    name: "Real Estate Development Recommendation Tool"
     org: "The Royal Danish Academy"
     location: "Copenhagen, DK"
     tags: [proptech, real-estate, esg]
@@ -329,14 +391,16 @@ projects:
       - "Built a machine learning tool that generates site-specific development recommendations for buildings in Copenhagen by integrating financial, social, sustainability, and geospatial data."
       - "Designed a user interface allowing different stakeholders to adjust impact drivers and weighting, with predictive outputs aligned to ESG priorities and local development conditions."
 
-  - name: "Embodied Carbon Toolkit"
+  - id: project.embodied-carbon-toolkit
+    name: "Embodied Carbon Toolkit"
     location: "Copenhagen, DK"
     tags: [esg, proptech]
     bullets:
       - "Collaborated with a Copenhagen-based LCA startup to design and deliver a Revit-based toolkit for embodied carbon calculations, integrating the platform's GWP values for A1-A3 and A4 stages."
       - "Built a pre-configured Revit schedule that computes embodied carbon with built-in documentation for adoption by architects."
 
-  - name: "Computational Deployable Structures Workshop"
+  - id: project.computational-deployable-structures
+    name: "Computational Deployable Structures Workshop"
     org: "Southeast University x The Royal Danish Academy"
     location: "Nanjing, CN"
     tags: [proptech]
@@ -344,13 +408,15 @@ projects:
       - "Selected as one of a small group from The Royal Danish Academy for a two-week international workshop at Southeast University, applying origami-based deployable-structure principles (used in satellite deployment) to architectural structures."
       - "Developed parametric models exploring foldable geometry, material systems, and structural performance, working across computational design, geometry, and engineering."
 
-  - name: "House Price Prediction - Competition"
+  - id: project.house-price-prediction
+    name: "House Price Prediction - Competition"
     location: "Copenhagen, DK"
     tags: [proptech, real-estate]
     bullets:
       - "Built a predictive model for real estate valuation using ensemble learning (XGBoost, LightGBM, Ridge, CatBoost) and feature engineering on structured property and financial data, finishing in the top 2% of competitors."
 
-  - name: "Rammed Blue Biomass & Computational Optimization"
+  - id: project.rammed-blue-biomass
+    name: "Rammed Blue Biomass & Computational Optimization"
     org: "The Royal Danish Academy"
     location: "Copenhagen, DK"
     tags: [esg, proptech]
@@ -358,7 +424,8 @@ projects:
       - "Developed a new construction technique and material system using blue biomass (seashells and algae), applying LCA metrics and parametric simulations to optimize structural performance and environmental impact."
       - "Project was selected as a semester highlight and served as the material foundation for the school's installation at the Venice Architecture Biennale 2025, presented in collaboration with CITA, GXN, and 3XN at the Arsenale."
 
-  - name: "Venice Architecture Biennale 2025"
+  - id: project.venice-architecture-biennale
+    name: "Venice Architecture Biennale 2025"
     org: "The Royal Danish Academy, CITA, GXN, 3XN"
     location: "Venice, IT"
     tags: [esg, proptech]

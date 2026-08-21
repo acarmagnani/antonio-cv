@@ -1,0 +1,12 @@
+Estimado equipo de selección de Bureau Veritas,
+
+Me formé como arquitecto en Brasil, pero lo que más me atrajo del oficio no fueron los planos sino la pregunta que viene después de construir: si el edificio cumple realmente lo que promete en eficiencia energética, en impacto ambiental, en las normas que se supone debe cumplir. Esa pregunta de verificación, más que de diseño, es la que me llevó a un M.Arch. en Architecture Computation en The Royal Danish Academy, centrado en usar datos y análisis para mejorar el desempeño del entorno construido. El puesto de Consultor/a en Edificación Sostenible en Bureau Veritas, una empresa que existe justamente para verificar que lo construido cumple el estándar que declara, es donde quiero llevar esa inclinación más lejos.
+
+Durante mi etapa como becario de Gestión de Proyectos en Itaú-Unibanco evalué el desempeño ambiental y energético de edificios que el banco adquiría o arrendaba, revisando datos de consumo, ratings de eficiencia y certificaciones como parte de la due diligence interna. En paralelo, revisé documentación técnica de estudios de arquitectura e ingeniería antes de la autorización de obra, comprobando los planos contra normas de construcción, accesibilidad y seguridad contra incendios (normas NBR), y apoyé la revisión técnica de las nuevas torres de oficinas en construcción en la sede del banco en São Paulo, evaluando la documentación de diseño frente a criterios de cumplimiento y desempeño ambiental. Es prácticamente el mismo ejercicio que pide esta posición, comparar lo que un edificio dice ser contra lo que un estándar exige, y documentarlo con rigor.
+
+Esa misma atención al desempeño ambiental de un edificio la llevé después a la práctica de arquitectura. En Isay Weinfeld Architects optimicé la orientación y la masa de los edificios con simulaciones ambientales y de luz natural, y coordiné en un único modelo de Revit las entradas de estructura, HVAC, electricidad e iluminación de todas las disciplinas. Más recientemente, colaboré con una startup de Copenhague especializada en LCA para construir una herramienta en Revit que calcula el carbono incorporado según los valores de GWP de cada etapa del ciclo de vida (A1-A3, A4), justo el tipo de análisis de ciclo de vida que pide esta posición.
+
+Bureau Veritas certifica lo que otros solo declaran. Aprender el oficio de la certificación (LEED, BREEAM, VERDE) desde dentro de una organización que lo hace a esta escala es la dirección en la que quiero crecer.
+
+Un cordial saludo,
+Antonio Carmagnani

@@ -1,0 +1,47 @@
+profile: profile.infrastructure-consulting
+
+bullets:
+  # Sweco - energy and infrastructure, project economics, data work
+  - sweco.department-anchor.v1
+  - sweco.project-pricing-model.v1
+  - sweco.climate-risk-assessments.v1
+  - sweco.geospatial-data-and-analysis.v1
+  - sweco.engineering-design-review.v1
+  - sweco.azerbaijan-field-mission.v1
+
+  # Ramboll - technology supply chains, automated analysis, benchmarking
+  - ramboll.critical-raw-materials-study.v1
+  - ramboll.frameworks-anchor.v1
+  - ramboll.colt-salience-tool.v2
+  - ramboll.colt-peer-benchmark.v1
+  - ramboll.ai-in-research-workflow.v1
+
+  # Isay Weinfeld - Python tooling, simulation, tool adoption
+  - isay.staircase-grasshopper-plugin.v1
+  - isay.environmental-daylight-analysis.v2
+  - isay.staircase-plugin-adoption-teaching.v1
+  - isay.portfolio-anchor.v1
+
+  # OSPA - investment and return modeling
+  - ospa.numerical-feasibility-financial-modeling.v1
+  - ospa.feasibility-anchor.v1
+  - ospa.client-presentations.v1
+
+  # VIZU
+  - vizu.studio-anchor.v1
+  - vizu.visualization-production.v1
+
+  # Felipe Hess
+  - felipe.portfolio-anchor.v1
+  - felipe.environmental-analysis.v1
+
+  # Itau-Unibanco - building energy performance data
+  - itau.building-environmental-energy.v1
+  - itau.documentation-review-anchor.v1
+  - itau.furniture-inventory-tool.v1
+
+projects:
+  - project.house-price-prediction
+  - project.real-estate-development
+  - project.masters-thesis-computational
+  - project.embodied-carbon-toolkit
