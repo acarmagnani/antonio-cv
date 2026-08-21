@@ -59,6 +59,7 @@ if not chrome:
     for cache in (Path.home() / "Library/Caches/ms-playwright", Path.home() / ".cache/ms-playwright"):
         if cache.exists():
             matches = sorted(cache.glob("chromium*/**/Chromium.app/Contents/MacOS/Chromium")) \
+                or sorted(cache.glob("chromium*/**/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing")) \
                 or sorted(cache.glob("chromium*/**/chrome"))
             if matches:
                 chrome = str(matches[-1])

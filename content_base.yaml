@@ -214,7 +214,7 @@ experience:
       - point: "Buildable capacity and land-use analysis"
         variants:
           - id: isay.buildable-capacity.v1
-            text: "Analysed land-use regulation and buildable capacity on residential and mixed-use developments, resolving floor area ratio, site coverage, units per floor, and active frontage against the master plan before the design proposal was set."
+            text: "Analysed land-use regulation and buildable capacity on residential and mixed-use developments, testing the zoning envelope against the master plan before the design proposal was set."
             tags: [real-estate, re-investment]
 
       - point: "Development through to construction"
@@ -299,7 +299,7 @@ experience:
             text: "Developed volumetric massing studies in Revit, resolving circulation, unit layouts, ground-floor active frontage, and parking against zoning metrics."
             tags: [real-estate, proptech]
           - id: ospa.volumetric-massing-study.v2
-            text: "Tested development scenarios in Revit, resolving unit mix, circulation, ground-floor use, and parking against zoning limits to establish the buildable programme behind each feasibility case."
+            text: "Tested development scenarios in Revit, resolving the unit programme against zoning limits to establish the buildable case behind each feasibility study."
             tags: [re-investment, real-estate]
 
       - point: "Environmental analysis"
@@ -339,13 +339,13 @@ experience:
       - point: "Buildable capacity under the master plan"
         variants:
           - id: felipe.buildable-capacity.v1
-            text: "Calculated buildable capacity for residential developments under São Paulo's master plan, working through floor area ratio, site coverage, height limits, units per floor, and active frontage requirements to establish what each site could hold."
+            text: "Calculated buildable capacity for residential developments under São Paulo's master plan, resolving the zoning parameters into a buildable programme for each site."
             tags: [real-estate, re-investment]
 
       - point: "First ground-up building with a developer"
         variants:
           - id: felipe.developer-first-building.v1
-            text: "Took part in the studio's first ground-up residential building, delivered with a São Paulo developer, from land-use and capacity analysis through design development and construction."
+            text: "Took part in the studio's first ground-up residential building, following it from land-use and capacity analysis through design development and construction."
             tags: [real-estate, re-investment]
 
       - point: "Financial feasibility on candidate sites"
@@ -452,10 +452,10 @@ experience:
             text: "Designed and delivered residential architecture and renovation projects for private clients with a collaborator, and entered open design competitions, alongside the B.Arch."
             tags: [real-estate, consulting]
 
-      - point: "LCA software startup product consulting"
+      - point: "Product consulting for a built-environment software startup"
         variants:
           - id: independent.lca-startup-consulting.v1
-            text: "Advised a Copenhagen LCA software startup over two years on product direction, UI and UX, and applied AI, testing releases and returning improved Revit and Dynamo scripts."
+            text: "Advised a software startup in the built environment over two years on product direction, UI and UX, and applied AI, testing releases and returning improved Revit and Dynamo scripts."
             tags: [proptech, esg, consulting]
 
       - point: "Financial analysis tool for a private client"
@@ -487,6 +487,9 @@ projects:
       - "Built a machine learning tool that generates site-specific development recommendations for buildings in Copenhagen by integrating financial, social, sustainability, and geospatial data."
       - "Designed a user interface allowing different stakeholders to adjust impact drivers and weighting, with predictive outputs aligned to ESG priorities and local development conditions."
 
+  # RETIRED from the preset blocks: this work now appears as experience, under
+  # Independent Consultant. The definition stays because 8 already-sent
+  # applications reference it and must keep resolving. Do not add it to a new CV.
   - id: project.embodied-carbon-toolkit
     name: "Embodied Carbon Toolkit"
     location: "Copenhagen, DK"

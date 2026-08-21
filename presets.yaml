@@ -123,7 +123,6 @@ presets:
       - independent.anchor.v1
       - independent.lca-startup-consulting.v1
     projects:
-      - project.embodied-carbon-toolkit
       - project.rammed-blue-biomass
       - project.real-estate-development
       - project.masters-thesis-computational

@@ -13,6 +13,15 @@ Chat novo por tarefa. A barra na primeira mensagem tira a ambiguidade.
 - **Só a carta, numa application que já existe:** 
     `/cover-letter` + nome da pasta
 
+Pra olhar os currículos base (os blocos), sem mexer em application nenhuma:
+
+- **Exportar os 3 blocos em PDF pra ler:** 
+    `python system/make_preset_pdfs.py` (sai em `preset_previews/`)
+- **Ver que tópico do content_base vai pra cada bloco:** 
+    `python system/select_cv.py --usage`
+- **Listar os blocos:** 
+    `python system/select_cv.py --list-presets`
+
 Notas:
 
 - `/cv-tailoring` já faz a carta e os PDFs junto. Não preciso chamar `/cover-letter` depois.

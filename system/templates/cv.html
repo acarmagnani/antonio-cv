@@ -340,7 +340,15 @@
       try { presetsData = await loadYAML('../../presets.yaml'); } catch (e) { /* no presets file */ }
 
       let tailoredData = {};
+
+      // ?preset=<name> renders a preset block directly, so the blocks themselves
+      // can be reviewed without creating a throwaway application folder.
+      const presetParam = new URLSearchParams(location.search).get('preset');
+
       try {
+        if (presetParam) {
+          tailoredData = resolveSelection({ extends: presetParam }, baseData, presetsData);
+        } else {
         const pointerRes = await fetch('../../active_application.txt', { cache: 'no-cache' });
         if (pointerRes.ok) {
           const pointer = (await pointerRes.text()).trim();
@@ -357,7 +365,9 @@
             }
           }
         }
+        }
       } catch (e) {
+        if (presetParam) throw e;
         // No pointer or no tailored file - render from base only
         tailoredData = {};
       }

@@ -6,6 +6,7 @@ Usage:
     python system/select_cv.py <application-folder-name> [--preview]
     python system/select_cv.py --preset <preset-name> [--preview]
     python system/select_cv.py --list-presets
+    python system/select_cv.py --usage            # which block uses which entry
 
 Tailoring is pure SELECTION: nothing here holds CV text, only ids resolved against
 content_base.yaml. Because no text is ever copied, "is it verbatim?" cannot fail by
@@ -176,6 +177,44 @@ def main():
     preview = "--preview" in argv
     presets_path = ROOT / "presets.yaml"
     presets = load(presets_path) if presets_path.exists() else {"presets": {}}
+
+    if "--usage" in argv:
+        base = load(ROOT / "content_base.yaml")
+        blocks = list((presets.get("presets") or {}).items())
+        cols = [n[0].upper() for n, _ in blocks]
+        used = [set(b.get("bullets") or []) | set(b.get("projects") or []) | {b.get("profile")}
+                for _, b in blocks]
+
+        def mark(i):
+            return " ".join(c if i in u else "." for c, u in zip(cols, used))
+
+        print("Which content_base entry each preset block uses.")
+        for name, _ in blocks:
+            print(f"  {name[0].upper()} = {name}")
+        print()
+        dead = []
+        print("PROFILES")
+        for pr in base["profiles"]:
+            print(f"  {mark(pr['id'])}   {pr['id']}")
+            if not any(pr["id"] in u for u in used):
+                dead.append(pr["id"])
+        for role in base["experience"]:
+            print(f"\n{role['id'].upper()}  {role['title']} @ {role['org']}")
+            for point in role["points"]:
+                for v in point["variants"]:
+                    print(f"  {mark(v['id'])}   {v['id']}")
+                    if not any(v["id"] in u for u in used):
+                        dead.append(v["id"])
+        print("\nPROJECTS")
+        for pj in base.get("projects", []):
+            print(f"  {mark(pj['id'])}   {pj['id']}")
+            if not any(pj["id"] in u for u in used):
+                dead.append(pj["id"])
+        print(f"\nIn no block ({len(dead)}). These are fine to keep, but nothing "
+              f"currently reaches them:")
+        for d in dead:
+            print("  -", d)
+        return
 
     if "--list-presets" in argv:
         for name, p in (presets.get("presets") or {}).items():
