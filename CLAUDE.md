@@ -35,6 +35,10 @@ There are two distinct phases, with different rules:
 
 Do NOT hard-wrap markdown. Write each paragraph and each bullet as one single long line and let the editor soft-wrap it. Antonio reads these with word-wrap on, so manual newlines inside a paragraph only fragment the text for him. This applies to every `.md` here: notes, skills, strategy files, cover letters, README.
 
+### Roles are droppable
+
+An "anchor" point marks the lead bullet for a role, NOT a bullet that must appear in every CV. A tailored CV is expected to omit whole roles: Antonio's own read of his CV is that his career looks scattered (bank, then architecture, then ESG, then infrastructure), and the fix is that each CV shows only the roles that serve its direction. Watch the timeline when cutting, since a weak role may still earn one line by closing a gap.
+
 ### Bullet style
 
 - Preserve concrete details: tool names, numbers, specific outputs. Keep client/project names only where Antonio is sure of them.
@@ -47,7 +51,7 @@ Profiles are **pre-written variants** in content_base.yaml, selected verbatim by
 
 ## File structure
 
-- **content_base.yaml**:         Source of truth. Every profile, variant and project carries a stable `id` (e.g. `ramboll.critical-raw-materials-study.v1`) that applications reference. `profiles` (tagged profile variants), `experience` (7 roles, each a list of `points` with tagged phrasing `variants`), `projects`, and STATIC `education`, `skills`. Adding a bullet means adding an id to it.
+- **content_base.yaml**:         Source of truth, and the ONLY place CV text lives. Every role, profile, variant and project carries a stable `id` (e.g. `ramboll.critical-raw-materials-study.v1`) that presets and applications reference. `profiles` (tagged profile variants), `experience` (7 roles, each a list of `points` with tagged phrasing `variants`), `projects`, and STATIC `education`, `skills`. Adding a bullet means adding an id to it.
 - **cover_letter_base.md**:      Base/voice anchor for cover letters (the content_base of letters). Antonio edits it; the cover-letter skill writes each letter to match its voice, architecture, and banned-phrases list.
 - **notes/**:                    Reference notes Antonio READS. Plain markdown, no machinery.
   - **context.md**:              Personal context (work eligibility, ambitions, career arc). Read by the job-fit skill; edit it when timing, eligibility, or direction changes.
@@ -55,7 +59,8 @@ Profiles are **pre-written variants** in content_base.yaml, selected verbatim by
   - **skills_gaps.md**:          What his real applications ask for that he has and lacks. Rebuilt from `applications/*/job_description.md`, never from market research.
   - **prompts.md**:              Antonio's own cheat-sheet of which skill to type for which task. Keep it tiny; update it when a skill is added or renamed.
 - **system/**:                   Machinery only. Scripts, template, CSS. Antonio does not edit these.
-- **system/select_cv.py**:       Validator. Checks a folder's `selection.yaml` against `content_base.yaml`: every id must exist, no id repeated, and no two bullets from the same point. `--preview` prints the resolved CV as text. Run `python system/select_cv.py <folder>` after tailoring.
+- **presets.yaml**:              The three CV blocks Antonio actually applies with (`real-estate-investment`, `esg-built-environment`, `data-built-environment`), derived from the real postings in `applications/`. A preset is a finished CV for a FAMILY of jobs: profile, which roles appear and in what order, bullets, projects, skill groups. Ids only, no text. Each block deliberately DROPS the roles that point elsewhere, which is the whole point: a CV should read as one direction, not as a list of everything. An application normally just extends a block and records the delta.
+- **system/select_cv.py**:       Validator. Resolves a folder's `selection.yaml` (including `extends` / `add` / `drop`) against `presets.yaml` and `content_base.yaml`: every id must exist, no id repeated, no two bullets from the same point. Roles with no bullets are reported as deliberately omitted, not as a problem. `--preview` prints the resolved CV as text, `--preset <name>` inspects a block directly, `--list-presets` lists them. Run `python system/select_cv.py <folder>` after tailoring.
 - **system/verify_cv.py**:       LEGACY. Verbatim checker for old applications that still have a `content_tailored.yaml`. Not used for new ones.
 - **system/make_pdfs.py**:       One command for the active application: validates the selection, then renders `cv.pdf` and `cover_letter.pdf`. Normal way to produce output.
 - **system/make_cv_pdf.py**:        Render the active CV to `cv.pdf` via a local server + headless Chrome. Run `python system/make_cv_pdf.py` (works in any shell). `system/make_cv_pdf.sh` is the Git Bash equivalent.
@@ -67,7 +72,7 @@ Profiles are **pre-written variants** in content_base.yaml, selected verbatim by
 - **applications/wide/YYYY-MM-company-role/**:    Everything else: above his level, wrong direction, or a long shot he is trying anyway. Never counted in the analysis.
 - A `job_description.md` whose first line contains `not-a-posting` is a brief we wrote, not employer text. It renders normally but is excluded from requirement counts.
 - **job_description.md**:        Pasted from the job posting.
-- **selection.yaml**:            Written by Claude during tailoring. Ids only (`profile`, `bullets`, `projects`), no CV text. Education and skills are static from content_base.yaml.
+- **selection.yaml**:            Written by Claude during tailoring. Ids only, no CV text. Usually just `extends:` a preset plus `add:` / `drop:` of a few ids, so the file records what was special about this job. The full form (`profile`, `roles`, `bullets`, `projects`, `skills`) is for a job that fits no block. Education is always static from content_base.yaml.
 - **content_tailored.yaml**:     LEGACY format (full text copied in). Present in applications made before the id-based selection. Still renders; do not create new ones.
 - **strategy.md**:               Short positioning note written during tailoring; used by the cover-letter skill.
 - **cover_letter.md**:           Optional. Cover letter for this application.
@@ -86,8 +91,8 @@ Profiles are **pre-written variants** in content_base.yaml, selected verbatim by
 
 ### How rendering works
 
-- `templates/cv.html` reads `active_application.txt` to find the active application folder, then loads its `selection.yaml` and resolves the ids against `content_base.yaml` (falling back to a legacy `content_tailored.yaml` if there is no selection file).
-- Education and skills always render from `content_base.yaml` (static). Projects are selected per job (the base renders all projects when there is no tailored file).
+- `templates/cv.html` reads `active_application.txt` to find the active application folder, then loads its `selection.yaml`, expands any `extends` against `presets.yaml`, and resolves the ids against `content_base.yaml` (falling back to a legacy `content_tailored.yaml` if there is no selection file).
+- Education always renders from `content_base.yaml` (static). Skills come from `content_base.yaml` too, but the selection or preset chooses which groups appear and in what order. Projects are selected per job (the base renders all projects when there is no tailored file).
 - If the pointer is missing or empty, it renders the base CV directly, flattening each experience point to its first variant (a full "master" view).
 - To switch which application is rendered, update `active_application.txt` (the tailoring skill does this).
 - Generate the PDFs with `python system/make_pdfs.py` (validates, then outputs `cv.pdf` and `cover_letter.pdf`).

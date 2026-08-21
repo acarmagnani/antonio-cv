@@ -98,7 +98,7 @@
     // A per-application selection.yaml lists only IDs. We resolve them against
     // content_base.yaml here, so no CV text is ever copied into an application
     // folder. Bullet order inside each role follows the order given in the file.
-    function resolveSelection(sel, base) {
+    function resolveSelection(sel, base, presets) {
       const variantById = new Map();
       (base.experience || []).forEach((role, ri) => {
         (role.points || []).forEach((point, pi) => {
@@ -107,34 +107,82 @@
           });
         });
       });
+      const byProjectId = new Map((base.projects || []).map(p => [p.id, p]));
+      const skillKeys = Object.keys(base.skills || {});
+      const roleIds = (base.experience || []).map(r => r.id);
 
-      const wanted = sel.bullets || [];
-      const rank = new Map(wanted.map((id, i) => [id, i]));
+      // An application usually just extends a preset and records the delta.
+      let preset = {};
+      if (sel.extends) {
+        preset = ((presets || {}).presets || {})[sel.extends];
+        if (!preset) throw new Error(`Unknown preset: ${sel.extends}`);
+      }
 
-      const missing = wanted.filter(id => !variantById.has(id));
+      const res = {
+        profile: sel.profile || preset.profile,
+        bullets: [...(sel.bullets || preset.bullets || [])],
+        projects: [...(sel.projects || preset.projects || [])],
+        roles: [...(sel.roles || preset.roles || [])],
+        skills: [...(sel.skills || preset.skills || skillKeys)],
+      };
+
+      // add/drop are routed by what the id actually is, so one flat list can
+      // carry bullets, projects and skill groups at once.
+      const kindOf = id => variantById.has(id) ? 'bullets'
+                         : byProjectId.has(id) ? 'projects'
+                         : skillKeys.includes(id) ? 'skills' : null;
+      (sel.drop || []).forEach(id => {
+        const k = kindOf(id);
+        if (!k) throw new Error(`Unknown id in drop: ${id}`);
+        res[k] = res[k].filter(x => x !== id);
+      });
+      (sel.add || []).forEach(id => {
+        const k = kindOf(id);
+        if (!k) throw new Error(`Unknown id in add: ${id}`);
+        if (!res[k].includes(id)) res[k].push(id);
+      });
+
+      const missing = res.bullets.filter(id => !variantById.has(id));
       if (missing.length) throw new Error(`Unknown bullet id(s): ${missing.join(', ')}`);
 
-      const experience = (base.experience || []).map((role, ri) => {
-        const bullets = wanted
-          .filter(id => variantById.get(id).ri === ri)
-          .sort((a, b) => rank.get(a) - rank.get(b))
-          .map(id => variantById.get(id).text);
+      const rank = new Map(res.bullets.map((id, i) => [id, i]));
+      const used = new Set(res.bullets.map(id => variantById.get(id).ri));
+
+      // `roles` gives the render order. Any role holding a bullet but not named
+      // there is appended in base order, so a bullet can never be silently lost.
+      let order = res.roles
+        .map(rid => roleIds.indexOf(rid))
+        .filter(ri => ri >= 0 && used.has(ri));
+      [...used].sort((a, b) => a - b).forEach(ri => {
+        if (!order.includes(ri)) order.push(ri);
+      });
+
+      const experience = order.map(ri => {
+        const role = base.experience[ri];
         return {
           title: role.title, org: role.org, location: role.location,
-          start: role.start, end: role.end, bullets,
+          start: role.start, end: role.end,
+          bullets: res.bullets
+            .filter(id => variantById.get(id).ri === ri)
+            .sort((a, b) => rank.get(a) - rank.get(b))
+            .map(id => variantById.get(id).text),
         };
-      }).filter(role => role.bullets.length > 0);
+      });
 
-      const profile = (base.profiles || []).find(p => p.id === sel.profile);
-      if (sel.profile && !profile) throw new Error(`Unknown profile id: ${sel.profile}`);
+      const profile = (base.profiles || []).find(p => p.id === res.profile);
+      if (res.profile && !profile) throw new Error(`Unknown profile id: ${res.profile}`);
 
-      const byProjectId = new Map((base.projects || []).map(p => [p.id, p]));
-      const projects = (sel.projects || []).map(id => {
+      const projects = res.projects.map(id => {
         if (!byProjectId.has(id)) throw new Error(`Unknown project id: ${id}`);
         return byProjectId.get(id);
       });
 
-      return { profile: profile ? profile.text : null, experience, projects };
+      return {
+        profile: profile ? profile.text : null,
+        experience,
+        projects,
+        skillOrder: res.skills.filter(s => skillKeys.includes(s)),
+      };
     }
 
     async function loadYAML(path) {
@@ -253,20 +301,22 @@
       root.appendChild(section);
     }
 
-    function renderSkills(root, skills) {
+    function renderSkills(root, skills, order) {
       if (!skills) return;
       const section = create('div', 'cv-section');
       const title = create('div', 'section-title');
       title.appendChild(b1('Skills'));
       const content = create('div', 'section-content');
 
-      const groups = [
-        ['Data & Analysis', skills.data_and_analysis],
-        ['Digital Tools', skills.digital_tools],
-        ['ESG & Sustainability', skills.esg_and_sustainability],
-        ['Real Estate & Urban', skills.real_estate_and_urban],
-        ['Languages', skills.languages],
-      ];
+      const LABELS = {
+        data_and_analysis: 'Data & Analysis',
+        digital_tools: 'Digital Tools',
+        esg_and_sustainability: 'ESG & Sustainability',
+        real_estate_and_urban: 'Real Estate & Urban',
+        languages: 'Languages',
+      };
+      const keys = (order && order.length) ? order : Object.keys(LABELS);
+      const groups = keys.map(k => [LABELS[k] || k, skills[k]]);
 
       const ul = create('ul');
       groups.forEach(([label, arr]) => {
@@ -289,6 +339,10 @@
       // Tailored fields, when present, override base fields.
       const baseData = await loadYAML('../../content_base.yaml');
 
+      // Preset CV blocks. Optional: a selection can still list everything by hand.
+      let presetsData = { presets: {} };
+      try { presetsData = await loadYAML('../../presets.yaml'); } catch (e) { /* no presets file */ }
+
       let tailoredData = {};
       try {
         const pointerRes = await fetch('../../active_application.txt', { cache: 'no-cache' });
@@ -299,9 +353,9 @@
             try {
               // Preferred format: selection.yaml (ids only, resolved against base).
               const sel = await loadYAML(`${dir}/selection.yaml`);
-              tailoredData = resolveSelection(sel, baseData);
+              tailoredData = resolveSelection(sel, baseData, presetsData);
             } catch (selErr) {
-              if (/Unknown (bullet|profile|project)/.test(selErr.message)) throw selErr;
+              if (/Unknown (bullet|profile|project|preset|id)/.test(selErr.message)) throw selErr;
               // Legacy format: content_tailored.yaml with full text copied in.
               tailoredData = await loadYAML(`${dir}/content_tailored.yaml`);
             }
@@ -319,6 +373,7 @@
         profile: tailoredData.profile ?? baseData.profiles?.[0]?.text ?? null,
         experience: tailoredData.experience ?? flattenBaseExperience(baseData.experience),
         projects: tailoredData.projects ?? baseData.projects,
+        skillOrder: tailoredData.skillOrder ?? null,
       };
 
       const container = document.querySelector('.cv-container');
@@ -328,7 +383,7 @@
       renderExperience(container, data.experience);
       renderEducation(container, data.education);
       renderProjects(container, data.projects);
-      renderSkills(container, data.skills);
+      renderSkills(container, data.skills, data.skillOrder);
 
     }
 

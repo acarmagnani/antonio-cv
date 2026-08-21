@@ -16,17 +16,17 @@ application costs a ~30-line file instead of a full copy of the CV.
 ## How content_base.yaml is structured
 
 - `profiles`: profile variants, each with an `id` and `tags`. Pick exactly one.
-- `experience`: the 7 roles. Each role has a list of `points` (underlying facts). Each point has
+- `experience`: the 7 roles, each with a stable `id` (`sweco`, `ramboll`, `isay`, `ospa`, `vizu`, `felipe`, `itau`) used by `roles`. Each role has a list of `points` (underlying facts). Each point has
   one or more `variants` (different phrasings of that same fact), each with an `id` and `tags`.
   Select **at most one variant per point**.
 - `projects`: each project has an `id` and `tags`. Select whole projects; bullets are never split.
-- `education` and `skills` are STATIC, always from `content_base.yaml`, never tailored.
+- `education` is STATIC, always from `content_base.yaml`. `skills` comes from `content_base.yaml` too, but which groups appear (and in what order) is chosen per CV.
 
 Ids look like `ramboll.critical-raw-materials-study.v1`, `profile.proptech`,
 `project.embodied-carbon-toolkit`. They are stable; never invent one, always read it from
 `content_base.yaml`.
 
-Tags (`real-estate | esg | infrastructure | proptech | consulting | generic`) are **hints, not a
+Tags (`real-estate | re-investment | esg | infrastructure | proptech | consulting | generic`) are **hints, not a
 filter**. They are coarse: `esg` covers everything from human rights workshops to embodied
 carbon. Read the bullet text and decide on meaning, not on tag overlap. `generic` marks a fact
 that should appear in every CV.
@@ -47,19 +47,26 @@ labelled as such, based on research into the company.
 Read `job_description.md` and `content_base.yaml` in full. Identify what the role actually
 requires and which of Antonio's domains it maps to.
 
-### 2. Select (never rewrite)
+### 2. Start from a preset
 
-- Keep **all 7 roles**. Never drop a whole role.
-- Go point by point in each role. Include a point if it is relevant to this job, and pick the
-  single variant whose framing best fits. Note its `id`.
+Most jobs Antonio applies to fall into one of three families, and `presets.yaml` already holds a finished CV for each. Run `python system/select_cv.py --list-presets` to see them. Pick the block whose direction matches the job:
+
+- `real-estate-investment` — investment and acquisitions analyst, valuation and advisory, development analyst, real estate research.
+- `esg-built-environment` — sustainability consulting, carbon and energy assessment, CSRD and EU Taxonomy, building certification.
+- `data-built-environment` — data analyst and analytics engineer, computational design, pricing and valuation modelling, proptech.
+
+Then read the posting and decide the delta: what this specific job asks for that the block does not already carry, and what the block carries that would distract here. That delta is usually two to five ids. Building a selection from scratch is the exception, for a job that fits no block.
+
+### 2b. Selecting by hand (new block, or a job that fits none)
+
+- **Drop the roles that point elsewhere.** A CV that reads as one direction beats one that lists everything. Omitting a role is a deliberate move, and `select_cv.py` reports omitted roles as information, not as a problem. Antonio's own complaint about his CV is that his career looks scattered; leaving in a role that serves no purpose here is what causes that.
+- Watch the timeline when cutting. A role that is weak for this job may still be worth one line because it closes a gap between two others.
+- Go point by point in each role you keep. Include a point if it is relevant, and pick the single variant whose framing best fits. Note its `id`.
 - At most one variant per point.
-- **Minimum coverage:** no kept role should read empty. If a role is thin for this job, include
-  adjacent variants that still legitimately fit, so every role has substance.
-- Order matters: within a role, list ids most-relevant first. The renderer preserves the order
-  they appear in `bullets`.
-- Be selective. Target roughly 2 pages, which is about 20-25 bullets plus 4-5 projects. Not
-  every point belongs in every CV.
+- Order matters: within a role, list ids most-relevant first. The renderer preserves the order they appear in `bullets`.
+- Be selective. Target roughly 2 pages, which is about 17-22 bullets plus 3-4 projects.
 - Pick the `profile` id whose framing best matches the job.
+- Pick the skill groups that matter here. Showing `digital_tools` (Revit, AutoCAD, Adobe) on an investment analyst CV works against the positioning.
 - Select projects whose subject matches the role. Include only the few most relevant; if none
   clearly match, include the 2-3 strongest general ones so the section is not empty.
 - If the job genuinely needs something Antonio has not done, flag the gap to the user. Do not
@@ -78,24 +85,33 @@ genuinely borderline, ask him.
 
 ### 3. Write selection.yaml
 
-Write `applications/<bucket>/<folder>/selection.yaml`. Ids only, no CV text:
+Write `applications/<bucket>/<folder>/selection.yaml`. Ids only, no CV text. When extending a preset, record **only the delta**, so the file shows at a glance what was special about this job:
+
+```yaml
+extends: real-estate-investment
+add:
+  - ramboll.genesta-supplier-human-rights.v1
+drop:
+  - itau.furniture-inventory-tool.v1
+```
+
+`add` and `drop` accept bullet ids, project ids and skill-group names in the same flat list; the resolver routes each by what it is. Add `profile:` to override the preset's profile.
+
+For a job that fits no block, write the full form instead:
 
 ```yaml
 profile: profile.proptech
-
+roles: [sweco, ramboll, ospa, itau]
 bullets:
   - sweco.department-anchor.v1
-  - sweco.climate-risk-assessments.v1
   - ramboll.frameworks-anchor.v1
   # ... grouped by role, most-relevant first within each role
-
 projects:
   - project.rammed-blue-biomass
-  - project.embodied-carbon-toolkit
+skills: [data_and_analysis, real_estate_and_urban, languages]
 ```
 
-List bullets grouped by role, in the same reverse-chronological role order as
-`content_base.yaml`. Do not include meta, education, or skills.
+`roles` names which roles appear and in what order. Keep it reverse-chronological (the order in `content_base.yaml`): a CV that breaks chronology reads as a mistake. Shift emphasis by cutting roles and by how many bullets each keeps, not by reordering. Do not include meta or education, which are always static.
 
 ### 4. Validate
 

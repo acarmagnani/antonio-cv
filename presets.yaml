@@ -1,0 +1,156 @@
+# Preset CV blocks.
+#
+# A preset is a ready-made CV for a FAMILY of jobs, not for one job. It says which
+# profile, which roles appear (and in what order), which bullets, which projects,
+# and which skill groups. Ids only, resolved against content_base.yaml at render
+# time, exactly like an application selection. No CV text lives here.
+#
+# The point of a preset is that each block POINTS ONE DIRECTION. Roles that point
+# somewhere else are left out on purpose: a role listed nowhere in `roles` does not
+# appear in that CV at all. That is the whole reason this file exists.
+#
+# An application's selection.yaml normally just points at one of these and says what
+# was special about that particular job:
+#
+#     extends: real-estate-investment
+#     add:
+#       - ramboll.genesta-supplier-human-rights.v1
+#     drop:
+#       - itau.furniture-inventory-tool.v1
+#
+# `add` also accepts project ids and skill-group names. `drop` removes anything the
+# preset included. To override the profile, set `profile:` in the selection. A job
+# that fits no block at all can still ignore `extends` and list everything by hand.
+#
+# `roles` doubles as the render order. Keeping it reverse-chronological (the order
+# roles appear in content_base.yaml) is the safe default; reordering is allowed but
+# a CV that breaks chronology reads as a mistake to most recruiters. Prefer to shift
+# emphasis by cutting roles and by how many bullets each role keeps.
+#
+# Blocks are derived from what Antonio actually applies to, not from guesswork. See
+# applications/target/ and applications/wide/.
+
+presets:
+
+  # ---------------------------------------------------------------------------
+  real-estate-investment:
+    label: "Real Estate Investment & Analysis"
+    use_for: >
+      Investment and acquisitions analyst, valuation and advisory, development
+      analyst, real estate research. The direction Antonio is actively steering
+      toward. Matches Clikalia, EY-Parthenon transaction RE, Genesta, Greystar,
+      Urban Partners, Cushman & Wakefield.
+    profile: profile.real-estate-investment
+    roles: [sweco, ramboll, isay, ospa, itau]
+    bullets:
+      # Sweco: asset risk work for institutional lenders
+      - sweco.department-anchor.v2
+      - sweco.climate-risk-assessments.v3
+      - sweco.project-pricing-model.v1
+      - sweco.geospatial-data-and-analysis.v1
+
+      # Ramboll: due diligence, led by the real estate investment clients
+      - ramboll.frameworks-anchor.v2
+      - ramboll.genesta-code-of-conduct.v1
+      - ramboll.real-estate-esg.v1
+      - ramboll.colt-salience-tool.v2
+
+      # Isay Weinfeld: kept to two lines. Bridges 2023-2024 and carries the
+      # strongest technical showpiece. Everything else architectural is cut.
+      - isay.portfolio-anchor.v1
+      - isay.staircase-grasshopper-plugin.v1
+
+      # OSPA: the anchor role for this block, given the most space
+      - ospa.feasibility-anchor.v1
+      - ospa.numerical-feasibility-financial-modeling.v1
+      - ospa.zoning-land-use-regulatory.v1
+      - ospa.volumetric-massing-study.v2
+      - ospa.client-presentations.v1
+
+      # Itau: building-level due diligence on assets a bank was buying or leasing
+      - itau.documentation-review-anchor.v2
+      - itau.building-environmental-energy.v1
+      - itau.new-office-towers-technical.v2
+      - itau.furniture-inventory-tool.v1
+    projects:
+      - project.house-price-prediction
+      - project.real-estate-development
+      - project.masters-thesis-computational
+    skills: [real_estate_and_urban, data_and_analysis, esg_and_sustainability, languages]
+
+  # ---------------------------------------------------------------------------
+  esg-built-environment:
+    label: "Sustainability & ESG in the Built Environment"
+    use_for: >
+      Sustainability consulting, carbon and energy assessment, CSRD and EU
+      Taxonomy work, building certification. Matches Jacobs, Bureau Veritas,
+      NIRAS, EY sustainability data analytics, CBRE energy analyst.
+    profile: profile.esg-consulting
+    roles: [sweco, ramboll, isay, ospa, itau]
+    bullets:
+      - sweco.department-anchor.v1
+      - sweco.climate-risk-assessments.v1
+      - sweco.azerbaijan-field-mission.v1
+      - sweco.geospatial-data-and-analysis.v1
+
+      - ramboll.frameworks-anchor.v1
+      - ramboll.real-estate-esg.v1
+      - ramboll.nordzucker-hria-tool.v1
+      - ramboll.colt-salience-tool.v1
+      - ramboll.critical-raw-materials-study.v1
+
+      - isay.portfolio-anchor.v1
+      - isay.environmental-daylight-analysis.v1
+      - isay.staircase-grasshopper-plugin.v1
+
+      - ospa.feasibility-anchor.v1
+      - ospa.environmental-analysis.v1
+      - ospa.numerical-feasibility-financial-modeling.v1
+
+      - itau.documentation-review-anchor.v1
+      - itau.building-environmental-energy.v1
+      - itau.new-office-towers-technical.v1
+    projects:
+      - project.embodied-carbon-toolkit
+      - project.real-estate-development
+      - project.rammed-blue-biomass
+      - project.masters-thesis-computational
+    skills: [esg_and_sustainability, data_and_analysis, real_estate_and_urban, languages]
+
+  # ---------------------------------------------------------------------------
+  data-built-environment:
+    label: "Data & Computation in the Built Environment"
+    use_for: >
+      Data analyst and analytics engineer, computational design, pricing and
+      valuation modelling, proptech. Matches GXN, Hobbii, SEB portfolio analyst,
+      Trackunit, and the modelling half of Clikalia.
+    profile: profile.proptech
+    roles: [sweco, ramboll, isay, ospa, itau]
+    bullets:
+      - sweco.department-anchor.v1
+      - sweco.geospatial-data-and-analysis.v1
+      - sweco.office-gis-lead.v1
+      - sweco.project-pricing-model.v1
+
+      - ramboll.frameworks-anchor.v1
+      - ramboll.colt-salience-tool.v2
+      - ramboll.ai-in-research-workflow.v1
+      - ramboll.critical-raw-materials-study.v2
+
+      - isay.portfolio-anchor.v1
+      - isay.staircase-grasshopper-plugin.v1
+      - isay.staircase-plugin-adoption-teaching.v1
+      - isay.complex-organic-parametric-modeling.v1
+
+      - ospa.feasibility-anchor.v1
+      - ospa.numerical-feasibility-financial-modeling.v1
+      - ospa.volumetric-massing-study.v1
+
+      - itau.documentation-review-anchor.v1
+      - itau.furniture-inventory-tool.v1
+    projects:
+      - project.masters-thesis-computational
+      - project.house-price-prediction
+      - project.real-estate-development
+      - project.computational-deployable-structures
+    skills: [data_and_analysis, digital_tools, real_estate_and_urban, languages]

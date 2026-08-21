@@ -37,7 +37,8 @@ profiles:
     text: "Experience in international infrastructure consulting on water and energy projects across emerging economies, working from tender through delivery. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to the built environment. Hands-on skills span climate risk assessment (JASPERS/EBRD), GIS-based spatial analysis, and preparing technical documentation and tenders for development-bank-funded projects. Motivated by work where infrastructure, sustainability, and technical analysis intersect."
 
 experience:
-  - title: "Project Assistant in International Infrastructure Projects"
+  - id: sweco
+    title: "Project Assistant in International Infrastructure Projects"
     org: "Sweco Danmark A/S"
     location: "Copenhagen, DK"
     start: "2026-02"
@@ -118,7 +119,8 @@ experience:
             text: "Supported the setup of a new Sweco branch office in Bangladesh, drafting employment contracts and managing the full insurance onboarding."
             tags: [consulting]
 
-  - title: "Intern in Responsible Business Conduct"
+  - id: ramboll
+    title: "Intern in Responsible Business Conduct"
     org: "Ramboll Management Consulting"
     location: "Copenhagen, DK"
     start: "2025-05"
@@ -193,7 +195,8 @@ experience:
             text: "Integrated AI research tools into due diligence workflows to source and cite human rights risk data at scale across high research volumes."
             tags: [esg, proptech]
 
-  - title: "Architect"
+  - id: isay
+    title: "Architect"
     org: "Isay Weinfeld Architects"
     location: "São Paulo, BR"
     start: "2023-02"
@@ -250,7 +253,8 @@ experience:
             text: "Ran daylight and solar-exposure simulations with Ladybug in Grasshopper to drive massing and orientation decisions, quantifying light incidence across building layouts."
             tags: [proptech, esg]
 
-  - title: "Trainee in Real Estate Product Development"
+  - id: ospa
+    title: "Trainee in Real Estate Product Development"
     org: "OSPA"
     location: "São Paulo, BR"
     start: "2022-02"
@@ -295,7 +299,8 @@ experience:
             text: "Produced images, plans, and diagrams and presented feasibility outcomes to developer clients."
             tags: [consulting, real-estate, re-investment]
 
-  - title: "Co-Founder"
+  - id: vizu
+    title: "Co-Founder"
     org: "VIZU"
     location: "São Paulo, BR"
     start: "2022-02"
@@ -322,7 +327,8 @@ experience:
             text: "Developed architectural design for select client projects beyond visualization."
             tags: [real-estate]
 
-  - title: "Architect"
+  - id: felipe
+    title: "Architect"
     org: "Felipe Hess Architects"
     location: "São Paulo, BR"
     start: "2021-07"
@@ -358,7 +364,8 @@ experience:
             text: "Took part in client meetings and produced preliminary design studies to align proposals with client briefs."
             tags: [consulting, real-estate]
 
-  - title: "Intern in Project Management"
+  - id: itau
+    title: "Intern in Project Management"
     org: "Itaú-Unibanco"
     location: "São Paulo, BR"
     start: "2020-08"
