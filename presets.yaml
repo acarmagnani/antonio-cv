@@ -40,7 +40,7 @@ presets:
       toward. Matches Clikalia, EY-Parthenon transaction RE, Genesta, Greystar,
       Urban Partners, Cushman & Wakefield.
     profile: profile.real-estate-investment
-    roles: [sweco, ramboll, isay, ospa, felipe, itau]
+    roles: [sweco, ramboll, isay, ospa, felipe, itau, independent]
     bullets:
       # Sweco: asset risk work for institutional lenders
       - sweco.department-anchor.v2
@@ -78,6 +78,12 @@ presets:
       - itau.documentation-review-anchor.v2
       - itau.building-environmental-energy.v1
       - itau.new-office-towers-technical.v2
+
+      # Independent: the generic AEC framing, plus the commercial and financial
+      # angles. The visualization and design strands stay out of this block.
+      - independent.anchor.v1
+      - vizu.studio-anchor.v3
+      - independent.financial-analysis-tool.v1
     projects:
       - project.house-price-prediction
       - project.real-estate-development
@@ -121,6 +127,7 @@ presets:
       - itau.new-office-towers-technical.v1
 
       - independent.anchor.v1
+      - vizu.studio-anchor.v3
       - independent.lca-startup-consulting.v1
     projects:
       - project.rammed-blue-biomass
@@ -164,6 +171,7 @@ presets:
       - itau.furniture-inventory-tool.v1
 
       - independent.anchor.v2
+      - vizu.studio-anchor.v3
       - independent.lca-startup-consulting.v1
       - independent.financial-analysis-tool.v1
     projects:

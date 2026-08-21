@@ -419,7 +419,7 @@ experience:
       - point: "Consulting anchor (lead bullet when this role appears)"
         variants:
           - id: independent.anchor.v1
-            text: "Took on independent consulting and project work alongside studies and full-time roles, serving 10+ clients across architecture, real estate visualization, and software for the built environment."
+            text: "Took on independent projects, software, and consulting for clients across the architecture, engineering and construction sector, alongside studies and full-time roles."
             tags: [consulting, generic]
           - id: independent.anchor.v2
             text: "Delivered independent consulting to clients across the architecture, engineering and construction sector, spanning product and UX advice, Revit and Dynamo automation, and financial analysis tooling."
@@ -433,6 +433,9 @@ experience:
           - id: vizu.studio-anchor.v2
             text: "Co-founded and ran a small studio serving 10+ clients, responsible for client acquisition, scoping, pricing, delivery, and hiring."
             tags: [re-investment, consulting]
+          - id: vizu.studio-anchor.v3
+            text: "Co-founded and ran a small practice delivering projects for 10+ clients in the architecture, engineering and construction sector, responsible for client acquisition, scoping, pricing, and delivery."
+            tags: [re-investment, real-estate, consulting]
 
       - point: "Visualization production"
         variants:
@@ -446,11 +449,14 @@ experience:
             text: "Developed architectural design for select client projects beyond visualization."
             tags: [real-estate]
 
-      - point: "Architecture projects with a collaborator"
+      - point: "Client projects with a collaborator"
         variants:
           - id: independent.architecture-projects.v1
             text: "Designed and delivered residential architecture and renovation projects for private clients with a collaborator, and entered open design competitions, alongside the B.Arch."
             tags: [real-estate, consulting]
+          - id: independent.architecture-projects.v2
+            text: "Delivered client projects with a collaborator over several years alongside the B.Arch., from brief through design and documentation, and entered open competitions."
+            tags: [re-investment, real-estate, consulting]
 
       - point: "Product consulting for a built-environment software startup"
         variants:
