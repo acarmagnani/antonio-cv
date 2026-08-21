@@ -148,14 +148,10 @@
       const rank = new Map(res.bullets.map((id, i) => [id, i]));
       const used = new Set(res.bullets.map(id => variantById.get(id).ri));
 
-      // `roles` gives the render order. Any role holding a bullet but not named
-      // there is appended in base order, so a bullet can never be silently lost.
-      let order = res.roles
-        .map(rid => roleIds.indexOf(rid))
-        .filter(ri => ri >= 0 && used.has(ri));
-      [...used].sort((a, b) => a - b).forEach(ri => {
-        if (!order.includes(ri)) order.push(ri);
-      });
+      // Roles render in base order, which is reverse-chronological. A CV is
+      // reverse-chronological, full stop. `roles` only declares which roles a
+      // block shows; it never reorders them.
+      const order = [...used].sort((a, b) => a - b);
 
       const experience = order.map(ri => {
         const role = base.experience[ri];

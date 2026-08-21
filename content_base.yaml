@@ -207,6 +207,21 @@ experience:
           - id: isay.portfolio-anchor.v1
             text: "Delivered high-end residential, hotel, and mixed-use projects across South America, North America, Europe, the Middle East, and Asia at one of Brazil's most prominent architecture studios."
             tags: [real-estate, generic]
+          - id: isay.portfolio-anchor.v2
+            text: "Delivered residential, hotel, and mixed-use developments across South America, North America, Europe, the Middle East, and Asia at one of Brazil's most prominent studios, from feasibility through construction."
+            tags: [re-investment, real-estate]
+
+      - point: "Buildable capacity and land-use analysis"
+        variants:
+          - id: isay.buildable-capacity.v1
+            text: "Analysed land-use regulation and buildable capacity on residential and mixed-use developments, resolving floor area ratio, site coverage, units per floor, and active frontage against the master plan before the design proposal was set."
+            tags: [real-estate, re-investment]
+
+      - point: "Development through to construction"
+        variants:
+          - id: isay.development-through-construction.v1
+            text: "Carried developments past feasibility into delivery, taking them through design development, technical documentation, and construction on buildings that were actually built."
+            tags: [real-estate, re-investment]
 
       - point: "Staircase Grasshopper plugin (showpiece)"
         variants:
@@ -299,34 +314,6 @@ experience:
             text: "Produced images, plans, and diagrams and presented feasibility outcomes to developer clients."
             tags: [consulting, real-estate, re-investment]
 
-  - id: vizu
-    title: "Co-Founder"
-    org: "VIZU"
-    location: "São Paulo, BR"
-    start: "2022-02"
-    end: "2022-10"
-    points:
-      - point: "Studio anchor (lead bullet when this role appears)"
-        variants:
-          - id: vizu.studio-anchor.v1
-            text: "Co-founded and ran an architectural visualization studio, managing 10+ clients, project scoping and delivery, and hiring staff."
-            tags: [consulting, real-estate, generic]
-          - id: vizu.studio-anchor.v2
-            text: "Co-founded and ran a small studio serving 10+ clients, responsible for client acquisition, scoping, pricing, delivery, and hiring."
-            tags: [re-investment, consulting]
-
-      - point: "Visualization production"
-        variants:
-          - id: vizu.visualization-production.v1
-            text: "Produced architectural renders, humanized plans, and visualizations to communicate residential and commercial designs to investors and end buyers."
-            tags: [proptech, real-estate]
-
-      - point: "Design work"
-        variants:
-          - id: vizu.design-work.v1
-            text: "Developed architectural design for select client projects beyond visualization."
-            tags: [real-estate]
-
   - id: felipe
     title: "Architect"
     org: "Felipe Hess Architects"
@@ -339,11 +326,32 @@ experience:
           - id: felipe.portfolio-anchor.v1
             text: "Developed high-end residential projects in São Paulo and Rio de Janeiro from preliminary studies through technical documentation, working in Revit, AutoCAD, and SketchUp."
             tags: [real-estate, generic]
+          - id: felipe.portfolio-anchor.v2
+            text: "Developed residential buildings in São Paulo and Rio de Janeiro from land-use and feasibility analysis through technical documentation and construction."
+            tags: [re-investment, real-estate]
 
       - point: "Zoning / feasibility study"
         variants:
           - id: felipe.zoning-feasibility-study.v1
             text: "Carried out a zoning and feasibility study under São Paulo's master plan for residential buildings, determining buildable potential, apartment sizing, and compliance with fire and elevator regulations."
+            tags: [real-estate, re-investment]
+
+      - point: "Buildable capacity under the master plan"
+        variants:
+          - id: felipe.buildable-capacity.v1
+            text: "Calculated buildable capacity for residential developments under São Paulo's master plan, working through floor area ratio, site coverage, height limits, units per floor, and active frontage requirements to establish what each site could hold."
+            tags: [real-estate, re-investment]
+
+      - point: "First ground-up building with a developer"
+        variants:
+          - id: felipe.developer-first-building.v1
+            text: "Took part in the studio's first ground-up residential building, delivered with a São Paulo developer, from land-use and capacity analysis through design development and construction."
+            tags: [real-estate, re-investment]
+
+      - point: "Financial feasibility on candidate sites"
+        variants:
+          - id: felipe.financial-feasibility.v1
+            text: "Ran financial feasibility alongside the regulatory analysis, testing saleable area, unit mix, and development cost against the buildable programme to judge whether a site was worth pursuing."
             tags: [real-estate, re-investment]
 
       - point: "BIM documentation"
@@ -400,6 +408,62 @@ experience:
           - id: itau.furniture-inventory-tool.v1
             text: "Built a VBA-powered Excel dashboard tracking the bank's corporate furniture inventory across locations, replacing a manual process and speeding up procurement for new-building fit-outs."
             tags: [proptech, real-estate]
+
+  - id: independent
+    title: "Independent Consultant"
+    org: "Self-employed"
+    location: "São Paulo, BR and Copenhagen, DK"
+    start: "2018-07"
+    end: "Present"
+    points:
+      - point: "Consulting anchor (lead bullet when this role appears)"
+        variants:
+          - id: independent.anchor.v1
+            text: "Took on independent consulting and project work alongside studies and full-time roles, serving 10+ clients across architecture, real estate visualization, and software for the built environment."
+            tags: [consulting, generic]
+          - id: independent.anchor.v2
+            text: "Delivered independent consulting to clients across the architecture, engineering and construction sector, spanning product and UX advice, Revit and Dynamo automation, and financial analysis tooling."
+            tags: [proptech, consulting]
+
+      - point: "Visualization studio (VIZU), co-founded with a collaborator"
+        variants:
+          - id: vizu.studio-anchor.v1
+            text: "Co-founded and ran an architectural visualization studio, managing 10+ clients, project scoping and delivery, and hiring staff."
+            tags: [consulting, real-estate, generic]
+          - id: vizu.studio-anchor.v2
+            text: "Co-founded and ran a small studio serving 10+ clients, responsible for client acquisition, scoping, pricing, delivery, and hiring."
+            tags: [re-investment, consulting]
+
+      - point: "Visualization production"
+        variants:
+          - id: vizu.visualization-production.v1
+            text: "Produced architectural renders, humanized plans, and visualizations to communicate residential and commercial designs to investors and end buyers."
+            tags: [proptech, real-estate]
+
+      - point: "Design work"
+        variants:
+          - id: vizu.design-work.v1
+            text: "Developed architectural design for select client projects beyond visualization."
+            tags: [real-estate]
+
+      - point: "Architecture projects with a collaborator"
+        variants:
+          - id: independent.architecture-projects.v1
+            text: "Designed and delivered residential architecture and renovation projects for private clients with a collaborator, and entered open design competitions, alongside the B.Arch."
+            tags: [real-estate, consulting]
+
+      - point: "LCA software startup product consulting"
+        variants:
+          - id: independent.lca-startup-consulting.v1
+            text: "Advised a Copenhagen LCA software startup over two years on product direction, UI and UX, and applied AI, testing releases and returning improved Revit and Dynamo scripts."
+            tags: [proptech, esg, consulting]
+
+      - point: "Financial analysis tool for a private client"
+        variants:
+          - id: independent.financial-analysis-tool.v1
+            text: "Built an Excel and VBA financial analysis tool for a private client that ingests monthly statements and PDF exports, categorises transactions automatically, and renders them into a decision dashboard."
+            tags: [proptech, re-investment, consulting]
+
 
 # Projects are tag-selectable at the PROJECT level: a whole project is included
 # when its tags overlap the job. Bullets are always shown verbatim, never split.

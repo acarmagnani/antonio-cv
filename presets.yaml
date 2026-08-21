@@ -1,31 +1,30 @@
 # Preset CV blocks.
 #
 # A preset is a ready-made CV for a FAMILY of jobs, not for one job. It says which
-# profile, which roles appear (and in what order), which bullets, which projects,
-# and which skill groups. Ids only, resolved against content_base.yaml at render
-# time, exactly like an application selection. No CV text lives here.
+# profile, which roles appear, which bullets, which projects, and which skill groups.
+# Ids only, resolved against content_base.yaml at render time. No CV text lives here.
 #
-# The point of a preset is that each block POINTS ONE DIRECTION. Roles that point
-# somewhere else are left out on purpose: a role listed nowhere in `roles` does not
-# appear in that CV at all. That is the whole reason this file exists.
+# The point of a preset is that each block POINTS ONE DIRECTION. Within a role, pick
+# the bullets that serve this block's direction and leave the rest out, so a reader
+# who knows nothing about the employer still reads a coherent trajectory. Felipe Hess
+# and Isay Weinfeld should read as real estate development in the real-estate block
+# and as computational work in the data block: same jobs, different true subset.
 #
-# An application's selection.yaml normally just points at one of these and says what
-# was special about that particular job:
+# `roles` declares which roles the block shows. It does NOT set the order. Roles
+# always render reverse-chronologically, in content_base.yaml order. That is fixed.
+#
+# An application normally just points at a block and says what was special about that
+# particular job:
 #
 #     extends: real-estate-investment
 #     add:
 #       - ramboll.genesta-supplier-human-rights.v1
 #     drop:
-#       - itau.furniture-inventory-tool.v1
+#       - itau.new-office-towers-technical.v2
 #
-# `add` also accepts project ids and skill-group names. `drop` removes anything the
-# preset included. To override the profile, set `profile:` in the selection. A job
-# that fits no block at all can still ignore `extends` and list everything by hand.
-#
-# `roles` doubles as the render order. Keeping it reverse-chronological (the order
-# roles appear in content_base.yaml) is the safe default; reordering is allowed but
-# a CV that breaks chronology reads as a mistake to most recruiters. Prefer to shift
-# emphasis by cutting roles and by how many bullets each role keeps.
+# `add` and `drop` also accept project ids and skill-group names. To override the
+# profile, set `profile:` in the selection. A job that fits no block can ignore
+# `extends` and list everything by hand.
 #
 # Blocks are derived from what Antonio actually applies to, not from guesswork. See
 # applications/target/ and applications/wide/.
@@ -41,7 +40,7 @@ presets:
       toward. Matches Clikalia, EY-Parthenon transaction RE, Genesta, Greystar,
       Urban Partners, Cushman & Wakefield.
     profile: profile.real-estate-investment
-    roles: [sweco, ramboll, isay, ospa, itau]
+    roles: [sweco, ramboll, isay, ospa, felipe, itau]
     bullets:
       # Sweco: asset risk work for institutional lenders
       - sweco.department-anchor.v2
@@ -55,23 +54,30 @@ presets:
       - ramboll.real-estate-esg.v1
       - ramboll.colt-salience-tool.v2
 
-      # Isay Weinfeld: kept to two lines. Bridges 2023-2024 and carries the
-      # strongest technical showpiece. Everything else architectural is cut.
-      - isay.portfolio-anchor.v1
-      - isay.staircase-grasshopper-plugin.v1
+      # Isay Weinfeld: development, not architecture. The Grasshopper plugin is
+      # deliberately left to the data block; here it would pull the wrong way.
+      - isay.portfolio-anchor.v2
+      - isay.buildable-capacity.v1
+      - isay.development-through-construction.v1
 
-      # OSPA: the anchor role for this block, given the most space
+      # OSPA: the anchor role for this block
       - ospa.feasibility-anchor.v1
       - ospa.numerical-feasibility-financial-modeling.v1
       - ospa.zoning-land-use-regulatory.v1
       - ospa.volumetric-massing-study.v2
       - ospa.client-presentations.v1
 
+      # Felipe Hess: reads as pure real estate here. zoning-feasibility-study is
+      # left out only because buildable-capacity covers the same ground better.
+      - felipe.portfolio-anchor.v2
+      - felipe.developer-first-building.v1
+      - felipe.buildable-capacity.v1
+      - felipe.financial-feasibility.v1
+
       # Itau: building-level due diligence on assets a bank was buying or leasing
       - itau.documentation-review-anchor.v2
       - itau.building-environmental-energy.v1
       - itau.new-office-towers-technical.v2
-      - itau.furniture-inventory-tool.v1
     projects:
       - project.house-price-prediction
       - project.real-estate-development
@@ -86,7 +92,7 @@ presets:
       Taxonomy work, building certification. Matches Jacobs, Bureau Veritas,
       NIRAS, EY sustainability data analytics, CBRE energy analyst.
     profile: profile.esg-consulting
-    roles: [sweco, ramboll, isay, ospa, itau]
+    roles: [sweco, ramboll, isay, ospa, felipe, itau, independent]
     bullets:
       - sweco.department-anchor.v1
       - sweco.climate-risk-assessments.v1
@@ -107,13 +113,19 @@ presets:
       - ospa.environmental-analysis.v1
       - ospa.numerical-feasibility-financial-modeling.v1
 
+      - felipe.portfolio-anchor.v1
+      - felipe.environmental-analysis.v1
+
       - itau.documentation-review-anchor.v1
       - itau.building-environmental-energy.v1
       - itau.new-office-towers-technical.v1
+
+      - independent.anchor.v1
+      - independent.lca-startup-consulting.v1
     projects:
       - project.embodied-carbon-toolkit
-      - project.real-estate-development
       - project.rammed-blue-biomass
+      - project.real-estate-development
       - project.masters-thesis-computational
     skills: [esg_and_sustainability, data_and_analysis, real_estate_and_urban, languages]
 
@@ -125,7 +137,7 @@ presets:
       valuation modelling, proptech. Matches GXN, Hobbii, SEB portfolio analyst,
       Trackunit, and the modelling half of Clikalia.
     profile: profile.proptech
-    roles: [sweco, ramboll, isay, ospa, itau]
+    roles: [sweco, ramboll, isay, ospa, felipe, itau, independent]
     bullets:
       - sweco.department-anchor.v1
       - sweco.geospatial-data-and-analysis.v1
@@ -146,8 +158,15 @@ presets:
       - ospa.numerical-feasibility-financial-modeling.v1
       - ospa.volumetric-massing-study.v1
 
+      - felipe.portfolio-anchor.v1
+      - felipe.bim-documentation.v1
+
       - itau.documentation-review-anchor.v1
       - itau.furniture-inventory-tool.v1
+
+      - independent.anchor.v2
+      - independent.lca-startup-consulting.v1
+      - independent.financial-analysis-tool.v1
     projects:
       - project.masters-thesis-computational
       - project.house-price-prediction

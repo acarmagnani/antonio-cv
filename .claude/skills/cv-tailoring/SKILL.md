@@ -111,7 +111,7 @@ projects:
 skills: [data_and_analysis, real_estate_and_urban, languages]
 ```
 
-`roles` names which roles appear and in what order. Keep it reverse-chronological (the order in `content_base.yaml`): a CV that breaks chronology reads as a mistake. Shift emphasis by cutting roles and by how many bullets each keeps, not by reordering. Do not include meta or education, which are always static.
+`roles` declares which roles the CV shows. It does NOT set the order: roles always render reverse-chronologically, in `content_base.yaml` order. That is not configurable and must not be worked around. Shift emphasis by cutting roles and by how many bullets each keeps. Do not include meta or education, which are always static.
 
 ### 4. Validate
 

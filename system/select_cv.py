@@ -85,6 +85,8 @@ def resolve(sel, base, presets, idx):
         "profile": sel.get("profile") or preset.get("profile"),
         "bullets": list(sel.get("bullets") or preset.get("bullets") or []),
         "projects": list(sel.get("projects") or preset.get("projects") or []),
+        # `roles` documents which roles the block intends to show. It is validated,
+        # never used for ordering: rendering is always reverse-chronological.
         "roles": list(sel.get("roles") or preset.get("roles") or []),
         "skills": list(sel.get("skills") or preset.get("skills") or idx["skills"]),
         "preset": preset_name,
@@ -162,13 +164,11 @@ def validate(res, base, idx):
 
 
 def ordered_roles(res, base, idx):
-    """Roles that actually have bullets, in the preset's order, with any role the
-    preset did not name appended in content_base order so a bullet is never lost."""
+    """Roles that actually have bullets, ALWAYS in content_base order, which is
+    reverse-chronological. A CV is reverse-chronological, full stop: `roles`
+    declares which roles a block shows, never the order they show in."""
     used = {idx["variants"][b][1] for b in res["bullets"] if b in idx["variants"]}
-    order = [idx["role_ids"].index(r) for r in res["roles"]
-             if r in idx["role_ids"] and idx["role_ids"].index(r) in used]
-    order += [ri for ri in sorted(used) if ri not in order]
-    return order
+    return sorted(used)
 
 
 def main():
