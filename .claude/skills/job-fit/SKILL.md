@@ -16,11 +16,13 @@ his odds, and whether the role moves him toward the career he wants.
   `CLAUDE.md`.
 - `notes/context.md` — the versioned personal context (travels with the repo across machines):
   - **Job search 2026** — work eligibility (Italian / EU citizen, so no visa in the EU/EEA; UK
-    needs sponsorship post-Brexit), Spanish fluent, and the DIRECTION, which changed in 2026-08:
-    real estate first, real estate + data second, ESG + data as the fallback. Do not treat these
-    as co-equal any more, and do not treat green certification (BREEAM/LEED/DGNB) as a target.
+    needs sponsorship post-Brexit), Spanish fluent, and the **two-horizon direction**. Read that
+    part carefully: real estate is where he wants to END UP, but in the short term he is applying
+    widely and willingly to ESG, sustainability, consulting, energy, infrastructure and
+    computational/circular-economy roles. The ranking is a destination, never a filter.
   - **Compensation** and **Realistic odds by role family** — read both. They are the difference
-    between a useful verdict and a polite one.
+    between a useful verdict and a polite one. Note that his odds are HIGHEST in the adjacent
+    families, not the target one.
   - **Ambitions** — the professional he wants to become (the "future" axis).
   - **Journey** — his background arc.
 - If his ambitions or a key constraint are not clear from `notes/context.md`, ask one short
@@ -31,9 +33,10 @@ his odds, and whether the role moves him toward the career he wants.
 - Real fit, not flattery. Name the genuine matches AND the real gaps (missing must-haves, wrong
   level, a credential he lacks such as BREEAM, a tool he does not have such as Presto).
 - **Eligibility is often decisive.** EU roles are clean (Italian passport, Spanish); UK roles
-  need sponsorship; always check that first. But **location itself is now his least important
-  criterion**: he will relocate anywhere in the EU and would return to Brazil. Do not down-rank a
-  good real estate role for being outside Copenhagen.
+  need sponsorship; always check that first. On location, he is searching **Europe only at this
+  stage**: Nordics first, then London, then Spain and Italy, which are as far as he would move
+  today. Do not down-rank a good role for being outside Copenhagen, and do not surface Brazil,
+  the US or Asia as current options; those are a later horizon.
 - **Level. Always state the direction explicitly: below, at, or above his level, and by how much.**
   Benchmark against what he actually has: roughly 4.5 years total including internships and the
   trainee role, of which ~18 months titled "Architect" (Isay Weinfeld), most recent title "Project
@@ -50,11 +53,17 @@ his odds, and whether the role moves him toward the career he wants.
   band, and how the local market compares. Recalibrate to the LOCAL market (not his Nordic
   salary) and say the data is noisy. A well-aimed role that structurally caps low (green
   certification, pure ESG reporting) deserves that stated plainly.
-- **Anchor the odds in `notes/context.md` -> "Realistic odds by role family".** Valuation and
-  advisory, proptech pricing, research and development analyst roles are genuinely winnable;
-  investment/acquisitions analyst seats at the big funds are not, with the CV as it stands.
-  The decisive gap for real estate roles is no transaction experience and no DCF/waterfall
-  modelling, so a posting that runs a modelling test is a long shot today. Say so.
+- **Anchor the odds in `notes/context.md` -> "Realistic odds by role family".** On-target:
+  valuation and advisory, proptech pricing, research and development analyst are winnable;
+  investment/acquisitions seats at the big funds are not, with the CV as it stands, because the
+  decisive gap is no transaction experience and no DCF/waterfall modelling. Adjacent (ESG and
+  sustainability consulting, climate risk, energy, circular economy): he is a strong candidate,
+  not a stretch.
+- **Do NOT recommend skipping a solid role just because it is not real estate.** Right now he
+  wants to be working, and an adjacent seat he can move within is a real route to the target.
+  Reserve "Pula" for: not eligible, several levels above him, or a role that would genuinely
+  trap him with no way out. When a role is adjacent rather than on-target, say so in **Futuro**
+  and name the path from it toward real estate, instead of discouraging the application.
 
 ## Output — SHORT, in Portuguese (his language)
 
