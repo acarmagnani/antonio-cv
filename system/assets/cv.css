@@ -3,8 +3,8 @@
 @page {
     size: A4;
     /* First value = top/bottom, second = left/right. Bump the second value
-       for wider side margins (was 4mm all around). */
-    margin: 4mm 12mm;
+       for wider side margins (was 4mm all around, then 4mm 12mm). */
+    margin: 3mm 9mm;
 }
 
 .cv-container {
@@ -47,7 +47,7 @@
     display: grid;
     grid-template-columns: calc(var(--scale) * 50px) 1fr;
     gap: 0px;
-    margin-top: calc(var(--scale) * 3px);
+    margin-top: calc(var(--scale) * 2.5px);
 }
 
 .section-title {
@@ -59,7 +59,7 @@
 .section-content {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
 }
 
 /* Pagination control: never split a single role/project (its header, dates,
