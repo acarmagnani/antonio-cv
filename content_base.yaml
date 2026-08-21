@@ -12,6 +12,10 @@ profiles:
     tags: [esg, consulting]
     text: "Experience across sustainability consulting and the built environment, from ESG and human rights due diligence to climate risk work on internationally financed infrastructure. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to sustainability. Hands-on skills span the UNGP and OECD due-diligence frameworks, climate hazard and risk assessment, and building structured analytical tools in Excel and Python. Motivated by work where sustainability, the built environment, and rigorous analysis intersect."
 
+  - id: profile.real-estate-investment
+    tags: [re-investment, real-estate]
+    text: "Experience in real estate development and asset due diligence, from feasibility and financial modeling to zoning analysis and the technical and environmental review of buildings under acquisition. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to real estate and valuation. Hands-on skills span feasibility and investment sizing, zoning and buildable-potential analysis, predictive property valuation in Python, and building performance and climate risk assessment. Motivated by work where real estate, capital, and rigorous analysis intersect."
+
   - id: profile.real-estate-esg-data
     tags: [real-estate, esg, proptech, consulting]
     text: "Experience across real estate development and sustainability consulting, from feasibility and financial modeling to ESG due diligence, building energy assessment, and climate risk work on internationally financed infrastructure. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to real estate and sustainability. Hands-on skills span feasibility and financial modeling, building energy and environmental performance analysis, GIS, and structured analytical tools in Excel, Power BI, and Python. Motivated by work where real estate, sustainability, and rigorous analysis intersect."
@@ -39,11 +43,14 @@ experience:
     start: "2026-02"
     end: "2026-07"
     points:
-      - point: "Department anchor (always shows Sweco's core)"
+      - point: "Department anchor (lead bullet when this role appears)"
         variants:
           - id: sweco.department-anchor.v1
             text: "Support consulting teams delivering internationally funded infrastructure projects in water, energy, and transport across emerging and developing economies, financed by development banks including the World Bank, EBRD, IFDK, KfW and EIB."
             tags: [infrastructure, consulting, generic]
+          - id: sweco.department-anchor.v2
+            text: "Supported advisory teams on capital-intensive water, energy, and transport assets financed by development banks including the World Bank, EBRD, KfW and EIB, working to the appraisal and reporting standards those lenders require."
+            tags: [re-investment, consulting]
 
       - point: "Climate risk assessments (showpiece)"
         variants:
@@ -53,6 +60,9 @@ experience:
           - id: sweco.climate-risk-assessments.v2
             text: "Produced the climate risk and adaptation chapters of project Inception Reports for internationally financed water projects, translating climate projections into hazard, risk, and adaptation findings for client and lender review."
             tags: [esg, consulting]
+          - id: sweco.climate-risk-assessments.v3
+            text: "Assessed physical climate risk across major water infrastructure assets under lender climate-proofing standards (JASPERS, EBRD), rating each asset by hazard exposure and vulnerability to inform adaptation and investment decisions."
+            tags: [re-investment, esg]
 
       - point: "Azerbaijan field mission (asset assessment)"
         variants:
@@ -100,7 +110,7 @@ experience:
         variants:
           - id: sweco.project-pricing-model.v1
             text: "Developed a pricing tool to support bid decisions, parametrizing expert fee bands and project economics for financial viability testing of tender configurations."
-            tags: [consulting, infrastructure]
+            tags: [consulting, infrastructure, re-investment]
 
       - point: "Bangladesh branch office setup"
         variants:
@@ -114,11 +124,14 @@ experience:
     start: "2025-05"
     end: "2025-08"
     points:
-      - point: "Frameworks anchor (always shows Ramboll's core)"
+      - point: "Frameworks anchor (lead bullet when this role appears)"
         variants:
           - id: ramboll.frameworks-anchor.v1
             text: "Conducted human rights due diligence for corporate clients, applying the UN Guiding Principles on Business and Human Rights and OECD Guidelines to assess salient risks across global supply chains."
             tags: [esg, consulting, generic]
+          - id: ramboll.frameworks-anchor.v2
+            text: "Conducted due diligence for corporate and real estate investment clients, applying the UN Guiding Principles and OECD Guidelines to identify and prioritise material risks across assets and supply chains."
+            tags: [re-investment, consulting, esg]
 
       - point: "Nordzucker HRIA tool"
         variants:
@@ -133,7 +146,7 @@ experience:
             tags: [esg, consulting, generic]
           - id: ramboll.colt-salience-tool.v2
             text: "Built a fully automated risk-assessment system in Excel, consolidating risk data across supply chains into a single dashboard that updated salient risks dynamically."
-            tags: [proptech]
+            tags: [proptech, re-investment]
 
       - point: "Colt human rights workshop materials"
         variants:
@@ -151,7 +164,7 @@ experience:
         variants:
           - id: ramboll.genesta-code-of-conduct.v1
             text: "Reviewed and strengthened the Code of Conduct of real estate investment managers, identifying gaps against international human rights standards to reduce its exposure to human rights and labor risks."
-            tags: [esg, real-estate, consulting]
+            tags: [esg, real-estate, consulting, re-investment]
 
       - point: "Genesta supplier human rights resource"
         variants:
@@ -172,7 +185,7 @@ experience:
         variants:
           - id: ramboll.real-estate-esg.v1
             text: "Developed a client-facing overview of the firm's real estate ESG due diligence services, centered on building energy and decarbonization assessments aligned with EU building performance regulations."
-            tags: [esg, real-estate, consulting]
+            tags: [esg, real-estate, consulting, re-investment]
 
       - point: "AI in research workflow"
         variants:
@@ -186,7 +199,7 @@ experience:
     start: "2023-02"
     end: "2024-08"
     points:
-      - point: "Portfolio anchor (always shows Isay's core)"
+      - point: "Portfolio anchor (lead bullet when this role appears)"
         variants:
           - id: isay.portfolio-anchor.v1
             text: "Delivered high-end residential, hotel, and mixed-use projects across South America, North America, Europe, the Middle East, and Asia at one of Brazil's most prominent architecture studios."
@@ -196,7 +209,7 @@ experience:
         variants:
           - id: isay.staircase-grasshopper-plugin.v1
             text: "Built a Grasshopper plugin in Python that generates bespoke staircases from a floor plan, cutting staircase modeling from days to around 20 minutes and enabling far more design iterations and geometric complexity."
-            tags: [proptech, real-estate]
+            tags: [proptech, real-estate, re-investment]
 
       - point: "Staircase plugin adoption / teaching"
         variants:
@@ -243,41 +256,44 @@ experience:
     start: "2022-02"
     end: "2022-10"
     points:
-      - point: "Feasibility anchor (always shows OSPA's core)"
+      - point: "Feasibility anchor (lead bullet when this role appears)"
         variants:
           - id: ospa.feasibility-anchor.v1
             text: "Produced 15+ feasibility studies for mixed-use and residential developments across Brazil and the US (São Paulo, Rio de Janeiro, Porto Alegre, Miami) for developer clients."
-            tags: [real-estate, generic]
+            tags: [real-estate, generic, re-investment]
 
       - point: "Numerical feasibility / financial modeling"
         variants:
           - id: ospa.numerical-feasibility-financial-modeling.v1
             text: "Ran early-stage financial feasibility on candidate sites, sizing investment and return against buildable area, unit mix, price per square metre, and parking to test viability."
-            tags: [real-estate]
+            tags: [real-estate, re-investment]
 
       - point: "Zoning / land-use regulatory analysis"
         variants:
           - id: ospa.zoning-land-use-regulatory.v1
             text: "Analyzed municipal master plans and land-use law to determine development potential, unit counts, apartment sizing, and setback rules, identifying regulatory opportunities to maximize buildable value."
-            tags: [real-estate]
+            tags: [real-estate, re-investment]
 
       - point: "Volumetric massing study in Revit"
         variants:
           - id: ospa.volumetric-massing-study.v1
             text: "Developed volumetric massing studies in Revit, resolving circulation, unit layouts, ground-floor active frontage, and parking against zoning metrics."
             tags: [real-estate, proptech]
+          - id: ospa.volumetric-massing-study.v2
+            text: "Tested development scenarios in Revit, resolving unit mix, circulation, ground-floor use, and parking against zoning limits to establish the buildable programme behind each feasibility case."
+            tags: [re-investment, real-estate]
 
       - point: "Environmental analysis"
         variants:
           - id: ospa.environmental-analysis.v1
             text: "Ran preliminary environmental and solar studies to inform massing and layout decisions."
-            tags: [esg, real-estate, proptech]
+            tags: [esg, real-estate, proptech, re-investment]
 
       - point: "Client presentations"
         variants:
           - id: ospa.client-presentations.v1
             text: "Produced images, plans, and diagrams and presented feasibility outcomes to developer clients."
-            tags: [consulting, real-estate]
+            tags: [consulting, real-estate, re-investment]
 
   - title: "Co-Founder"
     org: "VIZU"
@@ -285,11 +301,14 @@ experience:
     start: "2022-02"
     end: "2022-10"
     points:
-      - point: "Studio anchor (always shows VIZU's core)"
+      - point: "Studio anchor (lead bullet when this role appears)"
         variants:
           - id: vizu.studio-anchor.v1
             text: "Co-founded and ran an architectural visualization studio, managing 10+ clients, project scoping and delivery, and hiring staff."
             tags: [consulting, real-estate, generic]
+          - id: vizu.studio-anchor.v2
+            text: "Co-founded and ran a small studio serving 10+ clients, responsible for client acquisition, scoping, pricing, delivery, and hiring."
+            tags: [re-investment, consulting]
 
       - point: "Visualization production"
         variants:
@@ -309,7 +328,7 @@ experience:
     start: "2021-07"
     end: "2022-02"
     points:
-      - point: "Portfolio anchor (always shows Felipe Hess's core)"
+      - point: "Portfolio anchor (lead bullet when this role appears)"
         variants:
           - id: felipe.portfolio-anchor.v1
             text: "Developed high-end residential projects in São Paulo and Rio de Janeiro from preliminary studies through technical documentation, working in Revit, AutoCAD, and SketchUp."
@@ -319,7 +338,7 @@ experience:
         variants:
           - id: felipe.zoning-feasibility-study.v1
             text: "Carried out a zoning and feasibility study under São Paulo's master plan for residential buildings, determining buildable potential, apartment sizing, and compliance with fire and elevator regulations."
-            tags: [real-estate]
+            tags: [real-estate, re-investment]
 
       - point: "BIM documentation"
         variants:
@@ -345,23 +364,29 @@ experience:
     start: "2020-08"
     end: "2021-07"
     points:
-      - point: "Documentation review anchor (always shows Itaú's core)"
+      - point: "Documentation review anchor (lead bullet when this role appears)"
         variants:
           - id: itau.documentation-review-anchor.v1
             text: "Reviewed technical documentation from architecture and engineering firms prior to construction authorization, checking drawings against building, accessibility, and fire-safety norms (NBR standards)."
             tags: [real-estate, consulting, generic]
+          - id: itau.documentation-review-anchor.v2
+            text: "Reviewed technical and regulatory documentation on the bank's real estate projects, checking design against Brazilian building, accessibility, and fire-safety standards (NBR) as a compliance gate before construction was authorised."
+            tags: [re-investment, real-estate]
 
       - point: "Building environmental / energy due diligence"
         variants:
           - id: itau.building-environmental-energy.v1
             text: "Assessed the environmental and energy performance of buildings the bank was acquiring or leasing, reviewing consumption data, efficiency ratings, and certifications as part of internal due diligence."
-            tags: [real-estate, esg]
+            tags: [real-estate, esg, re-investment]
 
       - point: "New office towers technical review"
         variants:
           - id: itau.new-office-towers-technical.v1
             text: "Supported technical review of new office towers under construction at the bank's São Paulo headquarters campus, evaluating design documentation for compliance and environmental performance."
             tags: [real-estate]
+          - id: itau.new-office-towers-technical.v2
+            text: "Supported owner-side technical review of new office towers under construction at the bank's São Paulo headquarters campus, evaluating design documentation for regulatory compliance and environmental performance."
+            tags: [re-investment, real-estate]
 
       - point: "Furniture inventory tool"
         variants:
@@ -376,7 +401,7 @@ projects:
     name: "Master's Thesis, Computational Urban Analysis for Intensification Strategy"
     org: "The Royal Danish Academy"
     location: "Copenhagen, DK"
-    tags: [proptech, real-estate]
+    tags: [proptech, real-estate, re-investment]
     bullets:
       - "Developed a computational framework to identify underused spaces in the historic city center of São Paulo, Brazil, combining urban morphology analysis, land use data, and social vulnerability indicators."
       - "Built an algorithm that uses urban data, including building typology, use patterns, regulatory conditions, and building use, to generate programmatic and morphological typologies for urban intensification, aligned with the city's existing urban policies."
@@ -386,7 +411,7 @@ projects:
     name: "Real Estate Development Recommendation Tool"
     org: "The Royal Danish Academy"
     location: "Copenhagen, DK"
-    tags: [proptech, real-estate, esg]
+    tags: [proptech, real-estate, esg, re-investment]
     bullets:
       - "Built a machine learning tool that generates site-specific development recommendations for buildings in Copenhagen by integrating financial, social, sustainability, and geospatial data."
       - "Designed a user interface allowing different stakeholders to adjust impact drivers and weighting, with predictive outputs aligned to ESG priorities and local development conditions."
@@ -411,7 +436,7 @@ projects:
   - id: project.house-price-prediction
     name: "House Price Prediction - Competition"
     location: "Copenhagen, DK"
-    tags: [proptech, real-estate]
+    tags: [proptech, real-estate, re-investment]
     bullets:
       - "Built a predictive model for real estate valuation using ensemble learning (XGBoost, LightGBM, Ridge, CatBoost) and feature engineering on structured property and financial data, finishing in the top 2% of competitors."
 

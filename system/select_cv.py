@@ -13,7 +13,7 @@ is replaced by these structural checks:
   1. Every id in `profile`, `bullets` and `projects` exists in content_base.yaml.  -> error
   2. No two bullets come from the same point (no duplicate fact).                  -> error
   3. No duplicate ids in the list.                                                 -> error
-  4. Every base role keeps at least one bullet.                                    -> warning
+  4. Roles with no bullets are listed as deliberately omitted.                     -> info
   5. A profile is selected.                                                        -> warning
 
 --preview prints the resolved CV as plain text (useful for a quick read without
@@ -90,11 +90,15 @@ def main():
         if len(ids) > 1:
             errors.append(f"DUPLICATE FACT, two variants of the same point: {', '.join(ids)}")
 
-    # 4. Role coverage.
+    # 4. Role coverage. Omitting a role is now a deliberate tailoring move
+    # (a CV that points one direction drops the roles that point elsewhere),
+    # so this is reported as information, not as a warning.
     used_roles = {variants[b][1] for b in wanted if b in variants}
-    for ri, role in enumerate(base["experience"]):
-        if ri not in used_roles:
-            warnings.append(f'Role has 0 bullets: {role["title"]} @ {role["org"]}')
+    omitted = [
+        f'{role["title"]} @ {role["org"]}'
+        for ri, role in enumerate(base["experience"])
+        if ri not in used_roles
+    ]
 
     if warnings:
         print("WARNINGS:")
@@ -108,7 +112,13 @@ def main():
         print(f"\nFAILED: {len(errors)} error(s).")
         sys.exit(1)
 
-    print(f"OK: {len(used_roles)} roles, {len(wanted)} bullets, "
+    if omitted:
+        print("ROLES OMITTED (deliberate):")
+        for o in omitted:
+            print("  -", o)
+        print()
+
+    print(f"OK: {len(used_roles)} roles shown, {len(wanted)} bullets, "
           f"{len(sel.get('projects') or [])} projects, all ids resolve.")
 
     if preview:
