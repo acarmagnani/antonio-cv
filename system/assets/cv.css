@@ -4,7 +4,7 @@
     size: A4;
     /* First value = top/bottom, second = left/right. Bump the second value
        for wider side margins (was 4mm all around, then 4mm 12mm). */
-    margin: 3mm 9mm;
+    margin: 2mm 7mm;
 }
 
 .cv-container {
