@@ -1,0 +1,91 @@
+profile: "Experience in real estate development, feasibility, and financial modeling, grounded in zoning and land-use analysis across multiple markets. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on computational and data methods for real estate and urban development. Hands-on skills span feasibility and P&L modeling, zoning and buildable-potential analysis, and volumetric studies in Revit. Motivated by work where real estate, finance, and design intersect."
+
+experience:
+  - title: "Project Assistant in International Infrastructure Projects"
+    org: "Sweco Danmark A/S"
+    location: "Copenhagen, DK"
+    start: "2026-02"
+    end: "Present"
+    bullets:
+      - "Support consulting teams delivering internationally funded infrastructure projects in water, energy, and transport across emerging and developing economies, financed by development banks including the World Bank, EBRD, IFDK, KfW and EIB."
+      - "Reviewed engineering designs across multiple infrastructure projects under FIDIC Yellow Book arrangements, checking specifications against subconsultants' technical drawings."
+      - "Joined a field mission across Baku's water supply system, assessing asset condition and identifying technical, social, environmental, and human rights risks through site inspections and interviews."
+      - "Produced the climate risk and adaptation chapters of project Inception Reports for internationally financed water projects, translating climate projections into hazard, risk, and adaptation findings for client and lender review."
+      - "Contributed to the technical and methodology sections of tender proposals, articulating Sweco's delivery approach for infrastructure project bids."
+
+  - title: "Intern in Responsible Business Conduct"
+    org: "Ramboll Management Consulting"
+    location: "Copenhagen, DK"
+    start: "2025-05"
+    end: "2025-08"
+    bullets:
+      - "Conducted human rights due diligence for corporate clients, applying the UN Guiding Principles on Business and Human Rights and OECD Guidelines to assess salient risks across global supply chains."
+      - "Developed a client-facing overview of the firm's real estate ESG due diligence services, centered on building energy and decarbonization assessments aligned with EU building performance regulations."
+      - "Led an internal market study mapping 20+ critical raw materials supply chains to identify prospective clients and new ESG service lines, connecting regulatory drivers to concrete business development targets."
+
+  - title: "Architect"
+    org: "Isay Weinfeld Architects"
+    location: "São Paulo, BR"
+    start: "2023-02"
+    end: "2024-08"
+    bullets:
+      - "Delivered high-end residential, hotel, and mixed-use projects across South America, North America, Europe, the Middle East, and Asia at one of Brazil's most prominent architecture studios."
+      - "Ran daylight and solar-exposure simulations with Ladybug in Grasshopper to drive massing and orientation decisions, quantifying light incidence across building layouts."
+      - "Coordinated multidisciplinary inputs (structural, HVAC, electrical, lighting) into a single Revit model."
+
+  - title: "Trainee in Real Estate Product Development"
+    org: "OSPA"
+    location: "São Paulo, BR"
+    start: "2022-02"
+    end: "2022-10"
+    bullets:
+      - "Produced 15+ feasibility studies for mixed-use and residential developments across Brazil and the US (São Paulo, Rio de Janeiro, Porto Alegre, Miami) for developer clients."
+      - "Ran early-stage financial feasibility on candidate sites, sizing investment and return against buildable area, unit mix, price per square metre, and parking to test viability."
+      - "Analyzed municipal master plans and land-use law to determine development potential, unit counts, apartment sizing, and setback rules, identifying regulatory opportunities to maximize buildable value."
+      - "Produced images, plans, and diagrams and presented feasibility outcomes to developer clients."
+
+  - title: "Co-Founder"
+    org: "VIZU"
+    location: "São Paulo, BR"
+    start: "2022-02"
+    end: "2022-10"
+    bullets:
+      - "Co-founded and ran an architectural visualization studio, managing 10+ clients, project scoping and delivery, and hiring staff."
+      - "Produced architectural renders, humanized plans, and visualizations to communicate residential and commercial designs to investors and end buyers."
+
+  - title: "Architect"
+    org: "Felipe Hess Architects"
+    location: "São Paulo, BR"
+    start: "2021-07"
+    end: "2022-02"
+    bullets:
+      - "Developed high-end residential projects in São Paulo and Rio de Janeiro from preliminary studies through technical documentation, working in Revit, AutoCAD, and SketchUp."
+      - "Carried out a zoning and feasibility study under São Paulo's master plan for residential buildings, determining buildable potential, apartment sizing, and compliance with fire and elevator regulations."
+      - "Ran environmental and daylight studies to inform early design decisions."
+
+  - title: "Intern in Project Management"
+    org: "Itaú-Unibanco"
+    location: "São Paulo, BR"
+    start: "2020-08"
+    end: "2021-07"
+    bullets:
+      - "Reviewed technical documentation from architecture and engineering firms prior to construction authorization, checking drawings against building, accessibility, and fire-safety norms (NBR standards)."
+      - "Assessed the environmental and energy performance of buildings the bank was acquiring or leasing, reviewing consumption data, efficiency ratings, and certifications as part of internal due diligence."
+      - "Supported technical review of new office towers under construction at the bank's São Paulo headquarters campus, evaluating design documentation for compliance and environmental performance."
+
+projects:
+  - name: "Embodied Carbon Toolkit"
+    org: "Revalu"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Collaborated with Revalu, a Copenhagen-based LCA platform, to design and deliver a Revit-based toolkit for embodied carbon calculations integrating the platform's GWP values."
+      - "Built a pre-configured Revit schedule that computes embodied carbon with built-in documentation for adoption by architects."
+      - "Provided UX feedback drawing on years of hands-on Revit experience, advising on material search, organization, and Revit integration workflows."
+      - "Maintained an ongoing advisory relationship with Revalu's product team, contributing feedback on API development and platform features over a year after the initial delivery."
+
+  - name: "Real Estate Development Recommendation Tool"
+    org: "The Royal Danish Academy"
+    location: "Copenhagen, DK"
+    bullets:
+      - "Built a machine learning tool that generates site-specific development recommendations for buildings in Copenhagen by integrating financial, social, sustainability, and geospatial data."
+      - "Designed a user interface allowing different stakeholders to adjust impact drivers and weighting, with predictive outputs aligned to ESG priorities and local development conditions."
