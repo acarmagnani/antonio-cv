@@ -1,0 +1,20 @@
+# Cushman & Wakefield, Investment Associate, Capital Markets, Madrid.
+#
+# The `real-estate-investment` block covers the core (feasibility, buildable
+# capacity, asset due diligence, financial tooling). Two deltas, both driven by
+# an explicit line in the posting:
+#
+#   - The posting asks for "demonstrated interest in artificial intelligence
+#     applications and emerging technologies, with the ability to leverage
+#     digital tools to enhance productivity". The block deliberately parks the
+#     Grasshopper plugin and the AI product-advisory work in the data block; here
+#     they answer a stated requirement, so both come back in.
+#   - Sweco's QGIS water-infrastructure databases go out. It is the bullet
+#     furthest from commercial real estate capital markets, and the thesis
+#     project already carries the geospatial evidence.
+extends: real-estate-investment
+add:
+  - isay.staircase-grasshopper-plugin.v1
+  - independent.lca-startup-consulting.v1
+drop:
+  - sweco.geospatial-data-and-analysis.v1

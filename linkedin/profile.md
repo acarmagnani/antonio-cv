@@ -44,7 +44,7 @@ ESG & Sustainability in the Built Environment | Human Rights Due Diligence · Cl
 ```
 I trained as an architect, but the part that pulled me was always the step before the drawings. Why this gets built here, what it costs, what it emits, and where it could be done better.
 
-That question took me from São Paulo to Copenhagen for an M.Arch in Architecture Computation at The Royal Danish Academy, a programme about using data to make construction and real estate work better.
+That question took me from São Paulo to Copenhagen for a Master's Degree in Architecture Computation at The Royal Danish Academy, a programme about using data to make construction and real estate work better.
 
 I work on sustainability in the built environment, with the numbers attached. Human rights and ESG due diligence, climate risk, and the reporting frameworks around them. I like the part where a pile of regulation and site data turns into something a client can act on.
 
@@ -71,7 +71,7 @@ Real Estate & Data | Feasibility · Valuation · ESG | Python, GIS, Machine Lear
 ```
 I trained as an architect, but the part that pulled me was always the step before the drawings: why this gets built here, what it is worth, what it emits, and where it could be done better.
 
-That question took me from São Paulo to Copenhagen for an M.Arch in Architecture Computation at The Royal Danish Academy, a programme about using data to make real estate and construction work better.
+That question took me from São Paulo to Copenhagen for a Master's Degree in Architecture Computation at The Royal Danish Academy, a programme about using data to make real estate and construction work better.
 
 I work where real estate, data and sustainability meet. Feasibility and development potential, zoning and land use, market and property data, and the ESG side that increasingly decides whether a project stands up. I like the part where a site, a spreadsheet and a set of rules turn into a decision someone can act on.
 
@@ -227,7 +227,7 @@ Keep the current two-position split under one company entry.
 ## 3. Education
 
 ### The Royal Danish Academy
-`Master of Architecture - MArch, Architecture Computation` · `Aug 2024 – Jul 2026`
+`Master's Degree, Architecture Computation` · `Aug 2024 – Jul 2026`
 
 ```
 A programme on using data, technology and innovation to improve real estate and construction. Focus on data-driven sustainability and urban analysis, working in Python, GIS, machine learning, life cycle assessment and parametric design.
@@ -236,7 +236,7 @@ Master's thesis on identifying underused space in central São Paulo, combining 
 ```
 
 ### Universidade Presbiteriana Mackenzie
-`Bachelor of Architecture - BArch, Architecture and Urbanism` · `Jul 2018 – Dec 2023`
+`Bachelor's Degree, Architecture and Urbanism` · `Jul 2018 – Dec 2023`
 
 ```
 Bachelor's thesis 'Urban Residues', on the reuse of underused urban fabric, received a perfect score of 10 from all three professors on the final panel.

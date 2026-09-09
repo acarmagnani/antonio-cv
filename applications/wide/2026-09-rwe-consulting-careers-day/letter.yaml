@@ -1,0 +1,30 @@
+# RWE Consulting Careers Day.
+#
+# The portal asks only for a CV, so this letter has no field of its own. It is
+# written because Antonio asked for it, and it is the right thing to have ready
+# if the portal offers a message box, if an invitation arrives and needs an
+# answer, or for the recruiter conversation on the day itself.
+#
+# The ESG block with its default pair, matching the CV. Ramboll carries the
+# corporate client work and the structuring, Sweco carries energy and water
+# infrastructure assessed to lender standards, which is the nearest thing in the
+# record to RWE's own projects.
+
+extends: esg-built-environment
+company: "RWE Consulting"
+role: "Consulting Careers Day"
+language: en
+
+hook: >
+  RWE Consulting sits inside that question rather than beside it, since an inhouse team working alongside Corporate Strategy and Sustainability carries the strategic initiatives of a company that has committed to carbon neutrality by 2040 and has to build the assets that get it there.
+
+relevance:
+  exp.ramboll.esg-data: >
+    Consulting on the energy transition rests on the same discipline, because a strategic recommendation is worth only as much as the evidence assembled underneath it and the order imposed on that evidence.
+  exp.sweco.climate-risk: >
+    Renewable generation is held to that same test, since projects of that size are financed, permitted and built on assessments that outside parties are entitled to check line by line.
+
+closing: closing.esg.v1
+
+closing_reason: >
+  RWE produces electricity from renewable sources at a scale few companies reach, and its inhouse consultancy works on the initiatives that decide how the transition is actually delivered rather than how it is described.

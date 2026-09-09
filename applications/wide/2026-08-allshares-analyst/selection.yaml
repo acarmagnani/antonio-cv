@@ -1,0 +1,44 @@
+# Allshares, Analyst in the Data & Intelligence team (Stockholm).
+#
+# Bucket wide: equity and incentive compensation is a different field, tried
+# opportunistically. Nothing here should feed notes/skills_gaps.md.
+#
+# Block: data-built-environment, not real-estate-investment. The subject of this
+# job has no overlap with his background at all, so the CV has to sell the
+# analyst rather than the property person: financial modelling, dashboards,
+# benchmarking, market research, tools that turn messy data into a decision.
+#
+# Profile overridden to profile.proptech-real-estate, which opens on feasibility
+# and financial analysis and predictive modelling. The block's default
+# (profile.proptech) opens on Grasshopper and parametric workflows, which is the
+# wrong first impression for an equity advisory team.
+#
+# Adds, both answering a responsibility named in the posting:
+#   - ramboll.colt-peer-benchmark: benchmarking a client against industry peers,
+#     which is structurally the same task as benchmarking compensation models.
+#   - ospa.client-presentations: presenting outcomes to clients, listed as an
+#     advantage in the posting.
+#
+# Drops, all of them architecture strands that make him read as a designer here:
+#   - isay.complex-organic-parametric-modeling and felipe.bim-documentation.
+#     The staircase plugin stays, because "days to 20 minutes, adopted across
+#     10+ projects" is an automation-impact story a SaaS company reads well.
+#   - sweco.office-gis-lead: cartography for proposals, weakest bullet here.
+#   - project.computational-deployable-structures: pure architectural research.
+#   - digital_tools: Revit, AutoCAD and Adobe on an analyst CV work against the
+#     positioning.
+
+extends: data-built-environment
+
+profile: profile.proptech-real-estate
+
+add:
+  - ramboll.colt-peer-benchmark.v1
+  - ospa.client-presentations.v1
+
+drop:
+  - isay.complex-organic-parametric-modeling.v1
+  - felipe.bim-documentation.v1
+  - sweco.office-gis-lead.v1
+  - project.computational-deployable-structures
+  - digital_tools

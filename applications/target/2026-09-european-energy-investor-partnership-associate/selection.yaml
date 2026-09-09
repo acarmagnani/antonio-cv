@@ -1,0 +1,41 @@
+# European Energy, Associate, Investor & Partnership Management (Copenhagen).
+#
+# Second European Energy application, and a deliberately different CV from the
+# project finance one. That seat was quantitative; this one is COMMERCIAL:
+# investor materials, business development proposals, partnership dialogues,
+# stakeholder management, with financial model literacy as a requirement rather
+# than the job itself.
+#
+# Still starts from real-estate-investment, because the profile has to open on
+# capital, feasibility and asset due diligence for an investor-facing seat. The
+# energy and infrastructure sector comes from Sweco, which now carries six
+# bullets and dominates the top of the page.
+#
+# The delta turns Sweco commercial: tender methodology and bid-team assembly are
+# business development proposals under another name, and the Azerbaijan
+# stakeholder work is the counterpart engagement the posting asks for. Ramboll
+# gains the market study framed as business development (prospective clients,
+# new service lines) instead of the Genesta code of conduct review.
+#
+# What comes out is the architectural and zoning residue: massing, buildable
+# capacity, GIS, the office-tower technical review. None of it helps a reader in
+# a renewables commercial team, and all of it dilutes the investor framing.
+
+extends: real-estate-investment
+
+add:
+  - sweco.tender-methodology.v1
+  - sweco.tender-bid-team-assembly.v1
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  - ramboll.critical-raw-materials-study.v2
+
+drop:
+  - sweco.geospatial-data-and-analysis.v1
+  - ramboll.genesta-code-of-conduct.v1
+  - isay.buildable-capacity.v1
+  - ospa.zoning-land-use-regulatory.v1
+  - ospa.volumetric-massing-study.v2
+  - felipe.buildable-capacity.v1
+  - itau.new-office-towers-technical.v2
+
+skills: [data_and_analysis, real_estate_and_urban, esg_and_sustainability, languages]

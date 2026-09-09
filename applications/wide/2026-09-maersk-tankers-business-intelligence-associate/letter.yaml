@@ -1,0 +1,31 @@
+# Maersk Tankers, Business Intelligence Associate.
+#
+# Data block throughout, matching the CV. The second paragraph is overridden from
+# exp.masters.models to exp.isay.tooling-adoption: the posting's first line is
+# translating business requirements into reporting solutions, and the staircase
+# plugin is the only paragraph in the library about gathering requirements from
+# the people who will use a tool and then getting it adopted. The predictive
+# models paragraph is stronger analysis but answers a question nobody asked here.
+
+extends: data-built-environment
+company: "Maersk Tankers"
+role: "Business Intelligence Associate"
+language: en
+
+hook: >
+  Maersk Tankers is a good place to do that, because a Data Insights team of six carrying reporting for the whole company leaves the same person holding a question from the business requirement through to the dashboard it is answered on.
+
+paragraphs:
+  - exp.ramboll.esg-data
+  - exp.isay.tooling-adoption
+
+relevance:
+  exp.ramboll.esg-data: >
+    A reporting layer rests on that same discipline, since a dashboard is trusted only when the model beneath it is consistent enough to give two people the same answer.
+  exp.isay.tooling-adoption: >
+    Translating business requirements into reporting solutions follows the same sequence, and the reports that get used are the ones shaped with the people who will read them.
+
+closing: closing.data.v1
+
+closing_reason: >
+  Maersk Tankers has owned and operated tankers since 1928 and is taking that fleet through the energy transition, which makes its commercial and operational reporting both substantial and consequential.

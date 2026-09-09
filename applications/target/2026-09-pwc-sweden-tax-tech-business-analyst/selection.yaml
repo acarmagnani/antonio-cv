@@ -1,0 +1,31 @@
+# PwC Sweden, Business Analyst in Tax Tech, Stockholm.
+#
+# Base: data-built-environment, the block for seats where the deliverable is a tool
+# or a dataset rather than a report. The retuning is away from anything spatial or
+# architectural and toward the actual job description: understand a requirement, build
+# the thing, put it in front of the people who have to use it, and support them.
+# Tax is the employer's domain, not the skill being hired, so the CV argues the skill.
+
+extends: data-built-environment
+
+add:
+  # "På sikt hålla i workshops och utbildningar" is a listed duty, and this is the
+  # bullet where he produced training material and took it to a client.
+  - ramboll.colt-human-rights-workshop.v1
+
+drop:
+  # Cartography for proposals is the least transferable Sweco bullet here.
+  - sweco.office-gis-lead.v1
+  # Geometry for its own sake. The plugin and its adoption carry the tooling story.
+  - isay.complex-organic-parametric-modeling.v1
+  # Massing studies read as architecture in front of a tax technology team.
+  - ospa.volumetric-massing-study.v1
+  # Felipe drops to its anchor: BIM documentation says draughtsman here.
+  - felipe.bim-documentation.v1
+  # Origami-based deployable structures is the project furthest from this seat.
+  - project.computational-deployable-structures
+
+# The urban and real estate skills line points at a domain this employer does not
+# have. Data first, then the tools he builds with, then languages, where English is
+# the stated requirement and Swedish only a merit.
+skills: [data_and_analysis, digital_tools, languages]

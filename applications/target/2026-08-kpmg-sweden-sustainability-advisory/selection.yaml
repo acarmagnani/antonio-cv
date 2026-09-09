@@ -1,0 +1,31 @@
+# KPMG Sweden, Sustainability Advisory (graduate), Stockholm.
+#
+# Base: esg-built-environment, the right block. The only real mismatch is that
+# the block is built for consultancies that assess BUILDINGS, and this is
+# corporate sustainability advisory, so the building-level environmental
+# analysis comes out and the client-facing consulting work goes in.
+
+extends: esg-built-environment
+
+add:
+  # "Human rights and sustainable supply chains" is one of their named topics,
+  # and this is the client-facing half of it: taking findings back to the client
+  # as workshop and training material.
+  - ramboll.colt-human-rights-workshop.v1
+  # Competitive benchmarking to find gaps and positioning. Traditional
+  # consulting skill, which is exactly how they describe the team.
+  - ramboll.colt-peer-benchmark.v1
+  # "Technology enablement" and "a strong business and digital mindset".
+  - ramboll.ai-in-research-workflow.v1
+
+drop:
+  # Daylight, solar and building-level environmental studies read as design
+  # work in front of a corporate advisory team.
+  - isay.environmental-daylight-analysis.v1
+  - felipe.environmental-analysis.v1
+  - ospa.environmental-analysis.v1
+  - itau.new-office-towers-technical.v1
+
+# Multilingual proficiency is named in the posting, so languages stays. Real
+# estate and urban comes out: this is corporate advisory, not a property team.
+skills: [esg_and_sustainability, data_and_analysis, languages]

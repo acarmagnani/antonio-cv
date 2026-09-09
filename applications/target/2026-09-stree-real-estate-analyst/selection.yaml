@@ -1,0 +1,32 @@
+# STREE Real Estate, Real Estate Analyst.
+#
+# Block: real-estate-investment, essentially unchanged. The posting is the block's
+# own description written back at it: financial analysis and valuation, market
+# analysis, due diligence on acquisitions. OSPA and Felipe Hess carry the
+# feasibility and financial modelling, Itau carries owner-side due diligence, and
+# the house-price and Copenhagen development models carry the quantitative half.
+#
+# Delta, all of it driven by the posting:
+#   - Critical raw materials study added: "prepare market analysis reports and
+#     identify market trends" is the one responsibility the block does not already
+#     evidence, and this is the only entry in his record that is literally a market
+#     study, mapping 20+ supply chains and reading them for where demand goes next.
+#   - Itau office towers dropped: construction-phase technical review, which says
+#     nothing to an analyst seat. The building energy and documentation bullets
+#     already carry the due-diligence side of that role.
+#   - Isay development-through-construction dropped: delivery and site work, the
+#     opposite end of the process from the one this job sits at. The buildable
+#     capacity bullet is the part of Isay this posting reads.
+#
+# Profile, skills and projects stay as the block has them: profile.real-estate-investment
+# opens on feasibility, financial modelling and asset due diligence and closes on
+# "real estate, capital, and rigorous analysis", which is this posting exactly.
+
+extends: real-estate-investment
+
+add:
+  - ramboll.critical-raw-materials-study.v2
+
+drop:
+  - itau.new-office-towers-technical.v2
+  - isay.development-through-construction.v1

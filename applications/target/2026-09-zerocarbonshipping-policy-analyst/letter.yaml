@@ -1,0 +1,39 @@
+# The ESG block is the right spine (climate, regulation, evidence), but the two
+# default paragraphs are both consulting-side. exp.masters.models replaces the
+# Ramboll one, because modelling in Python is the first requirement in the
+# posting and nothing else in the library evidences it.
+
+extends: esg-built-environment
+
+# Short form on purpose: the full name makes the greeting long enough that
+# check_letter.py stops recognising it as a greeting and counts it as a body
+# paragraph. The posting calls the organisation "the Center" throughout.
+company: "the Mærsk Mc-Kinney Møller Center"
+role: "Analyst, Economics and Transition Finance"
+language: en
+
+paragraphs:
+  - exp.sweco.climate-risk
+  - exp.masters.models
+
+hook: >
+  Working from evidence rather than intuition is what the Center does
+  institutionally, since the analyses its Regulation and Policy Hub publishes are
+  what governments, regulators and industry argue over when the rules for
+  shipping are written.
+
+relevance:
+  exp.sweco.climate-risk: >
+    This role puts that same requirement in front of a harder audience, because a
+    policy assessment that reaches an IMO submission has to hold up for
+    negotiators whose job is to find the weak assumption in it.
+  exp.masters.models: >
+    Working with Navigate to model regulatory designs, fuel cost assumptions and
+    scenarios asks for the same discipline, which is models whose assumptions can
+    be stated plainly to the people who have to act on them.
+
+closing_reason: >
+  The Center is an independent not-for-profit whose analyses are used by
+  governments and industry to design the regulatory framework for shipping's
+  energy transition, which is an unusual place from which to do quantitative
+  work.

@@ -1,0 +1,34 @@
+# Deloitte, Analyst in Finance Transformation.
+#
+# NOT FOR UPLOAD. Deloitte replaces the cover letter with questions in the form.
+# This is written anyway as the source material for those answers, which is why
+# the hook and the closing carry the "why Deloitte, why the CFO area" argument.
+#
+# The letter takes the data opening rather than the real estate one, because the
+# line about building the tool that answers a question is what a finance
+# transformation team is buying. Both paragraphs are overridden: OSPA supplies the
+# financial modelling, Isay supplies a tool that replaced manual work and was taken
+# up by the people who had been doing it by hand.
+
+extends: data-built-environment
+company: "Deloitte"
+role: "Analyst in Finance Transformation"
+language: en
+
+hook: >
+  Deloitte's Finance Transformation team does that inside the CFO function, where more than 350 consultants in Denmark rebuild how finance functions operate, report and forecast rather than only advising on what the numbers say.
+
+paragraphs:
+  - exp.ospa.feasibility
+  - exp.isay.tooling-adoption
+
+relevance:
+  exp.ospa.feasibility: >
+    That habit of producing a figure alongside the constraints it rests on is the finance craftsmanship this programme sets out to build, and it is where I would start from rather than arrive at.
+  exp.isay.tooling-adoption: >
+    Transforming a finance function is the same problem at a larger scale, since a process only improves once the people running it have been convinced to work the new way.
+
+closing: closing.data.v1
+
+closing_reason: >
+  Deloitte puts an analyst across operational finance, performance management and system implementations in the first years rather than in one discipline, which is the fastest way I can think of to learn the CFO domain properly.

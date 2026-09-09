@@ -1,0 +1,58 @@
+# Tetra Tech, Graduate in Sustainable Building Design (Next Gen Talent), Manchester /
+# Leeds / Edinburgh.
+#
+# Bucket: wide/. Not because the odds are poor but because the direction points away
+# from the target: the seat is built around BREEAM, WELL and DREAM certification, and
+# the UK needs sponsorship he does not have. Keeping it out of target/ also keeps
+# certification requirements out of the skills-gap count, which would otherwise read
+# as demand he has decided not to chase.
+#
+# Block: esg-built-environment. This posting is what the block was built for, closer
+# to it than anything else in applications/: energy assessment, embodied carbon, LCA,
+# circular economy and low-carbon materials, delivered as consulting alongside
+# architects and engineers.
+#
+# Profile kept as the block has it (profile.esg-consulting): it is the only variant
+# opening on "sustainability consulting and the built environment", which is the
+# headline this team reads. The UNGP and OECD clause inside it is the price paid, and
+# it is worth paying, because the alternatives lead on real estate feasibility.
+#
+# Delta, all of it driven by the posting:
+#   - Daylight analysis swapped v1 -> v2: v2 names Ladybug in Grasshopper and
+#     quantified light incidence, which is the closest thing he has to the energy
+#     modelling tools listed as desirable. It puts the tool on the page without
+#     spending a whole skill group on it.
+#   - BIM coordination added: coordinating structural, HVAC, electrical and lighting
+#     into a single Revit model is building services collaboration, which is who this
+#     team sits with, and Revit is named as desirable.
+#   - Felipe BIM documentation added: second, plain evidence of Revit and drawing
+#     production, reinforcing the architecture credential the posting requires.
+#   - digital_tools added to the skills in place of real_estate_and_urban: AutoCAD,
+#     Revit and Adobe Creative Cloud are named in the posting and zoning analysis is
+#     not.
+#   - Azerbaijan field mission dropped: a water supply mission says nothing to a
+#     building design team.
+#   - Nordzucker HRIA tool dropped: redundant next to the salience tool, and one
+#     human rights tool is enough on a CV going to a sustainable design practice.
+#   - OSPA financial modelling dropped: investment sizing is the wrong signal here.
+#
+# Kept deliberately: the critical raw materials study (material and technology
+# research, resource efficiency), the Ramboll real estate ESG bullet (building energy
+# and decarbonisation under EU building performance regulation), the Itau building
+# energy assessment, and the rammed blue biomass project, which is the single closest
+# thing in his record to embodied carbon, low-carbon materials and circular economy.
+
+extends: esg-built-environment
+
+add:
+  - isay.environmental-daylight-analysis.v2
+  - isay.bim-coordination-clash-detection.v1
+  - felipe.bim-documentation.v1
+
+drop:
+  - isay.environmental-daylight-analysis.v1
+  - sweco.azerbaijan-field-mission.v1
+  - ramboll.nordzucker-hria-tool.v1
+  - ospa.numerical-feasibility-financial-modeling.v1
+
+skills: [esg_and_sustainability, data_and_analysis, digital_tools, languages]

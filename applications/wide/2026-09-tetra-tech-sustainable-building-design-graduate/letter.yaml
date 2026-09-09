@@ -1,0 +1,29 @@
+extends: esg-built-environment
+company: "Tetra Tech"
+role: "Graduate, Sustainable Building Design"
+
+# Ramboll first, because it is the evidence that he has delivered sustainability work
+# as consulting, for clients, to a reviewable standard. The master's materials
+# paragraph second, because embodied carbon, low-carbon materials and circular economy
+# are the heart of this team's remit and that work is the closest thing he has to it,
+# so the letter builds toward it rather than opening on it.
+paragraphs:
+  - exp.ramboll.esg-data
+  - exp.masters.materials
+
+hook: >
+  Tetra Tech's Sustainable Building Design team holds those questions where they belong, in
+  the energy a building uses, the carbon embodied in what it is made of, and the decisions
+  taken while there is still time to change them.
+
+relevance:
+  exp.ramboll.esg-data: >
+    Sustainability reporting, and the research behind low-carbon materials and renewable
+    options, is that same discipline applied to a building rather than a supply chain.
+  exp.masters.materials: >
+    Embodied carbon studies and circular economy strategy are that work in professional
+    form, and I would rather arrive having already taken a material that far.
+
+closing_reason: >
+  Tetra Tech works across the full lifecycle of a project, which is where sustainability
+  stops being an assessment attached at the end and starts shaping what gets built.

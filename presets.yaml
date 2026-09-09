@@ -180,3 +180,65 @@ presets:
       - project.real-estate-development
       - project.computational-deployable-structures
     skills: [data_and_analysis, digital_tools, real_estate_and_urban, languages]
+
+  # ---------------------------------------------------------------------------
+  # NOT an application block. The other three point one direction on purpose;
+  # this one deliberately does not, and exists for the cases where there is no
+  # posting to point at: mentorship and career programmes, networking, career
+  # fairs, "send us your CV" forms. It leans on the `generic` variants in
+  # content_base.yaml and shows all four domains (real estate, ESG, data,
+  # architecture) rather than choosing between them. Never extend it from an
+  # application: a real posting always gets one of the three directional blocks.
+  general:
+    label: "General / No Specific Role"
+    use_for: >
+      Mentorship and career programme applications, networking, career fairs,
+      speculative CV uploads. Used when there is no job description to tailor
+      against and the CV has to represent the whole of Antonio's experience.
+    profile: profile.real-estate-esg-data
+    roles: [sweco, ramboll, isay, ospa, felipe, itau, independent]
+    bullets:
+      # Sweco: the infrastructure consulting frame, plus climate risk and GIS
+      - sweco.department-anchor.v1
+      - sweco.climate-risk-assessments.v1
+      - sweco.azerbaijan-field-mission.v1
+      - sweco.geospatial-data-and-analysis.v1
+
+      # Ramboll: ESG and due diligence, with the real estate service line kept
+      # so the sustainability work still reads as built-environment work
+      - ramboll.frameworks-anchor.v1
+      - ramboll.colt-salience-tool.v1
+      - ramboll.real-estate-esg.v1
+      - ramboll.critical-raw-materials-study.v1
+
+      # Isay Weinfeld: the one role where all four domains are visible at once
+      - isay.portfolio-anchor.v1
+      - isay.buildable-capacity.v1
+      - isay.staircase-grasshopper-plugin.v1
+      - isay.environmental-daylight-analysis.v1
+
+      # OSPA: feasibility and financial modeling, the real estate core
+      - ospa.feasibility-anchor.v1
+      - ospa.numerical-feasibility-financial-modeling.v1
+      - ospa.zoning-land-use-regulatory.v1
+      - ospa.client-presentations.v1
+
+      # Felipe Hess: architecture practice with the development side attached
+      - felipe.portfolio-anchor.v1
+      - felipe.zoning-feasibility-study.v1
+      - felipe.developer-first-building.v1
+
+      # Itau: the corporate client side, plus a tool he built himself
+      - itau.documentation-review-anchor.v1
+      - itau.building-environmental-energy.v1
+      - itau.furniture-inventory-tool.v1
+
+      # Independent: initiative and ownership, which is what this CV is for
+      - independent.anchor.v1
+      - vizu.studio-anchor.v1
+      - independent.lca-startup-consulting.v1
+    projects:
+      - project.masters-thesis-computational
+      - project.real-estate-development
+      - project.house-price-prediction
+    skills: [real_estate_and_urban, data_and_analysis, esg_and_sustainability, digital_tools, languages]

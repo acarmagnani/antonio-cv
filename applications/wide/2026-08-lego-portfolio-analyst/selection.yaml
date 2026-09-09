@@ -1,0 +1,46 @@
+# LEGO, Portfolio Analyst, Engineering & Quality, Billund.
+#
+# Base: data-built-environment. It is the block that carries the tooling spine,
+# and this job is a tooling job. Five bullets in it are a dashboard, a model or
+# a decision tool built for someone else to act on, which is the whole role.
+#
+# The delta does two things. It cuts everything that reads as built-environment
+# domain work (GIS cartography, parametric geometry, Revit massing, BIM
+# documentation, the real estate skills group), because LEGO is hiring an
+# analyst and not an architect. And it adds the two bullets that answer the
+# posting's two verbs it does not already cover, prioritisation and presenting
+# to a decision-making audience.
+
+extends: data-built-environment
+
+# The block's profile opens on Grasshopper and parametric workflows. This one
+# names Excel, Power BI and Python, which is the actual toolset of the job, and
+# covers the sustainability half of the portfolio this team manages.
+profile: profile.real-estate-esg-data
+
+add:
+  # "Support scenario analysis and prioritization models". This is a
+  # prioritisation model: 40+ risks mapped and severity-scored so the material
+  # ones surface first.
+  - ramboll.nordzucker-hria-tool.v1
+  # "Create clear, concise decision-making materials tailored to senior
+  # management". He has stood in front of the client with the analysis.
+  - ospa.client-presentations.v1
+
+drop:
+  # Cartography for proposal documents: too specific to infrastructure bids.
+  - sweco.office-gis-lead.v1
+  # Parametric modelling of complex geometry: design, not analysis.
+  - isay.complex-organic-parametric-modeling.v1
+  # Revit massing and BIM documentation: execution work.
+  - ospa.volumetric-massing-study.v1
+  - felipe.bim-documentation.v1
+  # Origami-based deployable structures: nothing to do with the role.
+  - project.computational-deployable-structures
+
+# Set explicitly rather than dropped, since this replaces the block's list
+# outright. Rhino, Revit and AutoCAD go, because they undercut an analyst
+# positioning. The real estate group goes, because zoning and feasibility mean
+# nothing here. Sustainability comes in, because the portfolio this team runs is
+# explicitly part sustainability projects.
+skills: [data_and_analysis, esg_and_sustainability, languages]

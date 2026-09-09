@@ -1,0 +1,29 @@
+extends: esg-built-environment
+company: "EY"
+role: "Junior Consultant, Sustainability Reporting"
+language: en
+
+# The block's default pair is exactly right here. Ramboll carries the structuring of
+# uneven evidence into scored, defensible outputs, which is what a sustainability
+# statement rests on, and Sweco carries the standard of evidence that survives review
+# by an outside reader, which is what assurance work is. The closing stays on the ESG
+# one, because the deliverable in this seat is reporting that has to withstand scrutiny.
+
+hook: >
+  EY's specialist group in Stockholm works both sides of the same requirement, reviewing
+  sustainability reports and advising on how they are produced, at the point where CSRD has
+  put sustainability information under something close to the evidentiary standard of the
+  financial statements it now sits beside.
+
+relevance:
+  exp.ramboll.esg-data: >
+    Reporting rests on that same task, since a sustainability statement is only as reliable as
+    the evidence trail behind each figure a company puts its name to.
+  exp.sweco.climate-risk: >
+    Assurance work answers to that standard by design, because the information reviewed in this
+    role is read by owners, investors and other stakeholders who then act on it.
+
+closing_reason: >
+  EY audits this reporting and advises on it across large listed companies and smaller ones at
+  the same time, which gives an unusually direct view of how sustainability information is
+  actually produced and where it turns out not to hold.

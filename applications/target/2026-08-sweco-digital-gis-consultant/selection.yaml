@@ -1,0 +1,24 @@
+# Sweco Digital, GIS consultant (Ørestad). The data block is the base and needs almost no
+# change: GIS, SQL, Python and consulting is the closest this record gets to a posting. The
+# delta only adds client-facing evidence and drops the massing and financial modelling lines,
+# which point at real estate rather than at a GIS consultancy.
+#
+# Note: he worked at Sweco Danmark until July 2026, in the infrastructure division, where he
+# was the office GIS lead. Different division, same house, and the letter says so.
+
+extends: data-built-environment
+
+add:
+  # Collecting technical and geographic project data directly from external counterparts
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  # Presenting analysis to the client paying for it
+  - ospa.client-presentations.v1
+  # Cartographic work on material sources and supply flows, exhibited at the Biennale
+  - project.venice-architecture-biennale
+
+drop:
+  # Revit massing and investment sizing: real estate vocabulary, not GIS consulting
+  - ospa.volumetric-massing-study.v1
+  - ospa.numerical-feasibility-financial-modeling.v1
+  # Origami structures say nothing here
+  - project.computational-deployable-structures

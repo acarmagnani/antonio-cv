@@ -1,0 +1,242 @@
+# Cover letter source of truth. This is to letters what content_base.yaml is to the CV:
+# the ONLY place letter prose lives. An application's letter.yaml holds ids plus a few
+# per-job sentences, and system/make_letter.py resolves them into cover_letter.md.
+#
+# STATUS: v1 DRAFT, seeded by Claude. Every block below
+# still needs Antonio's own pass before it can be trusted blind. Editing this file
+# WITH him is the authoring phase; per-application work is selection only.
+#
+# Voice rules the prose here must obey (enforced by system/check_letter.py):
+#   - Long, articulated sentences. No fragments, no short sentences used for effect.
+#   - Formal register. It is a professional document, not copywriting.
+#   - Never a career transition. The path is continuous: he followed the questions
+#     upstream and carried the built-environment knowledge with him. Never "left",
+#     "pivoted", "switched", "moved away from".
+#   - Nothing that diminishes him. No uncertainty about his own value.
+#   - No em dashes. Few colons.
+#   - Vary sentence length and sentence openings. Never start two consecutive sentences
+#     the same way.
+#   - No rhetorical flourishes. Do not end a paragraph on "X and Y are the same thing" or
+#     on "is exactly where I want to...". At most once in a letter, ideally never.
+#   - Every experience paragraph must stand on its own. They are combined in different orders across letters, so none may open with "that instinct", "this too", or any other reference back to a paragraph that may not be there.
+#
+# Placeholders resolved at render time: {company}, {role}.
+
+meta:
+  greeting: "Dear Hiring Team at {company},"
+  greeting_es: "Estimado equipo de selección de {company},"
+  signoff: "Best,\nAntonio Carmagnani"
+  signoff_es: "Un cordial saludo,\nAntonio Carmagnani"
+  # Calibrated on the two letters Antonio judged good (Clikalia, EY CCaSS), not on the old
+  # cover_letter_base.md, whose stated range contradicted them. That file is now in archive/.
+  # Clikalia is 389 words, EY CCaSS is 475. The template's "~300-350" is too tight.
+  word_range: [320, 500]
+  colon_warn: 4
+  colon_max: 8
+
+
+# ---------------------------------------------------------------------------
+# OPENINGS. Paragraph 1 states who he is and what he is aiming at, angled to the
+# job family. Each ends with a per-job hook sentence supplied in letter.yaml as
+# `hook`, which names the company and says what makes it the right place.
+openings:
+
+  - id: opening.real-estate.v1
+    tags: [real-estate, re-investment]
+    text: >
+      I trained as an architect, and the part of the work that has always drawn me most is the one that comes before the project itself - understanding what a site is worth and what it could become once its regulatory and physical constraints are properly read. Following that question is what took me from architecture practice into development feasibility, and then to a Master's Degree in Architecture Computation at The Royal Danish Academy, where I specialised in the computational and data methods that allow those questions to be answered with evidence rather than intuition. Alongside that, the environmental performance of buildings has been a constant thread in my work, from assessing the energy performance of assets a bank was acquiring to ESG due diligence for real estate investment managers, which is increasingly part of what an asset is worth rather than a separate conversation about it.
+
+  - id: opening.esg.v1
+    tags: [esg, consulting, infrastructure]
+    text: >
+      I trained as an architect, and what progressively drew me beyond the drawings were the questions a design studio rarely stops on - why something is being built, whether it should be built there at all, and what its impact will be over its life. Following those questions took me to a Master's Degree in Architecture Computation at The Royal Danish Academy and, within it, specifically toward data, which is the part that makes it possible to answer them with evidence instead of intuition, and from there into sustainability and responsible business consulting.
+    
+  - id: opening.data.v1
+    tags: [proptech, data, consulting]
+    text: >
+      I trained as an architect, and the interest that has run alongside that from the beginning is data - using it to understand what has been built and what could be built better. That is what took me from architecture practice into feasibility and analysis, and then to a Master's Degree in Architecture Computation at The Royal Danish Academy, a programme built around using data and technology to improve the decisions made in real estate and construction. The through line has been consistent, which is that I would rather build the analytical tool that answers a question than argue the question without one.
+
+
+  - id: opening.architecture-technical.v1
+    tags: [facade, architecture, proptech]
+    text: >
+      I trained and practised as an architect, and the part of the work that has held my attention most consistently is the technical resolution of a building rather than its first image, meaning how it is put together, what it is made of, and what those choices cost over the building's life. That interest is what took me to a Master's Degree in Architecture Computation at The Royal Danish Academy, where I worked on computational geometry, new material systems and the environmental performance of construction.
+
+# ---------------------------------------------------------------------------
+# EXPERIENCE PARAGRAPHS. Each carries what he did and what it taught him. The final
+# sentence of every paragraph, the one that ties the learning to THIS job, is supplied
+# per application in letter.yaml under `relevance`, keyed by the paragraph id.
+# `relevance_prompt` says what that sentence has to do. It is guidance for whoever
+# writes it, never rendered.
+experiences:
+
+  - id: exp.ospa.feasibility
+    tags: [real-estate, re-investment]
+    text: >
+      At OSPA I produced multiple feasibility studies for residential and mixed-use developments across Brazil and the United States, sizing investment and return for each candidate site against buildable area, unit mix, price per square metre and parking, while reading the municipal master plan and land-use law to establish how much development potential the site actually carried. What that work taught me is that the number a client commits capital against is only as good as the regulatory reading underneath it, and that the two have to be produced together rather than in sequence.
+    relevance_prompt: >
+      One sentence saying that this role asks for the same exercise: reading an asset's technical and regulatory constraints, translating them into numbers, and arriving at a figure that supports a business decision.
+
+  - id: exp.ramboll.esg-data
+    tags: [esg, consulting, data]
+    text: >
+      During my time in Ramboll Management Consulting's Responsible Business Conduct team I ran human rights due diligence for corporate clients under the UN Guiding Principles and the OECD Guidelines, and in practice a large part of that was data work. I built a fully automated risk assessment system in Excel that consolidated supply chain risk data into a single dashboard which updated salient risks dynamically, an impact assessment tool that scored more than forty risks by severity so the most material ones surfaced first, and a mapping of the supply chains of over twenty critical raw materials under the EU Critical Raw Materials Act. The common task underneath all of it was taking broad and uneven bodies of evidence and structuring them rigorously enough to produce scored, defensible outputs.
+    relevance_prompt: >
+      One sentence connecting that structuring task to what this role puts at its centre.
+
+  - id: exp.sweco.climate-risk
+    tags: [esg, infrastructure, consulting]
+    text: >
+      At Sweco I supported advisory teams delivering water, energy and transport projects financed by development banks including the World Bank, EBRD, KfW and EIB, and authored climate risk assessments for major water supply projects under JASPERS and EBRD climate-proofing guidance, screening hazards against projection data and rating exposure and vulnerability asset by asset. Working to lender standards taught me that an assessment is only useful if it survives review by someone with money at stake, which changes how you evidence every claim you make.
+    relevance_prompt: >
+      One sentence tying that standard of evidence to what this role or client base demands.
+
+  - id: exp.sweco.consulting-delivery
+    tags: [consulting, infrastructure]
+    text: >
+      My work at Sweco extended into the commercial side of the practice, where I wrote the technical and methodology sections of competitive international tenders, assembled bid teams around the specialist expertise each procurement required, and built a pricing tool that parametrised expert fee bands and project economics so that bid decisions rested on figures rather than on judgement alone. Alongside that I joined field missions across Baku's water supply system, where I sat with national water agencies and government counterparts to align on rehabilitation priorities and gather the technical data the project needed. That combination taught me how a consultancy actually wins and then delivers work, and how much of it depends on being precise with people who are not obliged to agree with you.
+    relevance_prompt: >
+      One sentence linking that client-facing and commercial experience to this role's day to day.
+
+  - id: exp.isay.tooling-adoption
+    tags: [proptech, data, consulting]
+    text: >
+      At Isay Weinfeld Architects I wrote a Grasshopper plugin in Python that generates bespoke staircases directly from a floor plan, which took a task that had run to several days down to roughly twenty minutes and made a far wider range of geometry testable within a project timeline. Building it was the smaller half of the work - the rest was sitting with the colleagues who had been doing it by hand to establish what they actually needed, presenting the tool in a studio workshop, and supporting its adoption across more than ten projects afterwards, which taught me that a tool nobody trusts enough to use has not been finished.
+    relevance_prompt: >
+      One sentence connecting requirements, delivery and adoption to what this role is responsible for.
+
+  - id: exp.masters.models
+    tags: [proptech, data, real-estate]
+    text: >
+      My Master's Degree in Architecture Computation gave the analytical side of my work its proper depth. I built a predictive property valuation model using ensemble learning across XGBoost, LightGBM, Ridge and CatBoost that finished in the top two per cent of its competition, and a machine learning tool that generates site-specific development recommendations for buildings in Copenhagen by combining financial, social, sustainability and geospatial data, with an interface that lets non-technical stakeholders adjust the impact drivers and weightings themselves. The second of those mattered more to me than the first, because it forced the modelling to survive contact with people who would never open the code.
+    relevance_prompt: >
+      One sentence saying this is the kind of analysis the role asks for, already applied.
+
+  - id: exp.itau.due-diligence
+    tags: [real-estate, esg]
+    text: >
+      At Itaú-Unibanco I reviewed technical documentation from architecture and engineering firms before construction was authorised, checking drawings against Brazilian building, accessibility and fire-safety standards, and assessed the environmental and energy performance of buildings the bank was acquiring or leasing by reviewing consumption data, efficiency ratings and certifications as part of internal due diligence. Sitting on the owner's side of that process taught me what an institution actually needs to see before it commits to a building, which is a different and narrower question than the one a design team asks.
+    relevance_prompt: >
+      One sentence tying owner-side due diligence to what this role assesses.
+
+  - id: exp.vizu.own-practice
+    tags: [consulting, generic]
+    text: >
+      Alongside all of this I co-founded and ran a small practice serving more than ten clients in the AEC sector, where I was responsible for client acquisition, scoping, pricing, delivery and hiring. Running the commercial side of my own work taught me to read a project from the position of the person paying for it, and to scope honestly rather than optimistically, because the cost of getting that wrong came directly out of my own margin.
+    relevance_prompt: >
+      One sentence connecting commercial judgement to this role or this firm's client work.
+
+
+  - id: exp.isay.facade-envelope
+    tags: [facade, architecture, real-estate]
+    text: >
+      At Isay Weinfeld Architects, working on large residential, hotel and mixed-use buildings, I sat across both the design team and the technical development team, which meant that facades came to me at the compositional stage and stayed with me into the build-up. That work ran from what the envelope should be to how it would be made, through material selection, fixing and jointing detail, preliminary structural sizing, and a continuous conversation with the structural and services engineers whose input I reviewed against the design intent before it was documented. Handling a facade end to end that way taught me that an envelope holds together only when its appearance, its build-up and its performance are settled in the same decisions rather than passed between people in sequence.
+    relevance_prompt: >
+      One sentence tying facade and envelope work, carried from concept into
+      buildable detail, to what this role is responsible for day to day.
+
+  - id: exp.masters.materials
+    tags: [facade, esg, proptech]
+    text: >
+      Material research was at the centre of my master's work at The Royal Danish Academy. I developed a construction technique using blue biomass, seashells and algae bound into a rammed composite, running LCA metrics alongside parametric simulation so that structural performance and environmental impact were pushed in the same iteration rather than traded off afterwards. That work became the material basis for the school's installation at the Venice Architecture Biennale 2025, where I produced the physical panels shown in the seven-metre structure built at the Arsenale with CITA, GXN and 3XN. What the period taught me is that a new material only becomes an engineering proposition once someone has taken it far enough that it has to be built and has to stand up.
+    relevance_prompt: >
+      One sentence saying where novel materials and sustainable construction sit
+      in this role or in this team's remit.
+
+# ---------------------------------------------------------------------------
+# CLOSINGS. One paragraph naming what the company does and where he wants to take
+# his work. `{closing_reason}` is supplied per application: the specific thing about
+# this employer that makes it the right place. Never a discovery framing, never an ask.
+closings:
+
+  - id: closing.real-estate.v1
+    tags: [real-estate, re-investment]
+    text: >
+      {closing_reason} That is where I want to bring the architect's reading of an asset and the analytical side of my work into the same job, applied to real assets and to decisions with money behind them.
+
+  - id: closing.esg.v1
+    tags: [esg, consulting, infrastructure]
+    text: >
+      {closing_reason} That is where I want to keep building sustainability work that is measurable, backed by evidence, and able to withstand scrutiny.
+
+  - id: closing.data.v1
+    tags: [proptech, data, consulting]
+    text: >
+      {closing_reason} That is where I want to keep doing the work I find most worthwhile, which is turning large and awkward bodies of data into something a business can decide on.
+
+
+  - id: closing.architecture-technical.v1
+    tags: [facade, architecture, proptech]
+    text: >
+      {closing_reason} That is where I want to keep working, on buildings whose technical resolution carries as much of the architecture as the design does, and to take the envelope specifically as the place to go deeper.
+
+  # Authored 2026-09-08 with Antonio. The technical one above ends on the envelope,
+  # which was right for Arup and wrong everywhere else in the architecture family:
+  # on a retail, interiors or object seat it reads as applying for a different job.
+  - id: closing.architecture-design.v1
+    tags: [architecture, design, facade]
+    text: >
+      {closing_reason} That is where I want to keep working, on spaces and objects whose quality is carried by how they are detailed and made, not only by how they are drawn.
+
+# ---------------------------------------------------------------------------
+# BLOCKS. A finished letter for a FAMILY of jobs, mirroring the three CV presets in
+# presets.yaml so a letter and a CV are always built from the same direction. An
+# application normally just extends one of these and supplies the per-job sentences.
+blocks:
+
+  real-estate-investment:
+    label: "Real Estate Investment & Analysis"
+    opening: opening.real-estate.v1
+    paragraphs: [exp.ospa.feasibility, exp.masters.models]
+    closing: closing.real-estate.v1
+
+  esg-built-environment:
+    label: "Sustainability & ESG in the Built Environment"
+    opening: opening.esg.v1
+    paragraphs: [exp.ramboll.esg-data, exp.sweco.climate-risk]
+    closing: closing.esg.v1
+
+  data-built-environment:
+    label: "Data & Computation in the Built Environment"
+    opening: opening.data.v1
+    paragraphs: [exp.ramboll.esg-data, exp.masters.models]
+    closing: closing.data.v1
+
+  # Pairs with the data-built-environment CV preset, for the jobs in that block
+  # that are technical architecture seats rather than analyst seats: facade and
+  # envelope engineering, materials, computational design in practice. Written
+  # 2026-09-07 for Arup, on Antonio's own account of the facade work he did at
+  # Isay Weinfeld and Felipe Hess.
+  architecture-technical:
+    label: "Technical Architecture, Facade & Materials"
+    opening: opening.architecture-technical.v1
+    paragraphs: [exp.isay.facade-envelope, exp.masters.materials]
+    closing: closing.architecture-technical.v1
+
+
+# ---------------------------------------------------------------------------
+# Patterns system/check_letter.py rejects outright. Extend this list whenever a
+# letter goes out with something Antonio dislikes.
+banned_phrases:
+  - "I would welcome the opportunity"
+  - "I would welcome the possibility"
+  - "I am excited to apply"
+  - "I am writing to express my interest"
+  - "aligns closely with"
+  - "aligns with your mission"
+  - "I am confident I would be a great fit"
+  - "Thank you for considering my application"
+  - "less organised"
+  - "figure out where"
+  - "find out which"
+  - "hoping to find"
+
+banned_patterns:
+  - pattern: "\\b(leaving|left|pivot|pivoted|pivoting|switched|switching) (architecture|the field|careers?)\\b"
+    reason: "career-transition framing: his path is continuous, never a departure"
+  - pattern: "\\bcareer (change|transition|switch)\\b"
+    reason: "career-transition framing"
+  - pattern: "\\bmy (real )?passion is\\b"
+    reason: "cover-letter boilerplate"
+  - pattern: "(?i)\\b(\\w+), \\1 \\w+, \\1 \\w+"
+    reason: "three-part rhythmic list used for effect, e.g. 'real clients, real deadlines, real consequences'"

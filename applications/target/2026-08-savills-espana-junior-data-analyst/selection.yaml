@@ -1,0 +1,28 @@
+# Savills España, Junior Data Analyst, Property Management, Barcelona.
+#
+# Base: data-built-environment. The block already carries all three dashboard
+# and automation bullets this posting asks for (the Ramboll Excel risk system,
+# the Itau VBA inventory dashboard, the private-client financial analysis tool),
+# so nothing needs adding.
+#
+# Small directional delta only: cut the design strand, which is what the block
+# carries for computational and proptech roles and which reads as noise on a
+# data analyst CV.
+
+extends: data-built-environment
+
+# The block's profile opens on Grasshopper and parametric workflows. This one
+# opens on real estate plus data, which is the division and the job.
+profile: profile.proptech-real-estate
+
+drop:
+  # Parametric modelling of complex geometry: design, not analysis.
+  - isay.complex-organic-parametric-modeling.v1
+  # Revit massing and BIM documentation: execution work.
+  - ospa.volumetric-massing-study.v1
+  - felipe.bim-documentation.v1
+  # Origami-based deployable structures: nothing to do with the role.
+  - project.computational-deployable-structures
+  # Rhino, Revit and AutoCAD undercut a data analyst positioning. Python, SQL,
+  # Power BI and Excel/VBA already carry it.
+  - digital_tools

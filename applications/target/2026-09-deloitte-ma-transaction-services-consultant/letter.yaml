@@ -1,0 +1,27 @@
+# Deloitte Sweden, Consultant, M&A Transaction Services.
+#
+# The block's second paragraph is overridden. exp.masters.models is the modelling
+# paragraph and it is good, but this posting is a due diligence desk, so the pair
+# that actually answers it is OSPA (the number a client commits capital against)
+# followed by Itau (sitting on the owner's side of a purchase). Together they say
+# he has been on the buyer's side of an asset before, which is the claim.
+
+extends: real-estate-investment
+company: "Deloitte"
+role: "Consultant in M&A Transaction Services"
+
+paragraphs:
+  - exp.ospa.feasibility
+  - exp.itau.due-diligence
+
+hook: >
+  Deloitte's M&A Transaction Services team applies that same reading to whole companies rather than to single sites, and testing whether the numbers a buyer has been shown actually hold is the work I want to be doing.
+
+relevance:
+  exp.ospa.feasibility: >
+    Financial due diligence asks for that discipline on a larger object, since a review of historical trading and a forecast only mean something once the operating reality underneath them has been read as carefully as the figures.
+  exp.itau.due-diligence: >
+    That is the position this role occupies on behalf of a buyer or a seller, establishing what is actually there before capital moves.
+
+closing_reason: >
+  Deloitte advises private equity firms and corporates deciding whether to buy or sell a business, and the answer those clients need rests on financial analysis that survives being checked by the other side.

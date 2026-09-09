@@ -1,0 +1,34 @@
+# Montagu Evans, Research Analyst, Research & Insight, London.
+#
+# Base: data-built-environment, the block built on QGIS, Python and urban
+# analysis, which is what this posting actually asks for.
+#
+# Small directional delta only. The block was assembled for computational and
+# proptech roles, so it carries a parametric-design strand that pulls the wrong
+# way in front of a property research team. Cut that, and put the planning and
+# land-use bullet back in, because Montagu Evans is a planning-heavy consultancy
+# and the team's brief runs through urban geography.
+
+extends: data-built-environment
+
+# The block's profile leads with Grasshopper and computational design. This one
+# leads with GIS, spatial analysis and machine learning on property and market
+# data, which is the job description.
+profile: profile.proptech-real-estate
+
+drop:
+  # Parametric modelling of complex geometry reads as design, not research.
+  - isay.complex-organic-parametric-modeling.v1
+  # Revit massing and BIM documentation are execution work.
+  - ospa.volumetric-massing-study.v1
+  - felipe.bim-documentation.v1
+  # Origami-based deployable structures: nothing to do with property research.
+  - project.computational-deployable-structures
+  # Rhino, Revit, AutoCAD on a research analyst CV works against the positioning.
+  # Python, QGIS, SQL and Power BI already carry the visualisation claim.
+  - digital_tools
+
+add:
+  # Master plans, land-use law and development potential. The closest thing in
+  # his record to the urban geography and planning side of this team's brief.
+  - ospa.zoning-land-use-regulatory.v1

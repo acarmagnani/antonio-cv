@@ -1,0 +1,15 @@
+# Business Intelligence Associate, Maersk Tankers (Copenhagen).
+#
+# Base: data-built-environment. The block already carries almost everything a BI
+# screener wants (databases in QGIS, the automated Excel risk dashboard, the VBA
+# inventory dashboard, the financial analysis tool that ingests statements and
+# renders a decision dashboard). The delta is subtraction: every bullet and
+# project that reads as architecture rather than as data comes out, because this
+# is the one application where the reader has no built-environment context at all.
+extends: data-built-environment
+drop:
+  - isay.complex-organic-parametric-modeling.v1   # organic geometry, pure design
+  - felipe.bim-documentation.v1                   # BIM production, no data angle
+  - ospa.volumetric-massing-study.v1              # massing models, not analysis
+  - project.computational-deployable-structures   # origami structures workshop
+  - digital_tools                                 # Revit/AutoCAD/Adobe read as architect

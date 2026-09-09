@@ -1,0 +1,57 @@
+# Business Sweden, Associate, Oslo.
+#
+# Fits no preset block: the job is commercial advisory and market intelligence, not
+# built environment. Built by hand around the consulting spine (Sweco and Ramboll),
+# selecting the bid, market-study, stakeholder and market-entry bullets that the
+# three blocks all leave out. Sector substance (energy, water, transport, climate)
+# rides along inside the anchors instead of being the subject of the CV.
+
+profile: profile.infrastructure-consulting
+
+roles: [sweco, ramboll, isay, ospa, felipe, itau, independent]
+
+bullets:
+  # Sweco: the closest thing he has to this job. International advisory, public
+  # counterparts, tenders and proposals, pricing, and a new market entry.
+  - sweco.department-anchor.v1
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  - sweco.bangladesh-branch-office-setup.v1
+  - sweco.tender-bid-team-assembly.v1
+  - sweco.tender-methodology.v1
+  - sweco.project-pricing-model.v1
+  - sweco.climate-risk-assessments.v2
+
+  # Ramboll: market study that produced business development targets, competitive
+  # benchmarking, quantitative tooling, client-facing workshop material.
+  - ramboll.frameworks-anchor.v1
+  - ramboll.critical-raw-materials-study.v2
+  - ramboll.colt-peer-benchmark.v1
+  - ramboll.colt-salience-tool.v2
+  - ramboll.colt-human-rights-workshop.v1
+
+  # Isay Weinfeld: international delivery and client coordination, nothing technical.
+  - isay.portfolio-anchor.v1
+  - isay.client-and-consultant-coordination.v1
+
+  # OSPA: analysis carried through to a client presentation.
+  - ospa.feasibility-anchor.v1
+  - ospa.client-presentations.v1
+
+  # Felipe Hess: anchor only, this role points elsewhere.
+  - felipe.portfolio-anchor.v1
+
+  # Itau-Unibanco: anchor only, kept for the institutional client side.
+  - itau.documentation-review-anchor.v1
+
+  # Independent: the commercial ownership and the start-up work, both listed as
+  # pluses in the posting.
+  - independent.anchor.v1
+  - vizu.studio-anchor.v2
+  - independent.lca-startup-consulting.v1
+
+projects:
+  - project.house-price-prediction
+  - project.masters-thesis-computational
+  - project.real-estate-development
+
+skills: [data_and_analysis, esg_and_sustainability, real_estate_and_urban, languages]

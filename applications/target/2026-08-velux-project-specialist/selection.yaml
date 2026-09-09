@@ -1,0 +1,55 @@
+# VELUX, Project Specialist for B2B engagement with the building design community. Fits no
+# preset: the seat is strategic project work with architects and designers, so this is built
+# by hand around the architecture credibility, the daylight and environmental work, the
+# stakeholder and workshop strand, and the two business cases he has actually written.
+#
+# The investment and zoning vocabulary is deliberately absent. It would say nothing here.
+
+profile: profile.real-estate-esg-data
+
+roles: [sweco, ramboll, isay, ospa, felipe, itau, independent]
+
+bullets:
+  # Sweco: international teams, external counterparts, proposals and project economics
+  - sweco.department-anchor.v1
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  - sweco.tender-methodology.v1
+  - sweco.project-pricing-model.v1
+
+  # Ramboll: the business case work, service development, and facilitation
+  - ramboll.frameworks-anchor.v1
+  - ramboll.critical-raw-materials-study.v2
+  - ramboll.real-estate-esg.v1
+  - ramboll.colt-human-rights-workshop.v1
+
+  # Isay Weinfeld: the anchor role here. Design community, daylight, and a tool he got
+  # colleagues to adopt, which is this job in miniature.
+  - isay.portfolio-anchor.v1
+  - isay.staircase-grasshopper-plugin.v1
+  - isay.staircase-plugin-adoption-teaching.v1
+  - isay.environmental-daylight-analysis.v2
+  - isay.client-and-consultant-coordination.v1
+
+  # OSPA: presenting analysis to the people paying for it
+  - ospa.feasibility-anchor.v1
+  - ospa.client-presentations.v1
+
+  # Felipe Hess: practice credibility plus the daylight thread again
+  - felipe.portfolio-anchor.v1
+  - felipe.environmental-analysis.v1
+
+  # Itau-Unibanco: working across architecture and engineering firms, and building performance
+  - itau.documentation-review-anchor.v1
+  - itau.building-environmental-energy.v1
+
+  # Independent: advising a software team on product, and running client work
+  - independent.anchor.v2
+  - independent.lca-startup-consulting.v1
+  - vizu.studio-anchor.v1
+
+projects:
+  - project.rammed-blue-biomass
+  - project.computational-deployable-structures
+  - project.masters-thesis-computational
+
+skills: [digital_tools, esg_and_sustainability, data_and_analysis, languages]

@@ -1,0 +1,31 @@
+# Deloitte Sweden, Consultant, M&A Transaction Services.
+#
+# The real-estate-investment block is the base because it is the one built around
+# feasibility, financial modeling and asset due diligence. The delta strips what
+# is specifically ARCHITECTURAL from it (GIS, massing, technical review) so what
+# is left reads as financial analysis and due diligence carried out on assets,
+# which is the honest version of what he has for a corporate FDD desk.
+#
+# Skills are reordered by dropping and re-adding: they ask for MS Excel outright,
+# so data_and_analysis has to lead rather than real_estate_and_urban.
+
+extends: real-estate-investment
+
+add:
+  # Benchmarking a client against its competitors is the closest thing in the
+  # record to a Big 4 analytical deliverable.
+  - ramboll.colt-peer-benchmark.v1
+  - real_estate_and_urban
+  - esg_and_sustainability
+
+drop:
+  # GIS, massing and technical building review are the architecture half. They
+  # pull attention away from the financial half on a transaction services CV.
+  - sweco.geospatial-data-and-analysis.v1
+  - ospa.volumetric-massing-study.v2
+  - isay.development-through-construction.v1
+  - felipe.buildable-capacity.v1
+  - itau.new-office-towers-technical.v2
+  # Reordered, not removed. See the note above.
+  - real_estate_and_urban
+  - esg_and_sustainability

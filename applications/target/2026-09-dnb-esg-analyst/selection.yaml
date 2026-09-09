@@ -1,0 +1,36 @@
+# DNB Bank, ESG Analyst / Senior Analyst, Group Risk Management, Oslo.
+#
+# The ESG block is the right spine, but this seat is ESG DATA inside a bank's risk
+# function, not sustainability advisory. The delta pulls every bullet toward built
+# tooling, dashboards and data sourcing, and drops the site-and-daylight work that
+# would read as an architect applying to a data team. The profile is overridden to
+# the one that names Excel, Power BI and Python, and the skills lead with data.
+
+extends: esg-built-environment
+
+profile: profile.real-estate-esg-data
+
+skills: [data_and_analysis, esg_and_sustainability, real_estate_and_urban, languages]
+
+add:
+  # Sweco: a pricing tool built to carry a commercial decision.
+  - sweco.project-pricing-model.v1
+  # Ramboll: the same salience work told as an automated risk dashboard, which is
+  # what this team actually builds.
+  - ramboll.colt-salience-tool.v2
+  # Itau: automation inside a bank, replacing a manual process.
+  - itau.furniture-inventory-tool.v1
+  # Independent: ingestion, automatic categorisation and a decision dashboard, the
+  # closest thing he has to a small data pipeline.
+  - independent.financial-analysis-tool.v1
+  # Modelling on structured financial and property data, benchmarked.
+  - project.house-price-prediction
+
+drop:
+  - sweco.azerbaijan-field-mission.v1
+  - ramboll.colt-salience-tool.v1
+  - isay.environmental-daylight-analysis.v1
+  - ospa.environmental-analysis.v1
+  - felipe.environmental-analysis.v1
+  - itau.new-office-towers-technical.v1
+  - project.rammed-blue-biomass

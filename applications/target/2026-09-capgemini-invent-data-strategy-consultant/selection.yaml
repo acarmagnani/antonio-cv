@@ -1,0 +1,32 @@
+# Capgemini Invent, Data Strategy & Analytics Consultant, Oslo/Stavanger.
+#
+# The data block is the right base, but this is a CONSULTING seat first and a data
+# seat second: the deliverable is a client workstream, not a model. So the delta
+# swaps the architecture-flavoured bullets for the consulting-flavoured ones that
+# already exist in content_base.yaml, and drops digital_tools, which reads as an
+# architecture toolkit to a data practice.
+
+extends: data-built-environment
+
+add:
+  # Consulting delivery: benchmarking, client-facing presentation, methodology.
+  - ramboll.colt-peer-benchmark.v1
+  - sweco.tender-methodology.v1
+  - ospa.client-presentations.v1
+  # Felipe is down to its single anchor line, so take the variant that reads as
+  # analysis rather than as a list of drafting software.
+  - felipe.portfolio-anchor.v2
+  # Sustainability is a differentiator inside Capgemini Invent, which sells a
+  # digital-and-sustainable dual transition, and real_estate_and_urban gives him
+  # an industry vertical to be useful in.
+  - esg_and_sustainability
+
+drop:
+  # Geometry, massing, cartography and BIM drawings say nothing to a data practice.
+  - isay.complex-organic-parametric-modeling.v1
+  - ospa.volumetric-massing-study.v1
+  - felipe.bim-documentation.v1
+  - felipe.portfolio-anchor.v1
+  - sweco.office-gis-lead.v1
+  - project.computational-deployable-structures
+  - digital_tools

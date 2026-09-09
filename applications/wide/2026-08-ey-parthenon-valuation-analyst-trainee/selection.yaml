@@ -1,0 +1,30 @@
+# EY-Parthenon, Analyst Trainee, Valuation and Modelling, Helsinki.
+#
+# Base: real-estate-investment, the only block that leads with feasibility and
+# financial modelling. The delta strips the ESG and design strands that pull away
+# from a corporate-finance valuation team, and pulls forward the Excel/VBA
+# evidence the posting names explicitly under "ideally".
+
+extends: real-estate-investment
+
+drop:
+  # GIS is not what a valuation and modelling team reads.
+  - sweco.geospatial-data-and-analysis.v1
+  # Human rights and building decarbonisation read as ESG, not as transactions.
+  # What stays from Ramboll is due diligence plus the automated Excel risk model.
+  - ramboll.genesta-code-of-conduct.v1
+  - ramboll.real-estate-esg.v1
+  # Design and delivery bullets: keep the analysis, cut the execution.
+  - isay.development-through-construction.v1
+  - ospa.volumetric-massing-study.v2
+  - felipe.developer-first-building.v1
+  - felipe.buildable-capacity.v1
+  - itau.new-office-towers-technical.v2
+
+add:
+  # Named in the posting: VBA. Also the only bullet where a bank, a dashboard and
+  # a replaced manual process appear in one line.
+  - itau.furniture-inventory-tool.v1
+
+# Reordered against the block: Excel, VBA and Python lead, ESG group dropped.
+skills: [data_and_analysis, real_estate_and_urban, languages]

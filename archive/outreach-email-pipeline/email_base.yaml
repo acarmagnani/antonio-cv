@@ -1,0 +1,217 @@
+# Outreach email source of truth. This is to emails what letter_base.yaml is to cover
+# letters and content_base.yaml is to the CV: the ONLY place email prose lives. An
+# application's email.yaml holds ids plus two short per-job clauses, and
+# system/make_email.py resolves them into outreach_email.md.
+#
+# WHY THIS EXISTS: when a whole email is improvised per job it drifts into short punchy
+# sentences, jargon and self-diminishing lines. Selecting from pre-written prose makes
+# that impossible by construction. The same reason the letter works this way.
+#
+# WHEN AN EMAIL IS WRITTEN AT ALL: only when the posting names a person and an address.
+# No address in the posting means no email. Never hunt one down elsewhere.
+#
+# Voice rules the prose here must obey (enforced by system/check_email.py):
+#   - SHORT. The whole body is three paragraphs and under 200 words. This is the one
+#     place where brevity outranks completeness: the CV and the letter carry the detail.
+#   - Long, articulated sentences even so. No fragments, no short sentences for effect.
+#   - Never a career transition, never anything that diminishes him. Same bans as the letter.
+#   - No em dashes, few colons, no bureaucratic email boilerplate.
+#   - Never claim a referral that did not happen. "I came across it through X" is what a
+#     friend inside the company earns; "X referred me" is a different claim and has to be
+#     true, because the recipient can check it in one message.
+#   - No question at the end. Asking something specific invites a one-line answer that
+#     closes the conversation, and asking about a gap hands over the rejection.
+#
+# LANGUAGE: English only for now. Spain roles take a Spanish CV and letter, and this
+# library has no Spanish prose yet, so for those either skip the email or ask Antonio.
+#
+# Placeholders resolved at render time: {company}, {role}, {team_clause}, {referral}, {when}.
+#
+# Each experience carries `text`, and optionally `text_second`: the same fact pre-written
+# to follow another experience, so a two-experience email reads as one argument instead of
+# a list of jobs. The renderer picks `text_second` automatically in second position.
+# A `text_second` must be TIME-NEUTRAL: it can end up after any other experience, so it may
+# never say "earlier" or "before that", which would assert an order that is often false.
+
+meta:
+  greeting: "Dear {contact_first},"
+  # Used when the posting gives a department address instead of a person. The opening
+  # tagged `team` switches to it, and `contact` is then the team name, used whole.
+  greeting_team: "Dear {contact},"
+  signoff: "Best regards,\nAntonio Carmagnani"
+  subject: "{role}{team_clause}"
+  # Calibrated on the Novo Nordisk email, the one Antonio approved: 155 words of body.
+  word_range: [110, 200]
+  colon_warn: 2
+  colon_max: 4
+  paragraphs: 3
+
+
+# ---------------------------------------------------------------------------
+# OPENINGS. Paragraph 1, one sentence. It says what he applied to and why this email
+# is not cold, which is either the posting's own invitation or a person inside.
+openings:
+
+  - id: opening.applied.v1
+    tags: [generic]
+    text: >
+      {when} I applied for the {role} position{team_clause} at {company}, and since the posting names you as the contact for questions about it, I wanted to introduce myself briefly.
+
+  - id: opening.applied.referral.v1
+    tags: [referral]
+    text: >
+      {when} I applied for the {role} position{team_clause}, which I came across through {referral}.
+
+  - id: opening.applied.team.v1
+    tags: [team]
+    text: >
+      {when} I applied for the {role} position{team_clause} at {company}, and since the posting gives this address for the role, I wanted to introduce myself briefly.
+
+  - id: opening.before-applying.v1
+    tags: [generic]
+    text: >
+      I am preparing an application for the {role} position{team_clause} at {company}, and since the posting names you as the contact for questions about it, I wanted to introduce myself first.
+
+
+# ---------------------------------------------------------------------------
+# BRIDGES. The fixed sentence-end that turns the per-job `attention` clause into a claim
+# about him, so paragraph 2 reads as one argument rather than as a list of jobs.
+bridges:
+
+  - id: bridge.previous-roles.v1
+    text: "which is something I have been part of in my previous roles."
+
+  - id: bridge.through-line.v1
+    text: "which has been the through line of the work I have done so far."
+
+
+# ---------------------------------------------------------------------------
+# EXPERIENCES. One or two sentences each, self-contained, pre-written. Every claim
+# traces to content_base.yaml. Pick one or two; three is already too long for an email.
+experiences:
+
+  - id: exp.ramboll.systems-and-training
+    tags: [consulting, data, esg]
+    text: >
+      At Ramboll Management Consulting I built an automated risk assessment system in Excel that consolidated a client's data into a single dashboard, and then produced the workshop and training material that turned what it showed into something their teams could act on.
+
+  - id: exp.ramboll.due-diligence
+    tags: [esg, consulting]
+    text: >
+      At Ramboll Management Consulting I ran human rights due diligence for corporate clients under the UN Guiding Principles and the OECD Guidelines, scoring risks across supply chains and business units so that the most material ones surfaced first.
+
+  - id: exp.ramboll.market-study
+    tags: [consulting, data, esg]
+    text: >
+      At Ramboll Management Consulting I led an internal market study mapping the supply chains of more than twenty critical raw materials under the EU Critical Raw Materials Act, turning regulatory drivers into concrete business development targets, and built the Excel system that consolidated that scattered evidence into a single dashboard.
+    text_second: >
+      The same had been true at Ramboll Management Consulting, where I led an internal market study mapping the supply chains of more than twenty critical raw materials, turned the regulatory drivers behind them into concrete business development targets, and built the Excel system that consolidated that scattered evidence into a single dashboard.
+
+  - id: exp.sweco.commercial-and-counterparts
+    tags: [consulting, infrastructure]
+    text: >
+      At Sweco I wrote the technical and methodology sections of competitive international tenders and assembled the bid teams each procurement required, and on field missions I sat with national agencies and government counterparts to align on priorities and gather the data the projects needed.
+    text_second: >
+      The same held at Sweco, where I wrote the technical and methodology sections of competitive international tenders and, on field missions, sat with national agencies and government counterparts to align on priorities and gather the data the projects needed.
+
+  - id: exp.isay.plugin-adoption
+    tags: [proptech, data, consulting]
+    text: >
+      At an architecture practice in São Paulo I wrote a plugin in Python that cut a routine modelling task from days to around twenty minutes, and what decided whether it was used was presenting it, establishing what my colleagues actually needed, and supporting its adoption across more than ten projects.
+    text_second: >
+      The same had been true at an architecture practice in São Paulo, where writing a plugin in Python that cut a routine modelling task from days to around twenty minutes proved to be the easier half of the job, and what decided whether it was used was presenting it, establishing what my colleagues actually needed, and supporting its adoption across more than ten projects.
+
+  - id: exp.sweco.tenders
+    tags: [consulting, infrastructure]
+    text: >
+      At Sweco I wrote the technical and methodology sections of competitive international tenders, assembled the bid teams around the expertise each procurement required, and built a pricing tool so that bid decisions rested on figures rather than on judgement alone.
+
+  - id: exp.sweco.lender-standard
+    tags: [esg, infrastructure, re-investment]
+    text: >
+      At Sweco I assessed physical climate risk on water and energy assets financed by the World Bank, EBRD, KfW and EIB, working to the standard of evidence those lenders require before they commit money to a project.
+    text_second: >
+      The same standard of evidence applied at Sweco, where I assessed physical climate risk on water and energy assets financed by the World Bank, EBRD, KfW and EIB, to the level those lenders require before they commit money to a project.
+
+  - id: exp.ospa.feasibility
+    tags: [real-estate, re-investment]
+    text: >
+      At OSPA I produced feasibility studies for residential and mixed-use developments in Brazil and the United States, sizing investment and return for each site against buildable area, unit mix and price per square metre, and reading the land-use law that set what the site could carry.
+
+  - id: exp.masters.models
+    tags: [proptech, data, real-estate]
+    text: >
+      During my master's I built a predictive property valuation model that finished in the top two per cent of its competition, and a machine learning tool that generates development recommendations for buildings in Copenhagen from financial, social, sustainability and geospatial data.
+    text_second: >
+      The same interest ran through my master's, where I built a predictive property valuation model that finished in the top two per cent of its competition, and a machine learning tool that generates development recommendations for buildings in Copenhagen from financial, social, sustainability and geospatial data.
+
+  - id: exp.vizu.own-practice
+    tags: [consulting, generic]
+    text: >
+      Alongside my studies I co-founded and ran a small practice serving more than ten clients, where I was responsible for client acquisition, scoping, pricing and delivery, and learned to read a project from the position of the person paying for it.
+
+  - id: exp.itau.owner-side
+    tags: [real-estate, esg]
+    text: >
+      At Itaú-Unibanco I assessed the environmental and energy performance of buildings the bank was acquiring or leasing, reviewing consumption data, efficiency ratings and certifications as part of its internal due diligence.
+
+  - id: exp.independent.lca-startup
+    tags: [proptech, esg, consulting]
+    text: >
+      Over two years I advised a built-environment software startup on product direction, interface and applied AI, testing releases and returning improved scripts to the team building it.
+
+
+# ---------------------------------------------------------------------------
+# CLOSINGS. Paragraph 3, one sentence. Openness to a conversation, never a request for
+# a meeting, never a question, never an ask. `{closing_tail}` is supplied per job.
+closings:
+
+  - id: closing.talk.v1
+    text: "I would be glad to talk about how that experience could be useful {closing_tail}."
+
+  - id: closing.talk.v2
+    text: "I would be glad to talk through where that experience could be useful {closing_tail}."
+
+
+# ---------------------------------------------------------------------------
+# BLOCKS. A finished email for a FAMILY of jobs, mirroring presets.yaml and
+# letter_base.yaml so the email, the letter and the CV all point the same way.
+blocks:
+
+  real-estate-investment:
+    label: "Real Estate Investment & Analysis"
+    opening: opening.applied.v1
+    bridge: bridge.previous-roles.v1
+    experiences: [exp.ospa.feasibility, exp.sweco.lender-standard]
+    closing: closing.talk.v1
+
+  esg-built-environment:
+    label: "Sustainability & ESG in the Built Environment"
+    opening: opening.applied.v1
+    bridge: bridge.previous-roles.v1
+    experiences: [exp.ramboll.due-diligence, exp.sweco.lender-standard]
+    closing: closing.talk.v1
+
+  data-built-environment:
+    label: "Data & Computation in the Built Environment"
+    opening: opening.applied.v1
+    bridge: bridge.previous-roles.v1
+    experiences: [exp.ramboll.systems-and-training, exp.isay.plugin-adoption]
+    closing: closing.talk.v1
+
+
+# ---------------------------------------------------------------------------
+# Email-specific bans, on top of the ones inherited from letter_base.yaml.
+banned_phrases:
+  - "I hope this email finds you well"
+  - "I look forward to hearing from you"
+  - "Please do not hesitate"
+  - "reaching out"
+  - "reach out"
+  - "touch base"
+  - "As you can see from my CV"
+  - "perfect fit"
+  - "referred me"
+  - "at your earliest convenience"
+  - "I wanted to reach"
+  - "Thank you for your time and consideration"

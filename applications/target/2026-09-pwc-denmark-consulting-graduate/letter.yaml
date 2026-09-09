@@ -1,0 +1,31 @@
+extends: esg-built-environment
+company: "PwC"
+role: "Graduate in Consulting, Strategy & Transformation Excellence"
+language: en
+
+# The block's default pair is wrong for a management consulting seat, so Sweco's
+# consulting-delivery paragraph replaces the climate risk one: this letter has to argue
+# that he has already worked inside a consultancy, winning work and delivering it to
+# clients, rather than that he is good at sustainability. Ramboll follows as the
+# analytical half. The closing is swapped to the data one, because the ESG closing would
+# narrow him to a specialism the track does not ask for.
+paragraphs: [exp.sweco.consulting-delivery, exp.ramboll.esg-data]
+closing: closing.data.v1
+
+hook: >
+  Strategy & Transformation Excellence is the track I am applying to at PwC, because strategy
+  carried through into the transformation itself, with energy-sector specialists inside the same
+  team, is the closest thing to the projects I have already worked on.
+
+relevance:
+  exp.sweco.consulting-delivery: >
+    That is the consulting day described in this programme, where the work runs from analysing
+    the problem to facilitating the room in which it gets decided.
+  exp.ramboll.esg-data: >
+    Client problems arrive in exactly that condition, and the value of a consultant lies in
+    the step between the evidence and the decision.
+
+closing_reason: >
+  PwC advises Danish companies and public organisations across strategy, operations and
+  technology at a scale few firms here reach, and Hellerup keeps that work in the city where
+  I have built my professional life.

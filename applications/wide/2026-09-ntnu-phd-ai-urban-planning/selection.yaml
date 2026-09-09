@@ -1,0 +1,46 @@
+# NTNU, PhD Candidate on emerging technologies in urban planning, Trondheim.
+#
+# Base: data-built-environment, which is the block written for exactly this reader:
+# computational and data work on cities, with academic research on the same footing
+# as practice. The retuning is toward the project's own subject, which is climate
+# risk and social vulnerability read through spatial data and AI, so the commercial
+# and geometric bullets come out and the risk, stakeholder and research-method
+# bullets go in.
+
+extends: data-built-environment
+
+add:
+  # The project is about climate risk mapped against vulnerability. This is the one
+  # bullet where he has authored that kind of assessment against a formal standard.
+  - sweco.climate-risk-assessments.v1
+  # "Co-create vulnerability narratives through participatory research methods and
+  # stakeholder engagement" is a named duty. This is the evidence for it.
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  # The methodological framing of the salience tool rather than the Excel one:
+  # scoring risks by probability, scale and scope is a stated method, which is what
+  # a supervision team reads for.
+  - ramboll.colt-salience-tool.v1
+  # Same swap on the raw materials study: the research framing, not the business
+  # development one.
+  - ramboll.critical-raw-materials-study.v1
+
+drop:
+  - ramboll.colt-salience-tool.v2
+  - ramboll.critical-raw-materials-study.v2
+  # Bid economics and proposal cartography say consultancy, and this reader is a
+  # doctoral committee.
+  - sweco.project-pricing-model.v1
+  - sweco.office-gis-lead.v1
+  # Organic parametric modelling is geometry for its own sake here. The plugin and
+  # its adoption stay, because tool-building and teaching others to use it are both
+  # part of the position.
+  - isay.complex-organic-parametric-modeling.v1
+  # The personal-finance tool points away from urban research.
+  - independent.financial-analysis-tool.v1
+  # Three projects, all of them urban data and modelling. The deployable structures
+  # workshop is the one that does not serve the proposal.
+  - project.computational-deployable-structures
+
+# Skills stay as the block sets them: data first, then the computational tools,
+# then the urban and spatial line, then languages. Norwegian is only a preferred
+# criterion and NTNU pays for the training, so the honest languages block is fine.

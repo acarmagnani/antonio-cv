@@ -1,0 +1,27 @@
+# EY, Valuation in Audit Assistant (ViA / FAAS).
+#
+# The real-estate-investment block is the right CV almost as it stands: feasibility,
+# financial modelling, zoning, buildable capacity and the house-price model are exactly
+# what this posting asks a built-environment graduate to bring to real estate valuation.
+#
+# The delta is about what ViA actually does, which is reviewing somebody else's
+# valuation rather than producing a deal. Two swaps:
+#
+#   - add sweco.engineering-design-review: the only bullet where he checks another
+#     party's technical work against a standard. That is the professional-skepticism
+#     muscle the posting names.
+#   - drop sweco.geospatial-data-and-analysis and ramboll.genesta-code-of-conduct:
+#     GIS databases and Code of Conduct gap analysis are the two bullets furthest
+#     from valuation review, and the space is better spent elsewhere.
+#
+# Profile, projects and skill groups stay as the block has them. The house-price
+# prediction project is the single strongest item for this seat.
+
+extends: real-estate-investment
+
+add:
+  - sweco.engineering-design-review.v1
+
+drop:
+  - sweco.geospatial-data-and-analysis.v1
+  - ramboll.genesta-code-of-conduct.v1

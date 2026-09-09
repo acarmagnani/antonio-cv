@@ -1,0 +1,113 @@
+# BYREDO, Architect (Stockholm), reporting to the Head of Architecture.
+#
+# Bucket wide: retail store design is architecture practice, the execution end that
+# Antonio deliberately moved away from, and there is no route from a brand's store
+# design team toward an investment seat. Sent because the fit is near total, the
+# chance is the highest in the pipeline, Stockholm is priority-one geography and the
+# process runs in English. He was told the positioning cost and said apply.
+#
+# Block: data-built-environment, taken the way the Arup facade application took it.
+# It is the only block whose direction is the built environment itself rather than
+# capital or sustainability, so the delta can turn it into an architecture CV without
+# fighting the block. This CV has to read as an architect who designs, visualises and
+# details, and nothing else.
+#
+# Profile: profile.architecture-design, authored with Antonio on 2026-09-08 because
+# this application exposed the gap. Every existing variant led on data, finance or
+# sustainability; this one opens on architecture and interiors at high-end studios,
+# names three-dimensional visualization and production documentation, and lists the
+# actual toolset (Rhino and Grasshopper, Revit, AutoCAD, Adobe). It is the first
+# paragraph an architecture team should read.
+#
+# Isay Weinfeld is the anchor role and carries six bullets: it is the high-end,
+# aesthetics-led credential this employer screens for, and it holds the envelope,
+# materials, geometry, documentation and site strands at once.
+#
+# Adds:
+#   - isay.facade-envelope-development and isay.facade-detailing: carrying an
+#     envelope from the compositional stage into build-up, materials, fixings and
+#     jointing is the same movement as taking a store concept into fixtures and
+#     finishes, which the posting names directly.
+#   - isay.bim-documentation-development and felipe.bim-documentation: "prepare
+#     detailed technical drawings" and "create production drawings for execution",
+#     answered twice.
+#   - isay.development-through-construction: "support site verifications and visits
+#     to ensure design quality".
+#   - felipe.facade-design-detailing: the same detailing work at a smaller studio,
+#     from preliminary study through documentation.
+#   - felipe.client-meetings-preliminary-studies and ospa.client-presentations:
+#     interpreting a brief, and presenting design layouts to stakeholders.
+#   - ospa.volumetric-massing-study.v1: resolving circulation, layouts and frontage
+#     in Revit, which is spatial design rather than investment sizing.
+#   - itau.new-office-towers-technical.v1: design documentation reviewed on site.
+#   - sweco.engineering-design-review.v1: checking specifications against technical
+#     drawings, the one thing in the current role that a design team can read.
+#   - vizu.studio-anchor.v1 in place of v3: v1 says architectural visualization
+#     studio in so many words, and three-dimensional visualization is the first
+#     responsibility in the posting.
+#   - vizu.visualization-production.v1: renders, humanised plans and visualizations
+#     produced to communicate a design. This is the single most on-brief bullet on
+#     the CV.
+#   - independent.architecture-projects.v1: design delivered for private clients and
+#     open design competitions, which is creative ideation from a brief.
+#   - independent.anchor.v1 in place of v2: v2 leads on UX advice and financial
+#     analysis tooling, which points at the wrong department.
+#   - Projects replaced wholesale: rammed blue biomass and the Venice Biennale
+#     panels (a material system taken to a built seven-metre installation at the
+#     Arsenale with CITA, GXN and 3XN) plus the deployable structures workshop.
+#     Objects, installations and fabrication, which is half of what this role
+#     designs. The real estate and machine learning projects all point elsewhere.
+#
+# Drops: the entire analytical strand. GIS and cartography, the pricing model, the
+# Ramboll tooling and market study, the staircase plugin and its adoption, OSPA
+# financial modelling, the Itau VBA dashboard, the private-client financial tool, the
+# LCA startup advisory, and the three data projects. Ramboll goes down to its anchor,
+# because human rights due diligence is the bullet that fights this CV hardest, and
+# Sweco to its anchor plus the design review.
+#
+# Skills: digital_tools first, because Rhino, Revit, AutoCAD and the Adobe Suite are
+# the working toolset of this seat. building_and_facade second for detailing and BIM
+# coordination. data_and_analysis kept last as range rather than as the headline, and
+# languages because the team is international.
+
+extends: data-built-environment
+
+profile: profile.architecture-design
+
+add:
+  - sweco.engineering-design-review.v1
+  - isay.facade-envelope-development.v1
+  - isay.facade-detailing.v1
+  - isay.bim-documentation-development.v1
+  - isay.development-through-construction.v1
+  - ospa.client-presentations.v1
+  - felipe.facade-design-detailing.v1
+  - felipe.client-meetings-preliminary-studies.v1
+  - itau.new-office-towers-technical.v1
+  - independent.anchor.v1
+  - vizu.studio-anchor.v1
+  - vizu.visualization-production.v1
+  - independent.architecture-projects.v1
+  - project.rammed-blue-biomass
+  - project.venice-architecture-biennale
+
+drop:
+  - sweco.geospatial-data-and-analysis.v1
+  - sweco.office-gis-lead.v1
+  - sweco.project-pricing-model.v1
+  - ramboll.colt-salience-tool.v2
+  - ramboll.ai-in-research-workflow.v1
+  - ramboll.critical-raw-materials-study.v2
+  - isay.staircase-grasshopper-plugin.v1
+  - isay.staircase-plugin-adoption-teaching.v1
+  - ospa.numerical-feasibility-financial-modeling.v1
+  - itau.furniture-inventory-tool.v1
+  - independent.anchor.v2
+  - vizu.studio-anchor.v3
+  - independent.lca-startup-consulting.v1
+  - independent.financial-analysis-tool.v1
+  - project.masters-thesis-computational
+  - project.house-price-prediction
+  - project.real-estate-development
+
+skills: [digital_tools, building_and_facade, data_and_analysis, languages]

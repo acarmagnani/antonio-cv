@@ -1,0 +1,55 @@
+# PwC Denmark, Consulting graduate programme, Strategy & Transformation Excellence, Hellerup.
+#
+# Base: esg-built-environment, because it is the block whose roles carry the consulting
+# work, but the direction is retuned. This is a management consulting seat, not a
+# sustainability one, so the CV has to read as someone who has already sat inside a
+# consultancy: winning work, pricing it, delivering it to clients and lenders, and
+# facilitating the conversation afterwards. Sweco becomes the lead role, Ramboll carries
+# the analysis and the client-facing half, and the building-design strand comes out.
+
+extends: esg-built-environment
+
+profile: profile.infrastructure-consulting
+
+add:
+  # The commercial half of a consultancy, which is what the S&T track actually does:
+  # methodology, team assembly around a procurement, and the economics of a bid.
+  - sweco.tender-methodology.v1
+  - sweco.tender-bid-team-assembly.v1
+  - sweco.project-pricing-model.v1
+  # Competitive benchmarking and workshop facilitation. Their own description of the
+  # job is "analyse challenges, develop solutions, and facilitate workshops".
+  - ramboll.colt-peer-benchmark.v1
+  - ramboll.colt-human-rights-workshop.v1
+  # The business-development framing of the critical raw materials study, swapped in
+  # for the regulatory one: market study, prospective clients, new service lines.
+  - ramboll.critical-raw-materials-study.v2
+  # "Business Data Analytics" and "Business Performance Metrics" are on their skills
+  # list, and this is the bullet that shows financial data turned into a decision tool.
+  - independent.financial-analysis-tool.v1
+  # Ensemble ML model that placed in the top 2% of its competition. The cleanest
+  # analytics credential he has for a firm that recruits on analytical raw material.
+  - project.house-price-prediction
+
+drop:
+  # The GIS database bullet is the weakest of the Sweco set in front of a strategy
+  # team, and Sweco is already carrying six bullets. Python and QGIS stay on skills.
+  - sweco.geospatial-data-and-analysis.v1
+  # Two tool-building bullets at Ramboll is one too many here; the salience tool is
+  # the stronger of the pair, so the HRIA tool comes out.
+  - ramboll.nordzucker-hria-tool.v1
+  # The real estate service line points somewhere this application does not go.
+  - ramboll.real-estate-esg.v1
+  - ramboll.critical-raw-materials-study.v1
+  # Building-level environmental and technical studies read as architecture work in
+  # front of a management consulting team.
+  - isay.environmental-daylight-analysis.v1
+  - ospa.environmental-analysis.v1
+  - felipe.environmental-analysis.v1
+  - itau.new-office-towers-technical.v1
+  # Material research is the least transferable of the three projects for this seat.
+  - project.rammed-blue-biomass
+
+# Data first: this is a firm that sorts graduates by analytical ability. Languages
+# stays because it is a Danish employer and the Danish line is honest and relevant.
+skills: [data_and_analysis, esg_and_sustainability, languages]

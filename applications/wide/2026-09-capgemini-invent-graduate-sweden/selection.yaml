@@ -1,0 +1,35 @@
+# Capgemini Invent, Graduate / Junior Consultant, Stockholm and Gothenburg.
+#
+# Base: data-built-environment. The posting's own list of assets is data, AI and
+# automation, so the block that leads with Python, ML and tool-building is the
+# right spine. The delta turns it from "computational designer" into "consultant
+# who works from data": the consulting-side bullets come in (stakeholder
+# alignment, competitor benchmarking, client presentations, the market
+# study run for business development) and the geometry, cartography and BIM
+# drafting go out, because a transformation practice reads those as drafting.
+#
+# Profile is the one that says consulting out loud and shows international
+# delivery, which is what a generalist consulting reader screens for. It is not
+# a perfect fit (it is anchored in infrastructure) and no profile variant is,
+# since none was written for management consulting.
+#
+# Languages stay in the skills block, unchanged and truthful.
+
+extends: data-built-environment
+
+profile: profile.infrastructure-consulting
+
+add:
+  - sweco.tender-methodology.v1                # articulating a delivery approach in a competitive bid
+  - sweco.azerbaijan-stakeholder-meetings.v1   # aligning counterparts and gathering project data
+  - ramboll.colt-peer-benchmark.v1             # competitor benchmarking to find gaps and positioning
+  - ospa.client-presentations.v1               # presenting analytical outcomes to decision-makers
+
+drop:
+  - sweco.office-gis-lead.v1
+  - isay.complex-organic-parametric-modeling.v1
+  - felipe.bim-documentation.v1
+  - ospa.volumetric-massing-study.v1
+  - project.computational-deployable-structures
+
+skills: [data_and_analysis, esg_and_sustainability, real_estate_and_urban, languages]

@@ -1,0 +1,55 @@
+# Danske Bank, Business and Functional Specialist, Digital Core (Aarhus). Fits no preset:
+# the seat is a business analyst between IT and business. Built by hand around the tools he
+# has actually specified and built, the workshops he has run, and the stakeholder work,
+# with the real estate strand cut back to what keeps the timeline readable.
+#
+# Felipe Hess is dropped entirely. It only repeats architecture the CV already shows.
+
+profile: profile.proptech
+
+roles: [sweco, ramboll, isay, ospa, felipe, itau, independent]
+
+bullets:
+  # Sweco: cross-border stakeholders, requirements gathering, and a tool he built
+  - sweco.department-anchor.v1
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  - sweco.project-pricing-model.v1
+  - sweco.geospatial-data-and-analysis.v1
+
+  # Ramboll: specifying and building systems, plus facilitation and workflow change
+  - ramboll.frameworks-anchor.v1
+  - ramboll.colt-salience-tool.v2
+  - ramboll.colt-human-rights-workshop.v1
+  - ramboll.ai-in-research-workflow.v1
+
+  # Isay Weinfeld: the plugin and its adoption, which is the closest he has to shipping
+  # an internal product to users, plus multidisciplinary coordination
+  - isay.portfolio-anchor.v1
+  - isay.staircase-grasshopper-plugin.v1
+  - isay.staircase-plugin-adoption-teaching.v1
+  - isay.bim-coordination-clash-detection.v1
+
+  # OSPA: two lines, kept for the timeline and for the client-facing half
+  - ospa.feasibility-anchor.v1
+  - ospa.client-presentations.v1
+
+  # Felipe Hess: two lines, practice credibility and aligning proposals to a brief
+  - felipe.portfolio-anchor.v1
+  - felipe.client-meetings-preliminary-studies.v1
+
+  # Itau-Unibanco: a bank, a documentation gate, and a manual process he automated
+  - itau.documentation-review-anchor.v1
+  - itau.furniture-inventory-tool.v1
+
+  # Independent: product and UX advice to a software team, and the tooling
+  - independent.anchor.v2
+  - independent.lca-startup-consulting.v1
+  - vizu.studio-anchor.v3
+  - independent.financial-analysis-tool.v1
+
+projects:
+  - project.real-estate-development
+  - project.masters-thesis-computational
+  - project.house-price-prediction
+
+skills: [data_and_analysis, digital_tools, real_estate_and_urban, languages]

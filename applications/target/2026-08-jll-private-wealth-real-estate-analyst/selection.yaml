@@ -1,0 +1,19 @@
+# JLL, Real Estate Analyst, Private Wealth Capital Markets, Milan.
+#
+# RECORD OF WHAT WAS SENT, not a fresh tailoring. Antonio applied on 2026-08-23
+# reusing the CV built for JLL Corporate Capital Markets, so this file is a copy
+# of that selection and renders the identical PDF. No cover letter was sent.
+#
+# For the record, if this seat comes up again: the delta below was aimed at a
+# coordinator role, and this one is a pure analyst role. The plain
+# real-estate-investment block, with the Revit massing bullet back in and the
+# tender-team bullet out, would read better against DCF, comparables and KPIs.
+
+extends: real-estate-investment
+
+add:
+  - sweco.tender-bid-team-assembly.v1
+
+drop:
+  - ospa.volumetric-massing-study.v2
+  - felipe.buildable-capacity.v1

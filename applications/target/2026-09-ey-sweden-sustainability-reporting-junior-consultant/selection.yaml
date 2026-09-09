@@ -1,0 +1,39 @@
+# EY Sweden, Junior Consultant in sustainability reporting and assurance, Stockholm.
+#
+# Base: esg-built-environment. The subject is right (CSRD, GRI, ESRS, reporting
+# quality), but the seat is corporate reporting and assurance, not building
+# assessment, so the same cut as the KPMG Sweden application applies: the
+# building-level environmental design strand comes out and the work that reads as
+# reviewing something against a standard, and as financial literacy, goes in.
+
+extends: esg-built-environment
+
+add:
+  # The closest thing in his record to an assurance engagement: reviewing a real
+  # estate investment manager's Code of Conduct against international standards
+  # and reporting the gaps back. Same shape as reviewing a sustainability
+  # statement against ESRS.
+  - ramboll.genesta-code-of-conduct.v1
+  # Benchmarking a client's disclosed practices against its peers to find gaps.
+  # Reporting advisory is largely this.
+  - ramboll.colt-peer-benchmark.v1
+  # "Kunskap om eller intresse för finansiell rapportering" is on the merit list,
+  # and this is the only evidence of him working with financial statements:
+  # ingesting monthly statements, categorising transactions, building the dashboard.
+  - independent.financial-analysis-tool.v1
+
+drop:
+  # Daylight, solar and building-level environmental studies read as design work
+  # in front of an assurance team that audits sustainability statements.
+  - isay.environmental-daylight-analysis.v1
+  - felipe.environmental-analysis.v1
+  - ospa.environmental-analysis.v1
+  - itau.new-office-towers-technical.v1
+  # The Grasshopper plugin is the strongest bullet in the data block and the
+  # wrong signal here; Isay stays on its anchor alone.
+  - isay.staircase-grasshopper-plugin.v1
+
+# Real estate and urban comes out: this is corporate reporting, not a property
+# team. Languages stays, and matters more than usual, because the posting asks
+# for Swedish and the honest answer is four fluent languages plus Danish.
+skills: [esg_and_sustainability, data_and_analysis, languages]

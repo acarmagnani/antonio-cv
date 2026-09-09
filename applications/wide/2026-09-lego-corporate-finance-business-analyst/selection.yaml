@@ -1,0 +1,30 @@
+# LEGO, Corporate Finance Business Analyst, Billund.
+#
+# Base block: data-built-environment. The job is a business analyst sitting between
+# finance stakeholders and a digital product team: requirements, process design,
+# workshops, user adoption of new planning tools. So the block's tool-building spine
+# (staircase plugin and its adoption, the Excel risk system, the VBA dashboards, the
+# LCA startup product work) is exactly right and stays.
+#
+# The delta pushes the CV from "computational designer" toward "translator between
+# business and tooling": in go the stakeholder-alignment and training bullets the
+# block leaves out, out go the geometry and drafting bullets that would read as
+# architecture rather than analysis.
+
+extends: data-built-environment
+
+profile: profile.proptech-real-estate
+
+add:
+  - sweco.azerbaijan-stakeholder-meetings.v1   # aligning counterparts, gathering project data = requirements gathering
+  - ramboll.colt-human-rights-workshop.v1      # workshop and training materials = the change-management ask
+  - isay.client-and-consultant-coordination.v1 # aligning proposals to requirements across disciplines
+  - ospa.client-presentations.v1               # presenting analytical outcomes to decision-makers
+
+drop:
+  - sweco.office-gis-lead.v1                   # cartography, off-message for a finance-systems seat
+  - isay.complex-organic-parametric-modeling.v1
+  - ospa.volumetric-massing-study.v1
+  - felipe.bim-documentation.v1
+  - project.computational-deployable-structures
+  - digital_tools                              # Rhino/Revit/AutoCAD/Adobe works against the positioning here

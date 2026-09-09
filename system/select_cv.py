@@ -260,7 +260,7 @@ def main():
     omitted = [f'{r["title"]} @ {r["org"]}'
                for ri, r in enumerate(base["experience"]) if ri not in order]
     if omitted:
-        print("ROLES OMITTED (deliberate):")
+        print("ROLES MISSING (every CV must show all seven, add at least the anchor bullet):")
         for o in omitted:
             print("  -", o)
         print()

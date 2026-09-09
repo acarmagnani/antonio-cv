@@ -1,0 +1,37 @@
+# European Energy, Associate, Investor & Partnership Management.
+#
+# The CV extends real-estate-investment, and so does the letter, but both
+# paragraph slots are overridden because this seat is commercial rather than
+# quantitative. Sweco's tender, bid-team and counterpart work is the closest
+# thing in his record to preparing a proposition for someone who has to be
+# persuaded, and OSPA supplies the investment sizing the posting asks for under
+# the heading of financial models and analyses supporting investment activity.
+#
+# The data opening is kept over the real-estate one for length reasons and
+# because it lands on feasibility and analysis rather than on zoning, and the
+# hook carries the investor framing instead.
+
+extends: real-estate-investment
+company: "European Energy"
+role: "Associate, Investor & Partnership Management"
+language: en
+
+opening: opening.data.v1
+
+hook: >
+  At European Energy that preference has a commercial edge, since developing, financing, building and then selling or co-investing in its own wind, solar and storage projects means the case put to an investor has to hold up against the asset underneath it.
+
+paragraphs:
+  - exp.sweco.consulting-delivery
+  - exp.ospa.feasibility
+
+relevance:
+  exp.sweco.consulting-delivery: >
+    Shaping business development proposals for prospective investors alongside Key Account Managers and executive management is that same work in a room where capital rather than a contract is at stake.
+  exp.ospa.feasibility: >
+    A divestment or co-investment case on a wind or solar project turns on the same pairing, because the permitting position, grid connection and offtake terms are what the numbers are allowed to move within.
+
+closing: closing.real-estate.v1
+
+closing_reason: >
+  European Energy owns and operates the assets its investor conversations are about, across more than twenty countries and the full path from development through financing and construction into operation.

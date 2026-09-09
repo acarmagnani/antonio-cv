@@ -1,0 +1,37 @@
+# Rystad Energy, junior Management Consultant (Advisory), Oslo.
+#
+# Block: esg-built-environment. It is the block whose direction is consulting and
+# analysis rather than design or deal execution, and it already carries the Sweco
+# energy-infrastructure and Ramboll due-diligence spine that this posting reads on.
+#
+# Delta, all of it driven by the posting:
+#   - profile swapped to infrastructure-consulting: it is the only variant that
+#     names ENERGY projects and international consulting in the first line, which
+#     is what an energy advisory house screens for.
+#   - AI in research workflow added: the posting asks for it by name.
+#   - Peer benchmarking added: the closest thing in his record to the competitive
+#     and market analysis the Advisory department sells.
+#   - Pricing model added: quantitative commercial modelling behind a bid decision.
+#   - House price prediction added over the biomass project: "proven analytical
+#     skills" is the qualification, and an ensemble ML model in the top 2% is
+#     harder evidence than a material-research project.
+#   - Two building-compliance bullets dropped (Itau towers, Felipe environmental):
+#     pure execution detail with nothing to say to an energy consultancy.
+# Skills reordered so data and analysis leads.
+
+extends: esg-built-environment
+
+profile: profile.infrastructure-consulting
+
+add:
+  - ramboll.ai-in-research-workflow.v1
+  - ramboll.colt-peer-benchmark.v1
+  - sweco.project-pricing-model.v1
+  - project.house-price-prediction
+
+drop:
+  - itau.new-office-towers-technical.v1
+  - felipe.environmental-analysis.v1
+  - project.rammed-blue-biomass
+
+skills: [data_and_analysis, esg_and_sustainability, real_estate_and_urban, languages]

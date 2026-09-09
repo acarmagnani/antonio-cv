@@ -1,0 +1,12 @@
+# Heitman, Analyst, Asset Management, London.
+#
+# No delta. The real-estate-investment block already says exactly what this
+# posting asks for: feasibility and financial modelling, asset-level due
+# diligence, climate risk on institutional assets, real estate ESG, and the
+# house-price model. Deliberately left unchanged rather than re-tuned.
+#
+# The one thing worth noting for the letter, not for the CV: Heitman co-authors
+# the ULI climate risk and real estate series, which is where
+# sweco.climate-risk-assessments.v3 stops being a side note.
+
+extends: real-estate-investment

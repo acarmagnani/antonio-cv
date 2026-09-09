@@ -1,0 +1,101 @@
+# Maersk Mc-Kinney Moller Center for Zero Carbon Shipping, Analyst in the
+# Economics and Transition Finance team (Regulation and Policy Hub), Copenhagen.
+#
+# Bucket target: a quantitative analyst seat in climate and energy policy, at his
+# level (1-3 years), in the city he lives in. This is the adjacent family where
+# his odds are genuinely best, and it feeds notes/skills_gaps.md.
+#
+# Block: esg-built-environment, because the spine of this job is climate and
+# regulation. The delta then pulls every role toward the quantitative half of his
+# record: models, tools, dashboards, datasets, research at scale. What comes out
+# is the architecture and the human rights depth, both of which would make him
+# read as a sustainability advisor rather than as the team's analyst.
+#
+# Profile stays profile.esg-consulting, the block default. It is the only profile
+# that names climate hazard and risk assessment alongside building analytical
+# tools in Excel and Python, and Python plus advanced Excel are stated must-haves.
+# Its weakness is real: it says "the built environment" twice, which is a half
+# step from a maritime centre. If this family recurs, a climate-and-energy-analyst
+# profile is worth authoring.
+#
+# Adds:
+#   - sweco.project-pricing-model: a tool that parametrises fee bands and project
+#     economics, the closest thing he has to techno-economic modelling with
+#     assumptions he can explain, which is a stated requirement.
+#   - sweco.azerbaijan-stakeholder-meetings: engaging national agencies and
+#     government counterparts, for "present findings to governments" and the
+#     exposure to policymakers the posting promises. It replaces the field
+#     mission bullet, which is site inspection and reads operational here.
+#   - ramboll.colt-salience-tool.v2 in place of v1: same work, told as a fully
+#     automated Excel risk system feeding a single dashboard that updates
+#     dynamically. Advanced Excel and dashboards for non-technical users are both
+#     named in the posting.
+#   - ramboll.ai-in-research-workflow: sourcing and citing risk data at scale
+#     across high research volumes, which is the "research across academic
+#     literature, regulatory submissions and industry publications" duty.
+#   - ramboll.colt-peer-benchmark: benchmarking an organisation against its peers
+#     to find gaps, structurally the same task as "investigate related policy
+#     frameworks and real-world case studies, extracting lessons".
+#   - independent.anchor.v2 in place of v1: names automation and financial
+#     analysis tooling rather than "projects, software and consulting".
+#   - independent.financial-analysis-tool: ingestion, automatic categorisation and
+#     a decision dashboard, the closest thing he has to a small data pipeline.
+#   - project.house-price-prediction: ensemble learning on structured data,
+#     benchmarked in the top 2%. The single strongest modelling credential he has
+#     and the answer to "proven experience building models".
+#
+# Drops:
+#   - ramboll.nordzucker-hria-tool and ramboll.real-estate-esg: one human rights
+#     tool is enough for a policy analyst CV, and the real estate service line
+#     points at a different industry.
+#   - isay.environmental-daylight-analysis, felipe.environmental-analysis,
+#     ospa.environmental-analysis and itau.new-office-towers-technical: the
+#     building-scale environmental work. It is the part of his sustainability
+#     record that reads as architecture rather than as analysis, and there are
+#     four bullets of it in the block.
+#   - project.rammed-blue-biomass: material research, off-message for a policy
+#     and economics team.
+#
+# Bullet and project order follows this file, not content_base.yaml, so five ids
+# are dropped from the block and re-added in place: the Sweco pricing tool ahead
+# of the GIS work, the Independent anchor ahead of the rest of that role, and the
+# house price model at the head of the projects, since ensemble learning
+# benchmarked in the top 2% is the first thing this team should read.
+#
+# Skills: real_estate_and_urban dropped. Three groups, led by data.
+
+extends: esg-built-environment
+
+skills: [data_and_analysis, esg_and_sustainability, languages]
+
+add:
+  - sweco.project-pricing-model.v1
+  - sweco.geospatial-data-and-analysis.v1
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  - ramboll.colt-salience-tool.v2
+  - ramboll.ai-in-research-workflow.v1
+  - ramboll.colt-peer-benchmark.v1
+  - independent.anchor.v2
+  - vizu.studio-anchor.v3
+  - independent.lca-startup-consulting.v1
+  - independent.financial-analysis-tool.v1
+  - project.house-price-prediction
+  - project.real-estate-development
+  - project.masters-thesis-computational
+
+drop:
+  - sweco.azerbaijan-field-mission.v1
+  - sweco.geospatial-data-and-analysis.v1
+  - vizu.studio-anchor.v3
+  - independent.lca-startup-consulting.v1
+  - project.real-estate-development
+  - project.masters-thesis-computational
+  - ramboll.colt-salience-tool.v1
+  - ramboll.nordzucker-hria-tool.v1
+  - ramboll.real-estate-esg.v1
+  - isay.environmental-daylight-analysis.v1
+  - ospa.environmental-analysis.v1
+  - felipe.environmental-analysis.v1
+  - itau.new-office-towers-technical.v1
+  - independent.anchor.v1
+  - project.rammed-blue-biomass

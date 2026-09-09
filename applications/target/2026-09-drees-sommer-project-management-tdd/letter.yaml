@@ -1,0 +1,28 @@
+extends: real-estate-investment
+company: "Drees & Sommer"
+role: "Project Management & Technical Due Diligence"
+
+# Paragraphs overridden. The block's pair (feasibility and the predictive models) is
+# built for an investment reader; this one is a delivery and advisory reader. Sweco
+# carries the consultancy side, tenders, bid economics and the client and counterpart
+# work, and Itau carries technical due diligence from the owner's side of the table,
+# which is the other half of the job title.
+paragraphs:
+  - exp.sweco.consulting-delivery
+  - exp.itau.due-diligence
+
+hook: >
+  Drees & Sommer puts both halves in one seat, the project carried from early planning through
+  delivery and the technical assessment that tells a client what they are taking on.
+
+relevance:
+  exp.sweco.consulting-delivery: >
+    Coordinating technical and commercial work packages, and being the contact consultants
+    and partners deal with, is that work continued.
+  exp.itau.due-diligence: >
+    Technical due diligence asks that question for someone else's money, which is the same
+    discipline with a client on the other side of it.
+
+closing_reason: >
+  Drees & Sommer sits on both sides of a project, advising and then delivering, across
+  logistics, data centres and commercial assets.

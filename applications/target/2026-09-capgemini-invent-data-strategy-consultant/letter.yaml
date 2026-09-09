@@ -1,0 +1,22 @@
+# Capgemini Invent, Data Strategy & Analytics Consultant, Oslo/Stavanger.
+#
+# The block's default pair is kept. Ramboll answers the consulting half (client
+# deliverables built out of uneven evidence) and the master's paragraph answers
+# the stakeholder half, since its recommendation tool was built for people who
+# would never open the code, which is the posting's last requirement.
+
+extends: data-built-environment
+company: "Capgemini Invent"
+role: "Data Strategy & Analytics Consultant"
+
+hook: >
+  Capgemini Invent is where that preference belongs, because a data strategy is only worth writing where the firm can also build the platforms underneath it and the client can act on what comes out.
+
+relevance:
+  exp.ramboll.esg-data: >
+    Helping a client make data a strategic asset is that same task at a larger scale, since an organisation can only govern evidence that has first been structured into something defensible.
+  exp.masters.models: >
+    This role puts explaining complex work to both technical and non-technical stakeholders among its requirements, and building for that second audience is the part I have practised most deliberately.
+
+closing_reason: >
+  Capgemini Invent works across industries on the dual digital and sustainable transition, and its Data Strategy and Analytics team sits where the business question, the data and the technology have to be settled together.

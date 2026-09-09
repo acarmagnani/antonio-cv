@@ -1,0 +1,28 @@
+# IFU (Impact Fund Denmark), Digital Workplace Specialist.
+#
+# Wrong-direction role (IT operations), applied to anyway on Antonio's call, so the
+# CV is pulled as far toward technology and internal tooling as the true content
+# allows. The data block is the base because it is the one that reads as "builds
+# tools that other people then use".
+#
+# The IFU connection is not an add: sweco.department-anchor.v1 already names IFDK
+# among the development banks whose projects he supported, so the lead bullet of
+# the most recent role says it outright.
+
+extends: data-built-environment
+
+add:
+  # Global operations across offices and countries, which is the job's real shape:
+  # 45 countries, six regional offices, colleagues in every time zone.
+  - sweco.bangladesh-branch-office-setup.v1
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  # Skills: the impact-investor mission is closer to him than the real estate one.
+  - esg_and_sustainability
+
+drop:
+  # Cartography and massing read as architecture, not as internal tooling.
+  - sweco.office-gis-lead.v1
+  - ospa.volumetric-massing-study.v1
+  - isay.complex-organic-parametric-modeling.v1
+  - project.house-price-prediction
+  - real_estate_and_urban

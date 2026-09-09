@@ -1,0 +1,26 @@
+# Eidra, Graduate Programme, Stockholm.
+#
+# Base: data-built-environment, kept close to the block on purpose. Eidra defines
+# itself as consulting, creativity, engineering and data in one house, and the
+# block is the one CV that shows all four at once. So unlike the analytics-house
+# applications, the creative and design strands STAY: the deployable-structures
+# workshop, the Grasshopper work and the digital_tools group are evidence for the
+# "designer who thrives at the intersection of design and business" archetype the
+# posting names, not distractions from it.
+#
+# The small delta adds the two bullets that answer "structured" and "strong
+# communicator" with client-facing work, and drops the two weakest lines to keep
+# the page count honest.
+
+extends: data-built-environment
+
+add:
+  - sweco.tender-methodology.v1              # arguing a delivery approach in a competitive bid
+  - sweco.azerbaijan-stakeholder-meetings.v1 # aligning agencies and government counterparts on priorities
+  - ramboll.colt-peer-benchmark.v1           # benchmarking a client against competitors to find gaps and positioning
+  - ospa.client-presentations.v1             # presenting analytical outcomes to the people deciding
+
+drop:
+  - sweco.office-gis-lead.v1                 # cartography for proposal documents, the thinnest analytical claim
+  - felipe.bim-documentation.v1              # construction drawings, the one strand that reads as pure execution
+  - ospa.volumetric-massing-study.v1         # geometry, and OSPA keeps its feasibility and financial lines

@@ -1,0 +1,32 @@
+extends: esg-built-environment
+company: "Rystad Energy"
+role: "Management Consultant"
+
+# Sweco leads: it is the energy exposure and the lender-grade standard of evidence an
+# energy advisory house screens for. Ramboll follows with the analytical structuring
+# and the critical raw materials market study. Closing swapped to the data one, because
+# what Rystad sells is data turned into decisions, not sustainability assurance.
+paragraphs:
+  - exp.sweco.climate-risk
+  - exp.ramboll.esg-data
+closing: closing.data.v1
+
+hook: >
+  Rystad Energy asks those questions at the scale of entire markets rather than single
+  assets, and an Advisory team that carries them from commercial due diligence for
+  investors through to corporate strategy and policy design is where I want to work on them.
+
+relevance:
+  exp.sweco.climate-risk: >
+    Advising an investor on a transaction, or an energy company on its strategy, is held to
+    that same standard, since the conclusion has to survive scrutiny from people whose
+    capital depends on it.
+  exp.ramboll.esg-data: >
+    Quantitative and qualitative analysis of energy markets is that task again on a larger
+    and more consequential body of evidence, and the tooling I built to move through it
+    faster is the same instinct behind applying AI systems to research at volume.
+
+closing_reason: >
+  Rystad Energy holds a position very few firms do, supplying the data and the independent
+  reading of it that governments, investors and energy companies argue from as the energy
+  transition unfolds.

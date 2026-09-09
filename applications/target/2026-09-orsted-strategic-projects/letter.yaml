@@ -1,0 +1,31 @@
+# Ørsted, Strategic Projects.
+#
+# The ESG block for its opening, which carries the question of whether something
+# should be built where it is proposed, and the closing swapped to the data one,
+# since the deliverable here is a recommendation a business decides on rather than
+# an advisory report. Both paragraphs are overridden toward consulting: Sweco
+# supplies tenders, bid economics and stakeholder missions, Ramboll supplies the
+# structuring of uneven evidence into defensible outputs.
+
+extends: esg-built-environment
+company: "Ørsted"
+role: "Strategic Projects"
+language: en
+
+hook: >
+  Ørsted answers those questions at the scale of an energy system rather than a site, and an in-house consulting team is where the hard ones get structured before they reach a decision forum.
+
+paragraphs:
+  - exp.sweco.consulting-delivery
+  - exp.ramboll.esg-data
+
+relevance:
+  exp.sweco.consulting-delivery: >
+    This team does that from the inside, where alignment across business units is won the same way it is with a client, by being exact with people who have their own priorities.
+  exp.ramboll.esg-data: >
+    Strategic projects run on that discipline, since a recommendation put to senior management is worth no more than the evidence assembled beneath it.
+
+closing: closing.data.v1
+
+closing_reason: >
+  Ørsted has committed to building the generation capacity the transition needs, and its strategic projects team sits close enough to that decision-making to shape how it is done.

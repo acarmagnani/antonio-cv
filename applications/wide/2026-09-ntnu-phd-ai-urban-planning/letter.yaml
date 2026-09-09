@@ -1,0 +1,29 @@
+extends: data-built-environment
+company: "NTNU"
+role: "PhD Candidate, Department of Architecture and Planning"
+language: en
+
+# NTNU caps the letter of motivation at 400 words, which is below what this pipeline
+# normally produces, so the two shortest paragraphs that carry the argument were chosen
+# and the per-job sentences are deliberately compact. The master's paragraph is the
+# research credential and comes first, Sweco supplies the climate risk half, and the
+# ESG closing is used instead of the data one because "something a business can decide
+# on" is the wrong reader for a doctoral committee.
+paragraphs: [exp.masters.models, exp.sweco.climate-risk]
+closing: closing.esg.v1
+
+hook: >
+  NTNU asks the harder version of that question, how climate risk and intersectional
+  vulnerability are read together when one is far better evidenced.
+
+relevance:
+  exp.masters.models: >
+    The project asks for that integration directly, spatial and non-spatial data brought into
+    vulnerability maps that stakeholders can contest.
+  exp.sweco.climate-risk: >
+    Validating AI-generated scenarios against established planning tools rests on that same
+    discipline of evidence.
+
+closing_reason: >
+  CREST-GLOBAL works with Norwegian municipalities on equitable urban transitions, keeping the
+  research answerable to the places it describes.

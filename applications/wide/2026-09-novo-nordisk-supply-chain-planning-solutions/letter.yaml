@@ -1,0 +1,39 @@
+# Novo Nordisk, Supply Chain Professional, Planning Solution Development.
+#
+# Extends data-built-environment to match the CV. The block's default second
+# paragraph (the master's models) is replaced by the Isay tooling and adoption
+# one, because the posting's own words are "used as intended" and that paragraph
+# is the only place in the library where adoption is the point rather than the
+# afterthought. Ramboll stays and carries the management consulting credential
+# plus the systems he built inside it.
+#
+# The letter never says "supply chain" about Ramboll's work, because there it
+# means human rights due diligence and the reader would catch the blur.
+#
+# Novo asks for no cover letter, only a few sentences in the CV about why he is
+# interested. The hook and the closing_reason are those sentences.
+
+extends: data-built-environment
+company: "Novo Nordisk"
+role: "Supply Chain Professional, Planning Solution Development"
+language: en
+
+opening: opening.data.v1
+
+hook: >
+  Novo Nordisk's Planning Solution Development team works on the far side of that preference, since a planning solution improves decisions only once the people planning against it trust it and use it as intended.
+
+paragraphs:
+  - exp.ramboll.esg-data
+  - exp.isay.tooling-adoption
+
+relevance:
+  exp.ramboll.esg-data: >
+    Gathering requirements from users across sites and converting them into clear stories, features and a maintained backlog is that same structuring task applied to business needs rather than risk evidence.
+  exp.isay.tooling-adoption: >
+    Supporting planning teams and Super Users in adopting standard solutions, and documenting them well enough to be used as designed, is the part of solution work that matters most.
+
+closing: closing.data.v1
+
+closing_reason: >
+  Novo Nordisk plans a heavily regulated supply chain across sites and geographies, where standardising how planning is done is a problem of process, systems and people at the same time.

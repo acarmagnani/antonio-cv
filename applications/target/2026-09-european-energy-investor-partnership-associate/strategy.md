@@ -1,0 +1,13 @@
+# Positioning, European Energy, Associate, Investor & Partnership Management
+
+**One line:** An analyst who has spent his most recent role on the commercial side of development-bank-financed energy and water assets, assembling bids, writing the proposal case and engaging the counterparties, and who before that sized investments on real assets for developer clients, entering an investor-facing seat at exactly the rung the posting describes.
+
+**Profile chosen:** `profile.real-estate-investment`. The seat is investor-facing, so the opening line has to be about capital, feasibility and asset due diligence rather than about technical consulting. Sector credibility in renewables is not the profile's job here: it comes from the six Sweco bullets immediately underneath, which are the first thing the reader sees.
+
+**Threads to lead with:**
+
+1. **The commercial side of infrastructure at Sweco.** Tender proposals whose technical and methodology sections he wrote, bid teams he assembled by sourcing specialist consultants, a pricing tool parametrising fee bands and project economics to support bid decisions, and government and agency counterparts engaged in the field to align on priorities. This is business development on capital-intensive energy and water assets, which is the same activity the posting describes in the language of investors and co-investment rather than of tenders. It also means the standard of evidence he is used to is the one institutions putting up money demand, since the projects were financed by the World Bank, EBRD, KfW and EIB.
+
+2. **Investment sizing and the materials that carry it.** Fifteen-plus feasibility studies at OSPA sizing investment and return against buildable area, unit mix and price per square metre, presented to developer clients as images, plans and diagrams; financial feasibility at Felipe Hess testing saleable area and development cost against the buildable programme; an Excel and VBA analysis tool that turns raw statements into a decision dashboard. The posting asks for someone who understands financial models and can prepare the analyses and presentations that support investment conversations, and both halves of that are in his record.
+
+**Honest gap, do not paper over it:** no M&A transaction, no experience of a joint venture or co-investment agreement, and no exposure to deal structuring. The posting lists those as things that will help rather than as requirements, and it opens the door with "consulting, strategic partnerships, commercial customer-facing roles, infrastructure", which is where his case actually sits. The letter should make the commercial and investor-facing evidence concrete and never imply deal experience he does not have.

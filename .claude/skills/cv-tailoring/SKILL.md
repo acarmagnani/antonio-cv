@@ -59,8 +59,7 @@ Then read the posting and decide the delta: what this specific job asks for that
 
 ### 2b. Selecting by hand (new block, or a job that fits none)
 
-- **Drop the roles that point elsewhere.** A CV that reads as one direction beats one that lists everything. Omitting a role is a deliberate move, and `select_cv.py` reports omitted roles as information, not as a problem. Antonio's own complaint about his CV is that his career looks scattered; leaving in a role that serves no purpose here is what causes that.
-- Watch the timeline when cutting. A role that is weak for this job may still be worth one line because it closes a gap between two others.
+- **Never drop a role.** All seven appear in every CV, `roles` always lists all seven, and `drop` is never used on the last bullet of a role. Emphasis comes from how many bullets each role keeps, never from omitting a job. A role that points elsewhere gets one bullet, usually its anchor, not zero. `select_cv.py` prints a ROLES MISSING warning if one disappears, and that warning means fix the selection.
 - Go point by point in each role you keep. Include a point if it is relevant, and pick the single variant whose framing best fits. Note its `id`.
 - At most one variant per point.
 - Order matters: within a role, list ids most-relevant first. The renderer preserves the order they appear in `bullets`.
@@ -139,15 +138,25 @@ Write a short `applications/<folder>/strategy.md`: a one-line positioning statem
 application, the profile chosen, and one or two threads to lead with. No EXCLUDE lists. The
 cover-letter skill builds on this.
 
-### 7. Continue straight into the cover letter
+### 7. Finish the package, in this order, without stopping to ask
 
-Do not stop here and ask. "Create the application" means the full package: run the **cover-letter** skill next, write `cover_letter.md`, then re-run `python system/make_pdfs.py` so both PDFs exist. Report back in a few short bullets (what was created, where the files are), not a walkthrough of the reasoning.
+"Create the application" means the whole package. Do not stop after the CV and do not ask
+whether to continue.
+
+1. **cover-letter** skill: write `letter.yaml`, run `python system/make_letter.py <folder>`
+   until it passes.
+2. `python system/make_pdfs.py`. Always. A folder with a `cover_letter.md` and no
+   `cover_letter.pdf` is an unfinished application, and this has happened before.
+3. Report in a few short bullets: what was created, where, what the CV delta was, and
+   anything Antonio has to do by hand. Not a walkthrough of the reasoning.
+
+An email address in the posting is NOT a step. Never write one unless Antonio asks.
 
 ## Rules
 
 - **Ids only.** Never write CV prose into an application folder. Rewriting a bullet happens only
   when Antonio and Claude edit `content_base.yaml`, never here.
-- All 7 roles always present. Education and skills are always static.
+- All 7 roles always present, no exceptions (see "Roles are never dropped" in CLAUDE.md). Education and skills are always static.
 - Adding a new bullet to `content_base.yaml` means adding an `id` to it as well.
 - Legacy: applications made before this format have a `content_tailored.yaml` with full text and
   are validated by the older `system/verify_cv.py`. The renderer still reads them. Do not create

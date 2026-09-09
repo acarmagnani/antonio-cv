@@ -1,0 +1,59 @@
+# Hines, Construction Data & Research Analyst (Conceptual Construction Group, Europe).
+#
+# Block: data-built-environment. The seat is a data seat inside a real estate
+# investment manager: build the database, build the tools on top of it, forecast cost
+# and programme, feed the investment teams. That is the block, and this is the closest
+# posting to it that has come through.
+#
+# The one thing the block does not carry is construction. The posting says exposure to
+# development projects and the construction process is highly beneficial and asks about
+# preconstruction, so the delta puts the delivery-side bullets back in and takes out
+# the design-geometry ones that would otherwise fill their space.
+#
+# Delta, all of it driven by the posting:
+#   - profile swapped to proptech-real-estate: it is the only variant that opens on
+#     real estate development AND computational work together, and names financial
+#     feasibility modelling alongside machine learning on property and market data.
+#     The block default (profile.proptech) opens on computational design and cities,
+#     which understates the real estate half this employer cares about.
+#   - Isay development-through-construction added: feasibility carried into design
+#     development, technical documentation and construction, which is the construction
+#     process exposure the posting asks for, seen from inside a project.
+#   - Felipe developer-first-building and financial-feasibility added: a ground-up
+#     building followed from land-use analysis into construction, with saleable area,
+#     unit mix and development cost tested against the buildable programme. Cost
+#     tested against a programme is the shape of this job.
+#   - Critical raw materials study swapped v2 -> v1: v1 is the data version, mapping
+#     20+ supply chains and profiling producing companies, sectors and geographies
+#     from industry databases. The posting asks for tracking construction material
+#     costs and inflation across a region, and v1 is that work.
+#   - Complex organic parametric modelling dropped: design geometry, not analysis.
+#   - OSPA volumetric massing dropped: Revit massing, the design end of feasibility.
+#   - Deployable structures project dropped: origami geometry, nothing to say here.
+#
+# Kept deliberately, against the instinct to cut them: the Itau furniture inventory
+# dashboard, because a VBA tool that replaced a manual tracking process across
+# locations is literally the first task in this job description, and the staircase
+# plugin plus its adoption, because getting project teams to actually use a tool is
+# the hard part of driving data collection out of a large portfolio.
+#
+# Skills unchanged from the block: data_and_analysis leads (Python, SQL, Power BI,
+# Excel/VBA, QGIS, all named or implied in the posting), digital_tools carries the
+# Revit and Rhino side that a construction team reads, and languages matter because
+# the posting names European languages as an advantage.
+
+extends: data-built-environment
+
+profile: profile.proptech-real-estate
+
+add:
+  - isay.development-through-construction.v1
+  - felipe.developer-first-building.v1
+  - felipe.financial-feasibility.v1
+  - ramboll.critical-raw-materials-study.v1
+
+drop:
+  - ramboll.critical-raw-materials-study.v2
+  - isay.complex-organic-parametric-modeling.v1
+  - ospa.volumetric-massing-study.v1
+  - project.computational-deployable-structures

@@ -1,0 +1,77 @@
+# Boston Consulting Group, Consultant.
+#
+# Built by hand, no `extends`. Same reasoning as the Novo Nordisk Consulting
+# application, and deliberately close to it: none of the three blocks sells a
+# consultant, they all sell a built-environment specialist. This reader wants
+# structured problem solving, quantitative analysis and deliverables that land
+# with senior people, so the CV argues method and lets the domain be the thing
+# that makes him different rather than the thing he is applying as.
+#
+# The named asks in the posting, and where each is answered:
+#   market research        -> ramboll.critical-raw-materials-study.v2
+#   benchmarking           -> ramboll.colt-peer-benchmark.v1
+#   financial modeling     -> ospa.numerical-feasibility, sweco.project-pricing-model,
+#                             independent.financial-analysis-tool
+#   operational assessment -> sweco.azerbaijan-field-mission
+#   structured logic       -> ramboll.nordzucker-hria-tool, ramboll.colt-salience-tool
+#   senior stakeholders    -> sweco.azerbaijan-stakeholder-meetings, ospa.client-presentations
+#   coaching colleagues    -> isay.staircase-plugin-adoption-teaching, vizu.studio-anchor
+#
+# Differences from the Novo Nordisk selection, both small and deliberate:
+#   - frameworks-anchor v2 instead of v1, because v2 leads on identifying and
+#     prioritising material risks rather than on human rights specifically.
+#   - colt-salience-tool.v2 replaces the client workshop bullet, because BCG
+#     names financial modelling and the Excel system is the better evidence,
+#     and the coaching ask is already answered by the plugin adoption bullet.
+#
+# Deliberately left out: everything real-estate-specific. No zoning, no
+# buildable capacity, no BIM, no valuation. A domain CV invites the question of
+# why he is not applying in his domain.
+
+profile: profile.esg-consulting
+
+roles: [sweco, ramboll, isay, ospa, felipe, itau, independent]
+
+bullets:
+  # Sweco: international consulting, on-site with clients, senior counterparts.
+  - sweco.department-anchor.v1
+  - sweco.climate-risk-assessments.v2
+  - sweco.azerbaijan-field-mission.v1
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  - sweco.project-pricing-model.v1
+
+  # Ramboll: the anchor role, and a management consultancy by name.
+  - ramboll.frameworks-anchor.v2
+  - ramboll.colt-peer-benchmark.v1
+  - ramboll.nordzucker-hria-tool.v1
+  - ramboll.colt-salience-tool.v2
+  - ramboll.critical-raw-materials-study.v2
+
+  # Isay Weinfeld: impact with a number on it, then adoption by colleagues.
+  - isay.portfolio-anchor.v1
+  - isay.staircase-grasshopper-plugin.v1
+  - isay.staircase-plugin-adoption-teaching.v1
+
+  # OSPA: quantitative analysis, taken to a client.
+  - ospa.feasibility-anchor.v1
+  - ospa.numerical-feasibility-financial-modeling.v1
+  - ospa.client-presentations.v1
+
+  # Felipe Hess: one line, to close the gap in the timeline.
+  - felipe.portfolio-anchor.v2
+
+  # Itau: a large corporate, and a manual process replaced with a tool.
+  - itau.documentation-review-anchor.v1
+  - itau.furniture-inventory-tool.v1
+
+  # Independent: owning a business end to end, and the quantitative tooling.
+  - independent.anchor.v2
+  - vizu.studio-anchor.v2
+  - independent.financial-analysis-tool.v1
+
+projects:
+  - project.house-price-prediction
+  - project.real-estate-development
+  - project.masters-thesis-computational
+
+skills: [data_and_analysis, esg_and_sustainability, languages]

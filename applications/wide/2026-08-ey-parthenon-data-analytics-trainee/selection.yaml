@@ -1,0 +1,31 @@
+# EY-Parthenon, Trainee, Data & Analytics, Helsinki.
+#
+# Base: data-built-environment, the block that leads with Python, ML and data
+# tools, which is exactly the stated must-have (Python plus Power BI/Tableau).
+# The delta pulls the finance signal forward, because the seat sits inside M&A
+# and the posting asks for business acumen and interest in finance, and strips
+# the geometry, BIM and cartography strands that read as architecture practice
+# rather than as analytics.
+
+extends: data-built-environment
+
+profile: profile.proptech-real-estate
+
+drop:
+  # Cartography for proposal documents: no analytical claim a D&A team reads.
+  - sweco.office-gis-lead.v1
+  # Organic geometry and BIM drawings are execution-level architecture.
+  - isay.complex-organic-parametric-modeling.v1
+  - felipe.bim-documentation.v1
+  - ospa.volumetric-massing-study.v1
+  # Origami deployable structures: strong project, wrong audience entirely.
+  - project.computational-deployable-structures
+
+add:
+  # Felipe keeps only the anchor after the BIM cut, so give the role its
+  # financial line: saleable area and development cost against the programme.
+  - felipe.financial-feasibility.v1
+
+# Revit, AutoCAD and Adobe work against an analytics positioning, so the
+# digital_tools group comes out and the finance-adjacent group stays.
+skills: [data_and_analysis, real_estate_and_urban, languages]

@@ -1,0 +1,33 @@
+company: "Business Sweden"
+role: "Associate"
+language: en
+
+# No block fits: the CV was built by hand around the consulting spine, so the letter
+# follows it. The ESG opening because it lands on consulting, the Sweco commercial
+# paragraph because it is the closest thing he has to this job, the Ramboll paragraph
+# for the market-study and structuring half, and the data closing because market
+# intelligence is the subject, not sustainability.
+opening: opening.esg.v1
+
+paragraphs:
+  - exp.sweco.consulting-delivery
+  - exp.ramboll.esg-data
+
+closing: closing.data.v1
+
+hook: >
+  Business Sweden works at the point where that analysis becomes a commercial decision, advising
+  companies on whether and how to enter a market before anyone commits resources to it.
+
+relevance:
+  exp.sweco.consulting-delivery: >
+    The Oslo role asks for both halves at once, since proposals, partner and customer
+    identification, and meetings with public-sector representatives are the substance of the week
+    rather than an occasional addition to it.
+  exp.ramboll.esg-data: >
+    Market intelligence rests on that discipline too, since an insight a company will act on in a
+    new market has to hold up in front of the executives paying for it.
+
+closing_reason: >
+  Business Sweden advises Swedish companies on entering and growing in a market, with the analysis
+  and the client relationship carried by the same small team.

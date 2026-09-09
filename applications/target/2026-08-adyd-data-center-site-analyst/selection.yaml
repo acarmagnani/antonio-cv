@@ -1,0 +1,32 @@
+# ADYD Group, junior technical and urban planning analyst, Data Centers, Spain.
+#
+# Base: real-estate-investment. Its spine is exactly this job, feasibility,
+# zoning and land-use law, buildable case, and technical review of assets.
+#
+# Three adds, one per responsibility the block does not reach, plus a skills
+# reorder. This is the one posting where BIM and the design tools are an asset
+# rather than a distraction, so digital_tools goes back in.
+
+extends: real-estate-investment
+
+add:
+  # "Coordinación de visitas técnicas" and "revisión de activos e identificación
+  # de riesgos técnicos". The Baku mission is the only site-inspection bullet.
+  - sweco.azerbaijan-field-mission.v1
+  # "Due diligences técnicas de edificios" against engineering documentation.
+  - sweco.engineering-design-review.v1
+  # "Conocimientos en BIM" (muy valorable) and "colaboración con equipos
+  # técnicos multidisciplinares". Structural, HVAC, electrical, lighting into
+  # one model is the right evidence for a power and cooling heavy asset.
+  - isay.bim-coordination-clash-detection.v1
+
+drop:
+  # Human rights Code of Conduct work reads as ESG governance, not as technical
+  # site due diligence.
+  - ramboll.genesta-code-of-conduct.v1
+  # Supply chain risk dashboard: tangential to a site feasibility team.
+  - ramboll.colt-salience-tool.v2
+
+# Reordered, and digital_tools restored: Revit, AutoCAD and Rhino are named
+# value-adds here (BIM), unlike on every other CV in this folder.
+skills: [real_estate_and_urban, digital_tools, data_and_analysis, languages]

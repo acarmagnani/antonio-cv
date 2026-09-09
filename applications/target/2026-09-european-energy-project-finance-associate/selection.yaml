@@ -1,0 +1,28 @@
+# European Energy, Associate Project Finance (Copenhagen/Soborg).
+#
+# Starts from the real-estate-investment block because the requirement is
+# quantitative: financial modelling, scenarios and sensitivities, Excel, due
+# diligence and deal documentation. That block is the one that leads with
+# feasibility and investment sizing.
+#
+# The delta makes it read as INFRASTRUCTURE finance rather than real estate:
+# Sweco gains the lender-facing documentation work (FIDIC design review, tender
+# methodology), and the architectural residue (massing in Revit, three separate
+# buildable-capacity bullets, the office-tower technical review, GIS) comes out.
+# Skills are reordered so data and Excel lead, since Excel is a stated must-have.
+
+extends: real-estate-investment
+
+add:
+  - sweco.engineering-design-review.v1
+  - sweco.tender-methodology.v1
+
+drop:
+  - sweco.geospatial-data-and-analysis.v1
+  - ramboll.genesta-code-of-conduct.v1
+  - isay.buildable-capacity.v1
+  - ospa.volumetric-massing-study.v2
+  - felipe.buildable-capacity.v1
+  - itau.new-office-towers-technical.v2
+
+skills: [data_and_analysis, real_estate_and_urban, esg_and_sustainability, languages]

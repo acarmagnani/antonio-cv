@@ -1,0 +1,34 @@
+# European Energy, Associate Project Finance.
+#
+# The CV extends real-estate-investment, but the letter overrides all three block
+# slots, because the seat is infrastructure finance rather than real estate. The data
+# opening leads on feasibility and analysis and ends on building the tool that answers
+# the question, which is the aptitude the posting screens for. Sweco carries the sector
+# and the lender standard of evidence; OSPA carries the investment sizing. The closing
+# stays the real-estate one for its last clause, real assets and decisions with money
+# behind them, which is what this seat is.
+
+extends: real-estate-investment
+company: "European Energy"
+role: "Associate, Project Finance"
+language: en
+
+opening: opening.data.v1
+
+hook: >
+  European Energy is the kind of place where that preference carries direct financial consequence, since a company that finances, builds and operates its own solar, wind and Power-to-X projects has to establish what an asset is worth and how much debt it can carry long before anything is constructed, and the Project and Asset Finance team is the part of the business that produces those figures.
+
+paragraphs:
+  - exp.sweco.climate-risk
+  - exp.ospa.feasibility
+
+relevance:
+  exp.sweco.climate-risk: >
+    That standard is the one this role works to daily, because maintaining a dataroom and coordinating lender and advisor questions means every figure has to hold up in front of the institutions putting up the money.
+  exp.ospa.feasibility: >
+    Running scenarios and sensitivities on a project finance model asks for that same discipline on a different asset class, where the technical, regulatory and grid conditions of a wind or solar project set the boundaries within which the numbers are allowed to move.
+
+closing: closing.real-estate.v1
+
+closing_reason: >
+  European Energy develops, finances, constructs and operates renewable assets across more than twenty countries, which means its financing team works on projects the company will own and run rather than on transactions that end at signing.

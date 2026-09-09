@@ -1,0 +1,40 @@
+# Novo Nordisk, Supply Chain Professional, Planning Solution Development.
+#
+# Applied on a referral, with the domain gap known and accepted: he has no
+# supply chain planning, no ERP and no APS. What the CV argues instead is the
+# other half of the posting, "translating user needs into practical system
+# improvements and supporting their successful adoption", which he has actually
+# done more than once.
+#
+# Starts from data-built-environment, because that block already carries the
+# Grasshopper plugin, its adoption across ten-plus projects, the LCA startup
+# product work and the VBA dashboard that replaced a manual process.
+#
+# The delta adds the requirements-gathering and enablement side that the block
+# does not carry: the Ramboll workshop and training materials (user enablement),
+# the Isay client and consultant meetings (aligning requirements across
+# disciplines) and the Azerbaijan counterpart engagement (stakeholders across
+# geographies, which is how this team works).
+#
+# What comes out is the pure architecture craft: parametric geometry, Revit
+# massing, BIM documentation, cartography. None of it argues anything to a
+# planning solutions reader. digital_tools goes with it for the same reason,
+# since Revit, AutoCAD and Adobe on this CV read as the wrong profession.
+
+extends: data-built-environment
+
+add:
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  - ramboll.colt-human-rights-workshop.v1
+  - isay.client-and-consultant-coordination.v1
+
+drop:
+  - sweco.office-gis-lead.v1
+  - isay.complex-organic-parametric-modeling.v1
+  - ospa.volumetric-massing-study.v1
+  - felipe.bim-documentation.v1
+  - project.computational-deployable-structures
+
+# Set explicitly rather than via add/drop so the order is right: data first,
+# because SQL, Power BI and Excel are what this seat runs on.
+skills: [data_and_analysis, esg_and_sustainability, real_estate_and_urban, languages]

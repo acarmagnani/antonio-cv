@@ -1,0 +1,66 @@
+# McKinsey & Company, Analyst, Energy Solutions (Global Energy & Materials), London.
+#
+# Block: esg-built-environment, the consulting and analysis block, taken the same
+# way the Rystad application took it. It is the only block carrying the Sweco
+# energy-infrastructure spine and the Ramboll analytical structuring, which are the
+# two things an energy intelligence team can actually read on this CV.
+#
+# The screening problem is known and stated in strategy.md: no oil and gas. Nothing
+# here pretends otherwise. What the delta does instead is turn the CV as hard as it
+# honestly can toward the second qualification the posting names, quantitative
+# modelling and tool building, because that is the part he can win on.
+#
+# Delta, all of it driven by the posting:
+#   - profile swapped to infrastructure-consulting: the only variant naming ENERGY
+#     projects and international consulting in the opening line.
+#   - Pricing model added: parametrised project economics behind a bid decision, the
+#     closest thing in his record to a commercial model built for a real decision.
+#   - Peer benchmark added: the posting's own words are "tools/benchmarks", and this
+#     is the one bullet where he benchmarks a client against its industry.
+#   - AI in research workflow added: an analytics team sourcing evidence at volume.
+#   - Salience tool swapped v1 -> v2: v2 is the Excel wording (fully automated
+#     risk-assessment system, single dashboard), and Excel is an essential.
+#   - Staircase plugin adoption added next to the plugin the block already carries:
+#     a Python tool that cut a task from days to 20 minutes and was then taken up
+#     across 10+ projects. Python is named in the posting, and building a tool other
+#     people actually use is the job.
+#   - Financial analysis tool added: Excel and VBA ingesting statements into a
+#     decision dashboard, which is VBA evidence outside a sustainability context.
+#   - Felipe anchor swapped v1 -> v2: with the role cut to a single bullet, v2 is
+#     the one that reads land-use and feasibility analysis rather than Revit,
+#     AutoCAD and SketchUp, which is design tooling this reader has no use for.
+#   - House price prediction added over the biomass project: ensemble learning in
+#     the top 2% of its competition is the hardest quantitative evidence he has.
+#   - Dropped, all of it building-scale sustainability and design detail with
+#     nothing to say to an energy intelligence team: real-estate ESG services, the
+#     Nordzucker HRIA tool (redundant next to the salience tool), daylight and solar
+#     analysis at Isay, OSPA and Felipe, the Itau office towers, and the LCA startup.
+# Skills reordered so data and analysis leads.
+
+extends: esg-built-environment
+
+profile: profile.infrastructure-consulting
+
+add:
+  - sweco.project-pricing-model.v1
+  - ramboll.colt-peer-benchmark.v1
+  - ramboll.ai-in-research-workflow.v1
+  - ramboll.colt-salience-tool.v2
+  - isay.staircase-plugin-adoption-teaching.v1
+  - felipe.portfolio-anchor.v2
+  - independent.financial-analysis-tool.v1
+  - project.house-price-prediction
+
+drop:
+  - ramboll.colt-salience-tool.v1
+  - ramboll.real-estate-esg.v1
+  - ramboll.nordzucker-hria-tool.v1
+  - isay.environmental-daylight-analysis.v1
+  - ospa.environmental-analysis.v1
+  - felipe.portfolio-anchor.v1
+  - felipe.environmental-analysis.v1
+  - itau.new-office-towers-technical.v1
+  - independent.lca-startup-consulting.v1
+  - project.rammed-blue-biomass
+
+skills: [data_and_analysis, esg_and_sustainability, real_estate_and_urban, languages]

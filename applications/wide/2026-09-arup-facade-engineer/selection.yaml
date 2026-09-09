@@ -1,0 +1,110 @@
+# Arup, Facade Engineer (Copenhagen), Technical Specialist Services.
+#
+# Bucket wide: facade engineering is a deep technical specialism and not the real
+# estate direction, and it is a hard seat to move out of toward investment. Sent
+# because it is Arup, in Copenhagen, and because Antonio has genuine facade
+# experience: at Isay Weinfeld he moved between the design team and the technical
+# development team on large buildings, resolving envelopes, build-ups and
+# preliminary structural sizing with the engineers. That was not in
+# content_base.yaml before this application; it is now (2026-09-07, from Antonio
+# directly) and it changes what this CV can claim.
+#
+# Block: data-built-environment. This CV has to read as an architect who resolves
+# buildings technically and works computationally, not as an analyst and not as a
+# property person. Profile stays the block default (profile.proptech), the only
+# one that opens on computational design and parametric work rather than on
+# finance or human rights.
+#
+# Isay Weinfeld is the anchor role and keeps six bullets, four of them facade.
+# It is the role the whole application rests on.
+#
+# Adds:
+#   - isay.facade-envelope-development, isay.facade-detailing and
+#     isay.facade-engineering-review: the three new facade points. Between them
+#     they answer "knowledge of facade systems", "facade architectural detail
+#     design", "construction build-ups and their respective materials", "liaising
+#     with other engineering discipline groups" and "reviewing technical
+#     submissions for compliance with design intent".
+#   - felipe.facade-design-detailing: the same work at the smaller studio, from
+#     preliminary study through to construction documentation.
+#   - isay.environmental-daylight-analysis.v2: the quantified version (Ladybug,
+#     solar exposure, light incidence), the closest thing he has to envelope
+#     physics, and nothing else on the CV covers thermal or glazing performance.
+#   - sweco.engineering-design-review: checking specifications against
+#     subconsultants' technical drawings, the consultancy-side version of the
+#     review duty.
+#   - ramboll.critical-raw-materials-study.v1: the materials framing rather than
+#     the v2 business-development framing, for a team whose subject is materials.
+#   - itau.new-office-towers-technical.v1: technical review of towers under
+#     construction, the site and compliance end of the job.
+#
+# Drops:
+#   - isay.complex-organic-parametric-modeling and
+#     isay.staircase-plugin-adoption-teaching: cut only for room. The staircase
+#     plugin itself stays, because "digital tools implemented into the different
+#     stages of projects" is an essential requirement and that bullet is the
+#     evidence for it.
+#   - sweco.geospatial-data-and-analysis and sweco.office-gis-lead: GIS work has
+#     no bearing on a facade team.
+#   - ramboll.colt-salience-tool and ramboll.ai-in-research-workflow: Ramboll is
+#     the role that fights this positioning hardest, so it goes down to the
+#     anchor plus the raw materials study.
+#   - ospa.numerical-feasibility-financial-modeling, itau.furniture-inventory-tool
+#     and independent.financial-analysis-tool: the finance strand, which here
+#     makes him read as someone applying to the wrong department.
+#   - project.house-price-prediction, project.real-estate-development and
+#     project.masters-thesis-computational: all three point at real estate and
+#     urban data. Replaced by the material, geometry and fabrication trio, which
+#     is what a materials-and-facade team actually reads.
+#
+# Projects added: rammed blue biomass (a construction technique and material
+# system optimised for structural performance and environmental impact) and the
+# Venice Biennale panels (built at seven metres with CITA, GXN and 3XN). With the
+# deployable structures workshop they are the strongest evidence he has for
+# "interested in novel facade materials and technologies".
+#
+# Bullet order inside a role follows the order in this file, not the order in
+# content_base.yaml, so isay.staircase-grasshopper-plugin and
+# felipe.bim-documentation are dropped from the block and re-added below the
+# facade bullets. They are kept, only moved: on this CV the facade work has to be
+# the first thing read under each architecture role.
+#
+# Skills: building_and_facade first (a group authored for this family), then the
+# digital tools. real_estate_and_urban and esg_and_sustainability both dropped;
+# the first points at property, the second would drag human rights due diligence
+# onto a facade CV, and LCA still shows through the blue biomass project.
+
+extends: data-built-environment
+
+add:
+  - sweco.engineering-design-review.v1
+  - ramboll.critical-raw-materials-study.v1
+  - isay.facade-envelope-development.v1
+  - isay.facade-detailing.v1
+  - isay.facade-engineering-review.v1
+  - isay.environmental-daylight-analysis.v2
+  - isay.staircase-grasshopper-plugin.v1
+  - felipe.facade-design-detailing.v1
+  - felipe.bim-documentation.v1
+  - itau.new-office-towers-technical.v1
+  - project.rammed-blue-biomass
+  - project.venice-architecture-biennale
+
+drop:
+  - sweco.geospatial-data-and-analysis.v1
+  - sweco.office-gis-lead.v1
+  - ramboll.colt-salience-tool.v2
+  - ramboll.ai-in-research-workflow.v1
+  - ramboll.critical-raw-materials-study.v2
+  - isay.complex-organic-parametric-modeling.v1
+  - isay.staircase-plugin-adoption-teaching.v1
+  - isay.staircase-grasshopper-plugin.v1
+  - felipe.bim-documentation.v1
+  - ospa.numerical-feasibility-financial-modeling.v1
+  - itau.furniture-inventory-tool.v1
+  - independent.financial-analysis-tool.v1
+  - project.house-price-prediction
+  - project.real-estate-development
+  - project.masters-thesis-computational
+
+skills: [building_and_facade, digital_tools, data_and_analysis, languages]

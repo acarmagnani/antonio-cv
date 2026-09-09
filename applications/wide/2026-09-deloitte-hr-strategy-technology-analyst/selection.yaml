@@ -1,0 +1,86 @@
+# Deloitte Denmark, Analyst / Consultant, HR Strategy & Technology (Technology & Transformation).
+#
+# NO `extends`. This job fits none of the three blocks. Every block is built to point at
+# the built environment, and the built environment is exactly the part a Deloitte HR
+# practice does not care about. Built by hand, from the two doors the posting actually
+# leaves open: "IT or a related field" plus digital transformation, and management
+# consulting craft.
+#
+# The positioning: a management consultant who builds the tool instead of only writing the
+# recommendation. Consulting craft carries the body of the CV (stakeholder engagement,
+# workshops, benchmarking, client deliverables, business development), and technology
+# carries the profile and the projects. Ramboll Management Consulting is the spine and
+# keeps six bullets; the two architecture practices are cut close to the bone, because
+# design delivery is the part that reads as noise to this reader.
+
+profile: profile.proptech
+
+bullets:
+  # Sweco Danmark, Project Assistant. Consulting delivery, and the one genuinely
+  # HR-shaped thing in his whole record: standing up a branch office, which meant
+  # employment contracts and insurance onboarding.
+  - sweco.department-anchor.v1
+  - sweco.bangladesh-branch-office-setup.v1
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  - sweco.tender-methodology.v1
+  - sweco.project-pricing-model.v1
+
+  # Ramboll Management Consulting. The anchor role for this application, and the
+  # answer to "experience from the consulting industry". Deliberately six bullets:
+  # workshop materials answer "workshop facilitation", peer benchmarking answers
+  # "best practices", the Excel dashboard answers building a tool a client function
+  # runs on, the AI bullet answers "leveraging AI and data-driven insights", and the
+  # raw materials study answers "support business development efforts".
+  - ramboll.frameworks-anchor.v1
+  - ramboll.colt-human-rights-workshop.v1
+  - ramboll.colt-peer-benchmark.v1
+  - ramboll.colt-salience-tool.v2
+  - ramboll.ai-in-research-workflow.v1
+  - ramboll.critical-raw-materials-study.v2
+
+  # Isay Weinfeld Architects, Architect. Kept only for the technology story: he built
+  # an internal tool and then got an organisation to adopt it, which is the shape of
+  # "implement HR technology solutions to improve operational efficiency" at analyst
+  # level. The real estate bullets are all out.
+  - isay.portfolio-anchor.v1
+  - isay.staircase-grasshopper-plugin.v1
+  - isay.staircase-plugin-adoption-teaching.v1
+
+  # OSPA, Trainee in Real Estate Product Development. Two bullets: volume of analytical
+  # deliverables, and presenting the outcome to the client.
+  - ospa.feasibility-anchor.v1
+  - ospa.client-presentations.v1
+
+  # Felipe Hess Architects, Architect. One bullet. The role points away from this job,
+  # so it is trimmed to the anchor and left to sit quietly in the history.
+  - felipe.portfolio-anchor.v1
+
+  # Itau-Unibanco, Intern in Project Management. The furniture inventory dashboard is
+  # the earliest instance of the same pattern: a manual corporate process replaced with
+  # a tool, inside a large organisation. That is process optimisation, and it happens to
+  # be a bank rather than a building.
+  - itau.documentation-review-anchor.v1
+  - itau.furniture-inventory-tool.v1
+
+  # Independent Consultant. Client acquisition, scoping, pricing and delivery on his own
+  # account, plus two more built tools, one of them a two-year product and UX advisory
+  # engagement with a software company.
+  - independent.anchor.v2
+  - vizu.studio-anchor.v3
+  - independent.lca-startup-consulting.v1
+  - independent.financial-analysis-tool.v1
+
+projects:
+  # Chosen for technology and for the academic-achievement line in the posting. The
+  # recommendation tool carries a UI built so different stakeholders can adjust drivers
+  # and weighting, which is the closest thing in his record to designing a system around
+  # how an organisation actually decides.
+  - project.real-estate-development
+  - project.house-price-prediction
+  - project.masters-thesis-computational
+
+skills:
+  - data_and_analysis
+  - digital_tools
+  - esg_and_sustainability
+  - languages

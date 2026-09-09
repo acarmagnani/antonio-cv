@@ -1,0 +1,30 @@
+# Deloitte, Analyst in Finance Transformation (Finance Consultancy Programme).
+#
+# No block fits a CFO-function consultancy, so this starts from the real estate
+# investment block for its financial modelling spine and then strips the property
+# specifics out of it. What has to survive: modelling that a client committed money
+# against, tools that replaced manual processes, and consulting delivery. What has
+# to go: zoning, massing, buildable capacity and building technical review, which
+# read as architecture to a finance reader and carry nothing here.
+extends: real-estate-investment
+add:
+  # Process optimisation and finance tooling, the closest thing in the record to
+  # "transformation and digitalization of finance functions".
+  - itau.furniture-inventory-tool.v1
+  - isay.staircase-grasshopper-plugin.v1
+  # Client proposals, which the posting lists under internal business development.
+  - sweco.tender-methodology.v1
+drop:
+  - sweco.geospatial-data-and-analysis.v1
+  - ramboll.genesta-code-of-conduct.v1
+  - isay.buildable-capacity.v1
+  - isay.development-through-construction.v1
+  - ospa.zoning-land-use-regulatory.v1
+  - ospa.volumetric-massing-study.v2
+  - felipe.developer-first-building.v1
+  - felipe.buildable-capacity.v1
+  - itau.building-environmental-energy.v1
+  - itau.new-office-towers-technical.v2
+# Data first, since the argument here is analytical and tooling. ESG stays because
+# CSRD reporting now sits inside the CFO function rather than beside it.
+skills: [data_and_analysis, esg_and_sustainability, real_estate_and_urban, languages]

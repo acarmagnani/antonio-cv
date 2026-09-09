@@ -1,0 +1,22 @@
+# Orsted, Global Lease Management. In-house corporate real estate, so the real-estate block
+# is the right base, but the job is contracts, portfolio data and stakeholder liaison rather
+# than underwriting. The delta pulls forward the contract and administration evidence and
+# drops the zoning strand, which does nothing for a lease portfolio.
+extends: real-estate-investment
+
+# Real estate plus sustainability plus the Excel and Power BI tooling, which is what this
+# team actually reads. Orsted is an energy company and the ESG half is not a distraction here.
+profile: profile.real-estate-esg-data
+
+add:
+  # Contracts and insurance, set up from scratch for a new international office.
+  - sweco.bangladesh-branch-office-setup.v1
+  # Liaison with external counterparts to align priorities and collect data.
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  # Corporate portfolio data across locations, replacing a manual process.
+  - itau.furniture-inventory-tool.v1
+drop:
+  # Zoning and massing analysis: real estate, but the wrong half of it for a lease portfolio.
+  - ospa.volumetric-massing-study.v2
+  - felipe.buildable-capacity.v1
+  - isay.buildable-capacity.v1

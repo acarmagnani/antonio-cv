@@ -1,0 +1,65 @@
+# Cushman & Wakefield, Technical Property Manager, Asset Services, España.
+#
+# Built by hand, no `extends`. This is a fourth family none of the three blocks
+# covers: technical management of buildings already in operation. The direction
+# is buildings, compliance, contractors and energy, not investment analysis
+# (real-estate-investment), not sustainability strategy (esg-built-environment),
+# not modelling (data-built-environment).
+#
+# What the CV has to say, in order: he has checked buildings against technical
+# and legal norms before work was authorised (Itau), he has audited what
+# contractors deliver (Sweco design review, Ramboll supplier work), he has run
+# tenders and priced contracts (Sweco), he has tracked energy and certifications
+# on real assets (Itau, Ramboll), and he has built the cost-tracking tools this
+# seat runs on (Itau VBA dashboard, private-client financial tool).
+#
+# Deliberately left out: feasibility and zoning depth, the house price model,
+# the human rights strand at Ramboll, all parametric and design work. None of it
+# is what an asset services team reads.
+
+profile: profile.real-estate-esg-data
+
+roles: [sweco, ramboll, isay, ospa, felipe, itau, independent]
+
+bullets:
+  # Sweco: reviewing what consultants deliver, running tenders, pricing contracts.
+  - sweco.department-anchor.v1
+  - sweco.engineering-design-review.v1
+  - sweco.tender-bid-team-assembly.v1
+  - sweco.project-pricing-model.v1
+
+  # Ramboll: the ESG platform side, plus supplier and contractor due diligence.
+  - ramboll.real-estate-esg.v1
+  - ramboll.genesta-supplier-human-rights.v1
+  - ramboll.frameworks-anchor.v2
+
+  # Isay Weinfeld: delivery and the coordination of building systems.
+  - isay.portfolio-anchor.v2
+  - isay.development-through-construction.v1
+  - isay.bim-coordination-clash-detection.v1
+
+  # OSPA: real estate credibility and client-facing reporting. Two lines only.
+  - ospa.feasibility-anchor.v1
+  - ospa.client-presentations.v1
+
+  # Felipe Hess: buildings taken to construction, and the documentation behind it.
+  - felipe.portfolio-anchor.v2
+  - felipe.bim-documentation.v1
+
+  # Itau: the anchor role. A corporate real estate function, seen from inside.
+  - itau.documentation-review-anchor.v1
+  - itau.building-environmental-energy.v1
+  - itau.new-office-towers-technical.v1
+  - itau.furniture-inventory-tool.v1
+
+  # Independent: owning a client relationship end to end, and cost tooling.
+  - independent.anchor.v1
+  - vizu.studio-anchor.v3
+  - independent.financial-analysis-tool.v1
+
+projects:
+  - project.real-estate-development
+  - project.rammed-blue-biomass
+  - project.masters-thesis-computational
+
+skills: [real_estate_and_urban, esg_and_sustainability, data_and_analysis, languages]

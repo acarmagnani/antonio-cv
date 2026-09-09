@@ -1,0 +1,44 @@
+# Deloitte Denmark, Analyst / Consultant, HR Strategy & Technology.
+#
+# NOTE: Deloitte explicitly replaces the cover letter with two 200-word answers, which
+# live in application_questions.md. This letter exists only for the portal's "any other
+# relevant documents" slot, and is optional. If it goes in alongside the answers, it must
+# not repeat them.
+#
+# Base: data-built-environment, because the door into this practice is Technology &
+# Transformation, not human capital. One swap against the block: the master's modelling
+# paragraph goes out and the Isay tool-adoption paragraph comes in, since getting an
+# organisation to actually use a tool is the argument this job turns on.
+#
+# Deliberately NOT used: exp.sweco.consulting-delivery, which is the strongest
+# management-consulting paragraph in the file and would otherwise be the obvious pick.
+# It opens "At Sweco I also worked on the commercial side", and that "also" refers back
+# to a Sweco paragraph that is not in this letter. Worth fixing in letter_base.yaml
+# during a future authoring pass, since it makes the paragraph unusable on its own.
+
+extends: data-built-environment
+company: "Deloitte"
+role: "Analyst / Consultant in HR Strategy & Technology"
+language: en
+
+hook: >
+  What makes the role interesting to me is that Deloitte's HR Strategy and Technology practice
+  sits inside Technology and Transformation rather than beside it, treating the operating model
+  and the systems that carry it as one problem.
+
+paragraphs:
+  - exp.ramboll.esg-data
+  - exp.isay.tooling-adoption
+
+relevance:
+  exp.ramboll.esg-data: >
+    Diagnosing how an organisation works and where it is exposed is that same exercise on a
+    different subject, and this role puts it at the centre of what an analyst produces.
+  exp.isay.tooling-adoption: >
+    That is the part of any technology implementation that decides whether it improves how a
+    function operates or merely exists alongside it, which is why I would rather work where
+    the advice and the system are owned by the same team.
+
+closing_reason: >
+  Deloitte is the largest consultancy in Denmark and runs these engagements end to end for
+  multinational clients.

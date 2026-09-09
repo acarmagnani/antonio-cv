@@ -1,0 +1,39 @@
+extends: architecture-technical
+company: "BYREDO"
+role: "Architect"
+
+closing: closing.architecture-design.v1
+
+# The block as written, because it was built for exactly this family: the technical
+# architecture seats where materials and how a thing is actually made carry the work.
+# Isay Weinfeld first for the professional depth and the high-end credential, then the
+# master's material work, which closes on a built installation and is the strongest
+# thing he has for the furniture, displays and objects half of this role.
+#
+# Closing swapped to closing.architecture-design.v1, authored with Antonio on
+# 2026-09-08. The block's own closing ends on taking the envelope as the place to go
+# deeper, which was written for Arup and would read here as applying for a facade job
+# instead of this one.
+#
+# The posting requires a portfolio, so closing_reason opens by pointing at the site
+# before the sentence about BYREDO. Placed there on purpose: the fixed closing line
+# follows the BYREDO sentence, so the paragraph still resolves on the work rather than
+# on a link. The other three per-job sentences were trimmed to make room under the
+# 500-word ceiling.
+
+hook: >
+  The Architect seat at BYREDO runs across that whole range, from stores and shop-in-shops to
+  furniture, displays and installations, where a brief has to end up standing in a space.
+
+relevance:
+  exp.isay.facade-envelope: >
+    Taking a store concept from a brief through to fixtures, finishes and production drawings
+    is that same movement, at a scale read from arm's length rather than across a street.
+  exp.masters.materials: >
+    Retail interiors are where a material is looked at most closely, so what one can be made
+    to do belongs inside the concept.
+
+closing_reason: >
+  My portfolio, with the built work and the drawings and visualisations behind it, is at
+  antoniocarmagnani.com. BYREDO treats its spaces with the attention it gives its products,
+  which makes the architecture team's work part of the brand rather than a setting for it.

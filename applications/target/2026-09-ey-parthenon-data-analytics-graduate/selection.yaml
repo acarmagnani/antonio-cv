@@ -1,0 +1,36 @@
+# EY-Parthenon, Graduate, Data & Analytics, Denmark.
+#
+# Same team and same reasoning as the Helsinki trainee application in
+# applications/wide/2026-08-ey-parthenon-data-analytics-trainee/, so the selection
+# is deliberately kept in step with it: the data block, the finance signal pulled
+# forward, and the geometry, BIM and cartography strands stripped out so the CV
+# reads as analytics rather than as architecture practice.
+#
+# One addition against the Helsinki version: this posting names presentation and
+# communication as a qualification in its own right, so OSPA keeps the bullet
+# about presenting feasibility outcomes to developer clients.
+
+extends: data-built-environment
+
+profile: profile.proptech-real-estate
+
+drop:
+  # Cartography for proposal documents: no analytical claim a D&A team reads.
+  - sweco.office-gis-lead.v1
+  # Organic geometry and BIM drawings are execution-level architecture.
+  - isay.complex-organic-parametric-modeling.v1
+  - felipe.bim-documentation.v1
+  - ospa.volumetric-massing-study.v1
+  # Origami deployable structures: strong project, wrong audience entirely.
+  - project.computational-deployable-structures
+
+add:
+  # Felipe keeps only the anchor after the BIM cut, so give the role its
+  # financial line: saleable area and development cost against the programme.
+  - felipe.financial-feasibility.v1
+  # Presenting analytical outcomes to the people who decide.
+  - ospa.client-presentations.v1
+
+# Revit, AutoCAD and Adobe work against an analytics positioning, so the
+# digital_tools group comes out and the finance-adjacent group stays.
+skills: [data_and_analysis, real_estate_and_urban, languages]

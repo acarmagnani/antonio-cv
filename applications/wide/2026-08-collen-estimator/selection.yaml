@@ -1,0 +1,52 @@
+# Collen, Estimator in preconstruction (Copenhagen). Fits no preset: the seat is tendering
+# and construction cost, so this is built by hand around the bid and tender work at Sweco,
+# the development-cost side of the feasibility roles, and the construction documentation
+# strand that a contractor actually reads. The investment framing is deliberately dialled
+# down, and zoning is out entirely.
+
+profile: profile.real-estate
+
+roles: [sweco, ramboll, isay, ospa, felipe, itau, independent]
+
+bullets:
+  # Sweco: the closest thing he has to this job, tenders end to end plus pricing
+  - sweco.department-anchor.v1
+  - sweco.tender-bid-team-assembly.v1
+  - sweco.tender-methodology.v1
+  - sweco.project-pricing-model.v1
+  - sweco.engineering-design-review.v1
+
+  # Ramboll: kept to two, led by the supply chain mapping rather than the ESG frameworks
+  - ramboll.frameworks-anchor.v1
+  - ramboll.critical-raw-materials-study.v1
+
+  # Isay Weinfeld: delivery and buildability, not design
+  - isay.portfolio-anchor.v1
+  - isay.development-through-construction.v1
+  - isay.bim-coordination-clash-detection.v1
+
+  # OSPA: the cost and viability half only
+  - ospa.feasibility-anchor.v1
+  - ospa.numerical-feasibility-financial-modeling.v1
+
+  # Felipe Hess: development cost tested against the buildable programme, plus drawings
+  - felipe.portfolio-anchor.v2
+  - felipe.financial-feasibility.v1
+  - felipe.bim-documentation.v1
+
+  # Itau-Unibanco: pre-construction document review and a procurement process he sped up
+  - itau.documentation-review-anchor.v1
+  - itau.new-office-towers-technical.v1
+  - itau.furniture-inventory-tool.v1
+
+  # Independent: pricing and delivery ownership on his own account
+  - independent.anchor.v1
+  - vizu.studio-anchor.v3
+  - independent.financial-analysis-tool.v1
+
+projects:
+  - project.house-price-prediction
+  - project.rammed-blue-biomass
+  - project.real-estate-development
+
+skills: [real_estate_and_urban, digital_tools, data_and_analysis, languages]

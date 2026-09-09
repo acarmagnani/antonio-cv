@@ -1,0 +1,17 @@
+# Strategy, EY-Parthenon, Trainee, Data & Analytics, Helsinki
+
+**Positioning:** someone who already builds the data tools that decisions get made on, in a field where the decision is always "what is this asset worth and does it clear", and who now wants to point that same method at businesses and transactions.
+
+**Profile chosen:** `profile.proptech-real-estate`. It is the one that opens on financial analysis and predictive modelling and closes on machine learning applied to property and market data, which is the closest his record gets to "data driven solutions inside M&A". The pure `profile.proptech` variant was the block default but leads with parametric Grasshopper workflows, which is the wrong first impression for a transactions team.
+
+**Bucket:** `wide`. Trainee seat, aimed at students still reading for a master's in accounting, finance, economics or engineering. He has graduated and his degree is none of those. He is applying on the strength of the technical match, not on the stated qualifications.
+
+**Threads to lead with:**
+
+- **The stated must-have is the part he actually has.** Python, Power BI, SQL, Excel and VBA are all in his record and all used on real deliverables, not in a course: the house-price model (XGBoost, LightGBM, Ridge, CatBoost, top 2% of a competition), the Copenhagen development recommendation tool that merges financial, social, sustainability and geospatial data behind an interface a non-technical user drives, the VBA dashboard that replaced a manual inventory process at a bank, the Excel and VBA tool that ingests statements and PDF exports and categorises transactions automatically.
+- **"Bridging the gap between data owners and users" is a thing he has already done twice.** The Grasshopper plugin at Isay Weinfeld went from his own tool to a studio workshop and adoption across 10+ projects. The Copenhagen tool was explicitly designed so different stakeholders could adjust the weightings themselves. Both are the same move the posting describes.
+- **Structured and unstructured datasets, at volume.** The critical raw materials study mapped 20+ supply chains out of industry databases into a client-targeting view, and the Ramboll due diligence work integrated AI research tools to source and cite risk data across high research volumes. That is unstructured-to-structured, done commercially.
+- **Name the degree gap once, then move.** He is not a finance or accounting graduate and he has finished studying. What he has instead is an M.Arch. in Architecture Computation built around data-driven approaches to real estate and valuation, plus four years of analytical work for developers, a bank and consulting clients. Say it plainly and spend the rest of the letter on evidence.
+- **The Nordic team is the point, and so is the transferability.** A Nordic-wide team with backgrounds in data science, engineering, finance and accounting is a place where an architect who codes is a normal hire rather than an anomaly. His record across Brazil, Denmark, Azerbaijan and Bangladesh, in four languages, answers the multicultural and fast-paced line without needing to claim it.
+
+**Open flags for Antonio:** the posting says "studying towards" a master's, and asks for transcripts. He should have his Royal Danish Academy transcript ready. Databricks, Snowflake, Dataiku, cloud and Git are all listed under "ideally" and he has none of them; do not claim any. Finnish is an advantage he does not have, but it is not a requirement.

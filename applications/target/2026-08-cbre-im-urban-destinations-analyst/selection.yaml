@@ -1,0 +1,17 @@
+# CBRE Investment Management, Analyst, UK Urban Destinations, London.
+#
+# Base: real-estate-investment, kept essentially as it is. The block already
+# answers the business plans, budgets, cash flow modelling, asset-level due
+# diligence and property inspection sides of this posting.
+#
+# One add. The posting puts "championing sustainability and social impact
+# initiatives" in the same sentence as refurbishment projects and leasing, which
+# is the one thing the block does not reach.
+
+extends: real-estate-investment
+
+add:
+  # Social impact, on site, with contractors, for real estate clients. The
+  # closest thing in his record to the social half of that responsibility, and
+  # it sits naturally next to a refurbishment programme.
+  - ramboll.genesta-supplier-human-rights.v1

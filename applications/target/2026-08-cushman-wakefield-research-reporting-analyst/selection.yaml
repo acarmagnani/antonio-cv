@@ -1,0 +1,40 @@
+# Cushman & Wakefield, Research & Reporting Analyst, Insights & Analytics.
+#
+# Base: data-built-environment. It is the only block that already carries the
+# research and tooling spine this posting runs on: the Ramboll market study and
+# AI-assisted research workflow, the automated Excel risk dashboard, the office
+# GIS lead and geospatial databases at Sweco, the Itau VBA dashboard, and the
+# private-client financial tool. Excel, Power BI, Python and SQL sit at the top
+# of the skills list, which is what "Excel modeling, Power BI, Alteryx a plus"
+# is asking about.
+#
+# Delta follows the same cut the Savills data analyst application made, plus the
+# two bullets this posting uniquely asks for: benchmarking research and standing
+# in front of a client with the result.
+
+extends: data-built-environment
+
+# The block's profile opens on Grasshopper and parametric workflows. This one
+# opens on real estate plus financial and predictive analysis, and closes on
+# "machine learning applied to property and market data", which is the job.
+profile: profile.proptech-real-estate
+
+add:
+  # The posting's core is benchmarking and research that informs strategy. This
+  # is the only bullet where he benchmarks a corporate client against its
+  # competitors and turns the gaps into positioning advice.
+  - ramboll.colt-peer-benchmark.v1
+  # "Attend client meetings and assist with presenting insights". He has done it.
+  - ospa.client-presentations.v1
+
+drop:
+  # Parametric modelling of complex geometry: design, not analysis.
+  - isay.complex-organic-parametric-modeling.v1
+  # Revit massing and BIM documentation: execution work.
+  - ospa.volumetric-massing-study.v1
+  - felipe.bim-documentation.v1
+  # Origami-based deployable structures: nothing to do with the role.
+  - project.computational-deployable-structures
+  # Rhino, Revit and AutoCAD undercut an analyst positioning. Excel, Power BI,
+  # Python and SQL already carry it.
+  - digital_tools

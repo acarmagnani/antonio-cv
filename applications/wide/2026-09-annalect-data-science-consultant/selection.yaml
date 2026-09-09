@@ -1,0 +1,20 @@
+# Annalect (Omnicom Media Group), Consultant, Data Science Consultancy team.
+#
+# The data block, pushed further from design and closer to statistical modelling
+# and client delivery. Annalect reads R, statistics and econometrics first, and
+# marketing/media second, so the CV has to say "builds models, hands results to
+# clients" without any of the drafting vocabulary.
+extends: data-built-environment
+add:
+  # Presented analytical outcomes to paying clients: the posting asks for
+  # PowerPoint deliverables and ongoing client dialogue.
+  - ospa.client-presentations.v1
+drop:
+  # Geometry and drafting bullets that read as architecture practice here.
+  - isay.complex-organic-parametric-modeling.v1
+  - felipe.bim-documentation.v1
+  - ospa.volumetric-massing-study.v1
+  # Origami structures: the least analytical of the four projects.
+  - project.computational-deployable-structures
+  # Revit, AutoCAD and Adobe work against a data science positioning.
+  - digital_tools

@@ -1,0 +1,56 @@
+# Rystad Energy, Junior Management Consultant, Advisory, Oslo.
+#
+# Base: esg-built-environment, the closest block, but this is genuinely a
+# different family (energy strategy consulting, not sustainability in the built
+# environment), so the delta is larger than usual and deliberately so.
+#
+# The move: strip the building-design strand, which is what that block carries
+# for consultancies that assess buildings, and pull forward the consulting work
+# proper. Market study, competitive benchmarking, tender methodology, project
+# economics, government stakeholder engagement, AI in research workflows.
+
+extends: esg-built-environment
+
+# Energy and infrastructure consulting, international, development-bank funded.
+# The block's esg-consulting profile leads with human rights due diligence.
+profile: profile.infrastructure-consulting
+
+add:
+  # Policy design for governmental bodies is in scope. This is the only bullet
+  # where he sits across from national agencies and government counterparts.
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  # Consulting delivery: how a firm argues its approach to win work.
+  - sweco.tender-methodology.v1
+  # Project economics and fee structure, the commercial side of an engagement.
+  - sweco.project-pricing-model.v1
+  # Competitive benchmarking against industry peers to find gaps and
+  # positioning. This is management consulting work under another name.
+  - ramboll.colt-peer-benchmark.v1
+  # "Experience or keen interest in applying AI tools and systems", named in the
+  # posting. He has done it, not just wanted to.
+  - ramboll.ai-in-research-workflow.v1
+  # Quantitative modelling evidence, which is what an analytical funnel reads.
+  - project.house-price-prediction
+  # Same point as the v1 dropped below, reframed as a market study connecting
+  # regulatory drivers to business development targets rather than as ESG.
+  - ramboll.critical-raw-materials-study.v2
+
+drop:
+  - ramboll.critical-raw-materials-study.v1
+  # Real estate ESG services and the human rights tool point at a different
+  # practice than energy strategy.
+  - ramboll.real-estate-esg.v1
+  - ramboll.nordzucker-hria-tool.v1
+  # Building-level environmental and daylight analysis: design work, not
+  # market or asset analysis.
+  - isay.environmental-daylight-analysis.v1
+  - felipe.environmental-analysis.v1
+  - ospa.environmental-analysis.v1
+  - itau.new-office-towers-technical.v1
+  # Material science and LCA optimisation: the wrong kind of technical for a
+  # markets team.
+  - project.rammed-blue-biomass
+
+# Skills: analysis first, ESG second. Real estate and urban drops out, it points
+# at a different practice than energy markets.
+skills: [data_and_analysis, esg_and_sustainability, languages]

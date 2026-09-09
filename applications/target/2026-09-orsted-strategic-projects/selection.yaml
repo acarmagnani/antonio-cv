@@ -1,0 +1,21 @@
+# Ørsted, Strategic Projects (in-house consulting).
+#
+# The ESG block, pushed from "sustainability specialist" toward "consultant who
+# analyses and recommends". Ørsted is an energy company, so the infrastructure
+# profile replaces the ESG one: it names water and energy projects, tender-through-
+# delivery work and technical analysis, which is the nearest thing in the record to
+# the world this team operates in. The building-level environmental bullets come
+# out, because they read as architecture rather than as analysis.
+extends: esg-built-environment
+profile: profile.infrastructure-consulting
+add:
+  # The business-case half: bid economics parametrised so a commercial decision
+  # rested on figures.
+  - sweco.project-pricing-model.v1
+  # Decision material presented to the people paying for it.
+  - ospa.client-presentations.v1
+drop:
+  - isay.environmental-daylight-analysis.v1
+  - ospa.environmental-analysis.v1
+  - felipe.environmental-analysis.v1
+  - itau.new-office-towers-technical.v1

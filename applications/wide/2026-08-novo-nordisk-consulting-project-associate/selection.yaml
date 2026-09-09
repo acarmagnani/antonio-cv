@@ -1,0 +1,72 @@
+# Novo Nordisk Consulting, Project Associate, Denmark.
+#
+# Built by hand, no `extends`. None of the three blocks is aimed at a management
+# consultancy: they all sell a built-environment specialist, and this reader
+# wants a consultant. The subject matter is pharma, which Antonio cannot claim,
+# so the CV argues method instead. Structured problem solving, frameworks applied
+# to corporate clients, quantitative prioritisation, deliverables that senior
+# stakeholders read, and change that actually landed in an organisation.
+#
+# The spine, in Antonio's own words for this application: two large Danish
+# consultancies already. Ramboll Management Consulting is literally the
+# "management consultancy" the posting says is highly regarded, and Sweco is
+# international advisory. Those two roles carry ten of the twenty-two bullets.
+#
+# The other roles are here for one thing each. Isay Weinfeld is the business
+# impact story (a tool that cut a task from days to twenty minutes and then got
+# adopted across ten-plus projects, which is change management with a number on
+# it). OSPA is analysis presented to a client. Itau is a large corporate and a
+# manual process replaced. Independent is running a business end to end.
+#
+# Deliberately left out: everything real-estate-specific that would read as a
+# domain specialist rather than a generalist. No zoning, no buildable capacity,
+# no feasibility beyond the anchor, no BIM, no valuation.
+
+profile: profile.esg-consulting
+
+roles: [sweco, ramboll, isay, ospa, felipe, itau, independent]
+
+bullets:
+  # Sweco: international consulting, on-site with clients, senior counterparts.
+  - sweco.department-anchor.v1
+  - sweco.climate-risk-assessments.v2
+  - sweco.azerbaijan-field-mission.v1
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  - sweco.project-pricing-model.v1
+
+  # Ramboll: the anchor role. A management consultancy, corporate clients,
+  # frameworks, benchmarking, and building the department's own pipeline.
+  - ramboll.frameworks-anchor.v1
+  - ramboll.colt-peer-benchmark.v1
+  - ramboll.nordzucker-hria-tool.v1
+  - ramboll.critical-raw-materials-study.v2
+  - ramboll.colt-human-rights-workshop.v1
+
+  # Isay Weinfeld: the business impact and adoption story, plus international scale.
+  - isay.portfolio-anchor.v1
+  - isay.staircase-grasshopper-plugin.v1
+  - isay.staircase-plugin-adoption-teaching.v1
+
+  # OSPA: quantitative analysis, taken to a client.
+  - ospa.feasibility-anchor.v1
+  - ospa.numerical-feasibility-financial-modeling.v1
+  - ospa.client-presentations.v1
+
+  # Felipe Hess: one line, to close the gap in the timeline.
+  - felipe.portfolio-anchor.v2
+
+  # Itau: a large corporate, and a manual process replaced with a tool.
+  - itau.documentation-review-anchor.v1
+  - itau.furniture-inventory-tool.v1
+
+  # Independent: owning a business, and the quantitative tooling.
+  - independent.anchor.v2
+  - vizu.studio-anchor.v2
+  - independent.financial-analysis-tool.v1
+
+projects:
+  - project.house-price-prediction
+  - project.real-estate-development
+  - project.masters-thesis-computational
+
+skills: [data_and_analysis, esg_and_sustainability, languages]

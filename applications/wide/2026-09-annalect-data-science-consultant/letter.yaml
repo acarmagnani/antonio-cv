@@ -1,0 +1,31 @@
+# Annalect, Consultant in the Data Science Consultancy team.
+#
+# The data block, with its two paragraphs reordered so the modelling comes first:
+# this team reads statistics before anything else, and the master's paragraph is
+# the only place the predictive work appears in full. Ramboll follows because the
+# posting starts its own job description at data collection and structuring, which
+# is what that paragraph is actually about, and because it puts the work in front
+# of corporate clients rather than in a notebook.
+
+extends: data-built-environment
+company: "Annalect"
+role: "Consultant in the Data Science Consultancy team"
+language: en
+
+hook: >
+  Annalect applies that same method commercially, using mathematics, statistics and econometrics to quantify what a client's marketing activity actually achieves, and a team of twenty built around that single question is an unusually direct place to do analytical work.
+
+paragraphs:
+  - exp.masters.models
+  - exp.ramboll.esg-data
+
+relevance:
+  exp.masters.models: >
+    That pairing of a model that performs and an output a client can act on is the substance of this role, and it is the part of my work I have built most deliberately.
+  exp.ramboll.esg-data: >
+    Your team's projects begin in the same place, since client data and media system exports have to be collected and structured before a model can be fitted to them at all.
+
+closing: closing.data.v1
+
+closing_reason: >
+  Annalect sits inside Omnicom Media Group with the volume of client data that follows from it, and puts a dedicated team on decision support rather than on reporting.

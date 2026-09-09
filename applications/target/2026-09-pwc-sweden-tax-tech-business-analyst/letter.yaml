@@ -1,0 +1,27 @@
+extends: data-built-environment
+company: "PwC"
+role: "Business Analyst, Tax Tech"
+language: en
+
+# The block's second paragraph is swapped: the master's modelling work is the wrong
+# argument for a seat whose job is to turn a colleague's requirement into a working
+# tool. The Isay plugin paragraph is that argument exactly, including the half about
+# adoption, which is the part the posting keeps returning to.
+paragraphs: [exp.ramboll.esg-data, exp.isay.tooling-adoption]
+
+hook: >
+  PwC's Tax Tech team sits between the advisers and the systems they work in, building the
+  tools rather than only specifying them, which is the position I have taken in every role
+  I have held.
+
+relevance:
+  exp.ramboll.esg-data: >
+    The same task sits underneath a BI solution, where data arrives from several systems long
+    before anyone can decide anything from it.
+  exp.isay.tooling-adoption: >
+    That is this role described almost line by line, from a colleague's requirement to a working
+    tool to the people who have to trust it.
+
+closing_reason: >
+  PwC is rebuilding how tax advice is produced, applying generative AI and agents to work that
+  has always been manual, document-heavy and full of rules.

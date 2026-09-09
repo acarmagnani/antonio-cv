@@ -1,0 +1,27 @@
+# Constanter Investment Office, Real Assets (entry level), Zug.
+#
+# This is a REAL ASSETS seat, not a real estate seat: real estate, infrastructure
+# and natural resources sit side by side, and Responsible Investment is written
+# into the mandate. The `real-estate-investment` block is still the right spine,
+# but three changes make it read as real assets rather than as property.
+#
+#   - Profile override. `profile.real-estate-esg-data` is the only variant that
+#     names real estate AND internationally financed infrastructure AND the ESG
+#     layer, which is exactly the shape of this desk. The re-investment profile
+#     is pure property and would undersell the Sweco half of the CV.
+#   - Sweco gains the Baku field mission (asset-condition assessment on site,
+#     which is what "attend manager meetings and asset tours" means here) and the
+#     counterpart engagement bullet, which answers direct engagement with
+#     external managers and third parties in a multinational setting.
+#   - Out go the two most delivery-flavoured bullets, Isay's design-development-
+#     through-construction and OSPA's Revit massing. An endowment investment
+#     office is buying and monitoring assets, not delivering buildings, and both
+#     bullets pull the CV back toward architecture practice.
+extends: real-estate-investment
+profile: profile.real-estate-esg-data
+add:
+  - sweco.azerbaijan-field-mission.v1
+  - sweco.azerbaijan-stakeholder-meetings.v1
+drop:
+  - isay.development-through-construction.v1
+  - ospa.volumetric-massing-study.v2

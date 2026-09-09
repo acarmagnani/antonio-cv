@@ -1,0 +1,31 @@
+extends: esg-built-environment
+company: "McKinsey & Company"
+role: "Analyst, Energy Solutions"
+
+# Sweco leads, because the energy exposure and the lender standard of evidence are
+# what an energy intelligence team can read first. Ramboll follows with the tools,
+# benchmarks and the critical raw materials market study, which is the closest thing
+# in his record to what Energy Solutions actually produces. Closing swapped to the
+# data one: what this team sells is data turned into decisions.
+paragraphs:
+  - exp.sweco.climate-risk
+  - exp.ramboll.esg-data
+closing: closing.data.v1
+
+hook: >
+  Energy Solutions asks those questions of entire energy systems rather than single projects,
+  and a team that turns market data and technology into the analysis clients act on is where
+  I want to be answering them.
+
+relevance:
+  exp.sweco.climate-risk: >
+    Analysis an energy company or an investor commits to carries that same burden, because the
+    conclusion has to hold in front of people whose capital and operations depend on it.
+  exp.ramboll.esg-data: >
+    Building the tools and benchmarks that turn uneven market evidence into something a client
+    can decide from is that task again, across the energy value chain and at a far larger scale.
+
+closing_reason: >
+  Energy Solutions occupies the position where the energy transition is actually argued,
+  supplying the data and the independent reading of it that operators, investors and
+  governments across the value chain decide from.

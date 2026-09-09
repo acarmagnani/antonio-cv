@@ -1,0 +1,13 @@
+# EY Luxembourg, Assistant Valuation (Private Equity / Private Debt), FAAS pricing team.
+#
+# The real-estate-investment block is already the right CV: the posting is a
+# valuation seat and the block leads with feasibility, financial modelling and
+# asset due diligence. Real estate is one of the asset classes the team prices,
+# so his domain is an angle here rather than a mismatch.
+#
+# Only delta: the posting never mentions sustainability, and it does ask for
+# Excel, VBA and SQL by name. Dropping the ESG skill group puts the finance and
+# data groups first and stops the CV pointing at a service line this job is not.
+extends: real-estate-investment
+drop:
+  - esg_and_sustainability

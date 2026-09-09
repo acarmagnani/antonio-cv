@@ -1,0 +1,58 @@
+# Cadeler, Business Development Analyst (Copenhagen, offshore wind).
+#
+# Fits no preset block: this is commercial market intelligence, not RE investment,
+# not ESG advisory, not computational design. Built by hand around four threads the
+# posting names outright: market and competitor research, trackers and dashboards,
+# commercial/bid work, and stakeholder engagement in the energy sector.
+
+profile: profile.infrastructure-consulting
+
+roles: [sweco, ramboll, isay, ospa, felipe, itau, independent]
+
+bullets:
+  # Sweco: the closest role. Energy and infrastructure sector, competitive bids,
+  # pricing, and government stakeholders.
+  - sweco.department-anchor.v1
+  - sweco.tender-methodology.v1
+  - sweco.tender-bid-team-assembly.v1
+  - sweco.project-pricing-model.v1
+  - sweco.azerbaijan-stakeholder-meetings.v1
+  - sweco.geospatial-data-and-analysis.v1
+
+  # Ramboll: the market study is the single most on-point bullet in the CV
+  # (market mapping to identify prospects and BD targets), followed by the
+  # competitor benchmark and the automated Excel dashboard.
+  - ramboll.frameworks-anchor.v1
+  - ramboll.critical-raw-materials-study.v2
+  - ramboll.colt-peer-benchmark.v1
+  - ramboll.colt-salience-tool.v2
+  - ramboll.ai-in-research-workflow.v1
+
+  # Isay Weinfeld: points elsewhere, cut to the anchor plus the Python tool that
+  # shows he builds his own tooling.
+  - isay.portfolio-anchor.v1
+  - isay.staircase-grasshopper-plugin.v1
+
+  # OSPA: commercial analysis and presenting findings to decision makers.
+  - ospa.feasibility-anchor.v1
+  - ospa.numerical-feasibility-financial-modeling.v1
+  - ospa.client-presentations.v1
+
+  # Felipe Hess: anchor only.
+  - felipe.portfolio-anchor.v1
+
+  # Itau: the VBA tracker is a literal match for "build and maintain trackers".
+  - itau.documentation-review-anchor.v1
+  - itau.furniture-inventory-tool.v1
+
+  # Independent: client acquisition and pricing, plus a second decision dashboard.
+  - independent.anchor.v2
+  - vizu.studio-anchor.v2
+  - independent.financial-analysis-tool.v1
+
+projects:
+  - project.house-price-prediction
+  - project.real-estate-development
+  - project.masters-thesis-computational
+
+skills: [data_and_analysis, esg_and_sustainability, real_estate_and_urban, languages]

@@ -1,0 +1,20 @@
+# NoA Denmark, Analyst in the strategy unit.
+#
+# The same shape as the Annalect application, since the job is the same one: a
+# data seat inside a marketing organisation, reading statistics first and the
+# media landscape second. The data block with the design and drafting bullets
+# taken out and the client-facing one put in. The AI bullets the block already
+# carries (Ramboll's research workflow, the startup advisory) matter more here
+# than they did at Annalect, because this posting asks for LLM-based tooling
+# outright.
+extends: data-built-environment
+add:
+  # Presenting analytical outcomes to clients, which the posting asks for as
+  # client sessions and workshops with non-technical audiences.
+  - ospa.client-presentations.v1
+drop:
+  - isay.complex-organic-parametric-modeling.v1
+  - felipe.bim-documentation.v1
+  - ospa.volumetric-massing-study.v1
+  - project.computational-deployable-structures
+  - digital_tools

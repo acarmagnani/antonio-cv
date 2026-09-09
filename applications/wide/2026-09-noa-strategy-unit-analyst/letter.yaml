@@ -1,0 +1,34 @@
+# NoA Denmark, Analyst in the strategy unit.
+#
+# This IS the "brief application" they ask for alongside the CV, so it has to
+# work as an email body. The data block with the paragraphs reordered, modelling
+# first, because the posting's centre of gravity is owning an analysis end to end.
+# Ramboll follows for messy client data structured into defensible outputs.
+#
+# The AI and LLM tooling they ask for is carried in the hook rather than in a
+# paragraph, since letter_base.yaml has no AI paragraph. The CV carries the
+# evidence directly (Ramboll's AI research workflow, the startup advisory), and
+# if this family of jobs keeps coming up, that paragraph is worth authoring.
+
+extends: data-built-environment
+company: "NoA"
+role: "Analyst in the strategy unit"
+language: en
+
+hook: >
+  NoA's strategy unit asks that commercially, working out how marketing creates value for a business and testing LLM-based tools on the question, and a unit established this recently is one where the way of working is still open.
+
+paragraphs:
+  - exp.masters.models
+  - exp.ramboll.esg-data
+
+relevance:
+  exp.masters.models: >
+    That is the shape of this role, an analysis owned from brief to finished output and made to land with people who decide commercially rather than technically.
+  exp.ramboll.esg-data: >
+    Client and third-party data from large brands arrives in the same state, and the structuring done before the modelling is what decides whether the recommendation on the other side holds.
+
+closing: closing.data.v1
+
+closing_reason: >
+  NoA puts strategy, creative and technology work in the same group, and the strategy unit is the part of it accountable for showing what the marketing is actually worth.

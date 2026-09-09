@@ -10,31 +10,39 @@ meta:
 profiles:
   - id: profile.esg-consulting
     tags: [esg, consulting]
-    text: "Experience across sustainability consulting and the built environment, from ESG and human rights due diligence to climate risk work on internationally financed infrastructure. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to sustainability. Hands-on skills span the UNGP and OECD due-diligence frameworks, climate hazard and risk assessment, and building structured analytical tools in Excel and Python. Motivated by work where sustainability, the built environment, and rigorous analysis intersect."
+    text: "Experience across sustainability consulting and the built environment, from ESG and human rights due diligence to climate risk work on internationally financed infrastructure. Recently completed a Master's Degree in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to sustainability. Hands-on skills span the UNGP and OECD due-diligence frameworks, climate hazard and risk assessment, and building structured analytical tools in Excel and Python. Motivated by work where sustainability, the built environment, and rigorous analysis intersect."
 
   - id: profile.real-estate-investment
     tags: [re-investment, real-estate]
-    text: "Experience in real estate development and asset due diligence, from feasibility and financial modeling to zoning analysis and the technical and environmental review of buildings under acquisition. M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to real estate and valuation. Hands-on skills span feasibility and investment sizing, zoning and buildable-potential analysis, predictive property valuation in Python, and building performance and climate risk assessment. Motivated by work where real estate, capital, and rigorous analysis intersect."
+    text: "Experience in real estate development and asset due diligence, from feasibility and financial modeling to zoning analysis and the technical and environmental review of buildings under acquisition. Master's Degree in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to real estate and valuation. Hands-on skills span feasibility and investment sizing, zoning and buildable-potential analysis, predictive property valuation in Python, and building performance and climate risk assessment. Motivated by work where real estate, capital, and rigorous analysis intersect."
 
   - id: profile.real-estate-esg-data
     tags: [real-estate, esg, proptech, consulting]
-    text: "Experience across real estate development and sustainability consulting, from feasibility and financial modeling to ESG due diligence, building energy assessment, and climate risk work on internationally financed infrastructure. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to real estate and sustainability. Hands-on skills span feasibility and financial modeling, building energy and environmental performance analysis, GIS, and structured analytical tools in Excel, Power BI, and Python. Motivated by work where real estate, sustainability, and rigorous analysis intersect."
+    text: "Experience across real estate development and sustainability consulting, from feasibility and financial modeling to ESG due diligence, building energy assessment, and climate risk work on internationally financed infrastructure. Recently completed a Master's Degree in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to real estate and sustainability. Hands-on skills span feasibility and financial modeling, building energy and environmental performance analysis, GIS, and structured analytical tools in Excel, Power BI, and Python. Motivated by work where real estate, sustainability, and rigorous analysis intersect."
 
   - id: profile.proptech
     tags: [proptech]
-    text: "Experience in computational design and data analysis for real estate and cities, spanning academic research and architecture practice. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on computational and data methods for real estate and urban development. Hands-on skills span Python, QGIS, and machine learning, parametric workflows in Grasshopper, and building data tools that turn spatial and financial data into decisions. Motivated by work where the built environment, technology, and data intersect."
+    text: "Experience in computational design and data analysis for real estate and cities, spanning academic research and architecture practice. Recently completed a Master's Degree in Architecture Computation at The Royal Danish Academy, with a focus on computational and data methods for real estate and urban development. Hands-on skills span Python, QGIS, and machine learning, parametric workflows in Grasshopper, and building data tools that turn spatial and financial data into decisions. Motivated by work where the built environment, technology, and data intersect."
 
   - id: profile.proptech-real-estate
     tags: [proptech, real-estate]
-    text: "Experience across real estate development and computational design, from feasibility and financial analysis to spatial and predictive modeling. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on computational and data methods for real estate and urban development. Hands-on skills span financial feasibility modeling, GIS and spatial analysis, and machine learning applied to property and market data. Motivated by work where real estate, technology, and data intersect."
+    text: "Experience across real estate development and computational design, from feasibility and financial analysis to spatial and predictive modeling. Recently completed a Master's Degree in Architecture Computation at The Royal Danish Academy, with a focus on computational and data methods for real estate and urban development. Hands-on skills span financial feasibility modeling, GIS and spatial analysis, and machine learning applied to property and market data. Motivated by work where real estate, technology, and data intersect."
 
   - id: profile.real-estate
     tags: [real-estate]
-    text: "Experience in real estate development, feasibility, and financial modeling, grounded in zoning and land-use analysis across multiple markets. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on computational and data methods for real estate and urban development. Hands-on skills span feasibility and P&L modeling, zoning and buildable-potential analysis, and volumetric studies in Revit. Motivated by work where real estate, finance, and design intersect."
+    text: "Experience in real estate development, feasibility, and financial modeling, grounded in zoning and land-use analysis across multiple markets. Recently completed a Master's Degree in Architecture Computation at The Royal Danish Academy, with a focus on computational and data methods for real estate and urban development. Hands-on skills span feasibility and P&L modeling, zoning and buildable-potential analysis, and volumetric studies in Revit. Motivated by work where real estate, finance, and design intersect."
 
   - id: profile.infrastructure-consulting
     tags: [infrastructure, consulting]
-    text: "Experience in international infrastructure consulting on water and energy projects across emerging economies, working from tender through delivery. Recently completed an M.Arch. in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to the built environment. Hands-on skills span climate risk assessment (JASPERS/EBRD), GIS-based spatial analysis, and preparing technical documentation and tenders for development-bank-funded projects. Motivated by work where infrastructure, sustainability, and technical analysis intersect."
+    text: "Experience in international infrastructure consulting on water and energy projects across emerging economies, working from tender through delivery. Recently completed a Master's Degree in Architecture Computation at The Royal Danish Academy, with a focus on data-driven approaches to the built environment. Hands-on skills span climate risk assessment (JASPERS/EBRD), GIS-based spatial analysis, and preparing technical documentation and tenders for development-bank-funded projects. Motivated by work where infrastructure, sustainability, and technical analysis intersect."
+
+  # Authored 2026-09-08 with Antonio, for the architecture and design seats: retail
+  # and interiors, technical architecture, visualization. Every other variant leads on
+  # data, finance or sustainability, which is the wrong first paragraph when the reader
+  # is an architecture team.
+  - id: profile.architecture-design
+    tags: [architecture, design, facade]
+    text: "Experience in architecture and interior projects at high-end studios, from concept and three-dimensional visualization through to technical and production documentation. Master's Degree in Architecture Computation at The Royal Danish Academy, with a focus on materials, geometry, and fabrication. Hands-on skills span Rhino and Grasshopper, Revit, AutoCAD and the Adobe Suite, facade and envelope detailing, and architectural visualization. Motivated by work where design intent survives into how a thing is actually made."
 
 experience:
   - id: sweco
@@ -211,6 +219,24 @@ experience:
             text: "Delivered residential, hotel, and mixed-use developments across South America, North America, Europe, the Middle East, and Asia at one of Brazil's most prominent architecture firms, from feasibility through construction."
             tags: [re-investment, real-estate]
 
+      - point: "Facade and envelope development"
+        variants:
+          - id: isay.facade-envelope-development.v1
+            text: "Developed building facades across the studio's design and technical development teams, carrying envelopes from the early compositional studies through to resolved construction build-ups on residential, hotel, and mixed-use buildings."
+            tags: [facade, real-estate, generic]
+
+      - point: "Facade materials, build-ups and detailing"
+        variants:
+          - id: isay.facade-detailing.v1
+            text: "Resolved facade build-ups and their materials, fixings, and jointing, working through preliminary structural sizing with the project's engineers before the detail was documented."
+            tags: [facade, real-estate]
+
+      - point: "Facade engineering coordination and review"
+        variants:
+          - id: isay.facade-engineering-review.v1
+            text: "Coordinated with structural and building services engineers on facade packages, reviewing their input against the design intent and resolving conflicts before documentation moved on."
+            tags: [facade, real-estate, consulting]
+
       - point: "Buildable capacity and land-use analysis"
         variants:
           - id: isay.buildable-capacity.v1
@@ -329,6 +355,12 @@ experience:
           - id: felipe.portfolio-anchor.v2
             text: "Developed residential and commercial buildings in São Paulo and Rio de Janeiro from land-use and feasibility analysis through technical documentation and construction."
             tags: [re-investment, real-estate]
+
+      - point: "Facade design and detailing"
+        variants:
+          - id: felipe.facade-design-detailing.v1
+            text: "Designed and detailed the facades of residential and commercial buildings, resolving materials, openings, and envelope build-up from preliminary studies through to construction documentation."
+            tags: [facade, real-estate]
 
       - point: "Zoning / feasibility study"
         variants:
@@ -452,10 +484,10 @@ experience:
       - point: "Client projects with a collaborator"
         variants:
           - id: independent.architecture-projects.v1
-            text: "Designed and delivered residential architecture and renovation projects for private clients with a collaborator, and entered open design competitions, alongside the B.Arch."
+            text: "Designed and delivered residential architecture and renovation projects for private clients with a collaborator, and entered open design competitions, alongside the bachelor's degree"
             tags: [real-estate, consulting]
           - id: independent.architecture-projects.v2
-            text: "Delivered client projects with a collaborator over several years alongside the B.Arch., from brief through design and documentation, and entered open competitions."
+            text: "Delivered client projects with a collaborator over several years alongside the bachelor's degree, from brief through design and documentation, and entered open competitions."
             tags: [re-investment, real-estate, consulting]
 
       - point: "Product consulting for a built-environment software startup"
@@ -539,7 +571,7 @@ projects:
       - "Contributed to the Veneto panel by producing the physical exhibition panels displayed in the 7-metre installation at the Arsenale, which used the blue biomass composite technique developed during the semester project."
 
 education:
-  - degree: "M.Arch. in Architecture Computation"
+  - degree: "Master's Degree in Architecture Computation"
     school: "The Royal Danish Academy"
     location: "Copenhagen, DK"
     start: "2024-07"
@@ -557,7 +589,7 @@ education:
     start: "2019-06"
     end: "2019-07"
 
-  - degree: "B.Arch. in Architecture and Urbanism"
+  - degree: "Bachelor's Degree in Architecture and Urbanism"
     school: "Mackenzie University"
     location: "São Paulo, BR"
     start: "2018-07"
@@ -578,6 +610,12 @@ skills:
     - "Revit"
     - "AutoCAD"
     - "Adobe Suite (InDesign, Illustrator, Photoshop)"
+
+  building_and_facade:
+    - "Facade and envelope design"
+    - "Construction detailing and technical documentation"
+    - "Multidisciplinary BIM coordination"
+    - "Daylight and solar simulation (Ladybug)"
 
   esg_and_sustainability:
     - "CSRD, Double Materiality, EU Taxonomy"

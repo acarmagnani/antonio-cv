@@ -1,0 +1,51 @@
+# Danske Bank, Equity Research graduate analyst (Oslo). Fits no preset block: the seat is
+# sell-side company and sector research, not real estate. Built by hand so the CV reads as
+# an analyst who builds models and writes research, with the architecture strands cut back
+# to what a bank would actually read.
+
+profile: profile.real-estate-investment
+
+roles: [sweco, ramboll, isay, ospa, felipe, itau, independent]
+
+bullets:
+  # Sweco: capital-intensive assets, lender appraisal standards, project economics
+  - sweco.department-anchor.v2
+  - sweco.project-pricing-model.v1
+  - sweco.climate-risk-assessments.v3
+
+  # Ramboll: the closest thing he has to research work, market studies and peer benchmarking
+  - ramboll.critical-raw-materials-study.v2
+  - ramboll.colt-peer-benchmark.v1
+  - ramboll.colt-salience-tool.v2
+  - ramboll.frameworks-anchor.v2
+
+  # Isay Weinfeld: kept thin, and led by the Python tool rather than the architecture
+  - isay.portfolio-anchor.v2
+  - isay.staircase-grasshopper-plugin.v1
+
+  # OSPA: investment sizing and the client-facing half of it
+  - ospa.feasibility-anchor.v1
+  - ospa.numerical-feasibility-financial-modeling.v1
+  - ospa.zoning-land-use-regulatory.v1
+  - ospa.client-presentations.v1
+
+  # Felipe Hess: two lines, the feasibility one is the reason it stays
+  - felipe.portfolio-anchor.v2
+  - felipe.financial-feasibility.v1
+
+  # Itau-Unibanco: a bank on the CV, plus asset due diligence and Excel/VBA
+  - itau.documentation-review-anchor.v2
+  - itau.building-environmental-energy.v1
+  - itau.furniture-inventory-tool.v1
+
+  # Independent: commercial ownership and the financial tooling
+  - independent.anchor.v1
+  - vizu.studio-anchor.v3
+  - independent.financial-analysis-tool.v1
+
+projects:
+  - project.house-price-prediction
+  - project.real-estate-development
+  - project.masters-thesis-computational
+
+skills: [data_and_analysis, real_estate_and_urban, esg_and_sustainability, languages]

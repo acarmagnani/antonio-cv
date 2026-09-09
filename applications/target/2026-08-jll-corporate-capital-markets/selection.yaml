@@ -1,0 +1,30 @@
+# JLL, Corporate Capital Markets, Spain (Madrid).
+#
+# Base: real-estate-investment. The block was built for exactly this family
+# (acquisitions and disposals, valuation and advisory) and already carries the
+# whole spine this posting asks for: feasibility and financial modelling at OSPA
+# and Felipe Hess, the Sweco pricing tool, the automated Excel risk system at
+# Ramboll, the private-client financial analysis tool, and the three Itau bullets
+# on buildings a bank was acquiring or leasing, which is the corporate-occupier
+# side of a sale and leaseback seen from the client's chair.
+#
+# Delta is small and only where the posting genuinely pushes: this seat is a
+# coordinator seat ("main contact both for clients and the rest of JLL's teams"),
+# not a pure analyst seat, so one bullet of multi-party coordination comes in and
+# two design-execution bullets go out to pay for it.
+
+extends: real-estate-investment
+
+add:
+  # The posting's core verb is coordinate. This is the one bullet where he
+  # assembles specialists across a competitive, client-facing deliverable.
+  - sweco.tender-bid-team-assembly.v1
+
+drop:
+  # Revit massing is design execution. A capital markets reader wants the
+  # feasibility numbers, which ospa.numerical-feasibility already carries.
+  - ospa.volumetric-massing-study.v2
+  # Third zoning-capacity bullet in the CV. isay.buildable-capacity and
+  # ospa.zoning-land-use-regulatory already make the point; the line is worth
+  # more spent on transactions and coordination here.
+  - felipe.buildable-capacity.v1

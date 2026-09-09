@@ -1,0 +1,26 @@
+extends: real-estate-investment
+company: "STREE Real Estate"
+role: "Real Estate Analyst"
+
+# The block's own two paragraphs, unchanged, because the posting is the block's
+# description written back at it. OSPA carries financial analysis and valuation
+# against regulatory and physical constraints, and the master's models carry the
+# market data and valuation modelling half of the responsibilities.
+
+hook: >
+  The analyst position at STREE Real Estate holds all of that in one seat, where market
+  analysis, valuation and acquisition due diligence feed the same investment decisions.
+
+relevance:
+  exp.ospa.feasibility: >
+    Analysing a property's financials, and supporting the due diligence behind acquiring it,
+    is that same exercise on an asset that already exists, with the same standard applied to
+    the number.
+  exp.masters.models: >
+    Analysing market data and reading where a market is moving is that work under its
+    commercial name, and I have built both halves, the model and the interface a
+    decision-maker can interrogate.
+
+closing_reason: >
+  STREE Real Estate places that analysis where it carries weight, behind what the firm buys
+  and what it builds.

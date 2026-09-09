@@ -1,0 +1,14 @@
+# Greystar, Development Associate (Spain). Half investment analysis, half development
+# management, so the real-estate-investment block is the right base and the delta only
+# pulls the delivery side of his record forward.
+extends: real-estate-investment
+add:
+  # Third-party consultants and technical quality: the posting asks for both explicitly.
+  - sweco.engineering-design-review.v1
+  - isay.client-and-consultant-coordination.v1
+drop:
+  # GIS database work reads as analyst-tooling, not development delivery.
+  - sweco.geospatial-data-and-analysis.v1
+  # Human rights governance is the weakest Ramboll line here; ESG is only "desirable"
+  # and real-estate-esg.v1 already carries the building energy angle.
+  - ramboll.genesta-code-of-conduct.v1

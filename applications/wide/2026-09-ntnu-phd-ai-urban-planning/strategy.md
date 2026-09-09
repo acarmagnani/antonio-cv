@@ -1,0 +1,31 @@
+# Strategy, NTNU PhD Candidate, Emerging Technologies in Urban Planning, Trondheim
+
+**Positioning:** the master's thesis is the application. A computational framework that identifies underused space in central São Paulo by combining urban morphology, land use data and social vulnerability indicators is, structurally, the thing this PhD proposes to build: quantitative urban data read against societal attributes that the data underrepresents. The CV and the letter exist to make that legible in thirty seconds, and everything else is supporting evidence for the method rather than for the subject.
+
+**Profile chosen:** `profile.proptech`, unchanged from the block. It is the only profile that names academic research and practice in the same sentence and puts Python, QGIS and machine learning in front, which is what a supervision team reads for.
+
+**Selection:** `data-built-environment` retuned toward risk and vulnerability. In go the Sweco climate risk assessments (hazard screening, exposure and vulnerability rating per asset), the Baku stakeholder engagement with national agencies (the posting names participatory methods and stakeholder engagement as a duty), the methodological framing of the salience tool, and the research framing of the critical raw materials study. Out go the bid pricing tool, the proposal cartography, the organic parametric modelling, the personal-finance tool and the deployable structures workshop. Three projects remain, all of them urban data and modelling.
+
+**Bucket:** `wide`. Not because it is a weak application, but because `applications/target/` feeds the skills-gap analysis and a doctoral posting's requirements (a five-year master's equivalence, a B average, a 1500-word project outline, Norwegian) are academic entry criteria rather than market signal. Counting them would distort the gap file. If Antonio decides the doctorate is the direction rather than a fork, the folder moves.
+
+**Threads to lead with:**
+
+- **The thesis, first and unmissable.** Urban morphology plus land use plus social vulnerability, an algorithm generating typologies against existing municipal policy, and the geospatial integration in QGIS at neighbourhood scale. This is the single strongest asset in the whole application after the outline itself.
+- **The ML recommendation tool for Copenhagen.** Financial, social, sustainability and geospatial data in one model, with an interface that lets non-technical stakeholders move the weightings. That interface is the "humans as critical arbiters of AI-driven methods" line in their project description, already built once.
+- **Sweco supplies the climate half.** Climate risk assessments under JASPERS and EBRD guidance, rating exposure and vulnerability asset by asset, and field missions where the data came from sitting with national agencies rather than from a desk.
+- **Ramboll supplies the risk method and the AI practice.** Salience scoring by probability, scale and scope, and AI research tools integrated into live due diligence workflows, which is a working position on where these tools help and where they need a human check.
+
+**Gaps to leave alone:** no publications, no peer-reviewed record, no formal training in social justice theory or intersectionality, no GDPR or EU AI Act work, no Norwegian (a preferred criterion only, and NTNU pays for A2 training). Do not argue any of them in the letter.
+
+**The grade requirement, now checked against the transcripts (2026-09-08).** NTNU asks for an average from the master's equal to B or better. The Royal Danish Academy transcript carries ECTS letter grades: Relational Strategies 12/A (30 ECTS), Tactical Experimentations 4/D (30 ECTS), Synthetic Constructions A 10/B (20 ECTS), Synthetic Constructions B 7/C (10 ECTS), and the thesis project 4/D (30 ECTS). Weighted by credits that is 7.25 on the Danish 7-point scale, which reads as a C, one step below the stated threshold. The Mackenzie weighted average is 7.85 out of 10 across 45 graded disciplines. This is a formal admission criterion rather than a preference, so it is the single largest risk in the application, ahead of the outline. It is not automatically disqualifying (Norwegian faculties can admit on special grounds), but it should be known before days go into the proposal, and it is not something to raise in the 400-word letter.
+
+**What this application actually turns on:** the project outline, max 1500 words, on research questions, theoretical perspectives and gaps, and methodological design. It is weighted as a required selection criterion in its own right, and it is not something this pipeline produces. Nothing else in the folder will compensate for a thin one.
+
+**Practical notes for Antonio:**
+
+- `education_description.md` in this folder is the written account of both degrees (scope, structure, credits, grading scales, and the equivalence argument for the five-year requirement), prepared to accompany the diplomas and transcripts.
+- Deadline 05.10.2026, submitted through Jobbnorge. A change after submission requires a whole new application from a new email address, so everything has to be final before sending.
+- Documents: bachelor's and master's transcripts and diplomas, the diploma supplement (and the HK-dir statement if he has one) because the education is foreign, a copy of the master's thesis, the CV, the project outline, the motivation letter, and three referees with contact details.
+- Referees are worth deciding early: the thesis supervisor at The Royal Danish Academy, and someone from Ramboll or Sweco who can speak to the analytical work.
+- The motivation letter is capped at 400 words, so the rendered letter runs to 388 (396 including greeting and signoff) rather than the usual length. The greeting renders as "Dear Hiring Team at NTNU"; for an academic panel it may be worth addressing Professor Rolee Aranya directly, which currently means changing it in the PDF pipeline rather than by hand.
+- Salary is NOK 550,800 gross, the position is four years (three of doctoral work plus one of departmental duties), daily physical presence in Trondheim is a stated prerequisite, and admission to the doctoral programme must be secured within three months of starting.

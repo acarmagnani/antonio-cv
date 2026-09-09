@@ -1,0 +1,32 @@
+# Turner & Townsend Digital Europe, Senior Consultant (BIM), on a data centre project near
+# Fredericia. The data block is the right base: this is the computational half of his record.
+# The delta trades the GIS and finance strands for the BIM strand proper, model coordination,
+# design review against subconsultants, and the client-facing side the role needs.
+
+extends: data-built-environment
+
+add:
+  # The core evidence: coordination and clash detection in a single federated model
+  - isay.bim-coordination-clash-detection.v1
+  - isay.bim-documentation-development.v1
+  # Client and consultant facing, which the role asks for explicitly
+  - isay.client-and-consultant-coordination.v1
+  # Design assurance: checking specifications against subconsultants' drawings, under FIDIC
+  - sweco.engineering-design-review.v1
+  # The duty to support tender bidding teams
+  - sweco.tender-methodology.v1
+
+drop:
+  # GIS is not this job
+  - sweco.geospatial-data-and-analysis.v1
+  - sweco.office-gis-lead.v1
+  # Market study and financial modelling: the wrong half of his record here
+  - ramboll.critical-raw-materials-study.v2
+  - ospa.numerical-feasibility-financial-modeling.v1
+  - independent.financial-analysis-tool.v1
+  # The plugin already carries Grasshopper; this one only repeats it
+  - isay.complex-organic-parametric-modeling.v1
+  # Valuation modelling points away from a BIM seat
+  - project.house-price-prediction
+
+skills: [digital_tools, data_and_analysis, real_estate_and_urban, languages]

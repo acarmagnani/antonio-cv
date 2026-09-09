@@ -1,0 +1,47 @@
+# Drees & Sommer, Project Management & Technical Due Diligence, Stockholm.
+#
+# Bucket target: technical due diligence is real estate advisory, which is the family
+# his own odds note marks as winnable, and the seat is a genuine entry rung with
+# growing responsibility. The Swedish C1 requirement is an odds problem, not a
+# direction problem, and the bucket records direction.
+#
+# Block: real-estate-investment. The posting reads on assets and projects rather than
+# on capital, so what carries it is the asset side of the block: the technical and
+# regulatory review at Itau, developments carried through construction, feasibility
+# and cost. Profile kept as the block has it, because
+# profile.real-estate-investment is the only variant that names the technical and
+# environmental review of buildings under acquisition, which is technical due
+# diligence described without the acronym.
+#
+# Delta, all of it driven by the posting:
+#   - Sweco engineering design review added: checking specifications against
+#     subconsultants' technical drawings under FIDIC is the closest thing in his
+#     record to the review half of TDD, done inside a consultancy.
+#   - Isay client and consultant coordination added: "supporting communication with
+#     clients, consultants and project partners" is a listed responsibility, and this
+#     is the bullet where he sits in those meetings across disciplines.
+#   - Sweco geospatial dropped: GIS has nothing to do with project delivery or TDD.
+#   - Ramboll Genesta code of conduct dropped: human rights policy review pulls the
+#     Ramboll role toward a subject this reader has no use for. The role keeps its
+#     anchor, the real estate ESG service line (building energy assessment, which is
+#     a TDD input) and the Excel risk tooling.
+#   - OSPA volumetric massing dropped: Revit massing is the design end of feasibility,
+#     and "feasibility inputs" here means the numbers and the documentation.
+#   - Felipe buildable capacity dropped: zoning capacity already appears at Isay and
+#     OSPA, and twice is enough on a CV that has to read as project delivery.
+#
+# Skills unchanged from the block. Note that the languages group states English
+# fluent, Danish and Italian at limited working proficiency, and no Swedish, which is
+# the honest position and visible on the page.
+
+extends: real-estate-investment
+
+add:
+  - sweco.engineering-design-review.v1
+  - isay.client-and-consultant-coordination.v1
+
+drop:
+  - sweco.geospatial-data-and-analysis.v1
+  - ramboll.genesta-code-of-conduct.v1
+  - ospa.volumetric-massing-study.v2
+  - felipe.buildable-capacity.v1

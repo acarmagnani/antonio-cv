@@ -1,0 +1,31 @@
+extends: data-built-environment
+company: "Hines"
+role: "Construction Data & Research Analyst"
+
+# Block paragraphs overridden. The master's models paragraph stays, because forecasting
+# from historic data is the analytical half of this job. The Ramboll paragraph is
+# swapped for the Isay tooling one, because the first responsibility in the posting is
+# driving construction data out of every European project, and the posting asks for
+# diplomacy and influencing skills in the same breath. Getting a tool adopted by the
+# people who have to feed it is the part of the job most applicants cannot evidence.
+paragraphs:
+  - exp.masters.models
+  - exp.isay.tooling-adoption
+
+hook: >
+  The Conceptual Construction Group asks for exactly that, a database assembled out of every
+  European project and the tools that turn it into forward cost and programme forecasts the
+  investment teams can act on.
+
+relevance:
+  exp.masters.models: >
+    Forecasting construction cost and programme from historic project data is that same
+    exercise, and what carries over hardest is that the output has to be usable by the people
+    it was built for.
+  exp.isay.tooling-adoption: >
+    Driving construction data out of every project across a region rests on the same thing,
+    because a repository is worth only what the project teams are willing to put into it.
+
+closing_reason: >
+  Hines runs projects from pre-investment through to completion and operation across thirty
+  countries, which means the data this role assembles has somewhere consequential to go.

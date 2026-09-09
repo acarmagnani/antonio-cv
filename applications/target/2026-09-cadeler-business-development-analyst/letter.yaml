@@ -1,0 +1,33 @@
+# Cadeler, Business Development Analyst.
+#
+# The CV is hand-built rather than extending a block, since this is commercial market
+# intelligence. The letter takes the esg block for its opening, which carries both the
+# environmental interest Cadeler screens for and the line about whether something should
+# be built where it is proposed, which is what a seabed leasing round decides. Both
+# paragraphs are overridden: Ramboll supplies the market mapping and the dashboards,
+# Sweco supplies the commercial and stakeholder half in the energy sector. The closing
+# is swapped to the data one, because the deliverable here is a tracker a business
+# decides on, not an advisory report.
+
+extends: esg-built-environment
+company: "Cadeler"
+role: "Business Development Analyst"
+language: en
+
+hook: >
+  Cadeler is where those questions become commercial, since a company that installs and services offshore wind farms reads auction rounds, seabed leasing and government targets years before a vessel is contracted.
+
+paragraphs:
+  - exp.ramboll.esg-data
+  - exp.sweco.consulting-delivery
+
+relevance:
+  exp.ramboll.esg-data: >
+    That structuring task is the substance of this role, because auction results, leasing rounds and competitor movements arrive scattered across sources long before they read as a pipeline.
+  exp.sweco.consulting-delivery: >
+    This role runs on the same pairing, where intelligence gathered across the industry is only worth having once it is recorded to a standard a commercial decision can rest on.
+
+closing: closing.data.v1
+
+closing_reason: >
+  Cadeler owns and operates the vessels that build and maintain offshore wind farms, which obliges it to hold a view of the market well ahead of the projects it will serve.

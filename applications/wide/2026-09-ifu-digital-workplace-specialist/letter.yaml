@@ -1,0 +1,28 @@
+# IFU (Impact Fund Denmark), Digital Workplace Specialist.
+#
+# The block's default paragraphs are overridden. This posting is not an analyst
+# seat, so the Ramboll and master's paragraphs are the wrong pair: what it asks
+# for is someone who builds an internal tool and then gets colleagues to use it,
+# across offices and time zones. exp.isay.tooling-adoption is the strongest match
+# in the library, and exp.sweco.consulting-delivery carries the international,
+# client-facing half.
+
+extends: data-built-environment
+company: "Impact Fund Denmark"
+role: "Digital Workplace Specialist"
+
+paragraphs:
+  - exp.isay.tooling-adoption
+  - exp.sweco.consulting-delivery
+
+hook: >
+  Impact Fund Denmark is an institution I already know from the delivery side of its capital, since at Sweco I supported water and energy projects financed by IFU alongside the World Bank and the EBRD.
+
+relevance:
+  exp.isay.tooling-adoption: >
+    Training and adoption carry that same weight here, because a global rollout is only complete once colleagues in Nairobi or Sao Paulo use what was deployed rather than work around it.
+  exp.sweco.consulting-delivery: >
+    This position asks for the same thing daily, explaining technical matters plainly to colleagues across regional offices and time zones whose priorities differ from my own.
+
+closing_reason: >
+  Impact Fund Denmark invests risk capital across more than forty-five countries, run from a Copenhagen office whose Technology and Operations team carries the systems and the security behind that work.

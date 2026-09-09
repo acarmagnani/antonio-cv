@@ -1,0 +1,27 @@
+extends: esg-built-environment
+company: "DNB"
+role: "ESG Analyst"
+language: en
+
+# The block's default pair is right here: Ramboll carries the data work and the
+# structuring task, Sweco carries the standard of evidence a control function needs.
+# The closing is swapped to the data one, because the deliverable in this seat is a
+# data product, not an advisory report.
+closing: closing.data.v1
+
+hook: >
+  DNB is building its ESG data value chains inside Group Risk Management, which is where
+  sustainability regulation stops being a reporting exercise and starts steering a portfolio.
+
+relevance:
+  exp.ramboll.esg-data: >
+    That structuring task sits at the centre of this role, since ESG portfolio data arrives from
+    external providers, customer submissions and public registers long before it is reliable enough
+    to report on.
+  exp.sweco.climate-risk: >
+    An independent control function answers to that same standard, because the ESG figures a bank
+    publishes are read by regulators, the Board and the market rather than filed away.
+
+closing_reason: >
+  Few institutions put this capability inside the risk function, where the data has to be
+  controlled and the analysis has to hold up under independent review.
